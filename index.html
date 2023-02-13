@@ -18,10 +18,28 @@ h1, h2, h3, h4, h5, h6 {
 	font-size:19px;
 }
 .links h4:hover{
-    background: #333; 
+    background: rgba(0, 0, 0, 0.5); 
 	color: #fff; 
 }
 
+.forest_image{
+    max-width:100%;
+    opacity:0.9
+}
+
+.home_title{
+    font-size:64px!important;
+    color: #fff; 
+    letter-spacing: 30px;
+    font-style: courier;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.forest_back{
+    content: "";
+    background-image: linear-gradient(rgba(255,255,255,0.8),rgba(255,255,255,0.8)),url('images/forest.jpg');
+    background-repeat: no-repeat
+}
 </style>
 </head>
 <body>
@@ -41,11 +59,13 @@ h1, h2, h3, h4, h5, h6 {
 
 <!-- Header -->
 <header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:300px" id="home">
-  <img class="w3-image" src="/images/.jpg" alt="forest" width="1600" height="300">
-  <div class="w3-display-bottomleft w3-padding-large w3-opacity">
-    <h1 class="w3-xxlarge">Yujia Jin</h1>
+  <img class="forest_image" src="/images/forest.jpg" alt="forest" width="1500" height="750">
+  <div class="w3-display-bottomleft w3-padding-large">
+    <h1 class="home_title">Sian Yujia Jin</h1>
   </div>
 </header>
+
+<hr>
 
 <!-- Page content -->
 <div class="w3-content" style="max-width:1100px">
@@ -59,43 +79,36 @@ h1, h2, h3, h4, h5, h6 {
     <div class="w3-col m6 w3-padding-large">
       <h1 class="w3-center">About Me</h1>
       <h5 class="w3-center">Exploring the data science world</h5>
-      <p class="w3-large">Welcome to my website. My name is Yujia Jin, you can call me Sian. I am a graduate student of Georgetown Data Science and Analytics Program with a background in Master of Pharmacy. 
-        Though from pharmacy to data science is a big jump, I am always keen to find the connects between these two fields and look for data analytics tool to facilitate the development of the healthcare field. My unique background brings up more diversity into the fields and definitely adds up a new perspective of thinking into data science problems.
+      <p class="w3-large" style="letter-spacing: 2px">Welcome to my website. My name is Yujia Jin, you can call me Sian. I am a graduate student of Georgetown Data Science and Analytics Program with a background in Master of Pharmacy. Though from pharmacy to data science is a big jump, I am always keen to find the connects between these two fields and look for data analytics tool to facilitate the development of the healthcare field. My unique background brings up more diversity into the fields and definitely adds up a new perspective of thinking into data science problems.
         <br><br>
-        I am very passionate about data analyzing, and enjoy the process of finding pattern and drawing conclusions from seemingly unordered data. I am ready to explore the next exciting data science problem with you.
-        
+        I am very passionate about data analyzing, and enjoy the process of finding pattern and drawing conclusions from seemingly unordered data. I am proficient in a number of languages including Python, R, SQL, JavaScript, Microsoft Office suite, and Tableau, and have interests in NLP, Machine learning, Big Data, Data visualization and etc. Check my links below to see some of projects I did.
         <br><br>
-        I am proficient in a number of languages including Python, R, SQL, JavaScript, Microsoft Office suite, and Tableau, and have interests in NLP, Machine learning, Big Data, Data visualization and data analytics. Additionally, I have extensive on-hand experiences on analyzing all types of data. Check my links below to see some of projects I did. Thanks for visiting!
-        .</p>
+        Thanks for visiting!</p>
       <p class="w3-large w3-text-grey w3-hide-medium"></p>
     </div>
   </div>
   
   <hr>
-  
   <!-- Projects Section -->
   <div class="w3-row w3-padding-64" id="projects">
-    <div class="w3-col l6 w3-padding-large">
-      <h1 class="w3-center">My Projects</h1> <br>
+    <div class="w3-container w3-padding-64">
+      <h1 class="w3-center">My Projects</h1>
       <h5 class="w3-center">Click below to see project pages</h5> <br>
       <a href="https://yujiajin.georgetown.domains/503_project/index.html" target="_blank" class="links"><h4>Data Visualization Project: Volcano Analysis & Visualizations</h4></a>
-      <p class="w3-text-grey">Assortment of fresh baked fruit breads and muffins 5.50</p><br>
+      <p class="w3-text-grey">This project presents a data science story about the volcanoes with Exploratory Data Analysis, and interactive visualization via Python (matplotlib, plotly), R and JavaScript, identifies insights behind time series, geospatial and quantitative data and applies statistical analysis </p><br>
     
-      <a href="https://gu-anly502.github.io/fall-2022-reddit-big-data-project-project-group-27/index.html" target="_blank" class="links"><h4>Examining Political Engagement and Sentiment on Reddit</h4></a>
-      <p class="w3-text-grey">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p><br>
+      <a href="https://gu-anly502.github.io/fall-2022-reddit-big-data-project-project-group-27/index.html" target="_blank" class="links"><h4>Big Data: Examining Political Engagement and Sentiment on Reddit</h4></a>
+      <p class="w3-text-grey">Cloud based big data project on Spark, that dive deeply into social media to explore behavior trends in how people engage with politics online, with implementing of data visualization, NLP and ML analysis.</p><br>
     
       <a href="https://yujiajin.georgetown.domains/ANLY560/project/" target="_blank" class="links"><h4>Time Series for Stock Price in Healthcare</h4></a>
-      <p class="w3-text-grey">Vanilla flavored batter with malted flour 7.50</p><br>
+      <p class="w3-text-grey">Explore the development of healthcare companies by fitting their stock price into various time series models
+    </p><br>
     
       <a href="https://yujiajin.georgetown.domains/index.html" target="_blank" class="links"><h4> Clinical Trials Analytics Project</h4></a>
-      <p class="w3-text-grey">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p><br>
+      <p class="w3-text-grey">Implement data cleaning, text mining, and machine learning methods on clinical trials dataset, and exploring the data science questions behind clinical trials.</p><br>
     
       <h4>coming out soon...</h4>
       <p class="w3-text-grey">...</p>    
-    </div>
-    
-    <div class="w3-col l6 w3-padding-large">
-      <img src="/w3images/tablesetting.jpg" class="w3-round w3-image w3-opacity-min" alt="Menu" style="width:100%">
     </div>
   </div>
 
@@ -121,7 +134,7 @@ h1, h2, h3, h4, h5, h6 {
 
 <!-- Footer -->
 <footer class="w3-center w3-light-grey w3-padding-32">
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  <p>© 2023 Yujia Jin. All rights reserved.</p>
 </footer>
 
 </body>
