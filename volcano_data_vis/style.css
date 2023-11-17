@@ -1,0 +1,141 @@
+body {
+    font-family: Helvetica, sans-serif;
+    margin: 0;
+}
+
+h1, h2, h3 {
+    font-family: Verdana, sans-serif;
+    color: Midnightblue;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 5px;
+}
+
+th {
+    text-align: left;
+}
+
+caption {
+    color: Midnightblue;
+    font-weight: bold;
+    padding: 10px;
+}
+
+p {
+    font-family: Georgia, serif;
+    line-height: 2;
+    font-size: 1.125em;
+    color: #414141;
+}
+
+figure {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+figurecaption {
+    color: gray;
+    font-size: 12px;
+}
+
+img {
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%)
+}
+
+.center-fig {
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.center-table {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.headerpage-501 {
+    background-color: MidnightBlue;
+}
+
+
+.headerbtn:link, .headerbtn:visited {
+    color: white;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.headerbtn:hover, .headerbtn:active {
+    background-color: white;
+    color: MidnightBlue;
+}
+
+.main {
+    display: flex;
+    position: relative;
+    max-width: 1000px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 15%;
+}
+
+.left-side {
+    position: relative;
+    padding-top: 100px;
+    float: left;
+    width: 25%;
+    display: block;
+}
+
+.left-navi {
+    position: sticky;
+    top: 50px;
+    display: block;
+    line-height: 2;
+}
+
+.nav {
+    border-left-color: white;
+    border-left-style: solid;
+    border-left-width: 4px;
+    list-style: none;
+}
+
+.active {
+    border-left-color: MidnightBlue;
+}
+
+.nav a {
+    color: Midnightblue;
+    text-decoration: none;
+    padding-left: 18px;
+}
+
+.nav p {
+    line-height: 1;
+    color: Midnightblue;
+    font-weight: bold;
+    padding-left: 6px;
+}
+
+.content {
+    position: relative;
+    padding-top: 25px;
+    float: right;
+    width: 75%;
+    display: block;
+}
