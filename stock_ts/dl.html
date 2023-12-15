@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.269">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Time Series for Stock Price in Healthcare - Deep Learning for TS</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-sidebar docked nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Time Series for Stock Price in Healthcare</span>
+    </a>
+  </div>
+          <div id="quarto-search" class="" title="Search"></div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title">Deep Learning for TS</h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation docked overflow-auto">
+      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">Introduction</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./dsourse.html" class="sidebar-item-text sidebar-link">Data Sources</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./dvis.html" class="sidebar-item-text sidebar-link">Data Visualization</a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">EDA</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./eda.html" class="sidebar-item-text sidebar-link">UNH (Main EDA descriptions)</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./eda_lly.html" class="sidebar-item-text sidebar-link">LLY</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./eda_azn.html" class="sidebar-item-text sidebar-link">AZN</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./eda_cvs.html" class="sidebar-item-text sidebar-link">CVS</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./eda_syk.html" class="sidebar-item-text sidebar-link">SYK</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./eda_pfe.html" class="sidebar-item-text sidebar-link">PFE</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./eda_jnj.html" class="sidebar-item-text sidebar-link">JNJ</a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./models.html" class="sidebar-item-text sidebar-link">ARMA/ARIMA/SARIMA Models</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./arimax.html" class="sidebar-item-text sidebar-link">ARIMAX/SARIMAX/VAR</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ts.html" class="sidebar-item-text sidebar-link">Financial Time Series Models</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./dl.html" class="sidebar-item-text sidebar-link active">Deep Learning for TS</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./conclusion.html" class="sidebar-item-text sidebar-link">Conclusions</a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#deep-learning-codes" id="toc-deep-learning-codes" class="nav-link active" data-scroll-target="#deep-learning-codes">Deep Learning Codes</a></li>
+  <li><a href="#rnn" id="toc-rnn" class="nav-link" data-scroll-target="#rnn">RNN</a>
+  <ul class="collapse">
+  <li><a href="#rnn-with-l1-regularization" id="toc-rnn-with-l1-regularization" class="nav-link" data-scroll-target="#rnn-with-l1-regularization">RNN with L1 regularization</a></li>
+  <li><a href="#rnn-with-l2-regularization" id="toc-rnn-with-l2-regularization" class="nav-link" data-scroll-target="#rnn-with-l2-regularization">RNN with L2 regularization</a></li>
+  </ul></li>
+  <li><a href="#lstm" id="toc-lstm" class="nav-link" data-scroll-target="#lstm">LSTM</a></li>
+  <li><a href="#gru" id="toc-gru" class="nav-link" data-scroll-target="#gru">GRU</a></li>
+  <li><a href="#result-discussion" id="toc-result-discussion" class="nav-link" data-scroll-target="#result-discussion">Result Discussion</a></li>
+  <li><a href="#deep-learning-vs-arima" id="toc-deep-learning-vs-arima" class="nav-link" data-scroll-target="#deep-learning-vs-arima">Deep Learning VS ARIMA</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title d-none d-lg-block">Deep Learning for TS</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<p>Deep learning models are a family of neural network models that have multiple layers between the input and output layers. These layers allow the model to learn increasingly complex features and representations of the input data, making them effective for time series modeling where the data may have complex and nonlinear relationships. In time series modeling, deep learning models are used to automatically extract and learn features from the time series data, which can then be used for prediction or classification tasks. These models can be used to model both univariate and multivariate time series data.</p>
+<p>Some common deep learning models used for time series modeling include recurrent neural networks (RNNs), long short-term memory networks (LSTMs), and gated recurrent unit networks (GRUs). This section is going to fit AZN stock price into these three deep learning models and explore meaningful results from the predictive modeling.</p>
+<section id="deep-learning-codes" class="level2">
+<h2 class="anchored" data-anchor-id="deep-learning-codes">Deep Learning Codes</h2>
+<p><a href="DLmodels.py" class="external" target="_blank">Python Code Download</a>.</p>
+</section>
+<section id="rnn" class="level2">
+<h2 class="anchored" data-anchor-id="rnn">RNN</h2>
+<p>A simple RNN is a type of recurrent neural network that can be used as a time series model. In a simple RNN, each time step takes an input vector and a hidden state vector, which is updated based on the previous hidden state and the current input. The hidden state serves as a memory for the model, allowing it to capture dependencies and patterns in the time series data.</p>
+<p>The figures below shows the result of fitting AZN stock price into RNN model.</p>
+<p><img src="images/rnn1.png" class="img-fluid" width="700"></p>
+<p><img src="images/rnn2.png" class="img-fluid" width="700"></p>
+<p>The model has: Train RMSE: 0.028; Test RMSE: 0.172</p>
+<section id="rnn-with-l1-regularization" class="level3">
+<h3 class="anchored" data-anchor-id="rnn-with-l1-regularization">RNN with L1 regularization</h3>
+<p>This section add both L1 and L2 regularization to simple RNN model to avoid overfitting. Generally, RNN with L2 regularization have lower error measurement comparing to the simple RNN model, while L1 regularization have higher error test RMSE than the simple RNN model.</p>
+<p><img src="images/rnn_reg11.png" class="img-fluid" width="700"></p>
+<p><img src="images/rnn_reg12.png" class="img-fluid" width="700"></p>
+<p>The model has: Train RMSE 0.011; Test RMSE: 0.571</p>
+</section>
+<section id="rnn-with-l2-regularization" class="level3">
+<h3 class="anchored" data-anchor-id="rnn-with-l2-regularization">RNN with L2 regularization</h3>
+<p><img src="images/rnn_reg1.png" class="img-fluid" width="700"></p>
+<p><img src="images/rnn_reg22.png" class="img-fluid" width="700"></p>
+<p>The model has: Training RMSE: 0.032; Testing RMSE: 0.047</p>
+</section>
+</section>
+<section id="lstm" class="level2">
+<h2 class="anchored" data-anchor-id="lstm">LSTM</h2>
+<p>LSTM stands for Long Short-Term Memory, which is a type of recurrent neural network that is designed to address the issue of the vanishing gradient problem in simple RNNs when used for time series modeling. LSTM networks are particularly effective for modeling long-term dependencies and patterns in sequential data, such as time series data. In an LSTM network, each time step takes an input vector, a hidden state vector, and a cell state vector, which are updated based on the previous hidden state, cell state, and the current input. The cell state serves as a long-term memory for the model, allowing it to capture and remember important information about the time series data over long periods of time. The hidden state, on the other hand, serves as a short-term memory that allows the model to capture short-term patterns and dependencies in the data.</p>
+<p>The figures below shows the result of fitting AZN stock price into LSTM model.</p>
+<p><img src="images/LSTM1.png" class="img-fluid" width="700"></p>
+<p><img src="images/LSTM2.png" class="img-fluid" width="700"></p>
+<p>The model has: Train RMSE: 0.012; Test RMSE: 0.079</p>
+</section>
+<section id="gru" class="level2">
+<h2 class="anchored" data-anchor-id="gru">GRU</h2>
+<p>GRU stands for Gated Recurrent Unit, which is a type of recurrent neural network that is designed to address the vanishing gradient problem in simple RNNs when used for time series modeling. GRU networks are similar to LSTM networks in that they use gates to control the flow of information in the network, but are computationally less expensive and have fewer parameters. In a GRU network, each time step takes an input vector and a hidden state vector, which are updated based on the previous hidden state and the current input. The GRU has two gates, a reset gate and an update gate, which control the flow of information into and out of the hidden state.</p>
+<p>The figures below shows the result of fitting AZN stock price into GRU model.</p>
+<p><img src="images/GRU1.png" class="img-fluid" width="700"></p>
+<p><img src="images/GRU2.png" class="img-fluid" width="700"></p>
+<p>The model has: Train RMSE: 0.008; Test RMSE: 0.078</p>
+</section>
+<section id="result-discussion" class="level2">
+<h2 class="anchored" data-anchor-id="result-discussion">Result Discussion</h2>
+<table class="table">
+<caption>Error Measurements of Deep Learning Models</caption>
+<thead>
+<tr class="header">
+<th>Model</th>
+<th style="text-align: left;">Train RMSE</th>
+<th style="text-align: right;">Test RMSE</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>RNN</td>
+<td style="text-align: left;">0.028</td>
+<td style="text-align: right;">0.172</td>
+</tr>
+<tr class="even">
+<td>RNN L1</td>
+<td style="text-align: left;">0.011</td>
+<td style="text-align: right;">0.571</td>
+</tr>
+<tr class="odd">
+<td>RNN L2</td>
+<td style="text-align: left;">0.032</td>
+<td style="text-align: right;">0.047</td>
+</tr>
+<tr class="even">
+<td>LSTM</td>
+<td style="text-align: left;">0.012</td>
+<td style="text-align: right;">0.079</td>
+</tr>
+<tr class="odd">
+<td>GRU</td>
+<td style="text-align: left;">0.008</td>
+<td style="text-align: right;">0.078</td>
+</tr>
+</tbody>
+</table>
+<p>Overall, GRU has the lowest test RMSE (0.078) among all three models, LSTM ranks the second (0.079), and simple RNN has the highest test RMSE (0.172). Besides, RNN with L2 regularization has the lowest test RMSE (0.047).</p>
+<p>In general, deep learning models can make accurate predictions for horizons ranging from a few time steps to several hundred time steps, but the accuracy may decrease as the forecasting horizon increases.</p>
+</section>
+<section id="deep-learning-vs-arima" class="level2">
+<h2 class="anchored" data-anchor-id="deep-learning-vs-arima">Deep Learning VS ARIMA</h2>
+<p>Here is the comparison plots between the ARIMA Model and Deep Learning methods. GRU method was chosen here since it works best in all the deep learning methods. According to error measurement, deep learning methods (RMSE 0.008) slightly outperforms the ARIMA model (0.016). However, the ARIMA model is more straightforward than a neural network with far fewer parameters and easier to understand. It can be concluded that both method have shown that it is very likely to have an up-ward trend for AZN stock price in the near future. An ARIMA model is far easier to set up and should be considered, especially with its ability to be interpretable, but a neural network is an excellent alternative.</p>
+<p><img src="images/ts_pred.png" class="img-fluid" width="700"></p>
+<p><img src="images/GRU2.png" class="img-fluid" width="700"></p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

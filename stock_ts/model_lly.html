@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.269">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Time Series for Stock Price in Healthcare - ARMA/ARIMA/SARIMA Models for LLY</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-sidebar docked nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Time Series for Stock Price in Healthcare</span>
+    </a>
+  </div>
+          <div id="quarto-search" class="" title="Search"></div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title">ARMA/ARIMA/SARIMA Models for LLY</h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation docked overflow-auto">
+      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">Introduction</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./dsourse.html" class="sidebar-item-text sidebar-link">Data Sources</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./dvis.html" class="sidebar-item-text sidebar-link">Data Visualization</a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">EDA</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./eda.html" class="sidebar-item-text sidebar-link">UNH (Main EDA descriptions)</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./eda_lly.html" class="sidebar-item-text sidebar-link">LLY</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./eda_azn.html" class="sidebar-item-text sidebar-link">AZN</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./eda_cvs.html" class="sidebar-item-text sidebar-link">CVS</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./eda_syk.html" class="sidebar-item-text sidebar-link">SYK</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./eda_pfe.html" class="sidebar-item-text sidebar-link">PFE</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./eda_jnj.html" class="sidebar-item-text sidebar-link">JNJ</a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./models.html" class="sidebar-item-text sidebar-link">ARMA/ARIMA/SARIMA Models</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./arimax.html" class="sidebar-item-text sidebar-link">ARIMAX/SARIMAX/VAR</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./analysis.html" class="sidebar-item-text sidebar-link">Spectral Analysis and Filtering</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ts.html" class="sidebar-item-text sidebar-link">Financial Time Series Models</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./dl.html" class="sidebar-item-text sidebar-link">Deep Learning for TS</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./conclusion.html" class="sidebar-item-text sidebar-link">Conclusions</a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#step-1-determine-the-stationality-of-time-series" id="toc-step-1-determine-the-stationality-of-time-series" class="nav-link active" data-scroll-target="#step-1-determine-the-stationality-of-time-series">Step 1: Determine the stationality of time series</a></li>
+  <li><a href="#step-2-eliminate-non-stationality" id="toc-step-2-eliminate-non-stationality" class="nav-link" data-scroll-target="#step-2-eliminate-non-stationality">Step 2: Eliminate Non-Stationality</a></li>
+  <li><a href="#step-3-determine-pdq-parameters" id="toc-step-3-determine-pdq-parameters" class="nav-link" data-scroll-target="#step-3-determine-pdq-parameters">Step 3: Determine p,d,q Parameters</a></li>
+  <li><a href="#step-4-fit-arimapdq-model" id="toc-step-4-fit-arimapdq-model" class="nav-link" data-scroll-target="#step-4-fit-arimapdq-model">Step 4: Fit ARIMA(p,d,q) model</a></li>
+  <li><a href="#step-5-forecast" id="toc-step-5-forecast" class="nav-link" data-scroll-target="#step-5-forecast">Step 5: Forecast</a></li>
+  <li><a href="#step-6-compare-arima-model-with-the-benchmark-methods" id="toc-step-6-compare-arima-model-with-the-benchmark-methods" class="nav-link" data-scroll-target="#step-6-compare-arima-model-with-the-benchmark-methods">Step 6: Compare ARIMA model with the benchmark methods</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title d-none d-lg-block">ARMA/ARIMA/SARIMA Models for LLY</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<div class="cell">
+
+</div>
+<section id="step-1-determine-the-stationality-of-time-series" class="level3">
+<h3 class="anchored" data-anchor-id="step-1-determine-the-stationality-of-time-series">Step 1: Determine the stationality of time series</h3>
+<p>Stationality is a pre-requirement of training ARIMA model. This is because term ‘Auto Regressive’ in ARIMA means it is a linear regression model that uses its own lags as predictors, which work best when the predictors are not correlated and are independent of each other. Stationary time series make sure the statistical properties of time series do not change over time.</p>
+<p>Based on information obtained from both ACF graphs and Augmented Dickey-Fuller Test, the time series data is non-stationary.</p>
+<div class="cell">
+<details>
+<summary>Show the code</summary>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>LLY_acf <span class="ot">&lt;-</span> <span class="fu">ggAcf</span>(LLY_ts,<span class="dv">100</span>)<span class="sc">+</span><span class="fu">ggtitle</span>(<span class="st">"LLY ACF Plot"</span>)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>LLY_pacf <span class="ot">&lt;-</span> <span class="fu">ggPacf</span>(LLY_ts,<span class="dv">100</span>)<span class="sc">+</span><span class="fu">ggtitle</span>(<span class="st">"PACF Plot for UHNs"</span>)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">grid.arrange</span>(LLY_acf, LLY_pacf,<span class="at">nrow=</span><span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<p><img src="model_lly_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<div class="cell">
+<details>
+<summary>Show the code</summary>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>tseries<span class="sc">::</span><span class="fu">adf.test</span>(LLY_ts)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    Augmented Dickey-Fuller Test
+
+data:  LLY_ts
+Dickey-Fuller = -2.8006, Lag order = 14, p-value = 0.2393
+alternative hypothesis: stationary</code></pre>
+</div>
+</div>
+</section>
+<section id="step-2-eliminate-non-stationality" class="level3">
+<h3 class="anchored" data-anchor-id="step-2-eliminate-non-stationality">Step 2: Eliminate Non-Stationality</h3>
+<p>Since this data is non-stationary, it is important to necessary to convert it to stationary time series. This step employs a series of actions to eliminate non-stationality, i.e.&nbsp;differencing the data. It turns out the 1st differened data has shown good stationary property, there are no need to go further at 2nd differencing. What is more, the Augmented Dickey-Fuller Test also confirmed that the 1st differenced data is stationary. Therefore, the1st differencing would be the actions taken to eliminate the non-stationality.</p>
+<div class="cell">
+<details>
+<summary>Show the code</summary>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>plot1<span class="ot">&lt;-</span> <span class="fu">ggAcf</span>((LLY_ts) <span class="sc">%&gt;%</span><span class="fu">diff</span>(), <span class="dv">50</span>, <span class="at">main=</span><span class="st">"ACF Plot for 1st differenced Data"</span>) </span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>plot2<span class="ot">&lt;-</span> <span class="fu">ggAcf</span>((LLY_ts) <span class="sc">%&gt;%</span><span class="fu">diff</span>()<span class="sc">%&gt;%</span><span class="fu">diff</span>(),<span class="dv">50</span>, <span class="at">main=</span><span class="st">"ACF Plot for 2nd differenced Data"</span>) </span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="fu">grid.arrange</span>(plot1, plot2,<span class="at">nrow=</span><span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<p><img src="model_lly_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<div class="cell">
+<details>
+<summary>Show the code</summary>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>tseries<span class="sc">::</span><span class="fu">adf.test</span>((LLY_ts) <span class="sc">%&gt;%</span><span class="fu">diff</span>())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    Augmented Dickey-Fuller Test
+
+data:  (LLY_ts) %&gt;% diff()
+Dickey-Fuller = -14.381, Lag order = 14, p-value = 0.01
+alternative hypothesis: stationary</code></pre>
+</div>
+</div>
+</section>
+<section id="step-3-determine-pdq-parameters" class="level3">
+<h3 class="anchored" data-anchor-id="step-3-determine-pdq-parameters">Step 3: Determine p,d,q Parameters</h3>
+<p>The standard notation of ARIMA(p,d,q) include p,d,q 3 parameters. Here are the representations: - p: The number of lag observations included in the model, also called the lag order; order of the AR term. - d: The number of times that the raw observations are differenced, also called the degree of differencing; number of differencing required to make the time series stationary. - q: order of moving average; order of the MA term. It refers to the number of lagged forecast errors that should go into the ARIMA Model.</p>
+<div class="cell">
+<details>
+<summary>Show the code</summary>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>plot3<span class="ot">&lt;-</span> <span class="fu">ggPacf</span>((LLY_ts) <span class="sc">%&gt;%</span><span class="fu">diff</span>(),<span class="dv">50</span>, <span class="at">main=</span><span class="st">"PACF Plot for Log Transformed &amp; 1st differenced Data"</span>) </span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="fu">grid.arrange</span>(plot1,plot3)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<p><img src="model_lly_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>According to the PACF plot and ACF plot above, there are no significant peaks on both graph, therefore, here set both p and q as 0. Since I only differenced the data once, the d would be 1.</p>
+</section>
+<section id="step-4-fit-arimapdq-model" class="level3">
+<h3 class="anchored" data-anchor-id="step-4-fit-arimapdq-model">Step 4: Fit ARIMA(p,d,q) model</h3>
+<div class="cell">
+<details>
+<summary>Show the code</summary>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>fit1 <span class="ot">&lt;-</span> <span class="fu">Arima</span>((LLY_ts), <span class="at">order=</span><span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">0</span>),<span class="at">include.drift =</span> <span class="cn">TRUE</span>) </span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(fit1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>Series: (LLY_ts) 
+ARIMA(0,1,0) with drift 
+
+Coefficients:
+       drift
+      0.0183
+s.e.  0.1283
+
+sigma^2 = 53.71:  log likelihood = -11128.73
+AIC=22261.47   AICc=22261.47   BIC=22273.65
+
+Training set error measures:
+                       ME     RMSE      MAE        MPE     MAPE       MASE
+Training set 2.349624e-05 7.326456 2.206738 -0.1331229 1.443189 0.02767164
+                    ACF1
+Training set 0.004971149</code></pre>
+</div>
+</div>
+<section id="model-diagnostics" class="level4">
+<h4 class="anchored" data-anchor-id="model-diagnostics">Model Diagnostics</h4>
+<ul>
+<li>Inspection of the time plot of the standardized residuals below shows no obvious patterns.</li>
+<li>Notice that there may be outliers, with a few values exceeding 3 standard deviations in magnitude.</li>
+<li>The ACF of the standardized residuals shows no apparent departure from the model assumptions, no significant lags shown.</li>
+<li>The normal Q-Q plot of the residuals shows that the assumption of normality is reasonable, with the exception of the fat-tailed.</li>
+<li>The model appears to fit well.</li>
+</ul>
+<div class="cell">
+<details>
+<summary>Show the code</summary>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>model_output <span class="ot">&lt;-</span> <span class="fu">capture.output</span>(<span class="fu">sarima</span>((LLY_ts), <span class="dv">0</span>,<span class="dv">1</span>,<span class="dv">0</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<p><img src="model_lly_files/figure-html/unnamed-chunk-8-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<div class="cell">
+<details>
+<summary>Show the code</summary>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(model_output[<span class="dv">9</span><span class="sc">:</span><span class="dv">37</span>], model_output[<span class="fu">length</span>(model_output)], <span class="at">sep =</span> <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>) <span class="co">#to get rid of the convergence status and details of the optimization algorithm used by the sarima() </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>$fit
+
+Call:
+arima(x = xdata, order = c(p, d, q), seasonal = list(order = c(P, D, Q), period = S), 
+    xreg = constant, transform.pars = trans, fixed = fixed, optim.control = list(trace = trc, 
+        REPORT = 1, reltol = tol))
+
+Coefficients:
+      constant
+        0.0183
+s.e.    0.1283
+
+sigma^2 estimated as 53.69:  log likelihood = -11128.73,  aic = 22261.47
+
+$degrees_of_freedom
+[1] 3262
+
+$ttable
+         Estimate     SE t.value p.value
+constant   0.0183 0.1283   0.143  0.8863
+
+$AIC
+[1] 6.822393
+
+$AICc
+[1] 6.822394
+
+$BIC
+[1] 6.826126</code></pre>
+</div>
+</div>
+</section>
+<section id="compare-with-auto.arima-function" class="level4">
+<h4 class="anchored" data-anchor-id="compare-with-auto.arima-function">Compare with auto.arima() function</h4>
+<p>auto.arima() returns best ARIMA model according to either AIC, AICc or BIC value. The function conducts a search over possible model within the order constraints provided. The parameters matches with the model.</p>
+<div class="cell">
+<details>
+<summary>Show the code</summary>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">auto.arima</span>((LLY_ts))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>Series: (LLY_ts) 
+ARIMA(0,1,0) 
+
+sigma^2 = 53.69:  log likelihood = -11128.74
+AIC=22259.49   AICc=22259.49   BIC=22265.58</code></pre>
+</div>
+</div>
+</section>
+</section>
+<section id="step-5-forecast" class="level3">
+<h3 class="anchored" data-anchor-id="step-5-forecast">Step 5: Forecast</h3>
+<p>The blue part in graph below forecast the next 100 values of LLY stock price in 80% and 95% confidence level.</p>
+<div class="cell">
+<details>
+<summary>Show the code</summary>
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>LLY_ts <span class="sc">%&gt;%</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">Arima</span>(<span class="at">order=</span><span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">1</span>,<span class="dv">0</span>),<span class="at">include.drift =</span> <span class="cn">TRUE</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">forecast</span>(<span class="dv">100</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">autoplot</span>() <span class="sc">+</span></span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ylab</span>(<span class="st">"LLY stock prices prediction"</span>) <span class="sc">+</span> <span class="fu">xlab</span>(<span class="st">"Year"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<p><img src="model_lly_files/figure-html/unnamed-chunk-11-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="step-6-compare-arima-model-with-the-benchmark-methods" class="level3">
+<h3 class="anchored" data-anchor-id="step-6-compare-arima-model-with-the-benchmark-methods">Step 6: Compare ARIMA model with the benchmark methods</h3>
+<p>Forecasting benchmarks are very important when testing new forecasting methods, to see how well they perform against some simple alternatives.</p>
+<section id="average-method" class="level4">
+<h4 class="anchored" data-anchor-id="average-method">Average method</h4>
+<p>Here, the forecast of all future values are equal to the average of the historical data. The residual plot of this method is not stationary.</p>
+<div class="cell">
+<details>
+<summary>Show the code</summary>
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>f1<span class="ot">&lt;-</span><span class="fu">meanf</span>((LLY_ts), <span class="at">h=</span><span class="dv">251</span>) <span class="co">#mean</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="co">#summary(f1)</span></span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a><span class="fu">checkresiduals</span>(f1)<span class="co">#serial correlation ; Lung Box p &lt;0.05</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<p><img src="model_lly_files/figure-html/unnamed-chunk-12-1.png" class="img-fluid" width="672"></p>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    Ljung-Box test
+
+data:  Residuals from Mean
+Q* = 300420, df = 501, p-value &lt; 2.2e-16
+
+Model df: 1.   Total lags used: 502</code></pre>
+</div>
+</div>
+</section>
+<section id="naive-method" class="level4">
+<h4 class="anchored" data-anchor-id="naive-method">Naive method</h4>
+<p>This method simply set all forecasts to be the value of the last observation. According to error measurement here, ARIMA(4,1,3) outperform the average method.</p>
+<div class="cell">
+<details>
+<summary>Show the code</summary>
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>f2<span class="ot">&lt;-</span><span class="fu">naive</span>((LLY_ts), <span class="at">h=</span><span class="dv">11</span>) <span class="co"># naive method</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(f2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Forecast method: Naive method
+
+Model Information:
+Call: naive(y = (LLY_ts), h = 11) 
+
+Residual sd: 7.3276 
+
+Error measures:
+                     ME     RMSE      MAE        MPE     MAPE       MASE
+Training set 0.01834098 7.327602 2.208937 -0.1191376 1.444964 0.02769921
+                    ACF1
+Training set 0.004970975
+
+Forecasts:
+         Point Forecast    Lo 80    Hi 80     Lo 95    Hi 95
+2023.004       136.5567 127.1660 145.9474 122.19488 150.9186
+2023.008       136.5567 123.2763 149.8372 116.24601 156.8674
+2023.012       136.5567 120.2915 152.8219 111.68129 161.4321
+2023.016       136.5567 117.7753 155.3381 107.83305 165.2804
+2023.020       136.5567 115.5585 157.5550 104.44268 168.6708
+2023.024       136.5567 113.5543 159.5591 101.37755 171.7359
+2023.028       136.5567 111.7113 161.4022  98.55887 174.5546
+2023.032       136.5567 109.9958 163.1176  95.93531 177.1781
+2023.036       136.5567 108.3846 164.7288  93.47121 179.6422
+2023.040       136.5567 106.8607 166.2527  91.14061 181.9728
+2023.044       136.5567 105.4113 167.7021  88.92390 184.1895</code></pre>
+</div>
+<details>
+<summary>Show the code</summary>
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="fu">checkresiduals</span>(f2)<span class="co">#serial correlation ; Lung Box p &lt;0.05</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<p><img src="model_lly_files/figure-html/unnamed-chunk-13-1.png" class="img-fluid" width="672"></p>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    Ljung-Box test
+
+data:  Residuals from Naive method
+Q* = 438.09, df = 502, p-value = 0.9816
+
+Model df: 0.   Total lags used: 502</code></pre>
+</div>
+</div>
+</section>
+<section id="seasonal-naive-method" class="level4">
+<h4 class="anchored" data-anchor-id="seasonal-naive-method">Seasonal naive method</h4>
+<p>This method is useful for highly seasonal data, which can set each forecast to be equal to the last observed value from the same season of the year. Here seasonal naive is used to forecast the next 4 values for the LLY stock price series.</p>
+<div class="cell">
+<details>
+<summary>Show the code</summary>
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>f3<span class="ot">&lt;-</span><span class="fu">snaive</span>((LLY_ts), <span class="at">h=</span><span class="dv">4</span>) <span class="co">#seasonal naive method</span></span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(f3)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Forecast method: Seasonal naive method
+
+Model Information:
+Call: snaive(y = (LLY_ts), h = 4) 
+
+Residual sd: 108.2255 
+
+Error measures:
+                   ME     RMSE      MAE       MPE     MAPE MASE      ACF1
+Training set 4.249799 108.2255 79.74729 -23.12158 65.75914    1 0.9950134
+
+Forecasts:
+         Point Forecast     Lo 80    Hi 80     Lo 95    Hi 95
+2023.004       105.4368 -33.25979 244.1334 -106.6813 317.5550
+2023.008       106.4282 -32.26840 245.1248 -105.6899 318.5464
+2023.012       107.5895 -31.10708 246.2861 -104.5286 319.7077
+2023.016       106.2299 -32.46667 244.9265 -105.8882 318.3481</code></pre>
+</div>
+<details>
+<summary>Show the code</summary>
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="fu">checkresiduals</span>(f3) <span class="co">#serial correlation ; Lung Box p &lt;0.05</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<p><img src="model_lly_files/figure-html/unnamed-chunk-14-1.png" class="img-fluid" width="672"></p>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    Ljung-Box test
+
+data:  Residuals from Seasonal naive method
+Q* = 235237, df = 502, p-value &lt; 2.2e-16
+
+Model df: 0.   Total lags used: 502</code></pre>
+</div>
+</div>
+</section>
+<section id="drift-method" class="level4">
+<h4 class="anchored" data-anchor-id="drift-method">Drift Method</h4>
+<p>A variation on the naïve method is to allow the forecasts to increase or decrease over time, where the amount of change over time is set to be the average change seen in the historical data.</p>
+<div class="cell">
+<details>
+<summary>Show the code</summary>
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>f4 <span class="ot">&lt;-</span> <span class="fu">rwf</span>((LLY_ts),<span class="at">drift=</span><span class="cn">TRUE</span>, <span class="at">h=</span><span class="dv">20</span>) </span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(f4)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Forecast method: Random walk with drift
+
+Model Information:
+Call: rwf(y = (LLY_ts), h = 20, drift = TRUE) 
+
+Drift: 0.0183  (se 0.1283)
+Residual sd: 7.3287 
+
+Error measures:
+                       ME     RMSE      MAE        MPE     MAPE       MASE
+Training set 5.431461e-15 7.327579 2.207391 -0.1331943 1.443601 0.02767983
+                    ACF1
+Training set 0.004970975
+
+Forecasts:
+         Point Forecast     Lo 80    Hi 80     Lo 95    Hi 95
+2023.004       136.5751 127.18151 145.9686 122.20887 150.9413
+2023.008       136.5934 123.30688 149.8799 116.27342 156.9134
+2023.012       136.6117 120.33665 152.8868 111.72114 161.5023
+2023.016       136.6301 117.83435 155.4258 107.88449 165.3757
+2023.020       136.6484 115.63094 157.6659 104.50496 168.7919
+2023.024       136.6668 113.63975 159.6938 101.44998 171.8835
+2023.028       136.6851 111.80928 161.5609  98.64081 174.7294
+2023.032       136.7034 110.10600 163.3009  96.02617 177.3807
+2023.036       136.7218 108.50663 164.9369  93.57042 179.8731
+2023.040       136.7401 106.99419 166.4861  91.24765 182.2326
+2023.044       136.7585 105.55590 167.9610  89.03826 184.4787
+2023.048       136.7768 104.18182 169.3718  86.92707 186.6265
+2023.052       136.7951 102.86403 170.7263  84.90198 188.6883
+2023.056       136.8135 101.59613 172.0309  82.95318 190.6738
+2023.060       136.8318 100.37284 173.2908  81.07261 192.5911
+2023.064       136.8502  99.18974 174.5106  79.25351 194.4468
+2023.068       136.8685  98.04311 175.6939  77.49018 196.2468
+2023.072       136.8869  96.92975 176.8440  75.77774 197.9960
+2023.076       136.9052  95.84692 177.9635  74.11198 199.6984
+2023.080       136.9235  94.79222 179.0549  72.48925 201.3578</code></pre>
+</div>
+<details>
+<summary>Show the code</summary>
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="fu">checkresiduals</span>(f4)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<p><img src="model_lly_files/figure-html/unnamed-chunk-15-1.png" class="img-fluid" width="672"></p>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    Ljung-Box test
+
+data:  Residuals from Random walk with drift
+Q* = 438.09, df = 501, p-value = 0.9801
+
+Model df: 1.   Total lags used: 502</code></pre>
+</div>
+</div>
+<div class="cell">
+<details>
+<summary>Show the code</summary>
+<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="fu">autoplot</span>(LLY_ts) <span class="sc">+</span></span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">autolayer</span>(<span class="fu">meanf</span>(LLY_ts, <span class="at">h=</span><span class="dv">100</span>),</span>
+<span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a>            <span class="at">series=</span><span class="st">"Mean.tr"</span>, <span class="at">PI=</span><span class="cn">FALSE</span>) <span class="sc">+</span></span>
+<span id="cb30-4"><a href="#cb30-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">autolayer</span>(<span class="fu">naive</span>((LLY_ts), <span class="at">h=</span><span class="dv">100</span>),</span>
+<span id="cb30-5"><a href="#cb30-5" aria-hidden="true" tabindex="-1"></a>            <span class="at">series=</span><span class="st">"Naïve.tr"</span>, <span class="at">PI=</span><span class="cn">FALSE</span>) <span class="sc">+</span></span>
+<span id="cb30-6"><a href="#cb30-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">autolayer</span>(<span class="fu">rwf</span>((LLY_ts), <span class="at">drift=</span><span class="cn">TRUE</span>, <span class="at">h=</span><span class="dv">100</span>),</span>
+<span id="cb30-7"><a href="#cb30-7" aria-hidden="true" tabindex="-1"></a>            <span class="at">series=</span><span class="st">"Drift.tr"</span>, <span class="at">PI=</span><span class="cn">FALSE</span>) <span class="sc">+</span></span>
+<span id="cb30-8"><a href="#cb30-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">autolayer</span>(<span class="fu">forecast</span>(fit1,<span class="dv">100</span>), </span>
+<span id="cb30-9"><a href="#cb30-9" aria-hidden="true" tabindex="-1"></a>            <span class="at">series=</span><span class="st">"fit"</span>,<span class="at">PI=</span><span class="cn">FALSE</span>) <span class="sc">+</span></span>
+<span id="cb30-10"><a href="#cb30-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggtitle</span>(<span class="st">"LLY Stock Price"</span>) <span class="sc">+</span></span>
+<span id="cb30-11"><a href="#cb30-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">xlab</span>(<span class="st">"Time"</span>) <span class="sc">+</span> <span class="fu">ylab</span>(<span class="st">"Price"</span>) <span class="sc">+</span></span>
+<span id="cb30-12"><a href="#cb30-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">guides</span>(<span class="at">colour=</span><span class="fu">guide_legend</span>(<span class="at">title=</span><span class="st">"Forecast"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<p><img src="model_lly_files/figure-html/unnamed-chunk-16-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>According to the graph above, ARIMA(0,1,0) outperform most of benchmark method, though its performance is very similar to drift method.</p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

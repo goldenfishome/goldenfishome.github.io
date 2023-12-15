@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.269">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Time Series for Stock Price in Healthcare - ARMA/ARIMA/SARIMA Models for AZN</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-sidebar docked nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Time Series for Stock Price in Healthcare</span>
+    </a>
+  </div>
+          <div id="quarto-search" class="" title="Search"></div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title">ARMA/ARIMA/SARIMA Models for AZN</h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation docked overflow-auto">
+      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">Introduction</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./dsourse.html" class="sidebar-item-text sidebar-link">Data Sources</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./dvis.html" class="sidebar-item-text sidebar-link">Data Visualization</a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">EDA</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./eda.html" class="sidebar-item-text sidebar-link">UNH (Main EDA descriptions)</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./eda_lly.html" class="sidebar-item-text sidebar-link">LLY</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./eda_azn.html" class="sidebar-item-text sidebar-link">AZN</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./eda_cvs.html" class="sidebar-item-text sidebar-link">CVS</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./eda_syk.html" class="sidebar-item-text sidebar-link">SYK</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./eda_pfe.html" class="sidebar-item-text sidebar-link">PFE</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./eda_jnj.html" class="sidebar-item-text sidebar-link">JNJ</a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./models.html" class="sidebar-item-text sidebar-link">ARMA/ARIMA/SARIMA Models</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./arimax.html" class="sidebar-item-text sidebar-link">ARIMAX/SARIMAX/VAR</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./analysis.html" class="sidebar-item-text sidebar-link">Spectral Analysis and Filtering</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ts.html" class="sidebar-item-text sidebar-link">Financial Time Series Models</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./dl.html" class="sidebar-item-text sidebar-link">Deep Learning for TS</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./conclusion.html" class="sidebar-item-text sidebar-link">Conclusions</a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#step-1-determine-the-stationality-of-time-series" id="toc-step-1-determine-the-stationality-of-time-series" class="nav-link active" data-scroll-target="#step-1-determine-the-stationality-of-time-series">Step 1: Determine the stationality of time series</a></li>
+  <li><a href="#step-2-eliminate-non-stationality" id="toc-step-2-eliminate-non-stationality" class="nav-link" data-scroll-target="#step-2-eliminate-non-stationality">Step 2: Eliminate Non-Stationality</a></li>
+  <li><a href="#step-3-determine-pdq-parameters" id="toc-step-3-determine-pdq-parameters" class="nav-link" data-scroll-target="#step-3-determine-pdq-parameters">Step 3: Determine p,d,q Parameters</a></li>
+  <li><a href="#step-4-fit-arimapdq-model" id="toc-step-4-fit-arimapdq-model" class="nav-link" data-scroll-target="#step-4-fit-arimapdq-model">Step 4: Fit ARIMA(p,d,q) model</a></li>
+  <li><a href="#step-5-forecast" id="toc-step-5-forecast" class="nav-link" data-scroll-target="#step-5-forecast">Step 5: Forecast</a></li>
+  <li><a href="#step-6-compare-arima-model-with-the-benchmark-methods" id="toc-step-6-compare-arima-model-with-the-benchmark-methods" class="nav-link" data-scroll-target="#step-6-compare-arima-model-with-the-benchmark-methods">Step 6: Compare ARIMA model with the benchmark methods</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title d-none d-lg-block">ARMA/ARIMA/SARIMA Models for AZN</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<div class="cell">
+
+</div>
+<section id="step-1-determine-the-stationality-of-time-series" class="level3">
+<h3 class="anchored" data-anchor-id="step-1-determine-the-stationality-of-time-series">Step 1: Determine the stationality of time series</h3>
+<p>Stationality is a pre-requirement of training ARIMA model. This is because term ‘Auto Regressive’ in ARIMA means it is a linear regression model that uses its own lags as predictors, which work best when the predictors are not correlated and are independent of each other. Stationary time series make sure the statistical properties of time series do not change over time.</p>
+<p>Based on information obtained from both ACF graphs and Augmented Dickey-Fuller Test, the time series data is non-stationary.</p>
+<div class="cell">
+<details>
+<summary>Show the code</summary>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>AZN_acf <span class="ot">&lt;-</span> <span class="fu">ggAcf</span>(AZN_ts,<span class="dv">100</span>)<span class="sc">+</span><span class="fu">ggtitle</span>(<span class="st">"AZN ACF Plot"</span>)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>AZN_pacf <span class="ot">&lt;-</span> <span class="fu">ggPacf</span>(AZN_ts)<span class="sc">+</span><span class="fu">ggtitle</span>(<span class="st">"PACF Plot for UHNs"</span>)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">grid.arrange</span>(AZN_acf, AZN_pacf,<span class="at">nrow=</span><span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<p><img src="model_azn_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<div class="cell">
+<details>
+<summary>Show the code</summary>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>tseries<span class="sc">::</span><span class="fu">adf.test</span>(AZN_ts)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    Augmented Dickey-Fuller Test
+
+data:  AZN_ts
+Dickey-Fuller = -3.3602, Lag order = 14, p-value = 0.06026
+alternative hypothesis: stationary</code></pre>
+</div>
+</div>
+</section>
+<section id="step-2-eliminate-non-stationality" class="level3">
+<h3 class="anchored" data-anchor-id="step-2-eliminate-non-stationality">Step 2: Eliminate Non-Stationality</h3>
+<p>Since this data is non-stationary, it is important to necessary to convert it to stationary time series. This step employs a series of actions to eliminate non-stationality, i.e.&nbsp;log transformation and differencing the data. It turns out the log transformed and 1st differened data has shown good stationary property, there are no need to go further at 2nd differencing. What is more, the Augmented Dickey-Fuller Test also confirmed that the log transformed and 1st differenced data is stationary. Therefore, the log transformation and 1st differencing would be the actions taken to eliminate the non-stationality.</p>
+<div class="cell">
+<details>
+<summary>Show the code</summary>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>plot1<span class="ot">&lt;-</span> <span class="fu">ggAcf</span>(<span class="fu">log</span>(AZN_ts) <span class="sc">%&gt;%</span><span class="fu">diff</span>(), <span class="dv">50</span>, <span class="at">main=</span><span class="st">"ACF Plot for Log Transformed &amp; 1st differenced Data"</span>) </span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>plot2<span class="ot">&lt;-</span> <span class="fu">ggAcf</span>(<span class="fu">log</span>(AZN_ts) <span class="sc">%&gt;%</span><span class="fu">diff</span>()<span class="sc">%&gt;%</span><span class="fu">diff</span>(),<span class="dv">50</span>, <span class="at">main=</span><span class="st">"ACF Plot for Log Transformed &amp; 2nd differenced Data"</span>) </span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="fu">grid.arrange</span>(plot1, plot2,<span class="at">nrow=</span><span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<p><img src="model_azn_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<div class="cell">
+<details>
+<summary>Show the code</summary>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>tseries<span class="sc">::</span><span class="fu">adf.test</span>(<span class="fu">log</span>(AZN_ts) <span class="sc">%&gt;%</span><span class="fu">diff</span>())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    Augmented Dickey-Fuller Test
+
+data:  log(AZN_ts) %&gt;% diff()
+Dickey-Fuller = -15.655, Lag order = 14, p-value = 0.01
+alternative hypothesis: stationary</code></pre>
+</div>
+</div>
+</section>
+<section id="step-3-determine-pdq-parameters" class="level3">
+<h3 class="anchored" data-anchor-id="step-3-determine-pdq-parameters">Step 3: Determine p,d,q Parameters</h3>
+<p>The standard notation of ARIMA(p,d,q) include p,d,q 3 parameters. Here are the representations: - p: The number of lag observations included in the model, also called the lag order; order of the AR term. - d: The number of times that the raw observations are differenced, also called the degree of differencing; number of differencing required to make the time series stationary. - q: order of moving average; order of the MA term. It refers to the number of lagged forecast errors that should go into the ARIMA Model.</p>
+<div class="cell">
+<details>
+<summary>Show the code</summary>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>plot3<span class="ot">&lt;-</span> <span class="fu">ggPacf</span>(<span class="fu">log</span>(AZN_ts) <span class="sc">%&gt;%</span><span class="fu">diff</span>(),<span class="dv">50</span>, <span class="at">main=</span><span class="st">"PACF Plot for Log Transformed &amp; 1st differenced Data"</span>) </span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="fu">grid.arrange</span>(plot1,plot3)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<p><img src="model_azn_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>According to the PACF plot and ACF plot above, both plots have 3 significant peak at 6,7,8. To avoid over-complexity, here choose the value of p and q as 0. Since I only differenced the data once, the d would be 1.</p>
+</section>
+<section id="step-4-fit-arimapdq-model" class="level3">
+<h3 class="anchored" data-anchor-id="step-4-fit-arimapdq-model">Step 4: Fit ARIMA(p,d,q) model</h3>
+<div class="cell">
+<details>
+<summary>Show the code</summary>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>fit1 <span class="ot">&lt;-</span> <span class="fu">Arima</span>(<span class="fu">log</span>(AZN_ts), <span class="at">order=</span><span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">0</span>),<span class="at">include.drift =</span> <span class="cn">TRUE</span>) </span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(fit1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>Series: log(AZN_ts) 
+ARIMA(0,1,0) with drift 
+
+Coefficients:
+      drift
+      5e-04
+s.e.  3e-04
+
+sigma^2 = 0.0002423:  log likelihood = 8953.58
+AIC=-17903.16   AICc=-17903.16   BIC=-17890.98
+
+Training set error measures:
+                      ME       RMSE        MAE           MPE     MAPE
+Training set 1.15802e-06 0.01555995 0.01046885 -0.0005720625 0.227243
+                   MASE        ACF1
+Training set 0.05903222 -0.03420903</code></pre>
+</div>
+</div>
+<section id="model-diagnostics" class="level4">
+<h4 class="anchored" data-anchor-id="model-diagnostics">Model Diagnostics</h4>
+<ul>
+<li>Inspection of the time plot of the standardized residuals below shows no obvious patterns.</li>
+<li>Notice that there may be outliers, with a few values exceeding 3 standard deviations in magnitude.</li>
+<li>The ACF of the standardized residuals shows no apparent departure from the model assumptions, no significant lags shown.</li>
+<li>The normal Q-Q plot of the residuals shows that the assumption of normality is reasonable, with the exception of the fat-tailed.</li>
+<li>The model appears to fit well.</li>
+</ul>
+<div class="cell">
+<details>
+<summary>Show the code</summary>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>model_output <span class="ot">&lt;-</span> <span class="fu">capture.output</span>(<span class="fu">sarima</span>(<span class="fu">log</span>(AZN_ts), <span class="dv">0</span>,<span class="dv">1</span>,<span class="dv">0</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<p><img src="model_azn_files/figure-html/unnamed-chunk-8-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<div class="cell">
+<details>
+<summary>Show the code</summary>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(model_output[<span class="dv">9</span><span class="sc">:</span><span class="dv">38</span>], model_output[<span class="fu">length</span>(model_output)], <span class="at">sep =</span> <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>) <span class="co">#to get rid of the convergence status and details of the optimization algorithm used by the sarima() </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>$fit
+
+Call:
+arima(x = xdata, order = c(p, d, q), seasonal = list(order = c(P, D, Q), period = S), 
+    xreg = constant, transform.pars = trans, fixed = fixed, optim.control = list(trace = trc, 
+        REPORT = 1, reltol = tol))
+
+Coefficients:
+      constant
+         5e-04
+s.e.     3e-04
+
+sigma^2 estimated as 0.0002422:  log likelihood = 8953.58,  aic = -17903.16
+
+$degrees_of_freedom
+[1] 3262
+
+$ttable
+         Estimate    SE t.value p.value
+constant    5e-04 3e-04  1.8978  0.0578
+
+$AIC
+[1] -5.486718
+
+$AICc
+[1] -5.486718
+
+$BIC
+[1] -5.482985</code></pre>
+</div>
+</div>
+</section>
+<section id="compare-with-auto.arima-function" class="level4">
+<h4 class="anchored" data-anchor-id="compare-with-auto.arima-function">Compare with auto.arima() function</h4>
+<p>auto.arima() returns best ARIMA model according to either AIC, AICc or BIC value. The function conducts a search over possible model within the order constraints provided. However, this method is not reliable sometimes. It fits a different model than ACF/PACF plots suggest. This is because auto.arima() usually return models that are more complex as it prefers more parameters compared than to the for example BIC.</p>
+<div class="cell">
+<details>
+<summary>Show the code</summary>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">auto.arima</span>(<span class="fu">log</span>(AZN_ts))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>Series: log(AZN_ts) 
+ARIMA(1,1,1) with drift 
+
+Coefficients:
+         ar1      ma1  drift
+      0.9292  -0.9519  5e-04
+s.e.  0.0365   0.0305  2e-04
+
+sigma^2 = 0.0002415:  log likelihood = 8959.68
+AIC=-17911.36   AICc=-17911.35   BIC=-17887</code></pre>
+</div>
+</div>
+</section>
+</section>
+<section id="step-5-forecast" class="level3">
+<h3 class="anchored" data-anchor-id="step-5-forecast">Step 5: Forecast</h3>
+<p>The blue part in graph below forecast the next 100 values of AZN stock price in 80% and 95% confidence level.</p>
+<div class="cell">
+<details>
+<summary>Show the code</summary>
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">log</span>(AZN_ts) <span class="sc">%&gt;%</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">Arima</span>(<span class="at">order=</span><span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">1</span>,<span class="dv">0</span>),<span class="at">include.drift =</span> <span class="cn">TRUE</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">forecast</span>(<span class="dv">100</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">autoplot</span>() <span class="sc">+</span></span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ylab</span>(<span class="st">"AZN stock prices prediction"</span>) <span class="sc">+</span> <span class="fu">xlab</span>(<span class="st">"Year"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<p><img src="model_azn_files/figure-html/unnamed-chunk-11-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="step-6-compare-arima-model-with-the-benchmark-methods" class="level3">
+<h3 class="anchored" data-anchor-id="step-6-compare-arima-model-with-the-benchmark-methods">Step 6: Compare ARIMA model with the benchmark methods</h3>
+<p>Forecasting benchmarks are very important when testing new forecasting methods, to see how well they perform against some simple alternatives.</p>
+<section id="average-method" class="level4">
+<h4 class="anchored" data-anchor-id="average-method">Average method</h4>
+<p>Here, the forecast of all future values are equal to the average of the historical data. The residual plot of this method is not stationary.</p>
+<div class="cell">
+<details>
+<summary>Show the code</summary>
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>f1<span class="ot">&lt;-</span><span class="fu">meanf</span>(<span class="fu">log</span>(AZN_ts), <span class="at">h=</span><span class="dv">251</span>) <span class="co">#mean</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="co">#summary(f1)</span></span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a><span class="fu">checkresiduals</span>(f1)<span class="co">#serial correlation ; Lung Box p &lt;0.05</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<p><img src="model_azn_files/figure-html/unnamed-chunk-12-1.png" class="img-fluid" width="672"></p>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    Ljung-Box test
+
+data:  Residuals from Mean
+Q* = 1165071, df = 501, p-value &lt; 2.2e-16
+
+Model df: 1.   Total lags used: 502</code></pre>
+</div>
+</div>
+</section>
+<section id="naive-method" class="level4">
+<h4 class="anchored" data-anchor-id="naive-method">Naive method</h4>
+<p>This method simply set all forecasts to be the value of the last observation. According to error measurement here, ARIMA(0,1,0) outperform the average method.</p>
+<div class="cell">
+<details>
+<summary>Show the code</summary>
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>f2<span class="ot">&lt;-</span><span class="fu">naive</span>(<span class="fu">log</span>(AZN_ts), <span class="at">h=</span><span class="dv">11</span>) <span class="co"># naive method</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(f2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Forecast method: Naive method
+
+Model Information:
+Call: naive(y = log(AZN_ts), h = 11) 
+
+Residual sd: 0.0156 
+
+Error measures:
+                       ME       RMSE        MAE        MPE      MAPE       MASE
+Training set 0.0005180792 0.01557082 0.01049512 0.01076463 0.2277994 0.05918031
+                    ACF1
+Training set -0.03425189
+
+Forecasts:
+         Point Forecast    Lo 80    Hi 80    Lo 95    Hi 95
+2023.004       5.470789 5.450834 5.490744 5.440271 5.501307
+2023.008       5.470789 5.442569 5.499010 5.427630 5.513949
+2023.012       5.470789 5.436226 5.505352 5.417930 5.523648
+2023.016       5.470789 5.430880 5.510699 5.409753 5.531826
+2023.020       5.470789 5.426169 5.515410 5.402548 5.539030
+2023.024       5.470789 5.421910 5.519668 5.396035 5.545543
+2023.028       5.470789 5.417994 5.523585 5.390046 5.551533
+2023.032       5.470789 5.414349 5.527230 5.384471 5.557108
+2023.036       5.470789 5.410925 5.530654 5.379234 5.562344
+2023.040       5.470789 5.407687 5.533892 5.374282 5.567296
+2023.044       5.470789 5.404607 5.536972 5.369572 5.572007</code></pre>
+</div>
+<details>
+<summary>Show the code</summary>
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="fu">checkresiduals</span>(f2)<span class="co">#serial correlation ; Lung Box p &lt;0.05</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<p><img src="model_azn_files/figure-html/unnamed-chunk-13-1.png" class="img-fluid" width="672"></p>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    Ljung-Box test
+
+data:  Residuals from Naive method
+Q* = 627.23, df = 502, p-value = 0.0001143
+
+Model df: 0.   Total lags used: 502</code></pre>
+</div>
+</div>
+</section>
+<section id="seasonal-naive-method" class="level4">
+<h4 class="anchored" data-anchor-id="seasonal-naive-method">Seasonal naive method</h4>
+<p>This method is useful for highly seasonal data, which can set each forecast to be equal to the last observed value from the same season of the year. Here seasonal naive is used to forecast the next 4 values for the AZN stock price series.</p>
+<div class="cell">
+<details>
+<summary>Show the code</summary>
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>f3<span class="ot">&lt;-</span><span class="fu">snaive</span>(<span class="fu">log</span>(AZN_ts), <span class="at">h=</span><span class="dv">4</span>) <span class="co">#seasonal naive method</span></span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(f3)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Forecast method: Seasonal naive method
+
+Model Information:
+Call: snaive(y = log(AZN_ts), h = 4) 
+
+Residual sd: 0.1989 
+
+Error measures:
+                    ME      RMSE       MAE      MPE     MAPE MASE      ACF1
+Training set 0.1378916 0.1988982 0.1773414 2.933481 3.770862    1 0.9881511
+
+Forecasts:
+         Point Forecast    Lo 80    Hi 80    Lo 95    Hi 95
+2023.004       5.528218 5.273320 5.783116 5.138385 5.918052
+2023.008       5.558320 5.303422 5.813219 5.168487 5.948154
+2023.012       5.574101 5.319203 5.828999 5.184268 5.963934
+2023.016       5.582158 5.327260 5.837056 5.192325 5.971991</code></pre>
+</div>
+<details>
+<summary>Show the code</summary>
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="fu">checkresiduals</span>(f3) <span class="co">#serial correlation ; Lung Box p &lt;0.05</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<p><img src="model_azn_files/figure-html/unnamed-chunk-14-1.png" class="img-fluid" width="672"></p>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    Ljung-Box test
+
+data:  Residuals from Seasonal naive method
+Q* = 174670, df = 502, p-value &lt; 2.2e-16
+
+Model df: 0.   Total lags used: 502</code></pre>
+</div>
+</div>
+</section>
+<section id="drift-method" class="level4">
+<h4 class="anchored" data-anchor-id="drift-method">Drift Method</h4>
+<p>A variation on the naïve method is to allow the forecasts to increase or decrease over time, where the amount of change over time is set to be the average change seen in the historical data.</p>
+<div class="cell">
+<details>
+<summary>Show the code</summary>
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>f4 <span class="ot">&lt;-</span> <span class="fu">rwf</span>(<span class="fu">log</span>(AZN_ts),<span class="at">drift=</span><span class="cn">TRUE</span>, <span class="at">h=</span><span class="dv">20</span>) </span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(f4)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Forecast method: Random walk with drift
+
+Model Information:
+Call: rwf(y = log(AZN_ts), h = 20, drift = TRUE) 
+
+Drift: 5e-04  (se 3e-04)
+Residual sd: 0.0156 
+
+Error measures:
+                       ME      RMSE       MAE           MPE     MAPE       MASE
+Training set 2.353136e-16 0.0155622 0.0104709 -0.0006028803 0.227282 0.05904378
+                    ACF1
+Training set -0.03425189
+
+Forecasts:
+         Point Forecast    Lo 80    Hi 80    Lo 95    Hi 95
+2023.004       5.471307 5.451357 5.491257 5.440797 5.501818
+2023.008       5.471825 5.443608 5.500043 5.428670 5.514981
+2023.012       5.472343 5.437779 5.506908 5.419481 5.525206
+2023.016       5.472862 5.432943 5.512780 5.411812 5.533911
+2023.020       5.473380 5.428743 5.518016 5.405114 5.541645
+2023.024       5.473898 5.424993 5.522802 5.399105 5.548691
+2023.028       5.474416 5.421585 5.527247 5.393618 5.555214
+2023.032       5.474934 5.418447 5.531421 5.388544 5.561324
+2023.036       5.475452 5.415529 5.535375 5.383808 5.567096
+2023.040       5.475970 5.412796 5.539144 5.379354 5.572586
+2023.044       5.476488 5.410221 5.542756 5.375141 5.577836
+2023.048       5.477006 5.407781 5.546231 5.371136 5.582876
+2023.052       5.477524 5.405462 5.549587 5.367314 5.587734
+2023.056       5.478042 5.403248 5.552836 5.363655 5.592430
+2023.060       5.478560 5.401129 5.555991 5.360140 5.596981
+2023.064       5.479078 5.399096 5.559061 5.356756 5.601401
+2023.068       5.479597 5.397140 5.562053 5.353490 5.605703
+2023.072       5.480115 5.395254 5.564975 5.350332 5.609897
+2023.076       5.480633 5.393434 5.567832 5.347273 5.613992
+2023.080       5.481151 5.391673 5.570629 5.344306 5.617995</code></pre>
+</div>
+<details>
+<summary>Show the code</summary>
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="fu">checkresiduals</span>(f4)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<p><img src="model_azn_files/figure-html/unnamed-chunk-15-1.png" class="img-fluid" width="672"></p>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    Ljung-Box test
+
+data:  Residuals from Random walk with drift
+Q* = 627.23, df = 501, p-value = 0.0001014
+
+Model df: 1.   Total lags used: 502</code></pre>
+</div>
+</div>
+<div class="cell">
+<details>
+<summary>Show the code</summary>
+<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="fu">autoplot</span>(AZN_ts) <span class="sc">+</span></span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">autolayer</span>(<span class="fu">meanf</span>(AZN_ts, <span class="at">h=</span><span class="dv">100</span>),</span>
+<span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a>            <span class="at">series=</span><span class="st">"Mean.tr"</span>, <span class="at">PI=</span><span class="cn">FALSE</span>) <span class="sc">+</span></span>
+<span id="cb30-4"><a href="#cb30-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">autolayer</span>(<span class="fu">naive</span>((AZN_ts), <span class="at">h=</span><span class="dv">100</span>),</span>
+<span id="cb30-5"><a href="#cb30-5" aria-hidden="true" tabindex="-1"></a>            <span class="at">series=</span><span class="st">"Naïve.tr"</span>, <span class="at">PI=</span><span class="cn">FALSE</span>) <span class="sc">+</span></span>
+<span id="cb30-6"><a href="#cb30-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">autolayer</span>(<span class="fu">rwf</span>((AZN_ts), <span class="at">drift=</span><span class="cn">TRUE</span>, <span class="at">h=</span><span class="dv">100</span>),</span>
+<span id="cb30-7"><a href="#cb30-7" aria-hidden="true" tabindex="-1"></a>            <span class="at">series=</span><span class="st">"Drift.tr"</span>, <span class="at">PI=</span><span class="cn">FALSE</span>) <span class="sc">+</span></span>
+<span id="cb30-8"><a href="#cb30-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">autolayer</span>(<span class="fu">forecast</span>(<span class="fu">Arima</span>((AZN_ts), <span class="at">order=</span><span class="fu">c</span>(<span class="dv">4</span>, <span class="dv">1</span>, <span class="dv">3</span>),<span class="at">include.drift =</span> <span class="cn">TRUE</span>),<span class="dv">100</span>), </span>
+<span id="cb30-9"><a href="#cb30-9" aria-hidden="true" tabindex="-1"></a>            <span class="at">series=</span><span class="st">"fit"</span>,<span class="at">PI=</span><span class="cn">FALSE</span>) <span class="sc">+</span></span>
+<span id="cb30-10"><a href="#cb30-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggtitle</span>(<span class="st">"AZN Stock Price"</span>) <span class="sc">+</span></span>
+<span id="cb30-11"><a href="#cb30-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">xlab</span>(<span class="st">"Time"</span>) <span class="sc">+</span> <span class="fu">ylab</span>(<span class="st">"Log(Price)"</span>) <span class="sc">+</span></span>
+<span id="cb30-12"><a href="#cb30-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">guides</span>(<span class="at">colour=</span><span class="fu">guide_legend</span>(<span class="at">title=</span><span class="st">"Forecast"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<p><img src="model_azn_files/figure-html/unnamed-chunk-16-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>According to the graph above, ARIMA(0,1,0) outperform most of benchmark method, though its performance is very similar to drift method.</p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
