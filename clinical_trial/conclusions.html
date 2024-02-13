@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Conclusions
+	</title>
+	<link rel='stylesheet' href="style.css">
+</head>
+<body>
+	<div class="banner">
+		<nav>
+		<div class="nav-links">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="aboutU.html">About You</a></li>
+				<li><a href="intro2.html">Introduction</a></li>
+				<li><a href="dataGather.html">Data Gathering</a></li>
+				<li><a href="dataCleaning.html">Data Cleaning</a></li>
+				<li><a href="exploreData.html">Exploring Data</a></li>
+				<li><a href="clustering.html">Clustering</a></li>
+				<br>
+				<li><a href="arm.html">ARM and Networking</a></li>
+				<li><a href="decisionTree.html">Decision Tree</a></li>
+				<li><a href="NB.html">Naive Bayes</a></li>
+				<li><a href="svm.html">SVM</a></li>
+				<li><a href="conclusion.html">Conclusions</a></li>
+
+			</ul>
+		</div>
+
+		</nav>
+
+		<h1>CONCLUSIONS</h1>
+
+	</div>
+	<br>
+	<br>
+
+    <div>
+
+
+        <p class="clustering_contents">
+            The length of the clinical trial is affected by the occurrence of adverse effects and the cases of death occurring along with the drug. Drugs with higher occurrence of adverse effects tends to have longer durations. Clinical trials with short length do not show that much association with high occurrence of the adverse effects and death. This results make sense, because the drugs with more serious side-effects tends to face more assessment steps to make sure patient safety.  
+            <br> <br>
+            Trials with age group of elderly, children and teenagers tends to have shorter length. Because the younger groups have relative less developed biological systems, and the elderly have aging organ functions and are more vulnerable. These groups are more susceptible to adverse effects of drugs. Therefore, makes sense that the clinical trials on these group, especially elderly group, last for shorter. 
+            <br><br>
+            What is more, the phase 1 trial are always shorter than other phases. <br><br>
+            Another interesting find is that the trials with treatment and health service research purpose tends to have longer length than that with primary purpose on basic science. This could possibly explained by the different level of patient safety concerns within the trials. The awareness of patient safety tend to be much higher in the trials of treatment and health service research than basic science. 
+        </p> <br>
+
+        <iframe src="https://yujiajin.georgetown.domains/NetD3_DurationDays.html" height="500" width="790" frameborder="10"
+        class="spreadSheet">
+        </iframe> <br><br> <br>
+
+
+        <p class="clustering_contents">
+            The overall status of clinical trials is related to several factors. Number of enrolment is the most important attribute. The design primary purpose of ranks the second, whether the trial accept healthy volunteers ranks slightly behind. The occurrence of adverse effects and death is the fourth important attributes. Further analysis are required to exam how each these attributes lead to completion or termination of the trial.  
+            <br><br>
+        </p>
+            <figure class="png">
+                <img src="NBrecord1.png"  width="585" height="500">
+                <figcaption class="fig">Relative importance of attributes in predicting label with naive bayes model </figcaption>
+            </figure><br>
+        
+        <p class="clustering_contents">
+            The clinical trials running on different conditions have different focusing. Trials on meningitis take lots of efforts on vaccines, while trials on Covid-19 are conducting anti-viral treatment. Trials on cirrhosis works around liver failure, renal conditions and antibiotics. Clinical trials of sepsis are taking research on blood infections and working on antibiotics as well. 
+            <br><br>
+            There are five different machine learning models ran in this project, some present really good results and result in interesting findings, while not every model give good predictions, because the analysis here is mainly focuses on the clinical trials themselves but did not cover specific drugs. Although the results of this portfolio have illustrate how the setting of clinical trials affects the length and status of the trials in various perspectives, it is important to aware drugs themselves, their side-effects, drug classes and etc. are also dominant factors affects the properties of trials. 
+        </p>
+    </div>
+
+
+	
+
+</body>
+</html>

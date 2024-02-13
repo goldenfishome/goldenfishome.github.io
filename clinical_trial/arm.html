@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		ARM and Networking 
+	</title>
+	<link rel='stylesheet' href="style.css">
+</head>
+<body>
+	<div class="banner">
+		<nav>
+		<div class="nav-links">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="aboutU.html">About You</a></li>
+				<li><a href="intro2.html">Introduction</a></li>
+				<li><a href="dataGather.html">Data Gathering</a></li>
+				<li><a href="dataCleaning.html">Data Cleaning</a></li>
+				<li><a href="exploreData.html">Exploring Data</a></li>
+				<li><a href="clustering.html">Clustering</a></li>
+				<br>
+				<li><a href="arm.html">ARM and Networking</a></li>
+				<li><a href="#">Decision Tree</a></li>
+				<li><a href="#">Naive Bayes</a></li>
+				<li><a href="#">SVM</a></li>
+				<li><a href="#">Conclusions</a></li>
+				<li><a href="#">Infographic</a></li>
+
+			</ul>
+		</div>
+
+		</nav>
+
+		<h1>ARM & NETWORKING</h1>
+
+	</div>
+
+    <div>
+       <div>
+           
+       </div>
+
+       <div>
+
+        <h2 class="cleaning_title1">Links of Dataset & Codes:</h2>    
+            <div class="cleaning_contents2">
+                <a href="ARMrecord.r">R code for ARM on all record data</a><br>
+                <a href="ARMduration.r">R code for ARM on duration data</a><br>
+                <a href="recordCleaning.py">Python code for preparing ARM data</a><br>
+                <a href="cleanerDF.csv">Dataset before ARM prepare</a><br>
+                <a href="ARMCleaned.csv">Dataset after ARM prepare</a><br>
+            </div>
+        
+
+        <h2 class="cleaning_title1">Prepare data for ARM</h2>
+        <p class="clustering_contents">
+            Step 1: Drop the unrelated columns</p><br>
+
+        <p class="clustering_contents">
+            Step 2: Convert the numeric columns of <q>AdverseEffectsorDeath</q> , <q>DurationDays</q> and <q>EnrollmentCount</q> into qualitative columns by grouping them into different labels. 
+        </p><br>
+
+
+        <figure class="png">
+            <img src="ARMData.png" width="855" height="365" ><br>
+            <a href="ARMCleaned.csv" class="fig">Fig.1 - Prepared Dataset for ARM (link)</a>
+        </figure>
+       </div>
+
+       <div>
+        <h2 class="cleaning_title1">Association Rule Mining (ARM) Support, Confidence, Lift</h2>
+        <h3 class='cleaning_contents2'>
+            1) ARM introduction 
+        </h3> <br>
+
+        <p class="clustering_contents">
+            Support is a rule that measuring the frequency of the itemset occurs in the dataset. Confidence measures how frequent of the itemset appear given the presence of other itemset. Lift  indicate the independency and association of itemset. The value of lift should be greater than 1 to show associations. 
+        </p> <br><br>
+
+        <h3 class='cleaning_contents2'>
+            2) Measures of Set Correlation for duration of clinical trials
+        </h3> <br>
+        <p class="clustering_contents">
+            This project use R to code ARM on the prepared dataset. Arules library are used to conduct apriori test. Since the project is interested about how other attributes cause influences on the label column <q>DurationDays</q>, set the appearance option in apriori as labels within <q>DurationDays</q> column. The thresholds are set as support=.005, confidence=0.01, minlen=2, which return 167 rules. 
+        </p> <br>
+
+        <p class="clustering_contents">
+            According to fig.2, the itemset {relatively_shortLen, All} has the highest support of 0.45 since it appears in 45% of all dataset. <q>All</q> is a variable under <q>Gender</q> column, which means the clinical trial accepts both genders and it counts for large portion of <q>Gender</q> column. This itemset implies that the most of trials with relatively short length accepts both genders. The itemset {relatively_shortLen, Completed} has the second highest support of 0.437, which indicates that there are lots of trials with relatively short length are completed. 
+        </p> <br>
+
+        <figure class="png">
+            <img src="ARM2.png" width="712" height="304" ><br>
+            <Figcaption class="fig">Fig.2 - Top 20 highest Support result for DurationDays</Figcaption>
+        </figure> <br>
+
+        <p class="clustering_contents">
+            According to fig 3., 4 different labels in <q>DurationDays</q> column all has itemsets {longLen, All}, {medianLen, All}, {relatively_shortLen, All} and {shortLen, All} with high confidence value. This indicates that whatever length of duration of the trial, it always employs both genders. Similar to the explanation in last part, this reflects that variable “<q>All</q>under <q>Gender</q> column counts for large proportion in that column. 
+         </p> <br>
+
+         <figure class="png">
+            <img src="ARM3.png" width="712" height="304" ><br>
+            <Figcaption class="fig">Fig.3 - Top 20 highest Confidence result for DurationDays</Figcaption>
+        </figure> <br>
+
+        <p class="clustering_contents">
+            According to Fig 4, itemset {longLen, very_highAD} has highest lift value of 2.61. This indicates that the long length of clinical trials are highly associated very high rate of adverse effects and death.  The itemset {shortLen, elderly} has high lift value of 2.4, which suggest the dependency of short length of clinical trials on elderly group.  
+        </p> <br>
+
+        <figure class="png">
+            <img src="ARM4.png" width="712" height="304" ><br>
+            <Figcaption class="fig">Fig.4 - Top 20 highest Lift result for DurationDays</Figcaption>
+        </figure> <br><br>
+
+        <h3 class='cleaning_contents2'>
+            3) Measures of Set Correlation for all record data
+        </h3> <br>
+
+        <p class="clustering_contents">
+            Apart from the ARM specific for <q>DurationDays</q> column, this project also conduct rules on whole record dataset. Fig 5, Fig 6 and Fig 7 illustrate the Top 20 highest Support, Confidence, Lift result for all data, respectively. 
+        </p> <br>
+
+        <p class="clustering_contents">
+            Fig 5 suggests the high existence of variable <q>Competed</q>, <q>All</q>, <q>Parallel Assignment</q>  and <q>Randomized</q> in the dataset. 
+        </p> <br>
+
+        <figure class="png">
+            <img src="ARM5.png" width="712" height="304" ><br>
+            <Figcaption class="fig">Fig.5 - Top 20 highest Support result for all data</Figcaption>
+        </figure> <br><br>
+
+        <figure class="png">
+            <img src="ARM6.png" width="712" height="304" ><br>
+            <Figcaption class="fig">Fig.6 - Top 20 highest Confident result for all data</Figcaption>
+        </figure> <br><br>
+
+        <p class="clustering_contents">
+            Fig 7 illustrates the high association of among items <q>SingleArmNA</q>, <q>Single Group Assignment</q> and <q>1</q>. 
+        </p> <br>
+
+        <figure class="png">
+            <img src="ARM7.png" width="712" height="304" ><br>
+            <Figcaption class="fig">Fig.7 - Top 20 highest Lift result for all data</Figcaption>
+        </figure> <br><br>
+       </div>
+
+       <div>
+        <h2 class="cleaning_title1">Networks Visualization</h2> 
+        <p class="clustering_contents">
+            Fig 8, fig 9 and fig 10 are presenting 3 different types of networks for duration data, which are networkD3, VisNetwork and igraph. These graphs are showing same edges and nodes. 
+        </p> <br>
+
+        <figure class="png">
+            <img src="ARM8.png" width="530" height="510" ><br>
+            <a href="NetD3_DurationDays.html" target="_blank" class="fig">Fig.8 - NetworkD3 based on lift value for duration of clinical trials (link)</a>
+        </figure> <br><br>
+
+        <figure class="png">
+            <img src="ARM9.png" width="530" height="510" >
+            <Figcaption class="fig">Fig.9 - visNetwork based on lift value for duration of clinical trials</Figcaption>
+        </figure> <br><br>
+
+        <figure class="png">
+            <img src="ARM10.png" width="530" height="510" >
+            <Figcaption class="fig">Fig.10 - iGraph network based on lift value for duration of clinical trials</Figcaption>
+        </figure> <br><br>
+
+        <p class="clustering_contents">
+            Fig 11 and fig 12 presents networkD3, and  VisNetwork respectively for lift value of all data
+        </p> <br>
+
+        <figure class="png">
+            <img src="ARM11.png" width="600" height="439" ><br>
+            <a href="NetD3_allData.html" target="_blank" class="fig">Fig.11 - NetworkD3 based on lift value for all data</a>
+        </figure> <br><br>
+
+        <figure class="png">
+            <img src="ARM12.png" width="530" height="510" >
+            <Figcaption class="fig">Fig.12 - VisNetwork based on lift value for all data</Figcaption>
+        </figure> <br><br>
+       </div>
+
+       <div>
+        <h2 class="cleaning_title1">Discussion</h2>
+       </div>
+
+       <p class="clustering_contents">
+        According to fig 7 and fig 12, it shows that variable <q>1</q> under <q>ArmNumber</q> column, variable <q>SingleArmNA</q> under column <q>DesignAllocation</q>, and <q>Single Group Assignment</q>  under column <q>DesignInterventionModel</q> have high association with each other. 
+        <br><br> This could be explained by the nature of the dataset and clinical trial. <q>ArmNumber</q> column record the number of arms (subgroups of participants) in the clinical trials. <q>DesignAllocation</q> column records the methods of how participants are assigned into different groups. <q>DesignInterventionModel</q> is the strategy of assigning interventions to participants. If there is only 1 arm,  participants neither do not need to be assigned, nor requiring special assigning strategies, thus it is labeled as <q>SingleArmNA</q> in the <q>DesignAllocation</q> column and <q>Single Group Assignment</q> under <q>DesignInterventionModel</q>.  
+    </p> <br>
+
+    <p class="clustering_contents">
+        According to the networks based on lift value for duration of clinical trials, it shows that there is clear distinguish of variables associating to long length of clinical trials and short length clinical trials. 
+        <br><br> Based on the fig 8, the green nodes are only connecting to one center, and the light orange nodes are connecting to 2 centers. The center of  <q>longLen</q> share lots of common nodes with center of <q>medianLen</q>, while only share 2 common node with center <q>relatively_shortLen</q> and no common node with <q>shortLen</q>. This graph clearly illustrate how the presence of different variables affect the length of clinical trials. 
+         Link this graph to the fig 4,  the long length of clinical trials shows the highest association with very high rate of adverse effects and death. 
+         <br><br>This make sense since if a medicine are highly possible of causing adverse effects or death, the research would take longer time to find the solution of lowering the risks of medicine. Besides that, the short length of clinical trials has high dependency on elderly group. Since elderly group are vulnerable and more susceptible to adverse effects of drugs, it makes sense that the clinical trials on elderly group take short length.
+     </p> <br>
+
+     <p class="clustering_contents">
+        To sum up, knowing associations of variables to duration of clinical trials greatly facilitate the prediction of the length. 
+    </p> <br>
+
+    <div>
+        
+    </div>
+
+
+    </div>
+	<br>
+	<br>
+
+
+
+	<br><br>
+
+	
+
+</body>
+</html>

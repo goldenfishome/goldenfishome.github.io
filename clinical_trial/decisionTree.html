@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Decision Tree 
+	</title>
+	<link rel='stylesheet' href="style.css">
+</head>
+<body>
+	<div class="banner">
+		<nav>
+		<div class="nav-links">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="aboutU.html">About You</a></li>
+				<li><a href="intro2.html">Introduction</a></li>
+				<li><a href="dataGather.html">Data Gathering</a></li>
+				<li><a href="dataCleaning.html">Data Cleaning</a></li>
+				<li><a href="exploreData.html">Exploring Data</a></li>
+				<li><a href="clustering.html">Clustering</a></li>
+				<br>
+				<li><a href="arm.html">ARM and Networking</a></li>
+				<li><a href="decisionTree.html">Decision Tree</a></li>
+				<li><a href="NB.html">Naive Bayes</a></li>
+				<li><a href="svm.html">SVM</a></li>
+				<li><a href="#">Conclusions</a></li>
+				<li><a href="#">Infographic</a></li>
+
+			</ul>
+		</div>
+
+		</nav>
+
+		<h1>DECISION TREE</h1>
+
+	</div>
+
+
+	<br><br>
+
+    <div>
+        <h2 class="cleaning_title1">Links of Dataset & Codes:</h2>    
+        <div class="cleaning_contents2">
+            <a href="DTrecord.r">R code for creating decision trees for record data</a><br>
+            <a href="DT_recordDF.csv">record data set</a><br>
+            <a href="DT_text.csv">Python code for creating decision trees text data</a><br>
+            <a href="DT_text.csv">text data set</a><br>
+            
+        </div>
+    </div>
+
+	<div>
+
+        <h2 class="cleaning_title1">Text Data</h2>  
+        <h3 class='cleaning_contents2'>
+            1) Text data description
+        </h3>
+        <br>
+            <p class="clustering_contents">
+                The text data presents the description of 125 clinical trials coming from 4 different bacterial infection conditions, cirrhosis, sepsis, covid and meningococcal. 
+                The dataset has 2 columns, one is label and another is the text. This dataset is a subset of collected data in Data Gathering part. 
+                The text data are transformed into matrix of token counts.
+            </p>
+        <br>
+        <h4 class="DT_contents1">Orignial text data</h4>
+        <iframe src="https://docs.google.com/spreadsheets/d/154ttEGPq7o1FMkjbQmtPLQe9L6cE6qH2-ZX_qSDvV9g/edit?usp=sharing" height="500" width="790" frameborder="10"
+        class="spreadSheet">
+        </iframe> <br><br>
+
+        <h4 class="DT_contents1">Matrix of token counts</h4>
+
+        <iframe src="https://docs.google.com/spreadsheets/d/1vIRDDoYDU8SDoYd3nvmxvDmK7jbGRJQb134mBUoVlHs/edit?usp=sharing" height="500" width="790" frameborder="10"
+        class="spreadSheet">
+        </iframe> <br><br> <br>
+
+        <h3 class='cleaning_contents2'>
+            2) WordCloud of Text Data 
+        </h3> <br>
+
+        <figure class="png">
+            <img src="DT_cir.png"  width="380" height="220">
+            <figcaption class="fig">Fig.1 - WordCloud of label cirrhosis</figcaption>
+        </figure><br>
+
+        <figure class="png">
+            <img src="DT_covid.png"  width="380" height="220">
+            <figcaption class="fig">Fig.2 - WordCloud of label covid</figcaption>
+        </figure><br>
+
+        <figure class="png">
+            <img src="DT_sepsis.png"  width="380" height="220">
+            <figcaption class="fig">Fig.3 - WordCloud of label sepsis</figcaption>
+        </figure><br>
+
+        <figure class="png">
+            <img src="DT_men.png"  width="380" height="220">
+            <figcaption class="fig">Fig.4 - WordCloud of label meningococcal</figcaption>
+        </figure><br> <br>
+
+        <h3 class='cleaning_contents2'>
+            3) Decision Trees of Text Data 
+        </h3> <br>
+
+        <p class="clustering_contents">
+            Three trees are created with different parameter values. The first tree has criterion of entropy and the <q>best</q> split.  The second tree is set on criterion of <q>Gini</q> and <q>best</q> splitter.  
+            And the third one has the criteria <q>gini</q>, <q>random splitter</q> and max depth of 5. Since the third tree has the limit on max depth, it has smaller size than other 2. 
+            The first two trees presents all pure child nodes. What is more, the first tree and the second tree share a common root node <q>vaccine</q>.  The word <q>liver</q> appears in high level in all these three trees. It clearly distinguish <q>covid</q> from other three labels. 
+        </p> <br>
+
+        <figure class="png">
+            <img src="DT_t1.png"  width="800" height="400">
+            <figcaption class="fig">Fig.5 - first decision tree of text data</figcaption>
+        </figure><br>
+
+        <figure class="png">
+            <img src="DT_t2.png"  width="800" height="400">
+            <figcaption class="fig">Fig.6 - second Decision tree of text data</figcaption>
+        </figure><br>
+
+        <figure class="png">
+            <img src="DT_t3.png"  width="800" height="400">
+            <figcaption class="fig">Fig.7 - third decision tree of text data</figcaption>
+        </figure><br>
+
+        <p class="clustering_contents">
+            Each tree has its own confusion matrix. Generally, all three trees has good prediction on label <q>cirrhosis</q> and label <q>covid</q>, while relatively poor on <q>sepsis</q> and least on <q>meningococcal</q>. 
+        </p> <br>
+
+        <figure class="png">
+            <img src="DT_textCM1.png">
+            <figcaption class="fig">Fig.8 - confusion matrix of first text data decison tree</figcaption>
+        </figure><br>
+
+        <figure class="png">
+            <img src="DT_textCM2.png">
+            <figcaption class="fig">Fig.9 - confusion matrix of second text data decison tree</figcaption>
+        </figure><br>
+
+        <figure class="png">
+            <img src="DT_textCM3.png">
+            <figcaption class="fig">Fig.10 - confusion matrix of third text data decison tree</figcaption>
+        </figure><br>
+        
+    </div>
+
+    <div>
+        <h2 class="cleaning_title1">Record Data</h2> 
+        <h3 class='cleaning_contents2'>
+            1) Record data description
+        </h3>
+
+        <br>
+        <p class="clustering_contents">
+            The record dataset shows the record of 400 clinical trials, which has 200 trials labelled as <q>Completed</q> and another 200 trials labelled as <q>Terminated</q>.  This dataset is a sample taken from the gathered and cleaned data earlier in this project, and has eight attributes.
+             It has mixed quantitative and qualitative data. 
+        </p>
+        <br>
+        <h4 class="DT_contents1">Record dataset</h4>
+            <iframe src="https://docs.google.com/spreadsheets/d/1qNHicilpav2ztG2-t1iRvHBV_FuLUG_7YWAD-VX19Ec/edit?usp=sharing" height="500" width="790" frameborder="10"
+            class="spreadSheet">
+            </iframe> <br><br> <br>
+
+        <h3 class='cleaning_contents2'>
+            2) Decision Trees of Record Data 
+        </h3> <br>
+
+        <p class="clustering_contents">
+            According to the ranks of the importance of attributes from the code, the key feature is the enrolment count of the trial, and the second important one is age groups of participants. Other attributes weigh way lower importance.  
+            <br><br>
+            The first tree includes all 8 attributes in training, which gives the most accurate prediction among these three trees, though it do not have high accuray. The second tree is built based on the column of Design Intervention Model and the primary purpose of designing, which have low importance weight. 
+            Thus, this tree has the lowest accuracy. 
+            The third tree is built on the attributes enrolment count and age groups, which are the 2 most important factors. It has a slightly lower accuracy than the first tree. 
+        </p> <br>
+
+        <figure class="png">
+            <img src="DT_tree1.png"  width="700" height="550">
+            <figcaption class="fig">Fig.11 - first Decision tree of record data</figcaption>
+        </figure><br> <br>
+
+        <figure class="png">
+            <img src="DT_tree2.png"  width="700" height="550">
+            <figcaption class="fig">Fig.12 - second Decision tree of record data</figcaption>
+        </figure><br> <br>
+
+        <figure class="png">
+            <img src="DT3.png"  width="700" height="550">
+            <figcaption class="fig">Fig.13 - third Decision tree of record data</figcaption>
+        </figure><br><br>
+
+        <figure class="png">
+            <img src="DT_rCM1.png"  width="375" height="90">
+            <figcaption class="fig">Fig.14 - confusion matrix of first record data decison tree</figcaption>
+        </figure><br>
+
+        <figure class="png">
+            <img src="DT_rCM2.png"  width="375" height="90">
+            <figcaption class="fig">Fig.15 - confusion matrix of second record data decison tree</figcaption>
+        </figure><br>
+
+        <figure class="png">
+            <img src="DT_rCM3.png"  width="375" height="90">
+            <figcaption class="fig">Fig.16 - confusion matrix of third record data decison tree</figcaption>
+        </figure><br>
+    </div>
+
+    <div>
+        <h2 class="cleaning_title1">Discussion</h2> 
+        
+        <p class="clustering_contents">
+
+            Generally, the decision tree built for text data is a good model for predicting the clinical trials of <q>cirrhosis</q>, <q>covid</q> and <q>sepsis</q> based on their description. 
+            Word <q>liver</q> clearly distinguish covid from other three labels, since covid is more about a localized respiratory condition, while other three conditions are systemic conditions, involving with whole body blood circulation which closely related to liver. 
+            What is more, cirrhosis is a type of liver infection. 
+            <br><br>
+            From the created Wordcloud, it is also interesting to observe that the <q>vaccine</q> is not a frequent word in description of <q>covid-19</q> trials, instead, the words like <q>treatment</q> or words related to virus occurs more frequently, which suggests that many clinical trials on covid-19 are focusing on anti-viral treatment. Sepsis is a type of blood infection. 
+            The WordCloud for sepsis shows the frequent words <q>antibiotic</q>, <q>blood</q>, <q>infections</q> and etc. , which suggests that antibiotics are one of the major focus on this field. What is more, lots of clinical trials on meningococcal are investigating the vaccine.
+            <br><br>
+            The decision tree built for record data are capable of predicting whether the clinical trial will complete or terminate based on the attributes of the trial, though its accuracy is median. 
+        </p> <br>
+    </div>
+
+	
+
+	
+
+	<br><br>
+
+	
+
+</body>
+</html>

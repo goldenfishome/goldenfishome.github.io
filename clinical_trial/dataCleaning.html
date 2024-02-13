@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Data Cleaning
+	</title>
+	<link rel='stylesheet' href="style.css">
+</head>
+<body>
+	<div class="banner">
+		<nav>
+		<div class="nav-links">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="aboutU.html">About You</a></li>
+				<li><a href="intro2.html">Introduction</a></li>
+				<li><a href="dataGather.html">Data Gathering</a></li>
+				<li><a href="dataCleaning.html">Data Cleaning</a></li>
+				<li><a href="exploreData.html">Exploring Data</a></li>
+				<li><a href="clustering.html">Clustering</a></li>
+				<br>
+				<li><a href="arm.html">ARM and Networking</a></li>
+				<li><a href="decisionTree.html">Decision Tree</a></li>
+				<li><a href="NB.html">Naive Bayes</a></li>
+				<li><a href="svm.html">SVM</a></li>
+				<li><a href="conclusions.html">Conclusions</a></li>
+
+			</ul>
+		</div>
+
+		</nav>
+
+		<h1>DATA CLEANING</h1>
+
+	</div>
+
+	<div>		
+		<h2 class="cleaning_title1">Cleanning combined dataset</h2>
+
+		<p class="clustering_contents">
+			1) Read all csv files and merge them as one data frame. <br>
+			2) Standardize date columns StartDate and CompletionDate <br>
+			3) Create new column DurationDays <br>
+			4) Deduplicate the InterventionType and create new column ArmNumber <br>
+			5) Fill Nan values <br>
+			6) Standardize the MaximumAge and MinimumAge columns in new AgeGroups column <br>
+			7) Drop columns of MaximumAge and MinimumAge <br>
+			8) Deduplicate the LocationCountry column into set <br>
+			9) Manage columns of EventGroupDeathsNumAffected and EventGroupSeriousNumAffected <br>
+			10) create new column AdverseEffectsorDeath <br>
+		</p> <br><br>
+
+		<h4 class="DT_contents1">Dataset before cleaning</h4><br>
+
+        <iframe src="https://docs.google.com/spreadsheets/d/1t-1afjQBcguduyx9VoJUkVg--Hoqijit_SdnA_wIOjg/edit?usp=sharing" height="500" width="790" frameborder="10"
+        class="spreadSheet">
+        </iframe> <br><br> <br>
+
+		<h4 class="DT_contents1">Dataset after cleaning</h4> <br>
+
+        <iframe src="https://docs.google.com/spreadsheets/d/1aFVxqdXz8kILNnlYI4JAd5dGGduXJ3dxaDT-w6uOicU/edit?usp=sharing" height="500" width="790" frameborder="10"
+        class="spreadSheet">
+        </iframe> <br><br> <br>
+		
+	</div>
+
+	<div>
+		<h2 class="cleaning_title1">Data Cleanning for ARM</h2>
+
+		<article class="clustering_contents">
+			<p>
+				Take the previously cleaned dataset in this page <br>
+			</p>
+			<ul style="text-indent: 40px">
+				<li>Step 1: Drop the unrelated columns</li>
+				<li>Step 2: Convert the numeric columns of AdverseEffectsorDeath , DurationDays and EnrollmentCount into qualitative columns by grouping them into different labels. <br></li>
+			</ul>
+			
+		</article> <br><br>
+
+		<h4 class="DT_contents1">ARM data prepare</h4> <br>
+
+        <iframe src="https://docs.google.com/spreadsheets/d/1Np8m4rWHLBKnQSLoRPfM6lV_K2QhTkhu-ZulyuhQst8/edit?usp=sharing" height="500" width="790" frameborder="10"
+        class="spreadSheet">
+        </iframe> <br><br> <br>
+	</div>
+	
+	<div>
+		<h2 class="cleaning_title1">Data Cleanning for Decision Tree</h2>
+
+		<h3 class='cleaning_contents2'>
+            1) Decision Tree Text data cleanning
+        </h3> <br>
+
+		<article class="clustering_contents">
+			<p>
+				Take the previously cleaned dataset in this page <br>
+			</p>
+			<ul style="text-indent: 40px">
+				<li>Step 1: take 2 columns of Condition and BriefSummary from orignal dataset</li>
+				<li>Step 2: filter dataframe by Condition column, choose the row with conditions of cirrhosis, sepsis, covid and meningococcal <br></li>
+				<li>Step 3: Tokenize and Vectorize the BriefSummary</li>
+				<li>Step 4: Create dataframe for vectorized words with labels</li>
+			</ul>
+			
+		</article> <br><br>
+
+        <h4 class="DT_contents1">Orignial text data</h4> <br>
+        <iframe src="https://docs.google.com/spreadsheets/d/154ttEGPq7o1FMkjbQmtPLQe9L6cE6qH2-ZX_qSDvV9g/edit?usp=sharing" height="500" width="790" frameborder="10"
+        class="spreadSheet">
+        </iframe> <br><br>
+
+        <h4 class="DT_contents1">Matrix of token counts</h4> <br>
+
+        <iframe src="https://docs.google.com/spreadsheets/d/1vIRDDoYDU8SDoYd3nvmxvDmK7jbGRJQb134mBUoVlHs/edit?usp=sharing" height="500" width="790" frameborder="10"
+        class="spreadSheet">
+        </iframe> <br><br> <br>
+
+
+	</div>
+
+	
+
+	
+
+	
+
+	<br><br>
+
+	
+
+</body>
+</html>

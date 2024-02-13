@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Data Gathering
+	</title>
+	<link rel='stylesheet' href="style.css">
+</head>
+<body>
+	<div class="banner">
+		<nav>
+		<div class="nav-links">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="aboutU.html">About You</a></li>
+				<li><a href="intro2.html">Introduction</a></li>
+				<li><a href="dataGather.html">Data Gathering</a></li>
+				<li><a href="dataCleaning.html">Data Cleaning</a></li>
+				<li><a href="exploreData.html">Exploring Data</a></li>
+				<li><a href="clustering.html">Clustering</a></li>
+				<br>
+				<li><a href="arm.html">ARM and Networking</a></li>
+				<li><a href="decisionTree.html">Decision Tree</a></li>
+				<li><a href="NB.html">Naive Bayes</a></li>
+				<li><a href="svm.html">SVM</a></li>
+				<li><a href="conclusion.html">Conclusions</a></li>
+
+			</ul>
+		</div>
+
+		</nav>
+
+		<h1>DATA GATHERING</h1>
+
+	</div>
+	<br>
+	<br>
+
+	<div>
+		<h2 class="cleaning_title1">
+			Souce of Raw Data & API
+		</h2>
+		<p class="clustering_contents">
+			This project drive data from <a href="https://clinicaltrials.gov/" target="_blank">clinicalTrials.gov</a> by using its own API, <a href="https://clinicaltrials.gov/api/gui/home" target="_blank">ClinicalTrials.gov API</a>. There are three categories of query URLs listed on this website, which obtain API data in different levels. This project employs Study Fields Query URL Type to access the API data. This is the link to <a href="https://clinicaltrials.gov/api/gui/demo/simple_study_fields" target="_blank">Builder API</a>.
+		</p>
+		<br><br>
+		<div class="png">
+			<img src="clinicaltrialWeb.png" width="571" height="371" class="center">
+		</div>
+		
+	</div>
+	<br>
+	<div>
+		<h2 class="cleaning_title1">
+			Build API URL Online
+		</h2>
+			<p class="clustering_contents">
+			Study Fields Query URL Type expect the user to specify search expression, study fields, minimum rank, maximum rank and format. Maximum limit of 20 study fields can be searched at once and 1,000 study records can be returned when minimum rank and maximum rank parameters are set. Based on the focus of the study, the search expression is <q>bacterial infection</q>. 20 study fields are selected and specified on the page in their API Field Name according webisite of ClinicalTrials.gov Data Element-to-API Field Crosswalks. Set Minimum Rank and Maximum Rank as 1 and 1000, respectively. Require the url in csv format. Then, click the 'Send Request' button on the page. The Response section of the page display the generated URL and study records subsequently.
+			<br><br>
+			Since there are more than 6000 studies found, while each search only return maximum number of 1000 studies. This project repeats the <q>Send Request</q> procedure with changing the values of minimum ranks and maximum ranks 7 times in total, to obtain the information of all study records.
+			<br><br>
+			Once this project has obtained the API URL for all 6000 studies, the next step is to code API in both Python and R.	
+			</p>
+			<br><br>
+			<div class="png">
+				<img src="web2.png" width="630" height="532">
+			</div>
+				
+		</div>
+	</div>
+		<h4 class="other_title">
+			Screenshot of raw data
+		</h4>
+			
+			<div class="png">
+				<img src="rawdata.png" width="1025" height="455">
+			</div>
+				
+		</div>
+
+	<div>
+
+	</div>
+
+	<div>
+		<h2 class="cleaning_title1">Links of Dataset & Codes:</h2>
+
+		<div class="cleaning_contents2">
+			<a href="ClinicalTrialApi.py">Python API</a> <br>
+		<a href="ClinicalTrialApi.r">R API</a> <br>
+		<a href="https://clinicaltrials.gov/api/query/study_fields?expr=bacterial+infection&fields=NCTId%2CBriefTitle%2CCondition%2CHealthyVolunteers%2CStudyType%2CStartDate%2CCompletionDate%2CInterventionName%2CInterventionType%2CPhase%2CGender%2CMaximumAge%2CMinimumAge%2CDesignPrimaryPurpose%2CDesignInterventionModel%2CLocationCountry%2CDesignAllocation%2CEnrollmentCount%2CEventGroupDeathsNumAffected%2CEventGroupSeriousNumAffected&min_rnk=1&max_rnk=1000&fmt=csv" target="_blank">Dataset 1</a> <br>
+		<a href = "https://clinicaltrials.gov/api/query/study_fields?expr=bacterial+infection&fields=NCTId%2CBriefTitle%2CCondition%2CHealthyVolunteers%2CStudyType%2CStartDate%2CCompletionDate%2CInterventionName%2CInterventionType%2CPhase%2CGender%2CMaximumAge%2CMinimumAge%2CDesignPrimaryPurpose%2CDesignInterventionModel%2CLocationCountry%2CDesignAllocation%2CEnrollmentCount%2CEventGroupDeathsNumAffected%2CEventGroupSeriousNumAffected&min_rnk=1001&max_rnk=2000&fmt=csv" target="_blank">Dataset 2</a> <br>
+		<a href = "https://clinicaltrials.gov/api/query/study_fields?expr=bacterial+infection&fields=NCTId%2CBriefTitle%2CCondition%2CHealthyVolunteers%2CStudyType%2CStartDate%2CCompletionDate%2CInterventionName%2CInterventionType%2CPhase%2CGender%2CMaximumAge%2CMinimumAge%2CDesignPrimaryPurpose%2CDesignInterventionModel%2CLocationCountry%2CDesignAllocation%2CEnrollmentCount%2CEventGroupDeathsNumAffected%2CEventGroupSeriousNumAffected&min_rnk=2001&max_rnk=3000&fmt=csv" target="_blank">Dataset 3</a> <br>
+		<a href = "https://clinicaltrials.gov/api/query/study_fields?expr=bacterial+infection&fields=NCTId%2CBriefTitle%2CCondition%2CHealthyVolunteers%2CStudyType%2CStartDate%2CCompletionDate%2CInterventionName%2CInterventionType%2CPhase%2CGender%2CMaximumAge%2CMinimumAge%2CDesignPrimaryPurpose%2CDesignInterventionModel%2CLocationCountry%2CDesignAllocation%2CEnrollmentCount%2CEventGroupDeathsNumAffected%2CEventGroupSeriousNumAffected&min_rnk=3001&max_rnk=4000&fmt=csv" target="_blank">Dataset 4</a> <br>
+		<a href = "https://clinicaltrials.gov/api/query/study_fields?expr=bacterial+infection&fields=NCTId%2CBriefTitle%2CCondition%2CHealthyVolunteers%2CStudyType%2CStartDate%2CCompletionDate%2CInterventionName%2CInterventionType%2CPhase%2CGender%2CMaximumAge%2CMinimumAge%2CDesignPrimaryPurpose%2CDesignInterventionModel%2CLocationCountry%2CDesignAllocation%2CEnrollmentCount%2CEventGroupDeathsNumAffected%2CEventGroupSeriousNumAffected&min_rnk=4001&max_rnk=5000&fmt=csv" target="_blank">Dataset 5</a> <br>
+		<a href = "https://clinicaltrials.gov/api/query/study_fields?expr=bacterial+infection&fields=NCTId%2CBriefTitle%2CCondition%2CHealthyVolunteers%2CStudyType%2CStartDate%2CCompletionDate%2CInterventionName%2CInterventionType%2CPhase%2CGender%2CMaximumAge%2CMinimumAge%2CDesignPrimaryPurpose%2CDesignInterventionModel%2CLocationCountry%2CDesignAllocation%2CEnrollmentCount%2CEventGroupDeathsNumAffected%2CEventGroupSeriousNumAffected&min_rnk=5001&max_rnk=6000&fmt=csv" target="_blank">Dataset 6</a> <br>
+		<a href= "https://clinicaltrials.gov/api/query/study_fields?expr=bacterial+infection&fields=NCTId%2CBriefTitle%2CCondition%2CHealthyVolunteers%2CStudyType%2CStartDate%2CCompletionDate%2CInterventionName%2CInterventionType%2CPhase%2CGender%2CMaximumAge%2CMinimumAge%2CDesignPrimaryPurpose%2CDesignInterventionModel%2CLocationCountry%2CDesignAllocation%2CEnrollmentCount%2CEventGroupDeathsNumAffected%2CEventGroupSeriousNumAffected&min_rnk=6001&max_rnk=6455&fmt=csv" target="_blank">Dataset 7</a> <br>
+
+		</div>
+		</div>
+
+	
+
+	
+
+	<br><br>
+
+	
+
+</body>
+</html>

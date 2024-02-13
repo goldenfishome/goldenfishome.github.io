@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Clustering 
+	</title>
+	<link rel='stylesheet' href="style.css">
+</head>
+<body>
+	<div class="banner">
+		<nav>
+		<div class="nav-links">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="aboutU.html">About You</a></li>
+				<li><a href="intro2.html">Introduction</a></li>
+				<li><a href="dataGather.html">Data Gathering</a></li>
+				<li><a href="dataCleaning.html">Data Cleaning</a></li>
+				<li><a href="exploreData.html">Exploring Data</a></li>
+				<li><a href="clustering.html">Clustering</a></li>
+				<br>
+				<li><a href="arm.html">ARM and Networking</a></li>
+				<li><a href="decisionTree.html">Decision Tree</a></li>
+				<li><a href="#">Naive Bayes</a></li>
+				<li><a href="#">SVM</a></li>
+				<li><a href="#">Conclusions</a></li>
+				<li><a href="#">Infographic</a></li>
+
+			</ul>
+		</div>
+
+		</nav>
+
+		<h1>Clustering</h1>
+
+	</div>
+
+
+	<br><br>
+
+	<div>
+        <section>
+            <h2 class="cleaning_title1">Links of Dataset & Codes:</h2>    
+            <div class="cleaning_contents2">
+                <a href="recordDataClustering.r">R code for clustering record data</a><br>
+                <a href="HepatitisCdata.csv">record data set</a><br>
+                <a href="clustering.py">Python code for clustering text data</a><br>
+                <a href="cleanerDF.csv">text data set</a><br>
+                
+            </div>
+            
+
+
+        </section>
+
+        <section>
+            <h2 class="cleaning_title1">For the Record Dataset:</h2>
+            <h3 class='cleaning_contents2'>
+                1) Analyse record data set in R studio
+            </h3>
+            <br>
+            <p class="clustering_contents">
+                Hepatitis C Prediction Dataset is analyzed at here. 
+                This dataset is downloaded from Kaggle. It contains laboratory values of blood donors and Hepatitis C patients and demographic values like age. <br><br>
+
+                The column of <q>Category</q> is label of this dataset, which tell whether the individual are patients or blood donor. There are 5 categories of labels. <br><br>
+
+                The dataset is cleaned by filling nan values with mean. The column of <q>Sex</q> are dropped to obtain an all numeric dataset.
+            </p><br>
+
+            <h3 class='cleaning_contents2'>2) Distance Metrics </h3> <br>
+            <p class="clustering_contents">
+                Three Distance Metrics of Euclidean, Cosine Similarity and Manhattan are used. 
+                Euclidean distance is one of the most common metrics for good reasons. Its utility would diminished as the dimensionality increases, though works well with low-dimensional data. 
+                The high dimensionality problem of Euclidean distance can be counteracted by cosine similarity, which are widely used in text analysis. Manhattan distance presents higher distance value than Euclidian distance.
+            </p> <br>
+
+            <figure class="png">
+                <img src="clusterDistRecord.png" width="600" height="130" >
+                <figcaption class="fig">Fig.1 - Screenshot of first 10 distance values calculated by these 3 metrics</figcaption>
+            </figure>
+
+                <br>  <br>
+
+            <h3 class='cleaning_contents2'>
+                3) Determine the number of clusters for record data
+            </h3> <br>
+            <p class="clustering_contents">
+                There are several methods are applied to find the best number of clusters. <br><br>
+                This is Dindex graphic, which showing that 3 is the best number of clusters in the dataset.
+            </p>
+
+            <figure class="png">
+                <img src="recordCluster1.png"  width="400" height="355" >
+                <figcaption class="fig">Fig.2 - Dindex graph</figcaption>
+            </figure><br>
+
+            <p class="clustering_contents">The silhouette graphic show that 2 is the best.</p><br>
+
+            <figure class="png">
+                <img src="recordCluster2.png" width="400" height="355" >
+                <figcaption class="fig">Fig.3 - silhouette graphic</figcaption>
+            </figure> <br>
+
+            <p class="clustering_contents">
+                The elbow graphic show that 4 is the best.
+            </p><br>
+
+            <figure class="png">
+                <img src="recordCluster3.png" width="400" height="355" >
+                <figcaption class="fig">Fig.4 - elbow graphic</figcaption>
+            </figure> <br>
+
+            <p class="clustering_contents">
+                The R package NbClust compare lots of indices and conclude that 4 is the best number for clustering this dataset.  
+            </p> <br>
+
+            <figure class="png">
+                <img src="recordCluster4.png" width="500" height="150" >
+                <figcaption class="fig">Fig.5 - screenshot of NbClust library result</figcaption> <br>
+                <img src="recordCluster5.png" width="400" height="355"  >
+                <figcaption class="fig">Fig.6 - screenshot of NbClust library result</figcaption>
+            </figure> <br><br>
+
+            <h3 class='cleaning_contents2'>4) Perform k- means </h3> <br>
+
+            <figure class="png">
+                <img src="recordCluster6.png" width="460" height="170" >
+                <figcaption class="fig">Fig.7 - k-mean centers</figcaption>
+            </figure> <br>
+
+            <p class="clustering_contents">This screenshot shows the size of each k-mean cluster and number of individuals under each real labels. </p><br>
+
+            <figure class="png">
+                <img src="recordCluster7.png" width="370" height="180" >
+                <figcaption class="fig">Fig.8 -size of k-mean cluster and number of individuals under each real labels</figcaption>
+            </figure> <br>
+
+            <p class="clustering_contents">
+                The screenshot below compares k-mean cluster to labels. Look together with the screenshot above, blood donor under real label with size of 533 accounts for large portion of the data, which have a counterpart in k-mean result, 526. This screenshot shows that there are 499 blood donner are clustered together by k-mean. This indicate that the k-mean cluster are able to distinguish the healthy individuals from patients well. 
+            </p><br>
+
+            <figure class="png">
+                <img src="recordCluster8.png" width="370" height="106" >
+                <figcaption class="fig">Fig.9 -labels vs k-mean cluster</figcaption>
+            </figure> <br><br>
+
+            <h3 class='cleaning_contents2'>5) Visualizations</h3><br>
+            <p class="clustering_contents">Visualization for k-mean-cluster:</p>
+            
+            <figure class="png">
+                <img src="recordCluster9.png" width="400" height="355" >
+                <figcaption class="fig">Fig.10 k-mean Visualization </figcaption><br>
+                <img src="recordCluster10.png" width="400" height="355" >
+                <figcaption class="fig">Fig.11 k-mean Visualization </figcaption>
+            </figure> <br><br>
+
+
+            <p class="clustering_contents">This is a visualization of Hierarchical Clustering. This visualization overlap to each other due to large size of dataset. But it can still see that it has 4 clusters. 
+                </p><br>
+
+                <figure class="png">
+                    <img src="recordCluster11.png" width="500" height="443" >
+                    <figcaption class="fig">Fig.12 Hierarchical Clustering </figcaption><br>
+                </figure>
+        </section>
+
+        <section>
+            <h2 class="cleaning_title1">For the text dataset:</h2>
+            <h3 class="cleaning_contents2">1) Analyse text dataset in Python</h3><br>
+            <p class="clustering_contents">
+                The dataset used here is the part of cleaned version of data which gathered by clinical trial API. <q>BriefSummary</q> column are selected to create a new text data frame. As the name suggest, it is the provide brief summary for each clinical trial. <br><br>
+                <q>DesignPrimaryPurpose</q> column is noticed as label for the new dataset, which has 8 categories. 
+            </p><br>
+            <figure class="png">
+                <img src="textCluster1.png" width="342" height="150" >
+                <figcaption class="fig">Fig.13 labels and their size </figcaption>
+            </figure><br><br>
+
+            <h3 class="cleaning_contents2"> 2) Vectorize and prepare dataset using CountVectorizer</h3><br>
+            <p class="clustering_contents">
+                Via this function, the text data are vectorized into separated words that without punctuations, numbers, in length greater than 2 and lowercase. 500 maximum features are selected. 
+            </p><br><br>
+
+            <h3 class="cleaning_contents2">3) Transformed text data into a data frame</h3><br>
+            <figure class="png">
+                <img src="textCluster2.png" width="500" height="133" >
+                <figcaption class="fig">Fig.14 vectorized text data frame</figcaption>
+            </figure>
+            <br>
+
+            <h3 class="cleaning_contents2">4) Determine the number of clusters</h3><br>
+            <p class="clustering_contents">
+                The elbow graphic show that 4 is the best.
+            </p><br>
+            <figure class="png">
+                <img src="textCluster3.png" >
+                <figcaption class="fig">Fig.15  elbow graphic </figcaption>
+            </figure><br>
+
+            <p class="clustering_contents">The silhouette plot and Calinski Harabasz plot do not show any clear peaks in diagram. The highest point in silhouette is at 2, and the plot has approximate bends at 5-6. Similarly,  Calinski Harabasz plot has highest point at 2, and the plot has approximate bends at 5. </p><br>
+            <figure class="png">
+                <img src="textCluster4.png" >
+                <figcaption class="fig">Fig.16 silhouette plot and Calinski Harabasz plot </figcaption>
+            </figure><br>
+
+            <p class="clustering_contents">Since the real number of labels is 8, here choose 5 as number of cluster. </p><br><br>
+
+            <h3 class="cleaning_contents2">5) Conduct k-means clustering </h3><br>
+
+                <figure class="png">
+                    <img src="textCluster5.png" width="133" height="310">
+                    <figcaption class="fig">Fig.17 screenshot of part of labels and k-mean cluster</figcaption><br>
+                </figure><br>
+                
+                <p class="clustering_contents">
+                    Fig 17 gives an overview of how eight labels are classified  in k-mean clusters. Comparing to Fig 13, the size of data in each label, it shows that k-mean cannot predict the labels of data by just text accurately. According to Fig 13, both label <q>Treatment</q> and label <q>Prevention</q> have big size of data, 624 and 564, respectively. They are supposed to classified into different clusters by ki-mean method. However, according to Fig 18, both labels have large amount of data that are classified into the same cluster, cluster 2. What is more, these 2 labels are not solely classified into 1 cluster. Apart from 498 of them in cluster 2, 107 number of data labelled as  <q>Treatment</q> are classified in cluster 0. Similarly, apart from 339 of them in cluster 2, 196 number of data labelled as <q>Prevention</q> are classified in cluster 0.
+                </p><br>
+ 
+                <figure class="png">
+                     <img src="textCluster6.png" width="312" height="373">
+                    <figcaption class="fig">Fig.18 labels vs k-mean cluster</figcaption>
+                
+                </figure>
+                   
+
+            <h3 class="cleaning_contents2">6) visualization </h3><br>
+            <figure class="png">
+                <img src="textCluster7.png">
+                <figcaption class="fig">Fig.19 4D PCA plot</figcaption><br>
+                <img src="textCluster8.png">
+                <figcaption class="fig">Fig.20 dendrogram</figcaption>
+            </figure>
+
+        </section>
+
+        
+    </div>
+
+	
+
+	
+
+	<br><br>
+
+	
+
+</body>
+</html>

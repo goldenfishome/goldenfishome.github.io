@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Support Vector Machine 
+	</title>
+	<link rel='stylesheet' href="style.css">
+</head>
+<body>
+	<div class="banner">
+		<nav>
+		<div class="nav-links">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="aboutU.html">About You</a></li>
+				<li><a href="intro2.html">Introduction</a></li>
+				<li><a href="dataGather.html">Data Gathering</a></li>
+				<li><a href="dataCleaning.html">Data Cleaning</a></li>
+				<li><a href="exploreData.html">Exploring Data</a></li>
+				<li><a href="clustering.html">Clustering</a></li>
+				<br>
+				<li><a href="arm.html">ARM and Networking</a></li>
+				<li><a href="decisionTree.html">Decision Tree</a></li>
+				<li><a href="NB.html">Naive Bayes</a></li>
+				<li><a href="svm.html">SVM</a></li>
+				<li><a href="#">Conclusions</a></li>
+				<li><a href="#">Infographic</a></li>
+
+			</ul>
+		</div>
+
+		</nav>
+
+		<h1>SUPPORT VECTOR MACHINE(SVM)</h1>
+
+	</div>
+
+
+	<br><br>
+
+    <div>
+        <h2 class="cleaning_title1">Links of Dataset & Codes:</h2>    
+        <div class="cleaning_contents2">
+            <a href="SVMrecord.r">R code for SVM for record data</a><br>
+            <a href="SVM_DF.csv">record data set</a><br>
+            <a href="NB_SVM.py">Python code for modeling NB and SVM on text data</a><br>
+            <a href="DT_text.csv">text data set</a><br>
+            
+        </div>
+    </div>
+
+	<div>
+
+        <h2 class="cleaning_title1">Record Data</h2>  
+        <h3 class='cleaning_contents2'>
+            1) Record data description
+        </h3>
+        <br>
+            <p class="clustering_contents">
+                In order to train SVM model, all the data except the label should be quantitative. 
+                The dataset used here is a subset of gathered data from clinicaltrials.gov API, which have four quantitative columns, AdverseEffectsorDeath, DurationDays, EnrollmentCount and ArmNumber, as well as one label column OverallStatus. 
+            </p>
+        <br>
+
+        <h4 class="DT_contents1">Record dataset</h4>
+
+        <iframe src="https://docs.google.com/spreadsheets/d/1iDyx6bIMtKmCGovLTB7j9RuEZtECzc8M-YeNU-F5wbo/edit?usp=sharing" height="500" width="790" frameborder="10"
+        class="spreadSheet">
+        </iframe> <br><br> <br>
+
+
+        <h3 class='cleaning_contents2'>
+            2) Models & Results for SVM with record data
+        </h3> <br>
+
+        <p class="clustering_contents">
+            Figure 1 has shown a broad overview of correlation among all attributes in the dataset. 
+            It is hard to tell the general relationship among these graphs. 
+        </p> <br>
+        
+        
+        <p class="clustering_contents"> 
+            Train the data with polynomial SVM, it has the accuracy of 43%. 
+            The confusion matrix has suggest the low accuracy on predicting the completed trials, 13%, and a median accuracy on predicting the terminated trials, 72%. 
+            What is more, the models trained with linear SVM and radial SVM have similar accuracy at 48% and 43%, respectively.
+        </p> <br>
+
+        <br>
+
+        <figure class="png">
+            <img src="SVMrecord1.png" width="590" height="495">
+            <figcaption class="fig">Fig.1 - overview of correlations between variables of record data. </figcaption>
+        </figure><br>
+
+        <figure class="png">
+            <img src="SVMrecord4.png"  width="405" height="90">
+            <figcaption class="fig">Fig.2 - confusion matrix of predicting labels with polynomial SVM on record data </figcaption>
+        </figure><br>
+
+        <figure class="png">
+            <img src="SVMrecord4.png"  width="405" height="90">
+            <figcaption class="fig">Fig.3 - confusion matrix of predicting labels with linear SVM on record data</figcaption>
+        </figure><br>
+
+        <figure class="png">
+            <img src="SVMrecord5.png"  width="405" height="90">
+            <figcaption class="fig">Fig.4 - confusion matrix of predicting labels with radial SVM on record data</figcaption>
+        </figure><br>
+
+        <p class="clustering_contents">
+            This part presents more detailed plots of four variables. Figure 5 presents the classification of labels along with the columns of AdverseEffectsorDeath vesus DurationDays. 
+            This plot does not show clear correlation between these two columns. A large proportion of data are lying within the classification of completed trials, though they should be around evenly distributed into both parts. Figure 6 shows the different distribution of labels, based on prediction, in the correlation plot of EnrollmentCount vesus DurationDays. 
+            Similarly, this graph does not suggest the these two factors have correlation, either.      
+        </p> <br>
+
+        <figure class="png">
+            <img src="SVMrecord3.png" width="390" height="330">
+            <figcaption class="fig">Fig.5 - distribution of labels in the graph of AdverseEffectsorDeath vesus DurationDays</figcaption>
+        </figure><br>
+
+        <figure class="png">
+            <img src="SVMrecord2.png" width="390" height="330">
+            <figcaption class="fig">Fig.6 - distribution of labels in the graph of EnrollmentCount vesus DurationDays</figcaption>
+        </figure><br>
+
+        <figure class="png">
+            <img src="SVMrecord8.png" width="390" height="330">
+            <figcaption class="fig">Fig.7 - distribution of labels in the graph of AdverseEffectsorDeath vesus EnrollmentCount</figcaption>
+        </figure><br>
+
+
+        
+    </div>
+
+    <div>
+        <h2 class="cleaning_title1">Text Data</h2> 
+
+        <br>
+        <p class="clustering_contents">
+            The SVM here share the same text dataset as the one in the naive bayes and decision tree section. Here train 3 SVM with different parameters. 
+            The SVM train with C=1 shows the highest accuracy of 0.79, while the model with ‘rbf’ kernel shows a much lower accuracy at 0.5, and the polynomial model has the accuracy of 0.34. 
+        </p>
+        <br>
+
+        <figure class="png">
+            <img src="SVM1.png">
+            <figcaption class="fig">Fig.8 - confusion matrix of predicting labels of text data with SVM C=1 </figcaption>
+        </figure><br>
+        
+        <figure class="png">
+            <img src="svm2.png">
+            <figcaption class="fig">Fig.9 - confusion matrix of predicting labels of text data with SVM C=1, kernel = ‘rbf’ </figcaption>
+        </figure><br>
+
+        <figure class="png">
+            <img src="svm3.png">
+            <figcaption class="fig">Fig.10 - confusion matrix of predicting labels of text data with SVM C=100, polynomial kernal</figcaption>
+        </figure><br>
+
+    </div>
+
+    <div>
+        <h2 class="cleaning_title1">Discussion</h2> 
+
+        <br>
+        <p class="clustering_contents">
+            SVM has shown a relatively low accuracy on predicting both the text and record dataset. Only the text data trained with polynomial model has shown a relatively higher accuracy. 
+            The numeric columns, AdverseEffectsorDeath, DurationDays, EnrollmentCount and ArmNumber do not show any observable any correlation to each other.  
+        </p>
+    </div>
+	
+    <br><br>
+
+</body>
+</html>

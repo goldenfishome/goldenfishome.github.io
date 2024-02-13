@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Naive Bayes 
+	</title>
+	<link rel='stylesheet' href="style.css">
+</head>
+<body>
+	<div class="banner">
+		<nav>
+		<div class="nav-links">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="aboutU.html">About You</a></li>
+				<li><a href="intro2.html">Introduction</a></li>
+				<li><a href="dataGather.html">Data Gathering</a></li>
+				<li><a href="dataCleaning.html">Data Cleaning</a></li>
+				<li><a href="exploreData.html">Exploring Data</a></li>
+				<li><a href="clustering.html">Clustering</a></li>
+				<br>
+				<li><a href="arm.html">ARM and Networking</a></li>
+				<li><a href="decisionTree.html">Decision Tree</a></li>
+				<li><a href="NB.html">Naive Bayes</a></li>
+				<li><a href="svm.html">SVM</a></li>
+				<li><a href="conclusions.html">Conclusions</a></li>
+
+			</ul>
+		</div>
+
+		</nav>
+
+		<h1>NAIVE BAYES</h1>
+
+	</div>
+
+
+	<br><br>
+
+    <div>
+        <h2 class="cleaning_title1">Links of Dataset & Codes:</h2>    
+        <div class="cleaning_contents2">
+            <a href="NBrecord.r">R code for NB for record data</a><br>
+            <a href="NBCleanedRecord.csv">record data set</a><br>
+            <a href="NB_SVM.py">Python code for modeling NB and SVM on text data</a><br>
+            <a href="DT_text.csv">text data set</a><br>
+            
+        </div>
+    </div>
+
+	<div>
+
+        <h2 class="cleaning_title1">Record Data</h2>  
+        <h3 class='cleaning_contents2'>
+            1) Record data description
+        </h3>
+        <br>
+            <p class="clustering_contents">
+                The dataset used in this part is a subset of dataset from data gathered from clincialtrial.gov API. It has  combination of qualitative and quantitative data, and 244 rows. 
+                The data frame has label column which suggest the overall status of the clinical trials. 122 rows data has label <q>completed</q> and 122 rows of label <q>terminated</q>.  
+            </p>
+        <br>
+
+        <h4 class="DT_contents1">Record dataset</h4>
+
+        <iframe src="https://docs.google.com/spreadsheets/d/1AdUdKTvI5f3k8UpHmCM93Zzr5NCPDQunD6YDkFxhZUo/edit?usp=sharing" height="500" width="790" frameborder="10"
+        class="spreadSheet">
+        </iframe> <br><br> <br>
+
+
+        <h3 class='cleaning_contents2'>
+            2) Models & Results for NB with record data 
+        </h3> <br>
+
+        <p class="clustering_contents">
+            The NB model on record data has accuracy of 0.77 on predicting whether a clinical trial is completed or terminated based on the conditions of clinical trialss.  
+            Figure 1 has suggest the relatively higher accuracy, 23/27, on predicting the terminated clinical trial. 
+            While the accuracy for predicting the completed trials is 2/3.
+        </p> <br> <br>
+
+        <figure class="png">
+            <img src="NBrecord2.png" width="405" height="90">
+            <figcaption class="fig">Fig.1 - confusion matrix of prediction on overall status using naive bayes</figcaption>
+        </figure><br>
+
+        <figure class="png">
+            <img src="NBrecord1.png"  width="585" height="500">
+            <figcaption class="fig">Fig.2 - relative importance of attributes in predicting label with naive bayes model </figcaption>
+        </figure><br>
+
+        <p class="clustering_contents">
+            Figure 2 suggests the ranking of importance on different attributes when predicting the labels. EnrollmentCount has play important role in predicting the label, DesignPrimaryPurpose ranks second, as well as HealthyVolunteers, and AdverseEffectsorDeath ranks after. 
+            This indicate that by knowing the information of size of the enrolment, the primary purpose of design, whether accept healthy volunteers, and the rate of adverse effect or death, it is possible to predict whether a trial would be completed or terminated, thus help investigator to make wise decisions on funding or engaging on a clinical trials. 
+        </p> <br>
+
+        <div class="row_margin_NB">
+            <div class="row">
+                <div class="column_2">
+                    <img src="NB_plot1.png">
+                </div>
+                <div class="column_2">  <br><br><br><p class="NB_contents">   
+                    This boxplot has shows that the total number of participants enrolled in completed trials are slightly higher than that in terminated trials. </p> 
+                </div>
+                <br>
+                <div class="row">
+                    <div class="column_2">
+                        <img src="NB_plot2.png" width="381" height="323">
+                    </div>
+                    <div class="column_2"> <p class="NB_contents">   
+                        The trials with design primary purpose on health services research and screening has the highest proportion of completeness. While the trials designed primarily for supportive care has the lowest proportion of completeness, as well as the trials with treatment purpose has the second lowest percentage.  
+                    </div>
+                </div>
+                <br> <br><br>
+                <div class="row">
+                    <div class="column_2">
+                        <img src="NB_plot3.png">
+                    </div>
+                    <div class="column_2">
+                        <p class="NB_contents">   
+                            The trials accept healthy volunteers has  percentage of completeness more than twice higher than the trials that do not. 
+                    </div>
+                </div>
+                <br><br><br><br>
+                <div class="row">
+                    <div class="column_2">
+                        <img src="NB_plot4.png">
+                    </div>
+                    <div class="column_2">
+                        <p class="NB_contents">The bar chart shows that the trials with median and high adverse effect rates are likely to be completed than the trials with no or very high adverse effects rate. </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+    </div>
+    <br><br>
+    <div>
+        <h2 class="cleaning_title1">Text Data</h2> 
+
+        <br>
+        <p class="clustering_contents">
+            The text dataset used in this part is the same dataset as the one used in decision tree text data part, four types of labels of bacterial infections with brief summary of clinical trials. The accuracy of naive bayes model here is 0.84. The confusion matrix has suggests high correctness on predicting each label. All summaries of cirrhosis, meningococcal are predicted correctly. 84.6% of covid summaries are assigned into the correct group. 
+            While the prediction of sepsis is a bit lower, with accuracy of 63.7%.
+        </p>
+        <br>
+        <h4 class="DT_contents1">Record dataset</h4>
+            <iframe src="https://docs.google.com/spreadsheets/d/1J_C81L5mJKsRbRzDRACNujuGP3Mfd0TrTw4d4MflrQc/edit?usp=sharing" height="500" width="790" frameborder="10"
+            class="spreadSheet">
+            </iframe> <br><br> <br>
+
+        <h3 class='cleaning_contents2'>
+            2) Decision Trees of Record Data 
+        </h3> <br>
+
+        <p class="clustering_contents">
+            According to the ranks of the importance of attributes from the code, the key feature is the enrolment count of the trial, and the second important one is age groups of participants. Other attributes weigh way lower importance.  
+            <br><br>
+            The first tree includes all 8 attributes in training, which gives the most accurate prediction among these three trees, though it do not have high accuray. The second tree is built based on the column of Design Intervention Model and the primary purpose of designing, which have low importance weight. 
+            Thus, this tree has the lowest accuracy. 
+            The third tree is built on the attributes enrolment count and age groups, which are the 2 most important factors. It has a slightly lower accuracy than the first tree. 
+        </p> <br>
+
+        <figure class="png">
+            <img src="NBtext1.png">
+            <figcaption class="fig">Fig.3 - Confusion matrix of predicting labels of text data with naive bayes model</figcaption>
+        </figure><br> <br>
+
+    </div>
+
+	<br><br>
+
+	
+
+</body>
+</html>
