@@ -1,0 +1,245 @@
+﻿OverallStatus,HealthyVolunteers,DurationDays,Phase,Gender,DesignPrimaryPurpose,DesignAllocation,EnrollmentCount,ArmNumber,AgeGroups,AdverseEffectsorDeath
+Completed,No,shortLen,Phase 3,All,Treatment,Randomized,735.0,2,elderly-adults,highAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Randomized,708.0,2,infants,highAD
+Completed,Accept,shortLen,Not Applicable,All,Prevention,Randomized,96.0,2,adults-infants,highAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Randomized,457.0,5,infants,highAD
+Completed,Accept,shortLen,Phase 4,All,Prevention,Randomized,283.0,2,infants,noAD
+Completed,Accept,medianLen,Phase 2,All,Prevention,Randomized,300.0,2,elderly,very_highAD
+Completed,Accept,relatively_shortLen,Phase 2,All,Prevention,Randomized,110.0,4,elderly-adults,noAD
+Completed,Accept,shortLen,Phase 3,All,Prevention,Randomized,843.0,4,childTeen,medianAD
+Completed,Accept,shortLen,Phase 3,All,Prevention,Randomized,360.0,4,infants,highAD
+Completed,No,relatively_shortLen,Phase 2,Female,Treatment,Randomized,254.0,2,elderly-adults,highAD
+Completed,Accept,shortLen,Phase 2,All,Prevention,Randomized,461.0,5,infants,highAD
+Completed,Accept,shortLen,Phase 3,All,Prevention,SingleArmNA,1053.0,1,elderly,highAD
+Completed,Accept,relatively_shortLen,Not Applicable,All,Treatment,Randomized,32.0,3,elderly-childTeen,noAD
+Completed,Accept,shortLen,Phase 3,All,Prevention,Randomized,2831.0,4,elderly-adults,medianAD
+Completed,No,relatively_shortLen,Phase 3,All,Treatment,SingleArmNA,63.0,1,elderly-childTeen,very_highAD
+Completed,Accept,relatively_shortLen,Phase 1,All,Other,SingleArmNA,15.0,2,elderly-adults,noAD
+Completed,Accept,shortLen,Phase 2,All,Prevention,Randomized,305.0,3,adults-childTeen,medianAD
+Completed,Accept,relatively_shortLen,Phase 2,All,Prevention,Randomized,484.0,4,adults-childTeen,highAD
+Completed,No,shortLen,Phase 2,All,Treatment,Randomized,68.0,2,elderly-adults,highAD
+Completed,No,shortLen,Not Applicable,All,Treatment,SingleArmNA,54.0,1,elderly-adults,noAD
+Completed,Accept,shortLen,Phase 2,All,Prevention,Randomized,409.0,7,infants,highAD
+Completed,Accept,shortLen,Phase 4,All,Prevention,Non-Randomized,335.0,1,infants,noAD
+Completed,No,shortLen,Phase 2,All,Treatment,Randomized,169.0,2,elderly-adults,highAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Randomized,7744.0,8,infants,highAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Non-Randomized,86.0,1,childTeen-infants,highAD
+Completed,No,medianLen,Phase 4,All,Treatment,Randomized,385.0,4,infants,noAD
+Completed,No,medianLen,Phase 1|Phase 2,All,Treatment,Non-Randomized,40.0,1,childTeen-infants,very_highAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Randomized,1620.0,3,adults-childTeen,medianAD
+Completed,Accept,relatively_shortLen,Not Applicable,All,Treatment,Randomized,27.0,1,elderly-adults,noAD
+Completed,No,relatively_shortLen,Phase 2,All,Treatment,Randomized,218.0,6,elderly-adults,highAD
+Completed,No,shortLen,Phase 3,All,Treatment,Non-Randomized,47.0,1,elderly-childTeen,highAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Randomized,1250.0,5,infants,highAD
+Completed,No,relatively_shortLen,Phase 3,All,Treatment,Randomized,606.0,3,elderly-adults,very_highAD
+Completed,Accept,relatively_shortLen,Phase 2,All,Prevention,Randomized,511.0,3,elderly-adults,highAD
+Completed,No,shortLen,Phase 4,All,Diagnostic,SingleArmNA,99.0,1,adults-infants,noAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Non-Randomized,286.0,2,infants,very_highAD
+Completed,No,relatively_shortLen,Not Applicable,All,Diagnostic,SingleArmNA,214.0,1,allAges,very_highAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Randomized,3902.0,4,elderly-adults,highAD
+Completed,No,shortLen,Not Applicable,All,Treatment,Randomized,553.0,3,elderly-childTeen,highAD
+Completed,Accept,relatively_shortLen,Not Applicable,All,Other,Randomized,306.0,3,elderly-childTeen,very_highAD
+Completed,No,relatively_shortLen,Phase 3,All,Prevention,Non-Randomized,89.0,2,childTeen-infants,noAD
+Completed,No,shortLen,Phase 3,All,Prevention,Non-Randomized,205.0,1,infants,noAD
+Completed,No,shortLen,Phase 3,All,Treatment,Randomized,495.0,2,adults,noAD
+Completed,No,shortLen,Phase 4,All,Treatment,Non-Randomized,137.0,1,childTeen-infants,noAD
+Completed,Accept,shortLen,Phase 4,All,Prevention,Non-Randomized,212.0,1,elderly-adults,noAD
+Completed,Accept,relatively_shortLen,Phase 1,All,Prevention,Randomized,420.0,5,adults,highAD
+Completed,No,longLen,Not Applicable,All,Prevention,Non-Randomized,239.0,1,allAges,very_highAD
+Completed,Accept,relatively_shortLen,Phase 1|Phase 2,All,Prevention,Randomized,176.0,5,adults,highAD
+Completed,Accept,shortLen,Phase 3,All,Prevention,Randomized,466.0,4,infants,highAD
+Completed,Accept,shortLen,Phase 3,All,Prevention,Non-Randomized,448.0,1,allAges,medianAD
+Completed,No,relatively_shortLen,Phase 3,All,Treatment,Randomized,578.0,2,elderly-adults,highAD
+Completed,Accept,relatively_shortLen,Phase 1,All,Prevention,Randomized,34.0,2,adults,noAD
+Completed,Accept,shortLen,Phase 1,Female,Other,Randomized,12.0,6,adults,noAD
+Completed,Accept,relatively_shortLen,Phase 2|Phase 3,All,Treatment,Randomized,1579.0,2,infants,very_highAD
+Completed,Accept,shortLen,Phase 2,All,Prevention,Randomized,301.0,2,elderly-adults,noAD
+Completed,Accept,relatively_shortLen,Phase 4,Female,Treatment,Non-Randomized,13.0,2,elderly-adults,noAD
+Completed,Accept,shortLen,Phase 3,All,Prevention,Randomized,50.0,1,infants,noAD
+Completed,No,shortLen,Phase 4,All,Treatment,Randomized,24.0,2,allAges,noAD
+Completed,No,medianLen,Phase 2|Phase 3,All,Treatment,Non-Randomized,48.0,1,elderly-adults,very_highAD
+Completed,No,relatively_shortLen,Phase 3,All,Treatment,Randomized,264.0,2,elderly-childTeen,medianAD
+Completed,No,relatively_shortLen,Not Applicable,All,Basic Science,SingleArmNA,197.0,1,elderly-adults,highAD
+Completed,No,medianLen,Phase 4,All,Prevention,Non-Randomized,45.0,1,elderly-adults,very_highAD
+Completed,Accept,shortLen,Phase 2,All,Prevention,Non-Randomized,151.0,1,adults,medianAD
+Completed,Accept,shortLen,Phase 2,All,Prevention,Non-Randomized,391.0,5,infants,highAD
+Completed,No,medianLen,Phase 2,All,Treatment,SingleArmNA,15.0,1,elderly-adults,noAD
+Completed,Accept,relatively_shortLen,Phase 1,All,Prevention,Randomized,36.0,2,adults,noAD
+Completed,Accept,shortLen,Phase 2,All,Treatment,Randomized,20.0,2,elderly-adults,noAD
+Completed,No,medianLen,Phase 4,All,Prevention,Randomized,200.0,2,elderly-adults,very_highAD
+Completed,No,relatively_shortLen,Phase 4,Female,Prevention,SingleArmNA,55.0,1,adults,noAD
+Completed,No,relatively_shortLen,Phase 3,All,Treatment,Randomized,160.0,2,elderly-childTeen,highAD
+Completed,No,relatively_shortLen,Phase 1|Phase 2,All,Treatment,Randomized,6.0,1,elderly-adults,noAD
+Completed,No,shortLen,Phase 2,All,Treatment,Randomized,85.0,5,elderly-adults,highAD
+Completed,Accept,shortLen,Phase 4,All,Treatment,SingleArmNA,11.0,1,adults,noAD
+Completed,Accept,relatively_shortLen,Phase 2,All,Prevention,Randomized,257.0,5,infants,highAD
+Completed,Accept,shortLen,Not Applicable,Male,Screening,Randomized,301.0,2,elderly-childTeen,noAD
+Completed,Accept,shortLen,Phase 3,All,Prevention,Non-Randomized,341.0,1,adults-infants,medianAD
+Completed,Accept,shortLen,Phase 2,All,Prevention,Randomized,210.0,3,adults,noAD
+Completed,No,relatively_shortLen,Not Applicable,All,Treatment,Randomized,48.0,5,elderly-adults,highAD
+Completed,No,medianLen,Phase 4,All,Treatment,Randomized,375.0,2,childTeen-infants,very_highAD
+Completed,No,relatively_shortLen,Phase 4,All,Treatment,Non-Randomized,270.0,1,elderly-adults,very_highAD
+Completed,No,medianLen,Phase 1,All,Prevention,Randomized,48.0,4,adults,noAD
+Completed,No,relatively_shortLen,Phase 2,All,Treatment,Randomized,107.0,3,elderly-adults,very_highAD
+Completed,Accept,medianLen,Phase 2,All,Prevention,Randomized,538.0,4,adults-childTeen,highAD
+Completed,No,relatively_shortLen,Not Applicable,All,Prevention,Non-Randomized,1518.0,3,elderly-adults,noAD
+Completed,No,relatively_shortLen,Phase 3,All,Prevention,SingleArmNA,331.0,2,elderly-adults,very_highAD
+Completed,No,longLen,Phase 1|Phase 2,All,Treatment,Randomized,168.0,2,elderly-childTeen,very_highAD
+Completed,No,relatively_shortLen,Phase 1,All,Basic Science,SingleArmNA,22.0,1,childTeen-infants,highAD
+Completed,No,relatively_shortLen,Phase 2,All,Treatment,SingleArmNA,49.0,1,elderly-childTeen,very_highAD
+Completed,Accept,shortLen,Phase 4,All,Prevention,Randomized,1344.0,2,adults-childTeen,medianAD
+Completed,Accept,shortLen,Phase 3,All,Prevention,Randomized,660.0,3,infants,highAD
+Completed,Accept,shortLen,Phase 1,Male,Basic Science,Randomized,40.0,7,adults,noAD
+Completed,Accept,medianLen,Phase 4,All,Treatment,Randomized,219.0,2,elderly-adults,noAD
+Completed,Accept,relatively_shortLen,Phase 4,All,Prevention,Randomized,671.0,2,childTeen,medianAD
+Completed,Accept,medianLen,Phase 4,All,Prevention,Randomized,1394.0,3,infants,highAD
+Completed,No,relatively_shortLen,Phase 2,All,Treatment,Randomized,259.0,2,elderly-adults,highAD
+Completed,Accept,relatively_shortLen,Phase 2,Female,Prevention,Randomized,86.0,2,adults,very_highAD
+Completed,Accept,relatively_shortLen,Phase 4,All,Prevention,Non-Randomized,180.0,2,adults,noAD
+Completed,No,relatively_shortLen,Phase 4,All,Treatment,Non-Randomized,282.0,3,elderly-adults,very_highAD
+Completed,No,relatively_shortLen,Phase 3,All,Treatment,Randomized,666.0,2,elderly-adults,highAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Randomized,2907.0,3,childTeen-infants,medianAD
+Completed,No,shortLen,Phase 2,All,Treatment,Randomized,69.0,5,elderly-adults,highAD
+Completed,Accept,shortLen,Phase 4,All,Prevention,Non-Randomized,415.0,1,childTeen,noAD
+Completed,No,medianLen,Not Applicable,All,Prevention,Randomized,223.0,2,allAges,highAD
+Completed,No,relatively_shortLen,Phase 3,All,Treatment,SingleArmNA,61.0,1,childTeen-infants,very_highAD
+Completed,No,medianLen,Phase 2,All,Prevention,SingleArmNA,15.0,4,elderly-adults,very_highAD
+Completed,No,shortLen,Phase 2,All,Treatment,Randomized,201.0,2,elderly-adults,highAD
+Completed,No,relatively_shortLen,Phase 3,All,Treatment,SingleArmNA,74.0,1,elderly-adults,noAD
+Completed,No,longLen,Phase 3,All,Treatment,Randomized,513.0,2,elderly-adults,very_highAD
+Completed,Accept,medianLen,Phase 4,All,Prevention,SingleArmNA,3948.0,1,adults-infants,medianAD
+Completed,No,relatively_shortLen,Phase 3,Female,Treatment,Randomized,475.0,3,elderly-childTeen,medianAD
+Completed,No,medianLen,Phase 4,All,Other,Randomized,15.0,4,elderly-adults,very_highAD
+Completed,No,relatively_shortLen,Phase 3,All,Prevention,Randomized,66.0,2,elderly-adults,highAD
+Completed,No,medianLen,Phase 2,All,Prevention,Randomized,188.0,2,elderly-adults,very_highAD
+Completed,Accept,relatively_shortLen,Not Applicable,All,Health Services Research,Non-Randomized,27.0,1,allAges,very_highAD
+Completed,No,longLen,Phase 4,All,Prevention,Randomized,146.0,2,elderly-adults,highAD
+Completed,No,relatively_shortLen,Not Applicable,All,Health Services Research,Randomized,430.0,1,elderly-adults,very_highAD
+Completed,Accept,relatively_shortLen,Phase 2,All,Prevention,Non-Randomized,241.0,3,adults-childTeen,noAD
+Completed,No,longLen,Phase 3,All,Treatment,Randomized,450.0,3,elderly-adults,very_highAD
+Completed,Accept,shortLen,Phase 3,All,Prevention,Randomized,344.0,1,childTeen,noAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Randomized,379.0,3,infants,highAD
+Completed,No,medianLen,Phase 4,All,Treatment,Randomized,1225.0,2,elderly-adults,very_highAD
+Completed,No,relatively_shortLen,Phase 3,All,Treatment,Randomized,121.0,2,elderly-adults,very_highAD
+Terminated,No,medianLen,Phase 1,All,Treatment,SingleArmNA,15.0,1,infants,very_highAD
+Terminated,Accept,relatively_shortLen,Not Applicable,Female,Treatment,Randomized,2.0,2,elderly-adults,noAD
+Terminated,No,relatively_shortLen,Phase 4,All,Treatment,Randomized,293.0,2,elderly-adults,medianAD
+Terminated,No,shortLen,Phase 3,All,Treatment,Randomized,61.0,3,elderly-adults,very_highAD
+Terminated,Accept,relatively_shortLen,Phase 1,All,Treatment,SingleArmNA,9.0,1,elderly-adults,noAD
+Terminated,Accept,shortLen,Phase 1,All,Treatment,Randomized,62.0,2,adults,noAD
+Terminated,No,relatively_shortLen,Phase 4,All,Treatment,SingleArmNA,11.0,2,elderly-adults,highAD
+Terminated,No,shortLen,Phase 3,All,Treatment,Randomized,2.0,2,elderly-adults,very_highAD
+Terminated,No,relatively_shortLen,Phase 2,All,Treatment,Randomized,10.0,2,elderly-adults,noAD
+Terminated,No,medianLen,Phase 2,Female,Treatment,Randomized,4.0,2,adults-childTeen,noAD
+Terminated,No,relatively_shortLen,Phase 1|Phase 2,All,Treatment,SingleArmNA,12.0,3,elderly-adults,noAD
+Terminated,No,shortLen,Not Applicable,All,Treatment,Randomized,6.0,2,elderly-adults,noAD
+Terminated,No,longLen,Phase 4,All,Treatment,Non-Randomized,220.0,2,allAges,very_highAD
+Terminated,No,relatively_shortLen,Phase 3,All,Treatment,Randomized,16.0,2,elderly-childTeen,noAD
+Terminated,No,shortLen,Phase 3,All,Treatment,Randomized,460.0,2,elderly-childTeen,medianAD
+Terminated,No,relatively_shortLen,Phase 4,All,Treatment,Randomized,24.0,2,elderly-adults,very_highAD
+Terminated,No,relatively_shortLen,Phase 2,All,Treatment,Randomized,14.0,2,elderly-adults,very_highAD
+Terminated,Accept,medianLen,Phase 3,Female,Prevention,Randomized,2891.0,2,adults-childTeen,very_highAD
+Terminated,No,shortLen,Phase 3,All,Treatment,Randomized,4.0,3,elderly-adults,very_highAD
+Terminated,No,relatively_shortLen,Phase 2,All,Treatment,Randomized,38.0,2,elderly-adults,very_highAD
+Terminated,No,relatively_shortLen,Phase 2,All,Treatment,Randomized,12.0,2,elderly-adults,noAD
+Terminated,No,shortLen,Phase 4,All,Prevention,Non-Randomized,26.0,2,elderly-adults,very_highAD
+Terminated,No,relatively_shortLen,Phase 4,All,Treatment,SingleArmNA,5.0,1,adults-childTeen,noAD
+Terminated,Accept,shortLen,Phase 1,All,Prevention,Randomized,14.0,3,adults,noAD
+Terminated,No,longLen,Phase 1,All,Treatment,Non-Randomized,142.0,4,childTeen-infants,very_highAD
+Terminated,Accept,relatively_shortLen,Phase 1|Phase 2,All,Treatment,SingleArmNA,33.0,1,elderly-adults,noAD
+Terminated,No,relatively_shortLen,Phase 4,All,Treatment,Randomized,44.0,2,elderly-adults,noAD
+Terminated,No,shortLen,Phase 2,All,Treatment,SingleArmNA,2.0,1,elderly-adults,noAD
+Terminated,No,medianLen,Phase 2,All,Treatment,SingleArmNA,17.0,1,elderly-adults,very_highAD
+Terminated,No,relatively_shortLen,Phase 3,All,Treatment,Randomized,143.0,3,elderly-adults,highAD
+Terminated,No,shortLen,Phase 4,Female,Treatment,Randomized,133.0,2,adults,noAD
+Terminated,No,medianLen,Phase 3,All,Treatment,Non-Randomized,31.0,1,childTeen-infants,very_highAD
+Terminated,No,medianLen,Phase 2,All,Supportive Care,SingleArmNA,13.0,2,elderly-adults,very_highAD
+Terminated,No,relatively_shortLen,Phase 3,All,Treatment,Non-Randomized,23.0,1,childTeen-infants,very_highAD
+Terminated,No,relatively_shortLen,Phase 3,All,Treatment,Randomized,30.0,2,infants,very_highAD
+Terminated,No,shortLen,Phase 4,All,Treatment,Non-Randomized,6.0,2,elderly-adults,very_highAD
+Terminated,No,relatively_shortLen,Phase 2|Phase 3,All,Treatment,Randomized,1.0,3,adults-infants,noAD
+Terminated,No,medianLen,Not Applicable,All,Treatment,Randomized,25.0,2,elderly-adults,noAD
+Terminated,Accept,medianLen,Phase 3,All,Prevention,Randomized,9302.0,2,elderly-adults,very_highAD
+Terminated,No,relatively_shortLen,Phase 2,All,Treatment,Randomized,17.0,3,elderly-adults,highAD
+Terminated,No,relatively_shortLen,Phase 4,All,Prevention,Randomized,76.0,2,elderly-adults,noAD
+Terminated,Accept,shortLen,Phase 1,All,Treatment,Randomized,36.0,3,adults,noAD
+Terminated,No,relatively_shortLen,Phase 3,All,Treatment,Randomized,33.0,2,infants,noAD
+Terminated,No,medianLen,Phase 2,All,Treatment,Randomized,51.0,2,infants,very_highAD
+Terminated,No,relatively_shortLen,Phase 2,All,Treatment,Randomized,15.0,2,elderly-adults,very_highAD
+Terminated,No,longLen,Phase 2,All,Treatment,SingleArmNA,2.0,9,adults,very_highAD
+Terminated,No,relatively_shortLen,Phase 3,Female,Treatment,Randomized,87.0,3,elderly-adults,noAD
+Terminated,No,relatively_shortLen,Phase 3,All,Treatment,Randomized,7.0,5,adults-infants,very_highAD
+Terminated,No,relatively_shortLen,Phase 1|Phase 2,All,Prevention,Randomized,7.0,1,infants,noAD
+Terminated,No,medianLen,Phase 2,All,Treatment,Randomized,71.0,9,elderly-adults,very_highAD
+Terminated,No,relatively_shortLen,Phase 2,All,Treatment,Randomized,16.0,2,elderly-adults,highAD
+Terminated,Accept,medianLen,Phase 1,All,Other,Randomized,2.0,4,adults,noAD
+Terminated,No,relatively_shortLen,Phase 4,All,Treatment,Randomized,92.0,3,elderly-adults,very_highAD
+Terminated,No,relatively_shortLen,Phase 3,All,Treatment,Randomized,3.0,7,elderly-adults,noAD
+Terminated,No,relatively_shortLen,Phase 2,All,Treatment,Randomized,108.0,3,elderly-adults,very_highAD
+Terminated,Accept,relatively_shortLen,Phase 2,All,Prevention,Randomized,142.0,2,adults,highAD
+Terminated,No,shortLen,Phase 1,All,Treatment,SingleArmNA,7.0,2,elderly-adults,noAD
+Terminated,No,relatively_shortLen,Phase 2|Phase 3,All,Treatment,Randomized,97.0,2,childTeen-infants,highAD
+Terminated,No,relatively_shortLen,Phase 4,All,Treatment,Non-Randomized,6.0,1,elderly-adults,very_highAD
+Terminated,No,relatively_shortLen,Phase 2,All,Treatment,Randomized,25.0,2,elderly-adults,very_highAD
+Terminated,No,medianLen,Phase 2,All,Treatment,Randomized,43.0,5,elderly-adults,very_highAD
+Terminated,No,relatively_shortLen,Not Applicable,All,Treatment,Randomized,53.0,1,childTeen-infants,noAD
+Terminated,No,shortLen,Phase 2|Phase 3,All,Treatment,SingleArmNA,13.0,1,elderly-childTeen,noAD
+Terminated,Accept,medianLen,Phase 2|Phase 3,All,Prevention,Randomized,1354.0,3,infants,very_highAD
+Terminated,No,relatively_shortLen,Phase 2,All,Prevention,Randomized,155.0,2,elderly-adults,very_highAD
+Terminated,No,medianLen,Phase 3,All,Treatment,Randomized,121.0,5,elderly-adults,very_highAD
+Terminated,No,relatively_shortLen,Phase 2,All,Treatment,Non-Randomized,14.0,2,elderly-adults,very_highAD
+Terminated,Accept,shortLen,Not Applicable,Female,Diagnostic,SingleArmNA,295.0,1,elderly-childTeen,noAD
+Terminated,No,medianLen,Phase 3,Male,Treatment,Randomized,64.0,2,allAges,noAD
+Terminated,No,medianLen,Phase 2,All,Treatment,Randomized,47.0,7,adults-infants,highAD
+Terminated,No,shortLen,Phase 2,All,Prevention,Randomized,46.0,5,infants,very_highAD
+Terminated,No,relatively_shortLen,Phase 4,All,Diagnostic,SingleArmNA,17.0,1,elderly-childTeen,noAD
+Terminated,No,relatively_shortLen,Not Applicable,All,Treatment,SingleArmNA,3.0,1,elderly-adults,very_highAD
+Terminated,Accept,shortLen,Not Applicable,All,Basic Science,Non-Randomized,10.0,1,elderly-adults,noAD
+Terminated,Accept,relatively_shortLen,Phase 4,Male,Prevention,Randomized,467.0,2,adults,medianAD
+Terminated,No,shortLen,Phase 4,All,Treatment,Randomized,58.0,1,childTeen-infants,noAD
+Terminated,No,medianLen,Phase 2,All,Treatment,Randomized,121.0,2,elderly-adults,noAD
+Terminated,Accept,relatively_shortLen,Not Applicable,Female,Prevention,Non-Randomized,2758.0,1,adults-childTeen,medianAD
+Terminated,No,relatively_shortLen,Phase 3,All,Treatment,Randomized,156.0,2,allAges,noAD
+Terminated,No,relatively_shortLen,Phase 3,All,Treatment,Randomized,219.0,3,allAges,medianAD
+Terminated,No,medianLen,Phase 2|Phase 3,All,Prevention,Randomized,8031.0,2,elderly-adults,highAD
+Terminated,No,relatively_shortLen,Phase 4,All,Treatment,SingleArmNA,5.0,1,elderly-adults,noAD
+Terminated,No,shortLen,Phase 4,All,Treatment,Randomized,11.0,2,elderly-adults,highAD
+Terminated,Accept,shortLen,Phase 2,All,Prevention,Randomized,16.0,3,infants,noAD
+Terminated,No,shortLen,Phase 3,All,Treatment,Randomized,136.0,2,allAges,noAD
+Terminated,No,relatively_shortLen,Phase 3,All,Treatment,Randomized,46.0,2,allAges,noAD
+Terminated,No,shortLen,Phase 4,Male,Prevention,Randomized,3.0,1,elderly-adults,noAD
+Terminated,No,shortLen,Phase 2,All,Treatment,Randomized,2.0,2,elderly-adults,noAD
+Terminated,No,shortLen,Not Applicable,All,Treatment,Randomized,11.0,2,elderly-adults,noAD
+Terminated,No,relatively_shortLen,Phase 2,All,Treatment,Randomized,224.0,2,elderly-adults,highAD
+Terminated,No,medianLen,Not Applicable,All,Treatment,Randomized,13.0,1,elderly-adults,very_highAD
+Terminated,No,medianLen,Phase 3,All,Treatment,Randomized,41.0,2,elderly-childTeen,very_highAD
+Terminated,No,relatively_shortLen,Phase 3,All,Treatment,Randomized,21.0,2,elderly-childTeen,very_highAD
+Terminated,No,shortLen,Phase 3,All,Treatment,Randomized,22.0,3,elderly-adults,very_highAD
+Terminated,No,shortLen,Phase 3,All,Treatment,Randomized,17.0,1,elderly-adults,very_highAD
+Terminated,No,relatively_shortLen,Phase 3,All,Treatment,Randomized,583.0,3,elderly-adults,highAD
+Terminated,No,relatively_shortLen,Not Applicable,All,Treatment,Randomized,7.0,1,elderly-adults,noAD
+Terminated,No,relatively_shortLen,Phase 4,All,Treatment,Randomized,72.0,2,elderly-adults,noAD
+Terminated,No,medianLen,Phase 1|Phase 2,All,Treatment,SingleArmNA,20.0,3,elderly-adults,very_highAD
+Terminated,No,relatively_shortLen,Phase 2,All,Treatment,SingleArmNA,12.0,2,elderly-adults,very_highAD
+Terminated,No,medianLen,Phase 2,All,Treatment,SingleArmNA,20.0,13,elderly-adults,very_highAD
+Terminated,No,relatively_shortLen,Phase 1|Phase 2,All,Treatment,Non-Randomized,3.0,2,elderly-adults,noAD
+Terminated,No,longLen,Phase 1,All,Treatment,SingleArmNA,2.0,3,elderly-adults,noAD
+Terminated,No,medianLen,Not Applicable,All,Treatment,SingleArmNA,25.0,4,elderly-adults,noAD
+Terminated,No,relatively_shortLen,Phase 2,All,Supportive Care,SingleArmNA,1.0,1,elderly-adults,noAD
+Terminated,Accept,shortLen,Not Applicable,All,Treatment,SingleArmNA,1.0,4,elderly-adults,very_highAD
+Terminated,No,relatively_shortLen,Phase 4,All,Treatment,Randomized,14.0,3,elderly-childTeen,very_highAD
+Terminated,No,medianLen,Phase 1,All,Treatment,Randomized,7.0,3,elderly-adults,very_highAD
+Terminated,No,relatively_shortLen,Phase 2,All,Treatment,SingleArmNA,2.0,2,elderly-adults,noAD
+Terminated,No,medianLen,Phase 1|Phase 2,All,Treatment,Randomized,28.0,2,elderly-adults,highAD
+Terminated,No,longLen,Phase 1,All,Treatment,Non-Randomized,14.0,2,elderly-adults,very_highAD
+Terminated,No,longLen,Phase 1|Phase 2,All,Treatment,SingleArmNA,46.0,1,elderly-adults,noAD
+Terminated,No,relatively_shortLen,Not Applicable,All,Treatment,Randomized,7.0,2,elderly-adults,very_highAD
+Terminated,No,medianLen,Not Applicable,All,Prevention,Randomized,2.0,2,elderly-adults,noAD
+Terminated,No,medianLen,Phase 2,All,Treatment,Randomized,16.0,2,allAges,very_highAD
+Terminated,No,medianLen,Phase 4,All,Prevention,Randomized,326.0,2,childTeen-infants,medianAD
+Terminated,No,shortLen,Phase 2,All,Treatment,Randomized,2.0,3,elderly-adults,noAD
+Terminated,No,relatively_shortLen,Not Applicable,Male,Treatment,Randomized,175.0,1,elderly-adults,noAD
+Terminated,No,shortLen,Not Applicable,All,Treatment,Randomized,2.0,3,elderly-adults,noAD
+Terminated,No,relatively_shortLen,Not Applicable,All,Treatment,Randomized,4.0,2,elderly-adults,noAD
+Terminated,No,relatively_shortLen,Phase 3,All,Treatment,Randomized,13.0,2,elderly-adults,noAD
+Terminated,Accept,longLen,Phase 1|Phase 2,All,Treatment,Non-Randomized,40.0,1,elderly-childTeen,highAD

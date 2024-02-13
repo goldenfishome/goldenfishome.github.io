@@ -1,0 +1,401 @@
+﻿OverallStatus,HealthyVolunteers,DurationDays,Phase,Gender,DesignPrimaryPurpose,DesignInterventionModel,DesignAllocation,EnrollmentCount,ArmNumber,AgeGroups
+Completed,No,1602.0,Not Applicable,All,Health Services Research,Single Group Assignment,SingleArmNA,371.0,1,childTeen-infants
+Completed,Accept,2435.0,Not Applicable,All,Diagnostic,Single Group Assignment,SingleArmNA,550.0,1,infants
+Completed,No,759.0,Phase 3,All,Treatment,Parallel Assignment,Randomized,50.0,4,elderly-adults
+Completed,No,303.0,Phase 1,All,Treatment,Single Group Assignment,Non-Randomized,10.0,1,childTeen
+Completed,No,736.0,Not Applicable,All,Diagnostic,Single Group Assignment,SingleArmNA,983.0,1,infants
+Completed,Accept,911.0,Phase 3,Female,Prevention,Parallel Assignment,Randomized,829.0,1,adults
+Completed,No,51.0,Not Applicable,All,Other,Single Group Assignment,SingleArmNA,47.0,1,adults-childTeen
+Completed,No,241.0,Not Applicable,All,Diagnostic,Sequential Assignment,Non-Randomized,780.0,1,elderly-adults
+Completed,No,762.0,Not Applicable,All,Supportive Care,Single Group Assignment,SingleArmNA,15.0,1,elderly-adults
+Completed,No,1249.0,Phase 2|Phase 3,All,Treatment,Parallel Assignment,Randomized,700.0,2,infants
+Completed,No,274.0,Phase 1,All,Treatment,Single Group Assignment,SingleArmNA,13.0,1,childTeen
+Completed,No,639.0,Phase 1,All,Treatment,Single Group Assignment,SingleArmNA,84.0,1,childTeen-infants
+Completed,Accept,189.0,Phase 1,Male,Treatment,Parallel Assignment,Randomized,64.0,2,adults
+Completed,No,669.0,Phase 1,All,Treatment,Single Group Assignment,SingleArmNA,36.0,1,childTeen-infants
+Completed,No,963.0,Phase 1,All,Treatment,Parallel Assignment,Non-Randomized,32.0,2,childTeen-infants
+Completed,No,273.0,Phase 4,All,Prevention,Single Group Assignment,Non-Randomized,710.0,1,elderly-adults
+Completed,No,578.0,Not Applicable,All,Device Feasibility,Single Group Assignment,SingleArmNA,18.0,1,elderly-adults
+Completed,No,805.0,Phase 1,All,Basic Science,Single Group Assignment,Non-Randomized,23.0,1,infants
+Completed,No,670.0,Phase 3,All,Treatment,Single Group Assignment,Non-Randomized,26.0,1,elderly-childTeen
+Completed,No,2373.0,Not Applicable,All,Prevention,Parallel Assignment,Randomized,120.0,1,allAges
+Completed,Accept,139.0,Phase 1,All,Treatment,Parallel Assignment,Randomized,40.0,2,adults
+Completed,Accept,122.0,Phase 1,All,Basic Science,Parallel Assignment,Randomized,48.0,2,adults
+Completed,Accept,184.0,Phase 1,All,Basic Science,Parallel Assignment,Randomized,70.0,7,adults
+Completed,No,913.0,Phase 1,All,Treatment,Single Group Assignment,Non-Randomized,52.0,2,infants
+Completed,No,701.0,Phase 3,All,Treatment,Parallel Assignment,SingleArmNA,115.0,1,elderly-adults
+Completed,No,284.0,Phase 4,All,Treatment,Parallel Assignment,SingleArmNA,0.0,1,elderly-adults
+Completed,Accept,56.0,Phase 1,All,Treatment,Single Group Assignment,SingleArmNA,21.0,2,adults
+Completed,Accept,1370.0,Not Applicable,All,Treatment,Single Group Assignment,Randomized,16359.0,1,allAges
+Completed,Accept,92.0,Phase 1,All,Treatment,Parallel Assignment,Randomized,36.0,2,adults
+Completed,Accept,0.0,Phase 1,All,Treatment,Parallel Assignment,Randomized,30.0,3,adults
+Completed,Accept,212.0,Phase 1,All,Treatment,Parallel Assignment,Randomized,80.0,2,adults
+Completed,Accept,215.0,Phase 1,All,Treatment,Parallel Assignment,Randomized,94.0,4,adults
+Completed,No,305.0,Not Applicable,All,Diagnostic,Factorial Assignment,Randomized,630.0,1,elderly-adults
+Completed,No,669.0,Phase 3,All,Treatment,Single Group Assignment,SingleArmNA,63.0,1,elderly-childTeen
+Completed,No,1476.0,Not Applicable,All,Treatment,Crossover Assignment,Randomized,9673.0,1,elderly-adults
+Completed,No,1460.0,Phase 4,All,Treatment,Parallel Assignment,Randomized,406.0,2,elderly-adults
+Completed,No,639.0,Phase 3,All,Treatment,Parallel Assignment,Randomized,850.0,1,elderly-childTeen
+Completed,No,882.0,Phase 3,All,Treatment,Single Group Assignment,SingleArmNA,51.0,1,allAges
+Completed,No,1308.0,Phase 4,All,Prevention,Parallel Assignment,Randomized,1050.0,3,elderly-adults
+Completed,No,578.0,Not Applicable,All,Diagnostic,Parallel Assignment,Randomized,384.0,1,infants
+Completed,No,577.0,Phase 3,All,Prevention,Parallel Assignment,Randomized,960.0,1,elderly-adults
+Completed,No,479.0,Phase 4,All,Treatment,Single Group Assignment,SingleArmNA,58.0,1,elderly-adults
+Completed,No,731.0,Not Applicable,All,Health Services Research,Crossover Assignment,Randomized,19220.0,1,allAges
+Completed,No,1065.0,Not Applicable,All,Prevention,Parallel Assignment,Randomized,203.0,1,elderly-adults
+Completed,No,793.0,Phase 2,All,Treatment,Parallel Assignment,Randomized,29.0,2,elderly-adults
+Completed,No,917.0,Not Applicable,All,Diagnostic,Single Group Assignment,SingleArmNA,122.0,2,elderly-adults
+Completed,No,276.0,Phase 4,All,Health Services Research,Single Group Assignment,Non-Randomized,134.0,1,elderly-adults
+Completed,No,273.0,Phase 4,All,Prevention,Single Group Assignment,Non-Randomized,500.0,1,elderly-adults
+Completed,Accept,61.0,Phase 1|Phase 2,Male,Treatment,Parallel Assignment,Randomized,122.0,2,childTeen
+Completed,No,1887.0,Phase 2,All,Prevention,Crossover Assignment,Randomized,11.0,2,elderly-childTeen
+Completed,Accept,503.0,Phase 1,All,Treatment,Parallel Assignment,Non-Randomized,48.0,2,adults
+Completed,No,426.0,Phase 1,All,Basic Science,Single Group Assignment,SingleArmNA,22.0,1,childTeen-infants
+Completed,No,1703.0,Phase 1,All,Other,Parallel Assignment,Non-Randomized,51.0,2,childTeen-infants
+Completed,No,973.0,Not Applicable,All,Basic Science,Parallel Assignment,Randomized,160.0,2,infants
+Completed,Accept,57.0,Phase 1,All,Basic Science,Sequential Assignment,Randomized,42.0,4,adults
+Completed,Accept,90.0,Phase 1|Phase 2,All,Treatment,Parallel Assignment,Randomized,286.0,1,infants
+Completed,Accept,26.0,Phase 1,All,Basic Science,Single Group Assignment,Non-Randomized,20.0,1,adults
+Completed,No,479.0,Phase 1,All,Basic Science,Parallel Assignment,Non-Randomized,20.0,2,childTeen
+Completed,No,669.0,Phase 3,All,Treatment,Single Group Assignment,SingleArmNA,50.0,1,allAges
+Completed,Accept,376.0,Phase 1,All,Other,Parallel Assignment,Randomized,40.0,1,adults
+Completed,Accept,212.0,Phase 1,All,Basic Science,Parallel Assignment,Randomized,84.0,2,adults
+Completed,Accept,30.0,Phase 4,Male,Basic Science,Crossover Assignment,Randomized,24.0,2,adults
+Completed,Accept,0.0,Phase 1,All,Treatment,Crossover Assignment,Randomized,6.0,3,adults
+Completed,Accept,0.0,Phase 1,All,Treatment,Crossover Assignment,Randomized,36.0,2,adults
+Completed,Accept,122.0,Phase 1,All,Basic Science,Factorial Assignment,Randomized,90.0,2,adults
+Completed,Accept,90.0,Phase 1,All,Basic Science,Crossover Assignment,Randomized,49.0,7,adults
+Completed,No,183.0,Phase 3,Male,Prevention,Parallel Assignment,Randomized,497.0,2,elderly-adults
+Completed,Accept,153.0,Phase 3,All,Prevention,Parallel Assignment,Randomized,376.0,2,elderly-adults
+Completed,Accept,823.0,Phase 2|Phase 3,All,Prevention,Parallel Assignment,Randomized,311.0,2,childTeen
+Completed,No,365.0,Not Applicable,All,Health Services Research,Parallel Assignment,Non-Randomized,779.0,1,elderly-adults
+Completed,Accept,579.0,Phase 1,All,Treatment,Single Group Assignment,Non-Randomized,20.0,1,elderly-adults
+Completed,No,760.0,Phase 4,All,Treatment,Single Group Assignment,SingleArmNA,30.0,1,childTeen
+Completed,No,275.0,Phase 3,All,Treatment,Parallel Assignment,Randomized,680.0,3,elderly-adults
+Completed,No,273.0,Phase 3,All,Treatment,Parallel Assignment,Randomized,698.0,2,elderly-adults
+Completed,No,2313.0,Not Applicable,All,Prevention,Parallel Assignment,Randomized,252.0,2,elderly-adults
+Completed,No,151.0,Phase 2,All,Treatment,Parallel Assignment,Randomized,150.0,3,elderly-adults
+Completed,No,1349.0,Phase 4,All,Treatment,Parallel Assignment,Randomized,510.0,2,infants
+Completed,No,776.0,Phase 3,All,Treatment,Parallel Assignment,Randomized,598.0,4,elderly-adults
+Completed,No,1308.0,Not Applicable,All,Treatment,Parallel Assignment,Randomized,101.0,1,elderly-adults
+Completed,No,835.0,Phase 3,All,Prevention,Parallel Assignment,Randomized,80.0,2,elderly-adults
+Completed,No,489.0,Phase 2,All,Treatment,Parallel Assignment,Randomized,330.0,6,elderly-adults
+Completed,No,823.0,Phase 2,All,Treatment,Parallel Assignment,Randomized,45.0,2,adults-infants
+Completed,Accept,365.0,Not Applicable,All,Basic Science,Single Group Assignment,SingleArmNA,7.0,1,adults
+Completed,No,1034.0,Not Applicable,All,Diagnostic,Parallel Assignment,Randomized,278.0,2,infants
+Completed,No,820.0,Phase 3,All,Treatment,Single Group Assignment,Randomized,13.0,1,childTeen-infants
+Completed,Accept,218.0,Phase 2,Female,Prevention,Parallel Assignment,Non-Randomized,80.0,1,adults
+Completed,No,274.0,Phase 4,All,Diagnostic,Single Group Assignment,SingleArmNA,99.0,1,adults-infants
+Completed,No,913.0,Phase 4,All,Treatment,Parallel Assignment,Randomized,462.0,3,elderly-adults
+Completed,No,456.0,Phase 3,All,Treatment,Parallel Assignment,Randomized,660.0,4,elderly-adults
+Completed,No,483.0,Phase 3,All,Treatment,Parallel Assignment,Randomized,666.0,2,elderly-adults
+Completed,Accept,610.0,Phase 2,All,Prevention,Parallel Assignment,Randomized,756.0,5,infants
+Completed,Accept,669.0,Phase 2,All,Prevention,Parallel Assignment,Randomized,708.0,4,infants
+Completed,No,580.0,Phase 4,All,Treatment,Parallel Assignment,SingleArmNA,262.0,1,elderly-adults
+Completed,No,212.0,Phase 2,All,Treatment,Parallel Assignment,Randomized,120.0,2,elderly-adults
+Completed,No,1075.0,Not Applicable,Female,Health Services Research,Single Group Assignment,SingleArmNA,38.0,1,elderly-adults
+Completed,No,350.0,Phase 1,All,Treatment,Single Group Assignment,Non-Randomized,33.0,1,childTeen-infants
+Completed,No,304.0,Phase 2,All,Treatment,Parallel Assignment,Randomized,256.0,3,elderly-adults
+Completed,No,365.0,Phase 3,All,Treatment,Parallel Assignment,Non-Randomized,18.0,2,elderly-adults
+Completed,No,1096.0,Phase 2,All,Treatment,Parallel Assignment,Randomized,60.0,2,elderly-adults
+Completed,No,89.0,Not Applicable,All,Health Services Research,Crossover Assignment,Non-Randomized,853.0,1,elderly-adults
+Completed,Accept,184.0,Phase 1,Male,Treatment,Parallel Assignment,Randomized,40.0,2,adults
+Completed,No,527.0,Phase 2,All,Treatment,Parallel Assignment,Randomized,118.0,2,elderly-adults
+Completed,No,485.0,Phase 3,All,Treatment,Single Group Assignment,SingleArmNA,40.0,1,elderly-adults
+Completed,Accept,129.0,Phase 1,All,Treatment,Crossover Assignment,Randomized,64.0,6,adults
+Completed,No,5419.0,Phase 3,All,Supportive Care,Parallel Assignment,Randomized,212.0,3,elderly-adults
+Completed,No,653.0,Phase 3,All,Treatment,Single Group Assignment,SingleArmNA,45.0,1,allAges
+Completed,No,518.0,Not Applicable,All,Prevention,Parallel Assignment,Randomized,30000.0,2,allAges
+Completed,No,601.0,Phase 3,All,Treatment,Single Group Assignment,SingleArmNA,47.0,1,allAges
+Completed,Accept,700.0,Phase 2,All,Prevention,Single Group Assignment,Non-Randomized,325.0,1,elderly-adults
+Completed,No,488.0,Phase 4,All,Treatment,Single Group Assignment,Non-Randomized,80.0,1,adults
+Completed,Accept,686.0,Phase 3,All,Prevention,Parallel Assignment,Randomized,1315.0,4,infants
+Completed,Accept,657.0,Phase 3,All,Prevention,Parallel Assignment,Randomized,1250.0,5,infants
+Completed,No,609.0,Phase 3,All,Treatment,Parallel Assignment,Randomized,174.0,1,elderly-adults
+Completed,No,1009.0,Phase 1,All,Treatment,Single Group Assignment,SingleArmNA,47.0,1,childTeen-infants
+Completed,Accept,808.0,Phase 3,All,Prevention,Parallel Assignment,Randomized,2808.0,5,infants
+Completed,Accept,751.0,Phase 3,All,Prevention,Parallel Assignment,Randomized,1473.0,8,infants
+Completed,No,1065.0,Phase 3,All,Treatment,Parallel Assignment,Randomized,200.0,1,elderly-childTeen
+Completed,No,411.0,Phase 3,All,Treatment,Parallel Assignment,Randomized,667.0,2,elderly-adults
+Completed,No,1614.0,Phase 4,All,Treatment,Parallel Assignment,Randomized,1089.0,2,elderly-adults
+Completed,No,546.0,Phase 3,All,Treatment,Single Group Assignment,SingleArmNA,89.0,1,allAges
+Completed,No,1004.0,Phase 3,All,Prevention,Single Group Assignment,SingleArmNA,57.0,1,allAges
+Completed,No,1029.0,Not Applicable,All,Treatment,Single Group Assignment,Non-Randomized,45.0,2,elderly-adults
+Completed,No,610.0,Phase 3,All,Treatment,Parallel Assignment,Randomized,850.0,3,elderly-adults
+Completed,No,309.0,Phase 3,All,Treatment,Parallel Assignment,Randomized,735.0,2,elderly-adults
+Completed,No,335.0,Phase 3,All,Treatment,Parallel Assignment,Randomized,655.0,2,elderly-adults
+Completed,No,693.0,Phase 3,All,Treatment,Parallel Assignment,Non-Randomized,89.0,2,allAges
+Completed,No,731.0,Phase 4,All,Treatment,Parallel Assignment,Randomized,118.0,1,elderly-adults
+Completed,No,701.0,Phase 4,All,Diagnostic,Parallel Assignment,Randomized,7263.0,3,allAges
+Completed,No,463.0,Phase 4,All,Treatment,Parallel Assignment,Non-Randomized,91.0,2,elderly-adults
+Completed,No,325.0,Phase 3,All,Treatment,Single Group Assignment,SingleArmNA,25.0,1,elderly-adults
+Completed,No,857.0,Not Applicable,All,Treatment,Single Group Assignment,SingleArmNA,15.0,1,elderly-adults
+Completed,Accept,821.0,Phase 1,All,Basic Science,Parallel Assignment,Randomized,222.0,4,elderly-adults
+Completed,No,278.0,Phase 2,All,Treatment,Parallel Assignment,Randomized,210.0,3,elderly-adults
+Completed,Accept,273.0,Phase 1,All,Treatment,Single Group Assignment,Randomized,48.0,2,adults
+Completed,No,182.0,Phase 2,All,Treatment,Single Group Assignment,SingleArmNA,103.0,1,elderly-adults
+Completed,Accept,1095.0,Phase 1|Phase 2,All,Prevention,Parallel Assignment,Randomized,74.0,4,elderly-adults
+Completed,No,396.0,Not Applicable,All,Diagnostic,Parallel Assignment,Randomized,802.0,2,allAges
+Completed,No,1612.0,Not Applicable,All,Other,Single Group Assignment,SingleArmNA,6.0,1,childTeen
+Completed,Accept,1277.0,Phase 4,Female,Treatment,Parallel Assignment,Randomized,132.0,2,elderly-adults
+Completed,No,518.0,Phase 3,All,Treatment,Parallel Assignment,Randomized,957.0,2,allAges
+Completed,No,334.0,Phase 3,All,Treatment,Single Group Assignment,SingleArmNA,59.0,1,allAges
+Completed,No,1275.0,Phase 3,All,Treatment,Single Group Assignment,SingleArmNA,81.0,1,allAges
+Completed,No,774.0,Phase 2|Phase 3,All,Treatment,Single Group Assignment,SingleArmNA,86.0,2,allAges
+Completed,Accept,539.0,Phase 1,All,Treatment,Parallel Assignment,Randomized,39.0,1,adults
+Completed,No,1127.0,Phase 4,All,Prevention,Single Group Assignment,SingleArmNA,25.0,1,childTeen-infants
+Completed,No,579.0,Phase 3,All,Prevention,Parallel Assignment,Randomized,16.0,1,elderly-adults
+Completed,No,730.0,Phase 3,All,Treatment,Parallel Assignment,Randomized,319.0,2,elderly-adults
+Completed,No,730.0,Phase 3,All,Treatment,Single Group Assignment,SingleArmNA,21.0,1,allAges
+Completed,No,761.0,Phase 4,All,Prevention,Parallel Assignment,Randomized,453.0,2,infants
+Completed,Accept,214.0,Phase 3,All,Prevention,Single Group Assignment,SingleArmNA,200.0,1,allAges
+Completed,No,1058.0,Phase 2|Phase 3,All,Treatment,Parallel Assignment,Non-Randomized,55.0,3,allAges
+Completed,No,638.0,Not Applicable,All,Treatment,Single Group Assignment,Non-Randomized,100.0,1,elderly-childTeen
+Completed,No,242.0,Phase 2,All,Treatment,Parallel Assignment,Randomized,215.0,2,elderly-adults
+Completed,No,245.0,Phase 1|Phase 2,All,Prevention,Single Group Assignment,Non-Randomized,8.0,1,elderly-adults
+Completed,No,131.0,Phase 2,All,Treatment,Parallel Assignment,Randomized,196.0,2,elderly-adults
+Completed,No,1178.0,Not Applicable,All,Treatment,Parallel Assignment,Randomized,45.0,2,elderly-adults
+Completed,No,518.0,Phase 4,All,Supportive Care,Parallel Assignment,Non-Randomized,80.0,4,infants
+Completed,No,1279.0,Phase 4,All,Treatment,Single Group Assignment,SingleArmNA,16.0,1,elderly-adults
+Completed,No,548.0,Phase 4,All,Treatment,Parallel Assignment,Randomized,56.0,2,elderly-adults
+Completed,No,702.0,Not Applicable,All,Treatment,Parallel Assignment,SingleArmNA,81.0,1,elderly-adults
+Completed,No,549.0,Phase 4,All,Treatment,Single Group Assignment,Randomized,12.0,2,elderly-adults
+Completed,No,1002.0,Phase 1,All,Treatment,Parallel Assignment,Non-Randomized,43.0,5,childTeen-infants
+Completed,Accept,322.0,Phase 3,All,Prevention,Single Group Assignment,SingleArmNA,385.0,5,infants
+Completed,Accept,671.0,Phase 3,All,Prevention,Parallel Assignment,Randomized,350.0,6,infants
+Completed,Accept,546.0,Phase 3,All,Prevention,Parallel Assignment,Randomized,284.0,6,infants
+Completed,Accept,761.0,Phase 2,Female,Prevention,Parallel Assignment,Randomized,86.0,2,adults
+Completed,No,457.0,Phase 2,Female,Prevention,Parallel Assignment,Non-Randomized,270.0,1,adults
+Completed,No,519.0,Not Applicable,All,Prevention,Parallel Assignment,Randomized,4056.0,1,allAges
+Completed,Accept,89.0,Not Applicable,All,Prevention,Parallel Assignment,Randomized,60.0,2,adults
+Completed,No,1187.0,Phase 3,All,Treatment,Parallel Assignment,Randomized,739.0,4,elderly-childTeen
+Completed,No,731.0,Phase 1,All,Treatment,Single Group Assignment,Non-Randomized,20.0,1,elderly-childTeen
+Completed,No,415.0,Phase 4,All,Other,Single Group Assignment,SingleArmNA,20.0,1,elderly-adults
+Completed,Accept,217.0,Not Applicable,All,Basic Science,Parallel Assignment,Randomized,4.0,1,allAges
+Completed,Accept,669.0,Not Applicable,All,Treatment,Parallel Assignment,Non-Randomized,42.0,1,allAges
+Completed,No,244.0,Not Applicable,All,Prevention,Parallel Assignment,Randomized,40.0,2,childTeen-infants
+Completed,Accept,92.0,Not Applicable,Male,Prevention,Parallel Assignment,Randomized,60.0,2,adults
+Completed,No,2292.0,Phase 3,All,Treatment,Single Group Assignment,SingleArmNA,75.0,1,allAges
+Completed,No,881.0,Phase 4,Female,Treatment,Parallel Assignment,Randomized,494.0,2,elderly-adults
+Completed,No,2339.0,Phase 3,All,Supportive Care,Parallel Assignment,Randomized,177.0,4,adults-infants
+Completed,No,2497.0,Phase 3,All,Treatment,Factorial Assignment,Randomized,2073.0,4,elderly-adults
+Completed,No,850.0,Phase 1,All,Treatment,Single Group Assignment,Non-Randomized,63.0,1,infants
+Completed,Accept,182.0,Not Applicable,Male,Prevention,Parallel Assignment,Randomized,40.0,2,adults
+Completed,Accept,294.0,Phase 1,All,Treatment,Parallel Assignment,Randomized,61.0,2,adults
+Completed,No,1095.0,Phase 4,All,Treatment,Single Group Assignment,SingleArmNA,24.0,1,childTeen-infants
+Completed,No,453.0,Not Applicable,All,Treatment,Parallel Assignment,Randomized,271.0,2,childTeen-infants
+Completed,No,243.0,Not Applicable,All,Treatment,Single Group Assignment,SingleArmNA,18.0,1,elderly-adults
+Completed,No,365.0,Phase 3,All,Treatment,Single Group Assignment,Non-Randomized,42.0,1,allAges
+Completed,Accept,3042.0,Phase 2,All,Prevention,Single Group Assignment,SingleArmNA,10.0,1,elderly-childTeen
+Completed,No,790.0,Phase 3,All,Treatment,Parallel Assignment,Randomized,1061.0,2,elderly-adults
+Completed,No,730.0,Phase 3,All,Treatment,Parallel Assignment,Randomized,603.0,1,elderly-adults
+Completed,No,120.0,Phase 2,All,Treatment,Parallel Assignment,Randomized,180.0,2,elderly-adults
+Completed,No,1066.0,Phase 2,All,Treatment,Parallel Assignment,Randomized,143.0,2,elderly-childTeen
+Completed,No,1217.0,Phase 4,All,Treatment,Parallel Assignment,Randomized,70.0,2,elderly-adults
+Completed,No,212.0,Phase 2,All,Treatment,Parallel Assignment,Randomized,30.0,2,elderly-adults
+Completed,No,182.0,Phase 2,All,Treatment,Parallel Assignment,Randomized,270.0,2,allAges
+Completed,Accept,3287.0,Phase 2,All,Prevention,Single Group Assignment,SingleArmNA,484.0,1,elderly-childTeen
+Completed,No,1078.0,Phase 3,All,Treatment,Single Group Assignment,SingleArmNA,61.0,1,allAges
+Completed,No,1579.0,Phase 1,All,Basic Science,Parallel Assignment,Non-Randomized,62.0,2,elderly-childTeen
+Completed,No,395.0,Phase 3,All,Treatment,Parallel Assignment,Randomized,1161.0,2,allAges
+Completed,No,0.0,Not Applicable,All,Treatment,Single Group Assignment,SingleArmNA,3000.0,1,allAges
+Terminated,No,1097.0,Phase 1,All,Basic Science,Parallel Assignment,Randomized,8.0,1,infants
+Terminated,No,2406.0,Phase 3,All,Supportive Care,Parallel Assignment,Randomized,240.0,2,elderly-adults
+Terminated,No,1827.0,Not Applicable,All,Diagnostic,Single Group Assignment,SingleArmNA,120.0,1,elderly-adults
+Terminated,No,123.0,Phase 3,All,Treatment,Parallel Assignment,Randomized,460.0,2,elderly-adults
+Terminated,No,1016.0,Phase 4,All,Treatment,Parallel Assignment,Randomized,136.0,1,elderly-adults
+Terminated,No,1190.0,Phase 1,All,Treatment,Single Group Assignment,SingleArmNA,15.0,1,infants
+Terminated,No,1278.0,Phase 3,All,Treatment,Parallel Assignment,Randomized,193.0,1,elderly-adults
+Terminated,No,403.0,Phase 3,All,Treatment,Parallel Assignment,Non-Randomized,75.0,1,elderly-adults
+Terminated,Accept,486.0,Not Applicable,Female,Treatment,Parallel Assignment,Randomized,2.0,2,elderly-adults
+Terminated,Accept,122.0,Phase 1,All,Treatment,Crossover Assignment,Randomized,96.0,1,adults
+Terminated,No,699.0,Phase 4,All,Treatment,Parallel Assignment,Randomized,293.0,2,elderly-adults
+Terminated,No,365.0,Phase 3,All,Treatment,Parallel Assignment,Randomized,61.0,3,elderly-adults
+Terminated,No,912.0,Phase 1|Phase 2,All,Treatment,Parallel Assignment,Randomized,140.0,1,elderly-adults
+Terminated,No,335.0,Phase 4,All,Treatment,Parallel Assignment,Randomized,11.0,1,elderly-adults
+Terminated,Accept,72.0,Phase 1,All,Treatment,Parallel Assignment,Randomized,12.0,7,elderly-adults
+Terminated,No,579.0,Phase 2,All,Treatment,Parallel Assignment,Randomized,36.0,2,elderly-adults
+Terminated,Accept,371.0,Phase 1,All,Treatment,Single Group Assignment,SingleArmNA,9.0,1,elderly-adults
+Terminated,Accept,234.0,Phase 1,All,Treatment,Parallel Assignment,Randomized,62.0,2,adults
+Terminated,No,1129.0,Phase 2,All,Treatment,Parallel Assignment,Randomized,242.0,1,infants
+Terminated,No,207.0,Not Applicable,All,Basic Science,Crossover Assignment,Randomized,13.0,2,elderly-adults
+Terminated,No,1005.0,Phase 4,All,Treatment,Single Group Assignment,SingleArmNA,11.0,2,elderly-adults
+Terminated,No,92.0,Phase 3,All,Treatment,Parallel Assignment,Randomized,2.0,2,elderly-adults
+Terminated,No,1794.0,Not Applicable,All,Treatment,Parallel Assignment,Non-Randomized,12.0,2,elderly-adults
+Terminated,No,700.0,Phase 2,All,Treatment,Parallel Assignment,Randomized,10.0,2,elderly-adults
+Terminated,No,1156.0,Phase 2,Female,Treatment,Parallel Assignment,Randomized,4.0,2,adults-childTeen
+Terminated,No,427.0,Phase 2,All,Prevention,Parallel Assignment,Randomized,7.0,2,elderly-adults
+Terminated,No,366.0,Not Applicable,All,Diagnostic,Crossover Assignment,Randomized,8698.0,2,infants
+Terminated,No,972.0,Phase 1|Phase 2,All,Treatment,Single Group Assignment,SingleArmNA,12.0,3,elderly-adults
+Terminated,No,418.0,Phase 2,All,Prevention,Parallel Assignment,Randomized,146.0,2,elderly-adults
+Terminated,No,275.0,Not Applicable,All,Treatment,Parallel Assignment,Randomized,6.0,2,elderly-adults
+Terminated,No,426.0,Phase 2,All,Diagnostic,Parallel Assignment,Randomized,23.0,2,elderly-adults
+Terminated,No,365.0,Phase 4,All,Treatment,Parallel Assignment,Randomized,13.0,2,childTeen-infants
+Terminated,No,243.0,Not Applicable,All,Diagnostic,Parallel Assignment,Randomized,90.0,1,elderly-adults
+Terminated,No,2230.0,Not Applicable,All,Treatment,Parallel Assignment,Randomized,1.0,1,infants
+Terminated,No,1824.0,Not Applicable,All,Diagnostic,Parallel Assignment,Randomized,18.0,1,elderly-adults
+Terminated,No,1283.0,Phase 4,All,Treatment,Parallel Assignment,Randomized,391.0,2,elderly-adults
+Terminated,No,701.0,Not Applicable,All,Treatment,Parallel Assignment,Randomized,279.0,2,infants
+Terminated,No,771.0,Not Applicable,All,Basic Science,Single Group Assignment,SingleArmNA,12.0,1,elderly-adults
+Terminated,No,2404.0,Phase 4,All,Treatment,Single Group Assignment,Non-Randomized,220.0,2,allAges
+Terminated,No,789.0,Phase 1|Phase 2,All,Treatment,Single Group Assignment,Randomized,2.0,1,elderly-adults
+Terminated,No,2040.0,Phase 3,All,Prevention,Parallel Assignment,Randomized,291.0,2,elderly-adults
+Terminated,No,485.0,Phase 3,All,Treatment,Parallel Assignment,Randomized,16.0,2,elderly-childTeen
+Terminated,No,321.0,Phase 3,All,Treatment,Parallel Assignment,Randomized,460.0,2,elderly-childTeen
+Terminated,No,999.0,Phase 4,All,Treatment,Parallel Assignment,Randomized,24.0,2,elderly-adults
+Terminated,No,884.0,Phase 2,All,Treatment,Parallel Assignment,Randomized,14.0,2,elderly-adults
+Terminated,No,365.0,Phase 2,All,Treatment,Parallel Assignment,Randomized,32.0,3,elderly-adults
+Terminated,Accept,1127.0,Phase 3,Female,Prevention,Parallel Assignment,Randomized,2891.0,2,adults-childTeen
+Terminated,No,214.0,Phase 3,All,Treatment,Parallel Assignment,Randomized,4.0,3,elderly-adults
+Terminated,No,744.0,Phase 2,All,Treatment,Parallel Assignment,Randomized,38.0,2,elderly-adults
+Terminated,No,137.0,Phase 4,All,Treatment,Parallel Assignment,Randomized,12.0,3,elderly-adults
+Terminated,No,518.0,Phase 2,All,Treatment,Parallel Assignment,Randomized,12.0,2,elderly-adults
+Terminated,No,3164.0,Not Applicable,All,Treatment,Single Group Assignment,SingleArmNA,4.0,1,elderly-adults
+Terminated,No,358.0,Phase 4,All,Prevention,Parallel Assignment,Non-Randomized,26.0,2,elderly-adults
+Terminated,No,964.0,Phase 4,All,Treatment,Single Group Assignment,SingleArmNA,5.0,1,adults-childTeen
+Terminated,No,151.0,Phase 3,All,Prevention,Parallel Assignment,Randomized,104.0,2,elderly-childTeen
+Terminated,No,304.0,Not Applicable,All,Diagnostic,Single Group Assignment,SingleArmNA,20.0,1,adults-infants
+Terminated,No,1357.0,Phase 3,All,Treatment,Parallel Assignment,Randomized,145.0,2,adults-infants
+Terminated,No,258.0,Phase 2,All,Treatment,Parallel Assignment,Non-Randomized,2.0,2,elderly-adults
+Terminated,No,234.0,Phase 4,All,Prevention,Single Group Assignment,SingleArmNA,40.0,1,adults
+Terminated,Accept,159.0,Phase 1,All,Prevention,Sequential Assignment,Randomized,14.0,3,adults
+Terminated,No,884.0,Phase 1,All,Treatment,Parallel Assignment,Randomized,20.0,1,adults-infants
+Terminated,No,275.0,Phase 4,All,Treatment,Single Group Assignment,SingleArmNA,105.0,1,elderly-adults
+Terminated,No,2540.0,Phase 1,All,Treatment,Parallel Assignment,Non-Randomized,142.0,4,childTeen-infants
+Terminated,No,1155.0,Phase 3,All,Treatment,Parallel Assignment,Randomized,358.0,1,elderly-adults
+Terminated,No,1247.0,Phase 4,All,Prevention,Parallel Assignment,Randomized,28.0,2,elderly-adults
+Terminated,Accept,579.0,Phase 1|Phase 2,All,Treatment,Single Group Assignment,SingleArmNA,33.0,1,elderly-adults
+Terminated,No,273.0,Early Phase 1,Female,Treatment,Single Group Assignment,Randomized,50.0,2,elderly-adults
+Terminated,No,1004.0,Phase 4,All,Treatment,Parallel Assignment,Randomized,44.0,2,elderly-adults
+Terminated,No,303.0,Phase 1|Phase 2,Female,Treatment,Parallel Assignment,Randomized,8.0,2,elderly-adults
+Terminated,No,304.0,Phase 3,All,Treatment,Parallel Assignment,Randomized,50.0,2,elderly-adults
+Terminated,No,184.0,Phase 2,All,Treatment,Single Group Assignment,SingleArmNA,2.0,1,elderly-adults
+Terminated,No,1188.0,Phase 2,All,Treatment,Single Group Assignment,SingleArmNA,17.0,1,elderly-adults
+Terminated,No,668.0,Phase 4,All,Treatment,Parallel Assignment,Randomized,99.0,2,elderly-adults
+Terminated,No,1948.0,Not Applicable,All,Prevention,Parallel Assignment,Randomized,25.0,2,elderly-adults
+Terminated,No,1979.0,Phase 2,All,Treatment,Single Group Assignment,SingleArmNA,300.0,1,elderly-adults
+Terminated,No,945.0,Not Applicable,All,Treatment,Parallel Assignment,Randomized,400.0,1,elderly-adults
+Terminated,No,376.0,Phase 3,All,Treatment,Parallel Assignment,Randomized,143.0,3,elderly-adults
+Terminated,No,123.0,Phase 4,Female,Treatment,Parallel Assignment,Randomized,133.0,2,adults
+Terminated,No,306.0,Phase 2,Female,Treatment,Parallel Assignment,Randomized,392.0,4,adults
+Terminated,No,822.0,Phase 4,All,Prevention,Single Group Assignment,Non-Randomized,10.0,1,elderly-adults
+Terminated,No,700.0,Phase 3,All,Prevention,Parallel Assignment,Randomized,1200.0,2,elderly-adults
+Terminated,No,1461.0,Phase 3,All,Treatment,Parallel Assignment,Non-Randomized,31.0,1,childTeen-infants
+Terminated,No,1766.0,Phase 2,All,Supportive Care,Single Group Assignment,SingleArmNA,13.0,2,elderly-adults
+Terminated,No,974.0,Phase 3,All,Treatment,Parallel Assignment,Non-Randomized,23.0,1,childTeen-infants
+Terminated,No,668.0,Phase 3,All,Treatment,Parallel Assignment,Randomized,30.0,2,infants
+Terminated,No,184.0,Phase 4,All,Treatment,Single Group Assignment,Non-Randomized,6.0,2,elderly-adults
+Terminated,No,482.0,Phase 4,All,Treatment,Single Group Assignment,SingleArmNA,43.0,1,elderly-adults
+Terminated,No,2192.0,Not Applicable,All,Treatment,Single Group Assignment,SingleArmNA,11.0,1,elderly-adults
+Terminated,No,62.0,Phase 2,All,Treatment,Single Group Assignment,Non-Randomized,2.0,2,allAges
+Terminated,No,641.0,Not Applicable,All,Other,Parallel Assignment,Randomized,12.0,1,elderly-adults
+Terminated,No,823.0,Phase 2,All,Treatment,Parallel Assignment,Randomized,17.0,2,elderly-adults
+Terminated,Accept,1418.0,Not Applicable,Female,Basic Science,Single Group Assignment,SingleArmNA,190.0,1,adults
+Terminated,No,368.0,Phase 2|Phase 3,All,Treatment,Parallel Assignment,Randomized,1.0,3,adults-infants
+Terminated,No,426.0,Phase 4,All,Treatment,Parallel Assignment,Randomized,194.0,1,childTeen-infants
+Terminated,No,1796.0,Not Applicable,All,Treatment,Parallel Assignment,Randomized,25.0,2,elderly-adults
+Terminated,No,2069.0,Not Applicable,All,Other,Parallel Assignment,Randomized,975.0,1,allAges
+Terminated,Accept,304.0,Phase 1,All,Treatment,Parallel Assignment,Randomized,5.0,3,adults
+Terminated,No,735.0,Phase 2,All,Treatment,Single Group Assignment,SingleArmNA,7.0,1,elderly-adults
+Terminated,Accept,1778.0,Phase 3,All,Prevention,Parallel Assignment,Randomized,9302.0,2,elderly-adults
+Terminated,No,556.0,Phase 2,All,Treatment,Parallel Assignment,Randomized,17.0,3,elderly-adults
+Terminated,No,578.0,Phase 4,All,Prevention,Parallel Assignment,Randomized,76.0,2,elderly-adults
+Terminated,No,1286.0,Phase 2,All,Prevention,Factorial Assignment,Randomized,2.0,1,elderly-adults
+Terminated,No,365.0,Not Applicable,All,Treatment,Parallel Assignment,Randomized,30.0,1,elderly-adults
+Terminated,No,942.0,Phase 2,All,Treatment,Single Group Assignment,SingleArmNA,8.0,1,elderly-adults
+Terminated,Accept,888.0,Phase 2,All,Prevention,Parallel Assignment,Randomized,560.0,2,infants
+Terminated,Accept,92.0,Phase 1,All,Treatment,Parallel Assignment,Randomized,36.0,3,adults
+Terminated,Accept,450.0,Phase 1,All,Treatment,Single Group Assignment,SingleArmNA,15.0,2,elderly-adults
+Terminated,Accept,1338.0,Phase 2,All,Prevention,Parallel Assignment,Randomized,74.0,2,infants
+Terminated,No,884.0,Phase 3,All,Treatment,Parallel Assignment,Randomized,33.0,2,infants
+Terminated,Accept,154.0,Not Applicable,All,Prevention,Parallel Assignment,Randomized,25.0,2,elderly-adults
+Terminated,No,122.0,Phase 1,All,Prevention,Parallel Assignment,Randomized,1.0,2,elderly-adults
+Terminated,No,1110.0,Not Applicable,All,Treatment,Parallel Assignment,Randomized,104.0,3,elderly-adults
+Terminated,Accept,153.0,Phase 1,All,Treatment,Parallel Assignment,Randomized,24.0,3,elderly-adults
+Terminated,No,1188.0,Phase 2|Phase 3,All,Treatment,Parallel Assignment,Randomized,64.0,1,elderly-childTeen
+Terminated,No,669.0,Phase 4,All,Treatment,Parallel Assignment,Randomized,72.0,1,elderly-adults
+Terminated,No,365.0,Phase 4,All,Prevention,Single Group Assignment,SingleArmNA,36.0,1,elderly-adults
+Terminated,No,426.0,Phase 2,Male,Treatment,Single Group Assignment,SingleArmNA,20.0,1,elderly-adults
+Terminated,No,1505.0,Phase 2,All,Treatment,Parallel Assignment,Randomized,51.0,2,infants
+Terminated,No,487.0,Phase 2,All,Treatment,Parallel Assignment,Randomized,15.0,2,elderly-adults
+Terminated,No,198.0,Phase 4,All,Diagnostic,Single Group Assignment,SingleArmNA,14.0,2,elderly-adults
+Terminated,No,2661.0,Phase 2,All,Treatment,Single Group Assignment,SingleArmNA,2.0,9,adults
+Terminated,No,1414.0,Phase 4,All,Prevention,Parallel Assignment,Randomized,65.0,2,elderly-adults
+Terminated,No,640.0,Phase 3,Female,Treatment,Parallel Assignment,Randomized,87.0,3,elderly-adults
+Terminated,No,456.0,Phase 3,All,Treatment,Parallel Assignment,Randomized,7.0,5,adults-infants
+Terminated,No,1345.0,Phase 2,All,Treatment,Sequential Assignment,SingleArmNA,13.0,1,elderly-adults
+Terminated,No,1218.0,Phase 4,All,Treatment,Parallel Assignment,Randomized,98.0,2,elderly-adults
+Terminated,No,3624.0,Phase 4,All,Treatment,Parallel Assignment,Randomized,228.0,1,elderly-childTeen
+Terminated,No,511.0,Phase 1|Phase 2,All,Treatment,Parallel Assignment,Non-Randomized,5.0,2,elderly-adults
+Terminated,No,823.0,Phase 1|Phase 2,All,Prevention,Parallel Assignment,Randomized,7.0,1,infants
+Terminated,No,577.0,Phase 4,All,Treatment,Parallel Assignment,Randomized,156.0,1,elderly-adults
+Terminated,No,1218.0,Not Applicable,All,Diagnostic,Single Group Assignment,SingleArmNA,200.0,1,elderly-adults
+Terminated,No,1446.0,Phase 2,All,Treatment,Parallel Assignment,Randomized,71.0,9,elderly-adults
+Terminated,Accept,1461.0,Phase 2|Phase 3,All,Treatment,Crossover Assignment,Randomized,81.0,2,elderly-adults
+Terminated,No,1308.0,Phase 3,Female,Prevention,Parallel Assignment,Randomized,645.0,1,elderly-childTeen
+Terminated,No,733.0,Phase 1|Phase 2,All,Treatment,Sequential Assignment,Randomized,10.0,2,elderly-adults
+Terminated,No,544.0,Not Applicable,All,Prevention,Parallel Assignment,Randomized,90.0,1,adults-childTeen
+Terminated,Accept,245.0,Phase 4,All,Prevention,Parallel Assignment,Randomized,720.0,3,infants
+Terminated,No,433.0,Phase 2,All,Treatment,Parallel Assignment,Randomized,16.0,2,elderly-adults
+Terminated,No,670.0,Phase 4,All,Treatment,Parallel Assignment,Randomized,44.0,2,elderly-adults
+Terminated,Accept,1129.0,Phase 1,All,Other,Parallel Assignment,Randomized,2.0,4,adults
+Terminated,No,1067.0,Not Applicable,All,Treatment,Parallel Assignment,Randomized,63.0,2,adults
+Terminated,No,79.0,Phase 1|Phase 2,All,Treatment,Parallel Assignment,Randomized,2.0,3,elderly-adults
+Terminated,No,244.0,Phase 4,All,Treatment,Parallel Assignment,Randomized,5.0,1,elderly-adults
+Terminated,No,785.0,Phase 4,All,Treatment,Parallel Assignment,Randomized,92.0,3,elderly-adults
+Terminated,No,639.0,Phase 3,All,Treatment,Parallel Assignment,Randomized,3.0,7,elderly-adults
+Terminated,No,2100.0,Phase 4,All,Treatment,Parallel Assignment,Randomized,130.0,1,elderly-adults
+Terminated,No,822.0,Phase 3,All,Treatment,Parallel Assignment,Randomized,40.0,2,infants
+Terminated,No,912.0,Phase 2,All,Treatment,Parallel Assignment,Randomized,108.0,3,elderly-adults
+Terminated,No,1919.0,Phase 4,All,Treatment,Single Group Assignment,Non-Randomized,9.0,1,elderly-adults
+Terminated,Accept,353.0,Phase 2|Phase 3,All,Health Services Research,Parallel Assignment,Randomized,30.0,5,elderly-adults
+Terminated,Accept,396.0,Phase 1,All,Treatment,Parallel Assignment,Randomized,18.0,2,adults
+Terminated,No,1064.0,Phase 4,All,Treatment,Single Group Assignment,SingleArmNA,9.0,1,elderly-adults
+Terminated,Accept,878.0,Phase 2,All,Prevention,Parallel Assignment,Randomized,142.0,2,adults
+Terminated,Accept,396.0,Phase 1,All,Prevention,Parallel Assignment,Non-Randomized,9.0,6,adults
+Terminated,No,973.0,Phase 4,All,Treatment,Parallel Assignment,Randomized,12.0,3,elderly-adults
+Terminated,No,914.0,Phase 2,All,Prevention,Parallel Assignment,Randomized,92.0,2,elderly-adults
+Terminated,No,299.0,Phase 4,All,Treatment,Single Group Assignment,SingleArmNA,50.0,1,elderly-adults
+Terminated,Accept,1367.0,Phase 1,All,Treatment,Parallel Assignment,Randomized,27.0,2,adults
+Terminated,No,2281.0,Phase 1,All,Treatment,Single Group Assignment,SingleArmNA,1.0,1,childTeen-infants
+Terminated,No,998.0,Phase 2|Phase 3,All,Treatment,Parallel Assignment,Randomized,21.0,2,elderly-adults
+Terminated,No,943.0,Not Applicable,All,Treatment,Parallel Assignment,Randomized,21.0,2,elderly-adults
+Terminated,No,237.0,Phase 1,All,Treatment,Single Group Assignment,SingleArmNA,7.0,2,elderly-adults
+Terminated,No,719.0,Phase 2|Phase 3,All,Treatment,Parallel Assignment,Randomized,97.0,2,childTeen-infants
+Terminated,No,761.0,Phase 4,All,Treatment,Parallel Assignment,Non-Randomized,6.0,1,elderly-adults
+Terminated,No,975.0,Phase 2,All,Treatment,Parallel Assignment,Randomized,25.0,2,elderly-adults
+Terminated,No,1673.0,Phase 2,All,Treatment,Parallel Assignment,Randomized,43.0,5,elderly-adults
+Terminated,No,1126.0,Phase 4,All,Treatment,Parallel Assignment,Randomized,151.0,2,elderly-adults
+Terminated,No,1096.0,Not Applicable,All,Treatment,Parallel Assignment,Randomized,53.0,1,childTeen-infants
+Terminated,No,176.0,Phase 2|Phase 3,All,Treatment,Single Group Assignment,SingleArmNA,13.0,1,elderly-childTeen
+Terminated,No,762.0,Phase 3,All,Treatment,Parallel Assignment,Randomized,68.0,2,elderly-adults
+Terminated,Accept,1916.0,Phase 2|Phase 3,All,Prevention,Parallel Assignment,Randomized,1354.0,3,infants
+Terminated,No,696.0,Phase 2,All,Prevention,Parallel Assignment,Randomized,155.0,2,elderly-adults
+Terminated,Accept,158.0,Phase 1,Male,Prevention,Single Group Assignment,SingleArmNA,3.0,1,adults
+Terminated,No,797.0,Phase 1|Phase 2,All,Treatment,Parallel Assignment,Randomized,9.0,2,elderly-adults
+Terminated,No,1369.0,Phase 4,All,Prevention,Parallel Assignment,Randomized,60.0,2,elderly-adults
+Terminated,Accept,93.0,Phase 2,Male,Prevention,Sequential Assignment,Randomized,10.0,3,adults
+Terminated,No,791.0,Phase 3,All,Treatment,Parallel Assignment,Randomized,10.0,2,elderly-adults
+Terminated,No,1126.0,Phase 4,All,Treatment,Single Group Assignment,SingleArmNA,21.0,1,childTeen-infants
+Terminated,No,1228.0,Phase 3,All,Treatment,Parallel Assignment,Randomized,121.0,5,elderly-adults
+Terminated,No,973.0,Phase 2,All,Treatment,Parallel Assignment,Randomized,10.0,3,elderly-adults
+Terminated,No,470.0,Phase 2,All,Treatment,Parallel Assignment,Non-Randomized,14.0,2,elderly-adults
+Terminated,No,577.0,Phase 4,All,Prevention,Parallel Assignment,Randomized,40.0,1,allAges
+Terminated,Accept,31.0,Phase 2,All,Prevention,Parallel Assignment,Randomized,20.0,2,adults
+Terminated,Accept,146.0,Phase 4,All,Prevention,Single Group Assignment,SingleArmNA,18.0,1,infants
+Terminated,Accept,42.0,Not Applicable,Female,Diagnostic,Single Group Assignment,SingleArmNA,295.0,1,elderly-childTeen
+Terminated,No,1613.0,Phase 3,Male,Treatment,Parallel Assignment,Randomized,64.0,2,allAges
+Terminated,No,640.0,Not Applicable,All,Diagnostic,Single Group Assignment,SingleArmNA,218.0,1,elderly-adults
+Terminated,Accept,850.0,Phase 3,Female,Prevention,Parallel Assignment,Randomized,2160.0,1,adults
+Terminated,Accept,81.0,Phase 1,All,Treatment,Sequential Assignment,Randomized,32.0,2,adults
+Terminated,No,365.0,Phase 3,All,Treatment,Parallel Assignment,Randomized,6.0,2,elderly-adults
+Terminated,No,1491.0,Phase 2,All,Treatment,Parallel Assignment,Randomized,47.0,7,adults-infants
+Terminated,No,243.0,Phase 2,All,Prevention,Parallel Assignment,Randomized,46.0,5,infants
+Terminated,Accept,31.0,Phase 2,All,Prevention,Single Group Assignment,SingleArmNA,20.0,1,adults
+Terminated,Accept,122.0,Phase 3,All,Prevention,Parallel Assignment,Randomized,61.0,2,elderly-childTeen
+Terminated,No,971.0,Phase 2,All,Treatment,Parallel Assignment,Randomized,20.0,6,elderly-adults
+Terminated,Accept,2556.0,Not Applicable,All,Prevention,Factorial Assignment,Non-Randomized,36502.0,1,adults-childTeen
+Terminated,No,122.0,Phase 3,All,Treatment,Single Group Assignment,Non-Randomized,65.0,1,elderly-adults
+Terminated,No,243.0,Phase 3,All,Prevention,Parallel Assignment,Randomized,99.0,2,elderly-adults
+Terminated,No,549.0,Phase 4,All,Prevention,Single Group Assignment,Non-Randomized,51.0,1,infants
+Terminated,No,303.0,Phase 4,All,Treatment,Parallel Assignment,Randomized,10.0,2,elderly-adults

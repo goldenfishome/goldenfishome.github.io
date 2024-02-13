@@ -1,0 +1,1287 @@
+﻿OverallStatus,HealthyVolunteers,DurationDays,Phase,Gender,DesignPrimaryPurpose,DesignInterventionModel,DesignAllocation,EnrollmentCount,ArmNumber,AgeGroups,AdverseEffectsorDeath
+Completed,No,relatively_shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,smallEnrol,4,elderly-adults,very_highAD
+Completed,No,relatively_shortLen,Phase 1,All,Treatment,Parallel Assignment,Non-Randomized,smallEnrol,2,childTeen-infants,highAD
+Completed,No,relatively_shortLen,Phase 3,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,1,elderly-childTeen,very_highAD
+Completed,No,relatively_shortLen,Phase 3,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,1,allAges,highAD
+Completed,No,relatively_shortLen,Phase 4,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,1,elderly-adults,highAD
+Completed,No,relatively_shortLen,Phase 2,All,Treatment,Parallel Assignment,Randomized,smallEnrol,2,elderly-adults,very_highAD
+Completed,Accept,shortLen,Phase 1|Phase 2,Male,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,2,childTeen,noAD
+Completed,No,medianLen,Phase 2,All,Prevention,Crossover Assignment,Randomized,smallEnrol,2,elderly-childTeen,very_highAD
+Completed,No,relatively_shortLen,Phase 1,All,Basic Science,Single Group Assignment,SingleArmNA,smallEnrol,1,childTeen-infants,highAD
+Completed,No,relatively_shortLen,Phase 3,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,1,allAges,very_highAD
+Completed,Accept,shortLen,Phase 4,Male,Basic Science,Crossover Assignment,Randomized,smallEnrol,2,adults,noAD
+Terminated,No,medianLen,Phase 1,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,1,infants,very_highAD
+Completed,Accept,shortLen,Phase 1,All,Basic Science,Crossover Assignment,Randomized,smallEnrol,7,adults,noAD
+Completed,No,shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,median_Enrol,3,elderly-adults,highAD
+Completed,No,shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,median_Enrol,2,elderly-adults,highAD
+Completed,No,shortLen,Phase 2,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,3,elderly-adults,highAD
+Completed,No,relatively_shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,median_Enrol,4,elderly-adults,highAD
+Completed,No,relatively_shortLen,Phase 2,All,Treatment,Parallel Assignment,Randomized,median_Enrol,6,elderly-adults,highAD
+Completed,No,relatively_shortLen,Not Applicable,All,Diagnostic,Parallel Assignment,Randomized,relatively_smallEnrol,2,infants,noAD
+Completed,Accept,shortLen,Phase 2,Female,Prevention,Parallel Assignment,Non-Randomized,smallEnrol,1,adults,noAD
+Completed,No,shortLen,Phase 4,All,Diagnostic,Single Group Assignment,SingleArmNA,smallEnrol,1,adults-infants,noAD
+Completed,No,relatively_shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,median_Enrol,4,elderly-adults,highAD
+Completed,No,relatively_shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,median_Enrol,2,elderly-adults,highAD
+Completed,No,shortLen,Phase 2,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,3,elderly-adults,highAD
+Completed,No,relatively_shortLen,Phase 2,All,Treatment,Parallel Assignment,Randomized,smallEnrol,2,elderly-adults,very_highAD
+Completed,No,relatively_shortLen,Phase 3,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,1,elderly-adults,noAD
+Completed,No,longLen,Phase 3,All,Supportive Care,Parallel Assignment,Randomized,relatively_smallEnrol,3,elderly-adults,highAD
+Completed,No,relatively_shortLen,Phase 3,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,1,allAges,highAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,largeEnrol,4,infants,highAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,largeEnrol,5,infants,highAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,largeEnrol,5,infants,highAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,largeEnrol,8,infants,highAD
+Completed,No,relatively_shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,median_Enrol,2,elderly-adults,highAD
+Terminated,Accept,relatively_shortLen,Not Applicable,Female,Treatment,Parallel Assignment,Randomized,smallEnrol,2,elderly-adults,noAD
+Completed,No,relatively_shortLen,Not Applicable,All,Treatment,Single Group Assignment,Non-Randomized,smallEnrol,2,elderly-adults,noAD
+Completed,No,relatively_shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,median_Enrol,3,elderly-adults,highAD
+Completed,No,shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,median_Enrol,2,elderly-adults,highAD
+Completed,No,shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,median_Enrol,2,elderly-adults,highAD
+Terminated,No,relatively_shortLen,Phase 4,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,2,elderly-adults,medianAD
+Completed,No,relatively_shortLen,Phase 3,All,Treatment,Parallel Assignment,Non-Randomized,smallEnrol,2,allAges,very_highAD
+Completed,No,relatively_shortLen,Phase 4,All,Treatment,Parallel Assignment,Non-Randomized,smallEnrol,2,elderly-adults,highAD
+Completed,No,shortLen,Phase 3,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,1,elderly-adults,noAD
+Completed,No,relatively_shortLen,Not Applicable,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,1,elderly-adults,noAD
+Completed,Accept,relatively_shortLen,Phase 1,All,Basic Science,Parallel Assignment,Randomized,relatively_smallEnrol,4,elderly-adults,medianAD
+Completed,No,shortLen,Phase 2,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,3,elderly-adults,highAD
+Completed,No,medianLen,Not Applicable,All,Other,Single Group Assignment,SingleArmNA,smallEnrol,1,childTeen,noAD
+Completed,No,relatively_shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,median_Enrol,2,allAges,medianAD
+Completed,No,shortLen,Phase 3,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,1,allAges,highAD
+Terminated,No,shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,smallEnrol,3,elderly-adults,very_highAD
+Completed,No,relatively_shortLen,Phase 2|Phase 3,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,2,allAges,highAD
+Completed,No,medianLen,Phase 4,All,Prevention,Single Group Assignment,SingleArmNA,smallEnrol,1,childTeen-infants,very_highAD
+Completed,No,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,smallEnrol,1,elderly-adults,noAD
+Completed,No,relatively_shortLen,Phase 3,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,1,allAges,very_highAD
+Completed,Accept,shortLen,Phase 3,All,Prevention,Single Group Assignment,SingleArmNA,relatively_smallEnrol,1,allAges,medianAD
+Completed,No,shortLen,Phase 2,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,2,elderly-adults,highAD
+Completed,No,medianLen,Not Applicable,All,Treatment,Parallel Assignment,Randomized,smallEnrol,2,elderly-adults,highAD
+Completed,No,relatively_shortLen,Phase 4,All,Treatment,Single Group Assignment,Randomized,smallEnrol,2,elderly-adults,noAD
+Completed,No,relatively_shortLen,Phase 1,All,Treatment,Parallel Assignment,Non-Randomized,smallEnrol,5,childTeen-infants,highAD
+Completed,Accept,shortLen,Phase 3,All,Prevention,Single Group Assignment,SingleArmNA,median_Enrol,5,infants,highAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,relatively_smallEnrol,6,infants,highAD
+Completed,Accept,relatively_shortLen,Phase 2,Female,Prevention,Parallel Assignment,Randomized,smallEnrol,2,adults,very_highAD
+Completed,No,relatively_shortLen,Phase 2,Female,Prevention,Parallel Assignment,Non-Randomized,relatively_smallEnrol,1,adults,very_highAD
+Completed,Accept,relatively_shortLen,Not Applicable,All,Treatment,Parallel Assignment,Non-Randomized,smallEnrol,1,allAges,noAD
+Completed,No,longLen,Phase 3,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,1,allAges,very_highAD
+Completed,No,longLen,Phase 3,All,Supportive Care,Parallel Assignment,Randomized,relatively_smallEnrol,4,adults-infants,highAD
+Terminated,Accept,relatively_shortLen,Phase 1,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,1,elderly-adults,noAD
+Completed,No,relatively_shortLen,Phase 4,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,1,childTeen-infants,highAD
+Terminated,Accept,shortLen,Phase 1,All,Treatment,Parallel Assignment,Randomized,smallEnrol,2,adults,noAD
+Completed,No,relatively_shortLen,Not Applicable,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,2,childTeen-infants,highAD
+Completed,Accept,longLen,Phase 2,All,Prevention,Single Group Assignment,SingleArmNA,smallEnrol,1,elderly-childTeen,highAD
+Completed,No,relatively_shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,largeEnrol,2,elderly-adults,very_highAD
+Completed,No,relatively_shortLen,Phase 2,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,2,elderly-childTeen,very_highAD
+Completed,No,shortLen,Phase 2,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,2,allAges,medianAD
+Completed,Accept,longLen,Phase 2,All,Prevention,Single Group Assignment,SingleArmNA,median_Enrol,1,elderly-childTeen,highAD
+Completed,No,relatively_shortLen,Phase 3,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,1,allAges,very_highAD
+Completed,No,relatively_shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,largeEnrol,2,allAges,medianAD
+Completed,No,medianLen,Phase 3,All,Treatment,Single Group Assignment,Non-Randomized,smallEnrol,3,allAges,very_highAD
+Completed,Accept,medianLen,Phase 1|Phase 2,All,Basic Science,Single Group Assignment,Randomized,smallEnrol,2,adults,noAD
+Completed,No,relatively_shortLen,Phase 2,Female,Prevention,Parallel Assignment,Randomized,relatively_smallEnrol,2,adults,highAD
+Completed,No,relatively_shortLen,Phase 4,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,1,allAges,noAD
+Completed,No,medianLen,Phase 4,All,Treatment,Parallel Assignment,Randomized,smallEnrol,4,childTeen-infants,noAD
+Completed,No,relatively_shortLen,Phase 3,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,1,allAges,very_highAD
+Completed,Accept,shortLen,Phase 1,All,Other,Crossover Assignment,Randomized,smallEnrol,2,adults,noAD
+Completed,Accept,shortLen,Phase 2,All,Treatment,Single Group Assignment,Randomized,smallEnrol,3,elderly-adults,highAD
+Terminated,No,relatively_shortLen,Phase 4,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,2,elderly-adults,highAD
+Completed,Accept,shortLen,Phase 1,All,Treatment,Sequential Assignment,Randomized,smallEnrol,2,adults-childTeen,noAD
+Completed,Accept,shortLen,Phase 1,All,Treatment,Crossover Assignment,Randomized,smallEnrol,2,adults,noAD
+Completed,No,shortLen,Phase 1,All,Treatment,Parallel Assignment,Non-Randomized,smallEnrol,1,elderly-adults,highAD
+Completed,Accept,shortLen,Phase 1,All,Treatment,Crossover Assignment,Randomized,smallEnrol,2,elderly-adults,noAD
+Completed,Accept,relatively_shortLen,Phase 1,All,Treatment,Crossover Assignment,Randomized,smallEnrol,3,adults,noAD
+Completed,Accept,medianLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,relatively_smallEnrol,2,elderly-adults,very_highAD
+Completed,Accept,relatively_shortLen,Phase 4,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,1,elderly-adults,noAD
+Completed,No,relatively_shortLen,Phase 4,All,Treatment,Parallel Assignment,Randomized,largeEnrol,3,allAges,noAD
+Terminated,No,shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,smallEnrol,2,elderly-adults,very_highAD
+Completed,Accept,shortLen,Not Applicable,All,Supportive Care,Parallel Assignment,Non-Randomized,relatively_smallEnrol,1,elderly-adults,noAD
+Terminated,No,relatively_shortLen,Phase 2,All,Treatment,Parallel Assignment,Randomized,smallEnrol,2,elderly-adults,noAD
+Completed,Accept,shortLen,Phase 1,All,Basic Science,Single Group Assignment,Non-Randomized,smallEnrol,2,elderly-adults,highAD
+Terminated,No,medianLen,Phase 2,Female,Treatment,Parallel Assignment,Randomized,smallEnrol,2,adults-childTeen,noAD
+Completed,No,longLen,Phase 4,All,Treatment,Parallel Assignment,Randomized,median_Enrol,3,elderly-childTeen,highAD
+Terminated,No,relatively_shortLen,Phase 1|Phase 2,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,3,elderly-adults,noAD
+Terminated,No,shortLen,Not Applicable,All,Treatment,Parallel Assignment,Randomized,smallEnrol,2,elderly-adults,noAD
+Completed,No,shortLen,Not Applicable,All,Treatment,Parallel Assignment,Randomized,smallEnrol,2,elderly-adults,noAD
+Completed,No,relatively_shortLen,Phase 2,All,Treatment,Parallel Assignment,Randomized,median_Enrol,2,elderly-adults,very_highAD
+Completed,No,shortLen,Phase 4,All,Treatment,Parallel Assignment,Randomized,median_Enrol,2,elderly-adults,noAD
+Completed,No,relatively_shortLen,Not Applicable,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,8,adults-infants,very_highAD
+Completed,No,shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,median_Enrol,2,elderly-adults,highAD
+Completed,No,longLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,smallEnrol,2,childTeen-infants,noAD
+Completed,Accept,shortLen,Phase 2,All,Prevention,Parallel Assignment,Randomized,median_Enrol,7,infants,highAD
+Completed,Accept,relatively_shortLen,Not Applicable,All,Basic Science,Parallel Assignment,Randomized,smallEnrol,3,adults,noAD
+Completed,No,relatively_shortLen,Phase 1|Phase 2,All,Treatment,Sequential Assignment,SingleArmNA,smallEnrol,1,elderly-adults,highAD
+Completed,No,relatively_shortLen,Phase 2,All,Treatment,Single Group Assignment,Non-Randomized,smallEnrol,2,elderly-childTeen,highAD
+Completed,No,longLen,Phase 2,All,Treatment,Single Group Assignment,Randomized,smallEnrol,2,infants,highAD
+Completed,No,medianLen,Phase 3,All,Supportive Care,Parallel Assignment,Randomized,median_Enrol,1,adults-infants,very_highAD
+Completed,No,relatively_shortLen,Phase 2,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,1,childTeen,highAD
+Completed,No,medianLen,Phase 3,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,1,allAges,very_highAD
+Completed,No,relatively_shortLen,Phase 2,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,4,elderly-adults,very_highAD
+Completed,Accept,relatively_shortLen,Phase 4,All,Treatment,Parallel Assignment,Randomized,median_Enrol,3,elderly-adults,highAD
+Completed,Accept,shortLen,Phase 2,All,Prevention,Parallel Assignment,Randomized,median_Enrol,5,infants,highAD
+Completed,No,relatively_shortLen,Phase 3,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,1,allAges,very_highAD
+Completed,Accept,medianLen,Phase 4,Female,Prevention,Parallel Assignment,Randomized,smallEnrol,2,elderly-adults,noAD
+Completed,Accept,shortLen,Phase 1,All,Treatment,Parallel Assignment,Non-Randomized,smallEnrol,1,elderly-adults,noAD
+Completed,No,medianLen,Not Applicable,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,1,elderly-adults,highAD
+Completed,No,medianLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,median_Enrol,2,elderly-adults,very_highAD
+Completed,No,shortLen,Phase 2,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,2,elderly-adults,highAD
+Terminated,No,longLen,Phase 4,All,Treatment,Single Group Assignment,Non-Randomized,relatively_smallEnrol,2,allAges,very_highAD
+Completed,No,shortLen,Phase 4,Female,Treatment,Single Group Assignment,SingleArmNA,relatively_smallEnrol,1,adults,noAD
+Completed,No,medianLen,Not Applicable,All,Prevention,Factorial Assignment,Randomized,largeEnrol,2,elderly-adults,very_highAD
+Completed,No,relatively_shortLen,Phase 4,All,Treatment,Parallel Assignment,Non-Randomized,relatively_smallEnrol,1,elderly-adults,very_highAD
+Completed,No,relatively_shortLen,Phase 2,All,Treatment,Parallel Assignment,Randomized,smallEnrol,2,elderly-adults,highAD
+Completed,No,relatively_shortLen,Not Applicable,All,Treatment,Factorial Assignment,Randomized,smallEnrol,2,elderly-adults,noAD
+Completed,No,relatively_shortLen,Phase 3,All,Treatment,Single Group Assignment,Non-Randomized,smallEnrol,1,allAges,highAD
+Completed,No,relatively_shortLen,Phase 4,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,2,adults-infants,noAD
+Completed,No,relatively_shortLen,Phase 2,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,2,elderly-adults,highAD
+Completed,No,relatively_shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,2,childTeen-infants,highAD
+Completed,No,longLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,median_Enrol,2,elderly-adults,very_highAD
+Terminated,No,relatively_shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,smallEnrol,2,elderly-childTeen,noAD
+Terminated,No,shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,median_Enrol,2,elderly-childTeen,medianAD
+Completed,No,relatively_shortLen,Not Applicable,All,Health Services Research,Parallel Assignment,Randomized,median_Enrol,1,elderly-adults,very_highAD
+Terminated,No,relatively_shortLen,Phase 4,All,Treatment,Parallel Assignment,Randomized,smallEnrol,2,elderly-adults,very_highAD
+Completed,No,relatively_shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,median_Enrol,2,allAges,medianAD
+Completed,Accept,relatively_shortLen,Phase 2,All,Prevention,Parallel Assignment,Randomized,median_Enrol,3,elderly-adults,highAD
+Completed,No,medianLen,Phase 4,All,Treatment,Parallel Assignment,Randomized,median_Enrol,4,infants,noAD
+Completed,No,shortLen,Phase 3,All,Treatment,Parallel Assignment,Non-Randomized,smallEnrol,1,elderly-adults,very_highAD
+Terminated,No,relatively_shortLen,Phase 2,All,Treatment,Parallel Assignment,Randomized,smallEnrol,2,elderly-adults,very_highAD
+Completed,No,medianLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,median_Enrol,2,infants,very_highAD
+Completed,No,relatively_shortLen,Phase 2,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,2,elderly-adults,very_highAD
+Completed,No,shortLen,Phase 2,All,Treatment,Parallel Assignment,Randomized,smallEnrol,4,elderly-adults,highAD
+Completed,No,relatively_shortLen,Phase 2,All,Treatment,Single Group Assignment,SingleArmNA,relatively_smallEnrol,1,elderly-adults,very_highAD
+Completed,Accept,shortLen,Not Applicable,All,Other,Single Group Assignment,SingleArmNA,largeEnrol,3,elderly-adults,noAD
+Completed,No,relatively_shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,smallEnrol,5,elderly-adults,very_highAD
+Completed,No,relatively_shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,median_Enrol,2,allAges,highAD
+Completed,No,relatively_shortLen,Phase 4,All,Treatment,Factorial Assignment,Randomized,smallEnrol,4,elderly-adults,very_highAD
+Completed,No,relatively_shortLen,Phase 2,All,Prevention,Parallel Assignment,Randomized,relatively_smallEnrol,4,elderly-adults,very_highAD
+Completed,No,shortLen,Phase 2,Female,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,1,elderly-adults,highAD
+Completed,No,relatively_shortLen,Phase 4,All,Treatment,Parallel Assignment,Randomized,median_Enrol,2,elderly-adults,very_highAD
+Completed,No,medianLen,Phase 1|Phase 2,All,Treatment,Single Group Assignment,Non-Randomized,relatively_smallEnrol,2,adults-infants,very_highAD
+Completed,No,shortLen,Phase 2,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,2,elderly-adults,highAD
+Completed,No,medianLen,Phase 4,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,1,adults-infants,noAD
+Completed,No,longLen,Phase 3,Female,Treatment,Parallel Assignment,Randomized,largeEnrol,1,adults-childTeen,medianAD
+Completed,No,medianLen,Phase 3,All,Supportive Care,Parallel Assignment,Randomized,relatively_smallEnrol,4,adults-infants,highAD
+Completed,No,relatively_shortLen,Phase 2,All,Prevention,Single Group Assignment,Non-Randomized,smallEnrol,2,childTeen-infants,noAD
+Terminated,Accept,medianLen,Phase 3,Female,Prevention,Parallel Assignment,Randomized,largeEnrol,2,adults-childTeen,very_highAD
+Completed,Accept,shortLen,Not Applicable,Female,Prevention,Single Group Assignment,SingleArmNA,smallEnrol,1,adults,noAD
+Terminated,No,shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,smallEnrol,3,elderly-adults,very_highAD
+Completed,No,relatively_shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,median_Enrol,3,elderly-adults,highAD
+Completed,No,longLen,Phase 2,All,Treatment,Parallel Assignment,Non-Randomized,smallEnrol,3,childTeen-infants,very_highAD
+Completed,No,longLen,Phase 1|Phase 2,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,10,allAges,very_highAD
+Completed,No,relatively_shortLen,Phase 2|Phase 3,All,Treatment,Parallel Assignment,Non-Randomized,smallEnrol,1,allAges,highAD
+Terminated,No,relatively_shortLen,Phase 2,All,Treatment,Parallel Assignment,Randomized,smallEnrol,2,elderly-adults,very_highAD
+Completed,No,shortLen,Phase 4,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,1,infants,highAD
+Completed,No,relatively_shortLen,Phase 3,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,1,allAges,highAD
+Terminated,No,relatively_shortLen,Phase 2,All,Treatment,Parallel Assignment,Randomized,smallEnrol,2,elderly-adults,noAD
+Completed,No,relatively_shortLen,Phase 2,All,Prevention,Parallel Assignment,Randomized,median_Enrol,2,elderly-adults,very_highAD
+Completed,Accept,medianLen,Phase 2,All,Prevention,Parallel Assignment,Randomized,largeEnrol,4,infants,very_highAD
+Completed,Accept,relatively_shortLen,Not Applicable,All,Prevention,Parallel Assignment,Randomized,relatively_smallEnrol,1,adults-infants,highAD
+Completed,Accept,relatively_shortLen,Phase 1,All,Prevention,Single Group Assignment,Randomized,smallEnrol,2,adults,highAD
+Completed,No,relatively_shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,median_Enrol,2,elderly-adults,highAD
+Completed,Accept,shortLen,Phase 1,All,Prevention,Parallel Assignment,Randomized,smallEnrol,2,infants,very_highAD
+Completed,Accept,relatively_shortLen,Not Applicable,Female,Treatment,Single Group Assignment,Randomized,relatively_smallEnrol,2,adults,noAD
+Completed,No,shortLen,Phase 2,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,3,elderly-adults,highAD
+Completed,No,relatively_shortLen,Phase 4,All,Treatment,Parallel Assignment,Randomized,smallEnrol,2,elderly-adults,very_highAD
+Completed,No,shortLen,Phase 2,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,2,elderly-adults,highAD
+Completed,No,relatively_shortLen,Not Applicable,All,Diagnostic,Single Group Assignment,SingleArmNA,relatively_smallEnrol,1,allAges,very_highAD
+Completed,No,relatively_shortLen,Phase 1,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,1,infants,highAD
+Completed,No,medianLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,2,elderly-adults,very_highAD
+Completed,No,relatively_shortLen,Phase 4,All,Treatment,Parallel Assignment,Non-Randomized,median_Enrol,2,elderly-adults,highAD
+Terminated,No,shortLen,Phase 4,All,Prevention,Parallel Assignment,Non-Randomized,smallEnrol,2,elderly-adults,very_highAD
+Completed,No,shortLen,Phase 4,All,Basic Science,Single Group Assignment,SingleArmNA,smallEnrol,1,elderly-adults,very_highAD
+Completed,Accept,relatively_shortLen,Phase 4,All,Prevention,Parallel Assignment,Randomized,largeEnrol,2,childTeen-infants,medianAD
+Terminated,No,relatively_shortLen,Phase 4,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,1,adults-childTeen,noAD
+Completed,No,medianLen,Phase 2,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,1,elderly-childTeen,very_highAD
+Terminated,Accept,shortLen,Phase 1,All,Prevention,Sequential Assignment,Randomized,smallEnrol,3,adults,noAD
+Completed,No,relatively_shortLen,Phase 4,All,Treatment,Parallel Assignment,Randomized,smallEnrol,1,elderly-childTeen,highAD
+Completed,No,medianLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,2,elderly-adults,very_highAD
+Completed,No,longLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,median_Enrol,2,elderly-adults,very_highAD
+Completed,Accept,medianLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,median_Enrol,1,elderly-childTeen,noAD
+Completed,No,relatively_shortLen,Phase 3,All,Treatment,Single Group Assignment,Randomized,smallEnrol,2,elderly-adults,noAD
+Terminated,No,longLen,Phase 1,All,Treatment,Parallel Assignment,Non-Randomized,relatively_smallEnrol,4,childTeen-infants,very_highAD
+Completed,Accept,relatively_shortLen,Phase 4,Male,Basic Science,Single Group Assignment,Non-Randomized,smallEnrol,1,adults,noAD
+Completed,No,longLen,Phase 3,All,Treatment,Single Group Assignment,SingleArmNA,relatively_smallEnrol,1,elderly-adults,very_highAD
+Completed,No,medianLen,Phase 4,All,Prevention,Parallel Assignment,Randomized,relatively_smallEnrol,3,allAges,noAD
+Completed,No,relatively_shortLen,Phase 2,All,Treatment,Parallel Assignment,Randomized,median_Enrol,3,allAges,medianAD
+Completed,No,medianLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,4,childTeen,medianAD
+Completed,No,medianLen,Phase 4,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,1,elderly-adults,very_highAD
+Completed,No,relatively_shortLen,Not Applicable,Female,Treatment,Parallel Assignment,Randomized,smallEnrol,2,adults,noAD
+Completed,No,relatively_shortLen,Phase 2,Female,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,2,adults,noAD
+"Active, not recruiting",No,longLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,largeEnrol,1,elderly-adults,very_highAD
+Completed,No,relatively_shortLen,Phase 2,Female,Prevention,Parallel Assignment,Randomized,relatively_smallEnrol,3,adults,medianAD
+Completed,No,relatively_shortLen,Phase 2,All,Prevention,Parallel Assignment,Randomized,smallEnrol,2,elderly-adults,very_highAD
+Completed,No,relatively_shortLen,Phase 3,Female,Treatment,Parallel Assignment,Randomized,median_Enrol,3,elderly-adults,medianAD
+Completed,Accept,medianLen,Not Applicable,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,3,elderly-adults,noAD
+Completed,Accept,relatively_shortLen,Phase 1,All,Prevention,Parallel Assignment,Randomized,smallEnrol,2,elderly-adults,noAD
+Terminated,Accept,relatively_shortLen,Phase 1|Phase 2,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,1,elderly-adults,noAD
+Completed,No,shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,median_Enrol,3,elderly-adults,highAD
+Completed,No,medianLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,median_Enrol,1,elderly-adults,very_highAD
+Completed,No,shortLen,Phase 4,All,Treatment,Single Group Assignment,Non-Randomized,smallEnrol,1,elderly-adults,highAD
+Completed,No,medianLen,Phase 2,All,Prevention,Single Group Assignment,SingleArmNA,smallEnrol,1,elderly-adults,highAD
+Completed,Accept,relatively_shortLen,Phase 2,Female,Treatment,Parallel Assignment,Randomized,smallEnrol,2,adults,noAD
+Terminated,No,relatively_shortLen,Phase 4,All,Treatment,Parallel Assignment,Randomized,smallEnrol,2,elderly-adults,noAD
+Completed,No,medianLen,Phase 4,Female,Treatment,Parallel Assignment,Randomized,median_Enrol,1,adults,noAD
+Completed,No,relatively_shortLen,Phase 4,Female,Treatment,Parallel Assignment,Randomized,smallEnrol,3,elderly-adults,noAD
+Completed,No,medianLen,Phase 2|Phase 3,All,Treatment,Parallel Assignment,Randomized,largeEnrol,4,elderly-childTeen,highAD
+Completed,Accept,shortLen,Phase 1|Phase 2,All,Treatment,Parallel Assignment,Randomized,smallEnrol,3,elderly-adults,noAD
+Completed,No,relatively_shortLen,Phase 2,All,Treatment,Parallel Assignment,Randomized,smallEnrol,2,elderly-adults,highAD
+Completed,Accept,medianLen,Phase 3,All,Prevention,Parallel Assignment,Non-Randomized,median_Enrol,5,infants,very_highAD
+Completed,No,longLen,Not Applicable,All,Prevention,Parallel Assignment,Randomized,largeEnrol,2,elderly-adults,noAD
+Completed,No,relatively_shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,median_Enrol,2,elderly-adults,highAD
+Completed,Accept,relatively_shortLen,Phase 2,All,Prevention,Parallel Assignment,Randomized,largeEnrol,8,infants,highAD
+Completed,Accept,shortLen,Phase 4,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,1,elderly-adults,noAD
+Terminated,No,shortLen,Phase 2,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,1,elderly-adults,noAD
+Completed,Accept,medianLen,Not Applicable,All,Prevention,Parallel Assignment,Randomized,median_Enrol,2,allAges,noAD
+Completed,No,medianLen,Phase 4,All,Prevention,Parallel Assignment,Randomized,smallEnrol,2,elderly-adults,noAD
+Completed,No,relatively_shortLen,Not Applicable,All,Prevention,Parallel Assignment,Randomized,very_largeEnrol,1,elderly-childTeen,noAD
+Terminated,No,medianLen,Phase 2,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,1,elderly-adults,very_highAD
+Completed,No,medianLen,Not Applicable,All,Prevention,Parallel Assignment,Randomized,relatively_smallEnrol,2,allAges,highAD
+Completed,No,medianLen,Not Applicable,All,Prevention,Parallel Assignment,Non-Randomized,relatively_smallEnrol,1,adults-infants,highAD
+Completed,No,shortLen,Not Applicable,All,Diagnostic,Single Group Assignment,SingleArmNA,largeEnrol,1,allAges,noAD
+Completed,No,shortLen,Phase 2,All,Treatment,Parallel Assignment,Randomized,smallEnrol,3,elderly-adults,noAD
+Completed,Accept,medianLen,Phase 2,Female,Prevention,Parallel Assignment,Randomized,median_Enrol,2,adults,highAD
+Completed,No,relatively_shortLen,Phase 2,All,Prevention,Parallel Assignment,Randomized,relatively_smallEnrol,6,elderly-adults,very_highAD
+Completed,Accept,relatively_shortLen,Phase 1|Phase 2,All,Prevention,Parallel Assignment,Randomized,relatively_smallEnrol,5,adults,highAD
+Completed,No,relatively_shortLen,Phase 2,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,2,elderly-adults,very_highAD
+Completed,Accept,shortLen,Phase 1,All,Prevention,Parallel Assignment,Randomized,smallEnrol,4,elderly,highAD
+Completed,Accept,shortLen,Phase 1,All,Prevention,Parallel Assignment,Randomized,smallEnrol,4,adults,noAD
+Completed,Accept,relatively_shortLen,Phase 1,All,Prevention,Parallel Assignment,Non-Randomized,smallEnrol,2,adults,highAD
+Completed,Accept,shortLen,Phase 1,Male,Prevention,Parallel Assignment,Randomized,smallEnrol,2,elderly-adults,noAD
+Completed,Accept,relatively_shortLen,Phase 2,All,Other,Parallel Assignment,Randomized,relatively_smallEnrol,2,elderly-adults,highAD
+Completed,Accept,shortLen,Phase 1,All,Prevention,Parallel Assignment,Randomized,relatively_smallEnrol,2,adults,noAD
+Completed,Accept,relatively_shortLen,Phase 2,All,Prevention,Parallel Assignment,Randomized,median_Enrol,5,infants,very_highAD
+Completed,Accept,relatively_shortLen,Phase 4,All,Prevention,Factorial Assignment,Randomized,median_Enrol,5,infants,highAD
+Completed,Accept,relatively_shortLen,Phase 2,All,Prevention,Parallel Assignment,Randomized,median_Enrol,5,infants,very_highAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Non-Randomized,relatively_smallEnrol,3,infants,highAD
+Completed,Accept,shortLen,Phase 3,All,Prevention,Parallel Assignment,Non-Randomized,relatively_smallEnrol,2,infants,medianAD
+Completed,Accept,shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,relatively_smallEnrol,2,infants,highAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,relatively_smallEnrol,2,infants,highAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,median_Enrol,2,infants,very_highAD
+Completed,Accept,relatively_shortLen,Phase 2,All,Prevention,Parallel Assignment,Randomized,relatively_smallEnrol,5,infants,highAD
+Completed,Accept,shortLen,Phase 3,All,Prevention,Parallel Assignment,Non-Randomized,relatively_smallEnrol,1,infants,noAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Non-Randomized,median_Enrol,1,infants,noAD
+Completed,Accept,shortLen,Phase 3,All,Prevention,Parallel Assignment,Non-Randomized,median_Enrol,3,infants,highAD
+Completed,Accept,shortLen,Phase 2,All,Prevention,Parallel Assignment,Randomized,smallEnrol,2,adults,noAD
+Completed,Accept,shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,median_Enrol,4,infants,highAD
+Completed,Accept,shortLen,Phase 3,All,Prevention,Parallel Assignment,Non-Randomized,relatively_smallEnrol,2,infants,highAD
+Completed,Accept,shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,median_Enrol,3,infants,very_highAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,median_Enrol,3,infants,highAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,median_Enrol,4,infants,very_highAD
+Completed,Accept,shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,median_Enrol,6,infants,highAD
+Completed,Accept,relatively_shortLen,Phase 2,All,Prevention,Parallel Assignment,Non-Randomized,relatively_smallEnrol,3,infants,medianAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Non-Randomized,median_Enrol,4,infants,highAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Non-Randomized,relatively_smallEnrol,2,infants,very_highAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,largeEnrol,3,infants,highAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Non-Randomized,median_Enrol,2,infants,highAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,median_Enrol,6,infants,very_highAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,median_Enrol,3,infants,highAD
+Completed,No,shortLen,Not Applicable,Female,Diagnostic,Single Group Assignment,SingleArmNA,median_Enrol,1,elderly-adults,noAD
+Completed,Accept,relatively_shortLen,Phase 1,Female,Treatment,Parallel Assignment,Randomized,smallEnrol,4,adults,noAD
+Completed,Accept,shortLen,Phase 2,All,Prevention,Parallel Assignment,Non-Randomized,relatively_smallEnrol,1,adults,medianAD
+Completed,Accept,relatively_shortLen,Phase 2,All,Prevention,Sequential Assignment,Randomized,median_Enrol,2,adults,highAD
+Completed,No,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,median_Enrol,2,elderly-adults,highAD
+Terminated,No,relatively_shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,3,elderly-adults,highAD
+Completed,Accept,relatively_shortLen,Phase 1|Phase 2,Female,Prevention,Parallel Assignment,Randomized,median_Enrol,6,adults,very_highAD
+Completed,No,relatively_shortLen,Phase 1|Phase 2,All,Treatment,Parallel Assignment,Randomized,smallEnrol,2,elderly-adults,noAD
+Completed,Accept,shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,median_Enrol,3,infants,highAD
+Completed,No,shortLen,Phase 1,All,Basic Science,Parallel Assignment,Randomized,relatively_smallEnrol,2,elderly-adults,highAD
+Completed,Accept,relatively_shortLen,Not Applicable,All,Treatment,Single Group Assignment,SingleArmNA,relatively_smallEnrol,1,elderly-adults,noAD
+Completed,Accept,medianLen,Phase 2,All,Prevention,Parallel Assignment,Randomized,relatively_smallEnrol,2,elderly,very_highAD
+Completed,Accept,shortLen,Phase 2,All,Prevention,Parallel Assignment,Randomized,median_Enrol,2,elderly-adults,highAD
+Completed,Accept,relatively_shortLen,Phase 2,All,Prevention,Parallel Assignment,Randomized,relatively_smallEnrol,3,elderly-adults,highAD
+Completed,No,medianLen,Phase 2,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,3,elderly-adults,very_highAD
+Completed,No,medianLen,Phase 3,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,1,allAges,very_highAD
+Completed,No,medianLen,Phase 2,All,Prevention,Single Group Assignment,SingleArmNA,smallEnrol,4,elderly-adults,very_highAD
+Completed,Accept,medianLen,Phase 2|Phase 3,Female,Prevention,Parallel Assignment,Randomized,relatively_smallEnrol,1,elderly-adults,noAD
+Completed,No,shortLen,Phase 2,Female,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,2,elderly-adults,noAD
+Terminated,No,shortLen,Phase 4,Female,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,2,adults,noAD
+Completed,No,shortLen,Phase 2,Female,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,4,adults,noAD
+Completed,No,shortLen,Phase 3,Female,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,2,elderly-childTeen,noAD
+Completed,No,shortLen,Phase 3,Female,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,2,elderly-childTeen,medianAD
+Completed,No,shortLen,Phase 3,Female,Treatment,Parallel Assignment,Randomized,median_Enrol,1,elderly-childTeen,medianAD
+Completed,No,shortLen,Phase 3,Female,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,2,elderly-childTeen,highAD
+Completed,No,relatively_shortLen,Not Applicable,All,Other,Single Group Assignment,SingleArmNA,relatively_smallEnrol,2,childTeen-infants,noAD
+Completed,No,medianLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,smallEnrol,2,elderly-adults,noAD
+Completed,No,relatively_shortLen,Phase 4,Female,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,2,elderly-adults,noAD
+Completed,No,shortLen,Not Applicable,All,Other,Single Group Assignment,SingleArmNA,median_Enrol,2,childTeen-infants,noAD
+Completed,No,shortLen,Phase 3,Female,Treatment,Single Group Assignment,SingleArmNA,median_Enrol,1,elderly-childTeen,medianAD
+Completed,No,longLen,Phase 2|Phase 3,All,Treatment,Factorial Assignment,Randomized,relatively_smallEnrol,3,adults-infants,very_highAD
+Completed,No,medianLen,Phase 3,All,Prevention,Single Group Assignment,Randomized,relatively_smallEnrol,2,adults,medianAD
+Completed,No,medianLen,Phase 4,All,Prevention,Single Group Assignment,Non-Randomized,smallEnrol,1,elderly-adults,very_highAD
+Terminated,No,medianLen,Phase 3,All,Treatment,Parallel Assignment,Non-Randomized,smallEnrol,1,childTeen-infants,very_highAD
+Completed,No,relatively_shortLen,Phase 3,All,Treatment,Single Group Assignment,Non-Randomized,smallEnrol,1,elderly-adults,highAD
+Terminated,No,medianLen,Phase 2,All,Supportive Care,Single Group Assignment,SingleArmNA,smallEnrol,2,elderly-adults,very_highAD
+Completed,No,medianLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,median_Enrol,2,allAges,very_highAD
+Completed,No,shortLen,Phase 3,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,1,allAges,highAD
+Completed,No,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,median_Enrol,2,elderly-childTeen,very_highAD
+Completed,No,shortLen,Phase 1,All,Prevention,Single Group Assignment,SingleArmNA,smallEnrol,1,elderly-adults,very_highAD
+Completed,No,relatively_shortLen,Phase 1,All,Prevention,Single Group Assignment,Randomized,relatively_smallEnrol,2,elderly-adults,very_highAD
+Completed,No,shortLen,Phase 1,All,Prevention,Single Group Assignment,SingleArmNA,smallEnrol,1,elderly-adults,highAD
+Completed,No,relatively_shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,2,elderly-adults,very_highAD
+Completed,No,relatively_shortLen,Phase 1,All,Prevention,Single Group Assignment,Non-Randomized,relatively_smallEnrol,2,elderly-adults,very_highAD
+Completed,No,relatively_shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,2,elderly-adults,very_highAD
+Completed,No,medianLen,Phase 3,All,Treatment,Single Group Assignment,Non-Randomized,smallEnrol,1,elderly-adults,very_highAD
+Terminated,No,relatively_shortLen,Phase 3,All,Treatment,Parallel Assignment,Non-Randomized,smallEnrol,1,childTeen-infants,very_highAD
+Completed,Accept,medianLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,very_largeEnrol,8,infants,highAD
+Terminated,No,relatively_shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,smallEnrol,2,infants,very_highAD
+Completed,No,medianLen,Phase 2,All,Treatment,Parallel Assignment,Randomized,smallEnrol,3,allAges,very_highAD
+Terminated,No,shortLen,Phase 4,All,Treatment,Single Group Assignment,Non-Randomized,smallEnrol,2,elderly-adults,very_highAD
+Completed,Accept,shortLen,Phase 1,Male,Treatment,Parallel Assignment,Randomized,smallEnrol,2,adults,noAD
+Completed,No,relatively_shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,median_Enrol,2,elderly-adults,highAD
+Completed,No,medianLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,very_largeEnrol,11,allAges,very_highAD
+Completed,Accept,shortLen,Phase 1,All,Treatment,Crossover Assignment,Randomized,smallEnrol,2,adults,noAD
+Completed,No,relatively_shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,median_Enrol,3,elderly-childTeen,very_highAD
+Completed,No,relatively_shortLen,Phase 2,All,Treatment,Parallel Assignment,Non-Randomized,smallEnrol,1,elderly-adults,very_highAD
+Completed,No,relatively_shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,median_Enrol,2,elderly-adults,highAD
+Completed,No,relatively_shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,3,elderly-adults,very_highAD
+Completed,No,medianLen,Not Applicable,Female,Prevention,Parallel Assignment,Randomized,smallEnrol,3,adults,highAD
+Completed,No,medianLen,Phase 2,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,1,elderly-adults,very_highAD
+Completed,Accept,shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,median_Enrol,3,elderly-adults,highAD
+Completed,No,relatively_shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,median_Enrol,2,elderly-adults,highAD
+Completed,No,shortLen,Phase 2,All,Treatment,Parallel Assignment,Randomized,smallEnrol,4,elderly-adults,highAD
+Completed,No,medianLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,smallEnrol,2,elderly-adults,very_highAD
+Completed,Accept,relatively_shortLen,Phase 1,All,Prevention,Single Group Assignment,Non-Randomized,smallEnrol,4,adults,noAD
+Completed,No,longLen,Phase 4,All,Prevention,Parallel Assignment,Randomized,relatively_smallEnrol,2,elderly-adults,highAD
+Completed,No,relatively_shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,median_Enrol,2,elderly-adults,highAD
+Completed,No,relatively_shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,median_Enrol,2,elderly-adults,highAD
+"Active, not recruiting",No,longLen,Phase 4,All,Treatment,Parallel Assignment,Randomized,smallEnrol,8,elderly-adults,noAD
+Completed,No,shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,median_Enrol,2,elderly-adults,highAD
+Completed,Accept,shortLen,Phase 2,All,Treatment,Parallel Assignment,Randomized,smallEnrol,4,adults,highAD
+Terminated,No,relatively_shortLen,Phase 2|Phase 3,All,Treatment,Parallel Assignment,Randomized,smallEnrol,3,adults-infants,noAD
+Completed,No,relatively_shortLen,Phase 4,All,Treatment,Parallel Assignment,Randomized,largeEnrol,2,elderly-adults,highAD
+Completed,No,relatively_shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,median_Enrol,3,elderly-adults,very_highAD
+Completed,Accept,medianLen,Phase 2,All,Prevention,Parallel Assignment,Randomized,relatively_smallEnrol,1,infants,very_highAD
+Completed,No,medianLen,Phase 4,All,Other,Parallel Assignment,Randomized,smallEnrol,4,elderly-adults,very_highAD
+Completed,No,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,median_Enrol,3,elderly-adults,highAD
+Completed,No,medianLen,Phase 2,All,Treatment,Parallel Assignment,Randomized,largeEnrol,3,allAges,highAD
+Completed,No,relatively_shortLen,Phase 4,All,Treatment,Parallel Assignment,Randomized,median_Enrol,3,elderly-adults,noAD
+Completed,No,medianLen,Phase 4,All,Treatment,Parallel Assignment,Randomized,median_Enrol,3,elderly-adults,noAD
+Completed,No,medianLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,median_Enrol,3,elderly-adults,very_highAD
+Completed,Accept,shortLen,Phase 1,Male,Treatment,Parallel Assignment,Randomized,smallEnrol,2,adults,noAD
+Completed,No,longLen,Not Applicable,All,Treatment,Parallel Assignment,Randomized,median_Enrol,2,elderly-adults,medianAD
+Terminated,No,medianLen,Not Applicable,All,Treatment,Parallel Assignment,Randomized,smallEnrol,2,elderly-adults,noAD
+Completed,No,relatively_shortLen,Not Applicable,All,Treatment,Parallel Assignment,Randomized,median_Enrol,2,elderly-adults,noAD
+Completed,No,medianLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,median_Enrol,2,elderly-childTeen,very_highAD
+Completed,No,relatively_shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,median_Enrol,3,elderly-childTeen,very_highAD
+Completed,No,medianLen,Not Applicable,All,Treatment,Parallel Assignment,Randomized,smallEnrol,2,elderly-adults,noAD
+Completed,No,medianLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,median_Enrol,4,elderly-adults,very_highAD
+Completed,No,relatively_shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,median_Enrol,4,elderly-adults,highAD
+Completed,No,relatively_shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,2,elderly-adults,very_highAD
+Completed,No,relatively_shortLen,Not Applicable,All,Prevention,Parallel Assignment,Non-Randomized,largeEnrol,3,elderly-adults,noAD
+Completed,No,relatively_shortLen,Not Applicable,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,1,elderly-adults,highAD
+Terminated,Accept,medianLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,very_largeEnrol,2,elderly-adults,very_highAD
+Completed,No,medianLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,largeEnrol,3,elderly-childTeen,highAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,largeEnrol,3,childTeen-infants,medianAD
+Terminated,No,relatively_shortLen,Phase 2,All,Treatment,Parallel Assignment,Randomized,smallEnrol,3,elderly-adults,highAD
+Terminated,No,relatively_shortLen,Phase 4,All,Prevention,Parallel Assignment,Randomized,smallEnrol,2,elderly-adults,noAD
+Completed,No,medianLen,Phase 4,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,2,elderly-adults,noAD
+Completed,No,relatively_shortLen,Not Applicable,All,Basic Science,Parallel Assignment,Non-Randomized,smallEnrol,2,elderly-adults,highAD
+Completed,No,medianLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,4,childTeen-infants,very_highAD
+Completed,Accept,medianLen,Not Applicable,All,Basic Science,Parallel Assignment,Non-Randomized,smallEnrol,2,elderly-adults,highAD
+Completed,Accept,relatively_shortLen,Phase 4,All,Prevention,Single Group Assignment,Non-Randomized,median_Enrol,4,infants,medianAD
+Completed,No,shortLen,Phase 2,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,1,elderly-adults,very_highAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,largeEnrol,5,infants,highAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,median_Enrol,2,childTeen-infants,highAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Single Group Assignment,Randomized,largeEnrol,3,infants,highAD
+Completed,Accept,relatively_shortLen,Phase 2,All,Prevention,Parallel Assignment,Randomized,median_Enrol,1,infants,highAD
+Completed,Accept,shortLen,Phase 2,All,Prevention,Parallel Assignment,Randomized,median_Enrol,3,childTeen-infants,highAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,median_Enrol,2,infants,highAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,largeEnrol,2,childTeen,medianAD
+Completed,Accept,medianLen,Phase 3,All,Other,Parallel Assignment,SingleArmNA,median_Enrol,2,adults-childTeen,medianAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,largeEnrol,3,adults,highAD
+Completed,Accept,relatively_shortLen,Phase 2,All,Prevention,Parallel Assignment,Randomized,median_Enrol,1,elderly-adults,highAD
+Completed,Accept,shortLen,Phase 4,All,Prevention,Parallel Assignment,Non-Randomized,relatively_smallEnrol,1,elderly,highAD
+Completed,Accept,shortLen,Phase 3,All,Prevention,Parallel Assignment,Non-Randomized,relatively_smallEnrol,1,elderly-adults,noAD
+Completed,Accept,medianLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,largeEnrol,7,adults,highAD
+Completed,Accept,shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,largeEnrol,2,elderly-adults,highAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,median_Enrol,8,infants,very_highAD
+Completed,Accept,shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,largeEnrol,3,elderly-adults,highAD
+Completed,No,shortLen,Phase 3,All,Prevention,Single Group Assignment,SingleArmNA,relatively_smallEnrol,1,adults-childTeen,noAD
+Completed,Accept,relatively_shortLen,Phase 2,All,Prevention,Parallel Assignment,Randomized,median_Enrol,2,infants,highAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,median_Enrol,3,elderly-adults,highAD
+Completed,Accept,relatively_shortLen,Phase 2,All,Prevention,Parallel Assignment,Randomized,median_Enrol,3,elderly-adults,highAD
+Completed,Accept,relatively_shortLen,Phase 2,All,Prevention,Parallel Assignment,Randomized,median_Enrol,4,adults,highAD
+Completed,Accept,relatively_shortLen,Phase 2,All,Prevention,Parallel Assignment,Randomized,largeEnrol,3,infants,highAD
+Completed,Accept,shortLen,Phase 2,All,Prevention,Parallel Assignment,Randomized,relatively_smallEnrol,2,elderly,medianAD
+Completed,Accept,shortLen,Phase 2,All,Prevention,Parallel Assignment,Randomized,median_Enrol,3,elderly-adults,medianAD
+Completed,Accept,relatively_shortLen,Phase 1|Phase 2,All,Prevention,Parallel Assignment,Randomized,median_Enrol,5,adults-infants,highAD
+Completed,Accept,shortLen,Phase 2,All,Prevention,Parallel Assignment,Randomized,median_Enrol,3,elderly-adults,highAD
+Completed,Accept,shortLen,Phase 3,All,Prevention,Parallel Assignment,Non-Randomized,median_Enrol,2,elderly-adults,medianAD
+Completed,Accept,relatively_shortLen,Phase 2,All,Prevention,Parallel Assignment,Randomized,largeEnrol,3,infants,highAD
+Completed,Accept,relatively_shortLen,Phase 1,All,Prevention,Parallel Assignment,Randomized,relatively_smallEnrol,3,adults-infants,noAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,median_Enrol,2,elderly,very_highAD
+Completed,Accept,medianLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,largeEnrol,2,infants,very_highAD
+Completed,Accept,shortLen,Phase 3,All,Prevention,Single Group Assignment,SingleArmNA,largeEnrol,1,elderly,highAD
+Completed,Accept,shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,largeEnrol,2,elderly,highAD
+Completed,Accept,relatively_shortLen,Phase 1,All,Prevention,Parallel Assignment,Randomized,median_Enrol,2,infants,highAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,median_Enrol,2,infants,highAD
+Completed,Accept,shortLen,Phase 3,All,Prevention,Parallel Assignment,Non-Randomized,median_Enrol,1,infants,highAD
+Completed,Accept,relatively_shortLen,Phase 2,All,Prevention,Parallel Assignment,Randomized,median_Enrol,3,childTeen-infants,highAD
+Completed,Accept,medianLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,median_Enrol,3,infants,highAD
+Completed,Accept,relatively_shortLen,Phase 4,All,Prevention,Parallel Assignment,Randomized,median_Enrol,1,infants,highAD
+Completed,Accept,shortLen,Phase 3,All,Prevention,Parallel Assignment,Non-Randomized,smallEnrol,1,infants,noAD
+Completed,Accept,relatively_shortLen,Phase 4,All,Other,Single Group Assignment,SingleArmNA,smallEnrol,1,elderly-adults,noAD
+Completed,Accept,relatively_shortLen,Phase 2,All,Prevention,Parallel Assignment,Randomized,largeEnrol,3,infants,highAD
+Completed,Accept,shortLen,Phase 2,All,Prevention,Parallel Assignment,Randomized,median_Enrol,2,adults,highAD
+Completed,Accept,shortLen,Phase 3,All,Prevention,Parallel Assignment,Non-Randomized,median_Enrol,1,adults-childTeen,highAD
+Completed,Accept,relatively_shortLen,Phase 2,All,Prevention,Parallel Assignment,Randomized,median_Enrol,2,adults-childTeen,medianAD
+Completed,Accept,relatively_shortLen,Phase 1,All,Prevention,Parallel Assignment,Randomized,smallEnrol,5,adults,highAD
+Completed,Accept,shortLen,Phase 3,All,Prevention,Parallel Assignment,Non-Randomized,median_Enrol,1,adults-childTeen,medianAD
+Completed,Accept,relatively_shortLen,Phase 4,All,Prevention,Single Group Assignment,SingleArmNA,relatively_smallEnrol,1,infants,very_highAD
+Completed,Accept,relatively_shortLen,Phase 2,All,Other,Parallel Assignment,Randomized,largeEnrol,4,adults-childTeen,highAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,median_Enrol,2,infants,highAD
+Completed,Accept,medianLen,Phase 3,All,Prevention,Parallel Assignment,Non-Randomized,relatively_smallEnrol,1,allAges,medianAD
+Completed,Accept,longLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,median_Enrol,2,infants,highAD
+Completed,Accept,medianLen,Phase 3,All,Prevention,Single Group Assignment,Randomized,relatively_smallEnrol,1,allAges,noAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Non-Randomized,relatively_smallEnrol,1,infants,noAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,median_Enrol,2,adults-childTeen,medianAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Non-Randomized,smallEnrol,1,childTeen-infants,highAD
+Completed,Accept,shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,median_Enrol,2,elderly-adults,medianAD
+Completed,Accept,shortLen,Phase 2,All,Prevention,Parallel Assignment,Randomized,largeEnrol,2,adults-childTeen,medianAD
+Completed,Accept,shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,largeEnrol,2,adults,medianAD
+Completed,Accept,medianLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,median_Enrol,1,childTeen,noAD
+Completed,Accept,medianLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,median_Enrol,2,infants,medianAD
+Completed,Accept,medianLen,Phase 2,All,Prevention,Parallel Assignment,Randomized,median_Enrol,1,childTeen-infants,medianAD
+Completed,Accept,medianLen,Phase 2,All,Prevention,Parallel Assignment,Randomized,median_Enrol,2,adults-childTeen,medianAD
+Completed,Accept,shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,median_Enrol,2,childTeen-infants,highAD
+Completed,Accept,shortLen,Phase 2,All,Prevention,Parallel Assignment,Non-Randomized,relatively_smallEnrol,1,adults-infants,medianAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,median_Enrol,3,infants,highAD
+Completed,Accept,shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,median_Enrol,3,infants,highAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,median_Enrol,2,childTeen,medianAD
+Completed,Accept,shortLen,Phase 2,All,Prevention,Parallel Assignment,Randomized,median_Enrol,2,adults-childTeen,highAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,largeEnrol,3,adults,medianAD
+Completed,Accept,relatively_shortLen,Phase 2,All,Prevention,Parallel Assignment,Randomized,median_Enrol,2,adults-childTeen,medianAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,relatively_smallEnrol,3,infants,highAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,relatively_smallEnrol,3,infants,highAD
+Completed,Accept,shortLen,Phase 4,All,Prevention,Single Group Assignment,Non-Randomized,relatively_smallEnrol,1,allAges,noAD
+Completed,Accept,shortLen,Phase 2,All,Prevention,Parallel Assignment,Randomized,median_Enrol,5,infants,highAD
+Completed,Accept,relatively_shortLen,Phase 1,All,Prevention,Parallel Assignment,Randomized,smallEnrol,3,adults,noAD
+Completed,Accept,shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,median_Enrol,2,adults-infants,noAD
+"Active, not recruiting",Accept,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,median_Enrol,2,elderly-adults,medianAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,median_Enrol,3,adults-childTeen,highAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,median_Enrol,3,infants,medianAD
+Completed,Accept,relatively_shortLen,Phase 1|Phase 2,All,Prevention,Parallel Assignment,Randomized,relatively_smallEnrol,2,infants,highAD
+Completed,Accept,relatively_shortLen,Phase 1,All,Prevention,Parallel Assignment,Randomized,relatively_smallEnrol,6,adults,highAD
+Completed,Accept,medianLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,relatively_smallEnrol,2,childTeen-infants,noAD
+Completed,Accept,medianLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,largeEnrol,5,infants,highAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,largeEnrol,2,childTeen-infants,highAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,median_Enrol,3,adults-childTeen,medianAD
+Completed,Accept,shortLen,Phase 2,All,Prevention,Parallel Assignment,Non-Randomized,relatively_smallEnrol,1,adults-childTeen,noAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,relatively_smallEnrol,2,infants,highAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,median_Enrol,1,childTeen-infants,highAD
+Terminated,Accept,shortLen,Phase 1,All,Treatment,Parallel Assignment,Randomized,smallEnrol,3,adults,noAD
+Completed,No,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,median_Enrol,2,elderly-adults,very_highAD
+Completed,No,relatively_shortLen,Phase 2,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,1,adults-infants,very_highAD
+Completed,Accept,relatively_shortLen,Phase 3,Female,Prevention,Parallel Assignment,Randomized,largeEnrol,3,adults-childTeen,highAD
+Completed,Accept,shortLen,Phase 2,Female,Treatment,Parallel Assignment,Randomized,largeEnrol,2,adults,highAD
+Completed,Accept,shortLen,Phase 4,All,Prevention,Parallel Assignment,Randomized,median_Enrol,2,elderly-adults,medianAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,relatively_smallEnrol,2,adults,highAD
+Completed,No,relatively_shortLen,Not Applicable,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,1,elderly-adults,highAD
+Completed,Accept,shortLen,Phase 3,All,Prevention,Single Group Assignment,SingleArmNA,relatively_smallEnrol,1,allAges,noAD
+Completed,No,relatively_shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,median_Enrol,2,elderly-adults,very_highAD
+Completed,Accept,relatively_shortLen,Phase 4,All,Prevention,Sequential Assignment,Randomized,median_Enrol,2,childTeen-infants,medianAD
+Completed,Accept,shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,median_Enrol,3,elderly,highAD
+Completed,Accept,shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,largeEnrol,4,adults,medianAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,very_largeEnrol,4,elderly-adults,highAD
+Completed,Accept,relatively_shortLen,Phase 1|Phase 2,All,Prevention,Parallel Assignment,Randomized,median_Enrol,3,adults-infants,highAD
+Completed,Accept,shortLen,Phase 4,All,Basic Science,Parallel Assignment,Randomized,median_Enrol,6,elderly-adults,highAD
+Completed,Accept,shortLen,Phase 3,All,Prevention,Single Group Assignment,Non-Randomized,relatively_smallEnrol,1,allAges,noAD
+Completed,Accept,shortLen,Phase 4,All,Prevention,Single Group Assignment,Non-Randomized,median_Enrol,1,infants,noAD
+Completed,No,relatively_shortLen,Phase 3,All,Prevention,Single Group Assignment,Non-Randomized,smallEnrol,2,childTeen-infants,noAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Non-Randomized,median_Enrol,5,infants,highAD
+Completed,No,shortLen,Phase 2,All,Prevention,Parallel Assignment,Randomized,relatively_smallEnrol,2,adults-childTeen,noAD
+Completed,Accept,shortLen,Phase 3,All,Prevention,Parallel Assignment,Non-Randomized,relatively_smallEnrol,3,childTeen-infants,highAD
+Completed,Accept,shortLen,Phase 2,All,Prevention,Parallel Assignment,Randomized,median_Enrol,3,adults-childTeen,medianAD
+Completed,Accept,shortLen,Phase 2,All,Prevention,Parallel Assignment,Randomized,relatively_smallEnrol,2,infants,highAD
+Completed,Accept,relatively_shortLen,Phase 2,All,Prevention,Parallel Assignment,Randomized,relatively_smallEnrol,3,adults-childTeen,highAD
+Completed,Accept,shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,relatively_smallEnrol,3,childTeen,highAD
+Completed,Accept,shortLen,Phase 3,All,Prevention,Single Group Assignment,Non-Randomized,smallEnrol,1,elderly-adults,noAD
+Completed,Accept,relatively_shortLen,Phase 4,All,Prevention,Single Group Assignment,Non-Randomized,median_Enrol,1,childTeen,medianAD
+Completed,Accept,medianLen,Phase 4,All,Prevention,Single Group Assignment,SingleArmNA,very_largeEnrol,1,adults-infants,medianAD
+Completed,No,shortLen,Phase 3,All,Prevention,Parallel Assignment,Non-Randomized,relatively_smallEnrol,1,infants,noAD
+Completed,Accept,relatively_shortLen,Phase 2,All,Prevention,Parallel Assignment,Randomized,median_Enrol,4,adults-childTeen,highAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Non-Randomized,median_Enrol,1,infants,highAD
+Completed,Accept,relatively_shortLen,Phase 2,All,Prevention,Parallel Assignment,Non-Randomized,relatively_smallEnrol,2,infants,highAD
+Completed,Accept,relatively_shortLen,Phase 2,All,Prevention,Parallel Assignment,Non-Randomized,relatively_smallEnrol,2,infants,highAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,median_Enrol,5,infants,highAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,largeEnrol,8,infants,highAD
+Completed,Accept,relatively_shortLen,Phase 2|Phase 3,All,Prevention,Parallel Assignment,Randomized,largeEnrol,2,childTeen,highAD
+Completed,Accept,relatively_shortLen,Phase 2,All,Prevention,Parallel Assignment,Non-Randomized,median_Enrol,2,infants,highAD
+Completed,Accept,relatively_shortLen,Phase 2,All,Prevention,Crossover Assignment,Randomized,smallEnrol,2,adults,noAD
+Completed,Accept,relatively_shortLen,Phase 2,All,Prevention,Parallel Assignment,Randomized,relatively_smallEnrol,5,infants,highAD
+Completed,Accept,relatively_shortLen,Phase 2,All,Prevention,Parallel Assignment,Randomized,smallEnrol,2,infants,highAD
+Completed,Accept,shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,largeEnrol,2,childTeen-infants,medianAD
+Completed,No,relatively_shortLen,Phase 2,All,Prevention,Parallel Assignment,Randomized,median_Enrol,3,childTeen,highAD
+Completed,No,relatively_shortLen,Phase 2,All,Prevention,Parallel Assignment,Randomized,median_Enrol,2,childTeen-infants,highAD
+Completed,Accept,relatively_shortLen,Phase 2,All,Prevention,Parallel Assignment,Randomized,median_Enrol,8,infants,very_highAD
+Terminated,No,relatively_shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,smallEnrol,2,infants,noAD
+Completed,Accept,relatively_shortLen,Phase 2,All,Prevention,Parallel Assignment,Randomized,relatively_smallEnrol,2,adults,highAD
+Completed,Accept,shortLen,Phase 2|Phase 3,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,1,adults,noAD
+Completed,No,shortLen,Phase 2,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,3,elderly-adults,highAD
+Completed,Accept,shortLen,Phase 2,All,Prevention,Parallel Assignment,Randomized,relatively_smallEnrol,3,adults,noAD
+Completed,Accept,shortLen,Phase 1,All,Other,Parallel Assignment,Randomized,smallEnrol,2,adults,noAD
+Completed,Accept,shortLen,Phase 2,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,2,adults,noAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,median_Enrol,2,adults,medianAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,very_largeEnrol,4,adults,highAD
+Completed,Accept,relatively_shortLen,Not Applicable,All,Supportive Care,Parallel Assignment,Randomized,smallEnrol,1,childTeen-infants,noAD
+Completed,Accept,shortLen,Phase 1,All,Other,Sequential Assignment,Randomized,smallEnrol,2,elderly-adults,noAD
+Completed,Accept,shortLen,Phase 1,All,Other,Crossover Assignment,Randomized,smallEnrol,2,elderly-adults,highAD
+Completed,Accept,shortLen,Phase 1,All,Other,Parallel Assignment,Randomized,relatively_smallEnrol,2,elderly-adults,medianAD
+Completed,Accept,shortLen,Phase 3,All,Treatment,Single Group Assignment,SingleArmNA,relatively_smallEnrol,1,elderly-adults,medianAD
+Completed,Accept,relatively_shortLen,Phase 1|Phase 2,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,6,elderly-adults,highAD
+Completed,No,longLen,Phase 2,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,2,infants,very_highAD
+Completed,No,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,relatively_smallEnrol,2,elderly-adults,highAD
+Completed,Accept,relatively_shortLen,Phase 1,Male,Basic Science,Parallel Assignment,Non-Randomized,smallEnrol,5,adults,noAD
+Completed,No,medianLen,Phase 4,All,Prevention,Parallel Assignment,Randomized,relatively_smallEnrol,2,elderly-adults,very_highAD
+Completed,No,shortLen,Phase 3,Female,Treatment,Parallel Assignment,Randomized,median_Enrol,2,elderly-adults,noAD
+Completed,No,relatively_shortLen,Phase 2,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,1,elderly-adults,highAD
+Completed,No,medianLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,largeEnrol,1,elderly-adults,highAD
+Completed,Accept,shortLen,Phase 1,Female,Other,Parallel Assignment,Randomized,smallEnrol,6,adults,noAD
+Completed,No,relatively_shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,1,elderly-adults,very_highAD
+Completed,No,medianLen,Phase 2,All,Treatment,Parallel Assignment,Non-Randomized,smallEnrol,1,childTeen-infants,very_highAD
+Completed,No,relatively_shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,median_Enrol,2,elderly-adults,very_highAD
+Completed,No,relatively_shortLen,Phase 4,All,Prevention,Parallel Assignment,Randomized,relatively_smallEnrol,2,elderly-adults,very_highAD
+Completed,Accept,medianLen,Phase 4,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,2,elderly-adults,noAD
+Terminated,No,medianLen,Phase 2,All,Treatment,Parallel Assignment,Randomized,smallEnrol,2,infants,very_highAD
+Completed,No,relatively_shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,median_Enrol,4,elderly-adults,very_highAD
+Completed,No,relatively_shortLen,Not Applicable,All,Treatment,Parallel Assignment,Randomized,smallEnrol,2,elderly-adults,noAD
+Terminated,No,relatively_shortLen,Phase 2,All,Treatment,Parallel Assignment,Randomized,smallEnrol,2,elderly-adults,very_highAD
+Completed,No,shortLen,Not Applicable,All,Diagnostic,Parallel Assignment,Randomized,smallEnrol,2,infants,noAD
+Terminated,No,longLen,Phase 2,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,9,adults,very_highAD
+Completed,No,shortLen,Phase 2,All,Treatment,Parallel Assignment,Randomized,smallEnrol,3,elderly-adults,very_highAD
+Completed,No,medianLen,Phase 2,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,1,elderly-adults,noAD
+Completed,Accept,medianLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,very_largeEnrol,5,infants,very_highAD
+Completed,No,shortLen,Not Applicable,All,Diagnostic,Parallel Assignment,Randomized,median_Enrol,4,allAges,noAD
+Completed,No,shortLen,Phase 2,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,3,elderly-adults,noAD
+Terminated,No,relatively_shortLen,Phase 3,Female,Treatment,Parallel Assignment,Randomized,smallEnrol,3,elderly-adults,noAD
+Completed,Accept,relatively_shortLen,Not Applicable,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,1,childTeen-infants,noAD
+Completed,Accept,relatively_shortLen,Not Applicable,All,Diagnostic,Parallel Assignment,Non-Randomized,relatively_smallEnrol,1,elderly-adults,medianAD
+Completed,Accept,shortLen,Not Applicable,Female,Treatment,Parallel Assignment,Randomized,median_Enrol,1,adults,noAD
+Completed,No,medianLen,Phase 2,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,1,elderly-adults,very_highAD
+Completed,No,relatively_shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,median_Enrol,2,elderly-childTeen,very_highAD
+Terminated,No,relatively_shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,smallEnrol,5,adults-infants,very_highAD
+Completed,No,medianLen,Phase 2,All,Treatment,Single Group Assignment,SingleArmNA,relatively_smallEnrol,2,elderly-adults,very_highAD
+Completed,No,relatively_shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,largeEnrol,2,elderly-adults,highAD
+Completed,No,longLen,Phase 2,All,Treatment,Parallel Assignment,Randomized,median_Enrol,2,elderly-adults,very_highAD
+Completed,No,longLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,very_largeEnrol,2,allAges,highAD
+Completed,No,medianLen,Phase 2,All,Treatment,Parallel Assignment,Non-Randomized,relatively_smallEnrol,2,elderly-adults,very_highAD
+Completed,No,relatively_shortLen,Phase 2,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,4,allAges,highAD
+Completed,No,relatively_shortLen,Phase 2,All,Prevention,Single Group Assignment,Randomized,relatively_smallEnrol,2,infants,highAD
+Completed,No,relatively_shortLen,Not Applicable,All,Prevention,Parallel Assignment,Randomized,largeEnrol,1,elderly-adults,noAD
+Completed,No,relatively_shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,median_Enrol,3,elderly-adults,highAD
+Completed,No,shortLen,Not Applicable,All,Other,Single Group Assignment,Non-Randomized,median_Enrol,2,elderly-childTeen,noAD
+"Active, not recruiting",No,longLen,Phase 2,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,7,elderly-adults,highAD
+Completed,No,shortLen,Phase 4,All,Prevention,Parallel Assignment,Non-Randomized,smallEnrol,1,elderly,noAD
+Completed,No,relatively_shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,median_Enrol,2,allAges,noAD
+Completed,Accept,medianLen,Phase 2,All,Prevention,Parallel Assignment,Randomized,median_Enrol,2,childTeen,highAD
+Completed,No,relatively_shortLen,Phase 4,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,2,elderly-adults,highAD
+Completed,No,medianLen,Phase 4,All,Treatment,Parallel Assignment,Randomized,median_Enrol,6,elderly-childTeen,very_highAD
+Completed,No,medianLen,Phase 4,Female,Prevention,Parallel Assignment,Randomized,median_Enrol,2,elderly-childTeen,very_highAD
+Completed,No,relatively_shortLen,Phase 2,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,3,elderly-adults,very_highAD
+Completed,No,relatively_shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,largeEnrol,2,elderly-adults,highAD
+Completed,No,medianLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,median_Enrol,2,elderly-adults,highAD
+Completed,Accept,relatively_shortLen,Phase 1|Phase 2,Female,Treatment,Parallel Assignment,Non-Randomized,smallEnrol,3,elderly-adults,very_highAD
+Terminated,No,relatively_shortLen,Phase 1|Phase 2,All,Prevention,Parallel Assignment,Randomized,smallEnrol,1,infants,noAD
+Completed,No,medianLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,median_Enrol,6,elderly-adults,very_highAD
+Completed,Accept,shortLen,Phase 3,All,Prevention,Parallel Assignment,Non-Randomized,relatively_smallEnrol,1,adults-infants,noAD
+Completed,No,shortLen,Phase 3,All,Treatment,Single Group Assignment,Non-Randomized,smallEnrol,1,elderly-childTeen,highAD
+Completed,Accept,medianLen,Phase 2,All,Prevention,Parallel Assignment,Randomized,median_Enrol,3,childTeen,highAD
+Completed,No,medianLen,Phase 2,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,1,elderly-adults,highAD
+Completed,No,relatively_shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,median_Enrol,2,elderly-adults,highAD
+Terminated,No,medianLen,Phase 2,All,Treatment,Parallel Assignment,Randomized,smallEnrol,9,elderly-adults,very_highAD
+Completed,Accept,shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,median_Enrol,2,infants,medianAD
+Completed,No,medianLen,Phase 1|Phase 2,All,Treatment,Parallel Assignment,Non-Randomized,smallEnrol,1,childTeen-infants,very_highAD
+Completed,No,longLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,median_Enrol,4,adults,very_highAD
+Completed,No,relatively_shortLen,Phase 4,All,Treatment,Parallel Assignment,Randomized,smallEnrol,2,elderly-adults,noAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,very_largeEnrol,6,childTeen-infants,medianAD
+Completed,Accept,relatively_shortLen,Phase 4,Female,Prevention,Crossover Assignment,Randomized,median_Enrol,2,adults,very_highAD
+Completed,Accept,shortLen,Phase 3,All,Prevention,Single Group Assignment,SingleArmNA,median_Enrol,1,childTeen,noAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Non-Randomized,relatively_smallEnrol,1,adults,noAD
+Completed,Accept,relatively_shortLen,Phase 4,All,Prevention,Parallel Assignment,Randomized,median_Enrol,2,childTeen,medianAD
+Completed,Accept,relatively_shortLen,Phase 4,All,Prevention,Parallel Assignment,Non-Randomized,relatively_smallEnrol,2,adults,noAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,median_Enrol,3,childTeen-infants,medianAD
+Completed,Accept,shortLen,Phase 3,All,Prevention,Parallel Assignment,Non-Randomized,median_Enrol,2,infants,medianAD
+Completed,Accept,longLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,largeEnrol,3,elderly-adults,medianAD
+Completed,Accept,shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,median_Enrol,3,infants,highAD
+Completed,Accept,shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,largeEnrol,2,elderly-adults,medianAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,median_Enrol,3,infants,highAD
+Terminated,No,relatively_shortLen,Phase 2,All,Treatment,Parallel Assignment,Randomized,smallEnrol,2,elderly-adults,highAD
+Completed,Accept,relatively_shortLen,Phase 1,All,Prevention,Parallel Assignment,Randomized,relatively_smallEnrol,4,adults,noAD
+Terminated,Accept,medianLen,Phase 1,All,Other,Parallel Assignment,Randomized,smallEnrol,4,adults,noAD
+Completed,No,longLen,Phase 2,All,Treatment,Parallel Assignment,Randomized,smallEnrol,4,elderly-adults,very_highAD
+Completed,No,relatively_shortLen,Phase 2,Male,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,1,adults-childTeen,noAD
+Completed,No,relatively_shortLen,Phase 2,Female,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,1,adults,highAD
+Completed,Accept,shortLen,Phase 2,All,Prevention,Parallel Assignment,Randomized,smallEnrol,3,adults,noAD
+Completed,No,relatively_shortLen,Phase 3,All,Prevention,Single Group Assignment,SingleArmNA,median_Enrol,2,elderly-adults,very_highAD
+Completed,No,medianLen,Phase 3,All,Prevention,Single Group Assignment,SingleArmNA,median_Enrol,4,elderly-childTeen,highAD
+Completed,Accept,medianLen,Phase 2,All,Prevention,Parallel Assignment,Randomized,very_largeEnrol,2,adults,highAD
+Completed,Accept,medianLen,Not Applicable,All,Treatment,Parallel Assignment,Randomized,smallEnrol,2,allAges,noAD
+Completed,No,medianLen,Phase 4,All,Treatment,Parallel Assignment,Randomized,median_Enrol,2,elderly-childTeen,very_highAD
+Completed,No,relatively_shortLen,Phase 2,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,1,adults,highAD
+Terminated,No,relatively_shortLen,Phase 4,All,Treatment,Parallel Assignment,Randomized,smallEnrol,3,elderly-adults,very_highAD
+Terminated,No,relatively_shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,smallEnrol,7,elderly-adults,noAD
+Completed,No,medianLen,Not Applicable,All,Treatment,Crossover Assignment,Randomized,smallEnrol,2,elderly-adults,medianAD
+Completed,No,medianLen,Phase 2,All,Prevention,Parallel Assignment,Randomized,median_Enrol,2,adults,highAD
+Completed,No,relatively_shortLen,Phase 2,All,Prevention,Parallel Assignment,Randomized,smallEnrol,2,adults,highAD
+Completed,Accept,relatively_shortLen,Phase 1,All,Prevention,Parallel Assignment,Randomized,smallEnrol,4,childTeen,highAD
+Completed,No,medianLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,median_Enrol,2,elderly-adults,very_highAD
+Completed,No,relatively_shortLen,Not Applicable,All,Other,Parallel Assignment,Randomized,median_Enrol,5,elderly-adults,highAD
+Completed,No,shortLen,Phase 2,All,Treatment,Parallel Assignment,Randomized,smallEnrol,5,elderly-adults,highAD
+Completed,No,relatively_shortLen,Not Applicable,Female,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,2,elderly-adults,noAD
+Completed,No,relatively_shortLen,Phase 4,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,2,childTeen-infants,medianAD
+Completed,No,medianLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,largeEnrol,3,elderly-childTeen,highAD
+Completed,No,relatively_shortLen,Phase 3,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,1,elderly-adults,noAD
+Completed,Accept,shortLen,Phase 2,All,Prevention,Sequential Assignment,Randomized,relatively_smallEnrol,5,adults,noAD
+Completed,Accept,shortLen,Phase 1,All,Treatment,Single Group Assignment,Randomized,smallEnrol,2,adults,noAD
+Completed,Accept,shortLen,Phase 1,Male,Basic Science,Parallel Assignment,Randomized,smallEnrol,7,adults,noAD
+Terminated,No,relatively_shortLen,Phase 2,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,3,elderly-adults,very_highAD
+Completed,No,medianLen,Phase 1|Phase 2,All,Prevention,Parallel Assignment,Randomized,relatively_smallEnrol,1,elderly-adults,very_highAD
+Completed,No,shortLen,Phase 4,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,1,elderly-adults,noAD
+Completed,Accept,shortLen,Phase 1,Male,Treatment,Crossover Assignment,Randomized,smallEnrol,2,adults,noAD
+Completed,Accept,shortLen,Phase 2,All,Prevention,Parallel Assignment,Non-Randomized,smallEnrol,1,adults,noAD
+Completed,Accept,shortLen,Phase 2,All,Prevention,Parallel Assignment,Randomized,relatively_smallEnrol,3,infants,highAD
+Completed,Accept,relatively_shortLen,Phase 2,All,Prevention,Parallel Assignment,Randomized,relatively_smallEnrol,3,adults-infants,highAD
+Completed,Accept,shortLen,Phase 2,All,Prevention,Parallel Assignment,Randomized,smallEnrol,4,adults,noAD
+Completed,Accept,shortLen,Phase 1,All,Prevention,Parallel Assignment,Randomized,smallEnrol,2,adults,highAD
+Completed,No,relatively_shortLen,Not Applicable,All,Health Services Research,Parallel Assignment,Randomized,largeEnrol,1,allAges,highAD
+Completed,Accept,relatively_shortLen,Phase 2,All,Prevention,Parallel Assignment,Randomized,smallEnrol,4,adults,highAD
+Completed,No,relatively_shortLen,Phase 1,All,Prevention,Parallel Assignment,Randomized,smallEnrol,2,adults,noAD
+Completed,Accept,shortLen,Phase 2,All,Diagnostic,Parallel Assignment,Randomized,relatively_smallEnrol,8,elderly-adults,noAD
+Completed,Accept,relatively_shortLen,Phase 1,All,Prevention,Parallel Assignment,Randomized,smallEnrol,2,adults,noAD
+Completed,Accept,shortLen,Phase 1,All,Diagnostic,Single Group Assignment,Randomized,smallEnrol,1,adults,noAD
+Completed,No,medianLen,Phase 4,All,Supportive Care,Parallel Assignment,Randomized,smallEnrol,2,elderly-adults,noAD
+Completed,No,relatively_shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,2,elderly-adults,highAD
+Completed,Accept,shortLen,Not Applicable,All,Prevention,Parallel Assignment,Randomized,smallEnrol,2,adults-infants,highAD
+Completed,Accept,shortLen,Phase 2,All,Other,Single Group Assignment,SingleArmNA,smallEnrol,1,adults,highAD
+Completed,No,relatively_shortLen,Not Applicable,All,Health Services Research,Parallel Assignment,Non-Randomized,relatively_smallEnrol,1,elderly-adults,noAD
+Completed,No,medianLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,median_Enrol,2,elderly-adults,very_highAD
+Terminated,Accept,relatively_shortLen,Phase 2,All,Prevention,Parallel Assignment,Randomized,relatively_smallEnrol,2,adults,highAD
+Completed,Accept,medianLen,Phase 2,All,Prevention,Parallel Assignment,Randomized,relatively_smallEnrol,2,adults,highAD
+Completed,Accept,medianLen,Phase 1|Phase 2,All,Prevention,Parallel Assignment,Randomized,median_Enrol,4,infants,very_highAD
+Completed,Accept,relatively_shortLen,Phase 2,All,Prevention,Parallel Assignment,Randomized,relatively_smallEnrol,5,infants,highAD
+Completed,Accept,shortLen,Phase 2,All,Prevention,Parallel Assignment,Randomized,smallEnrol,2,childTeen,noAD
+Completed,No,shortLen,Phase 2,All,Prevention,Parallel Assignment,Randomized,smallEnrol,3,adults,highAD
+Completed,Accept,shortLen,Phase 2,All,Prevention,Parallel Assignment,Randomized,relatively_smallEnrol,6,adults,highAD
+Completed,Accept,medianLen,Phase 2,All,Prevention,Parallel Assignment,Randomized,relatively_smallEnrol,4,adults,highAD
+Completed,No,relatively_shortLen,Phase 2,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,1,elderly-adults,noAD
+Completed,No,relatively_shortLen,Phase 2,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,1,childTeen-infants,noAD
+Completed,No,relatively_shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,3,elderly-childTeen,very_highAD
+Completed,No,relatively_shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,median_Enrol,2,allAges,medianAD
+Completed,Accept,longLen,Phase 4,All,Treatment,Factorial Assignment,Randomized,relatively_smallEnrol,2,infants,noAD
+Completed,Accept,relatively_shortLen,Phase 4,All,Treatment,Parallel Assignment,Randomized,largeEnrol,2,allAges,noAD
+Completed,Accept,relatively_shortLen,Not Applicable,All,Prevention,Parallel Assignment,Randomized,largeEnrol,2,adults,noAD
+Completed,No,medianLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,3,adults-infants,very_highAD
+Completed,Accept,medianLen,Phase 4,All,Basic Science,Parallel Assignment,Non-Randomized,smallEnrol,1,childTeen-infants,noAD
+Completed,Accept,shortLen,Phase 1,All,Basic Science,Crossover Assignment,Randomized,smallEnrol,3,adults,noAD
+Completed,No,relatively_shortLen,Phase 3,Female,Prevention,Parallel Assignment,Randomized,median_Enrol,3,adults-childTeen,highAD
+Completed,No,medianLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,2,elderly-childTeen,very_highAD
+Completed,No,medianLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,median_Enrol,2,adults-childTeen,noAD
+Completed,No,medianLen,Phase 4,All,Treatment,Parallel Assignment,Randomized,smallEnrol,2,elderly-adults,noAD
+Terminated,No,shortLen,Phase 1,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,2,elderly-adults,noAD
+Terminated,No,relatively_shortLen,Phase 2|Phase 3,All,Treatment,Parallel Assignment,Randomized,smallEnrol,2,childTeen-infants,highAD
+Completed,No,relatively_shortLen,Not Applicable,All,Diagnostic,Parallel Assignment,Randomized,relatively_smallEnrol,2,infants,noAD
+Terminated,No,relatively_shortLen,Phase 4,All,Treatment,Parallel Assignment,Non-Randomized,smallEnrol,1,elderly-adults,very_highAD
+Completed,No,relatively_shortLen,Phase 2,All,Treatment,Single Group Assignment,SingleArmNA,relatively_smallEnrol,1,childTeen-infants,highAD
+Completed,No,shortLen,Phase 2,All,Treatment,Factorial Assignment,Randomized,relatively_smallEnrol,3,elderly-adults,highAD
+Completed,No,shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,median_Enrol,2,adults,noAD
+Terminated,No,relatively_shortLen,Phase 2,All,Treatment,Parallel Assignment,Randomized,smallEnrol,2,elderly-adults,very_highAD
+Completed,No,relatively_shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,median_Enrol,3,elderly-adults,very_highAD
+Terminated,No,medianLen,Phase 2,All,Treatment,Parallel Assignment,Randomized,smallEnrol,5,elderly-adults,very_highAD
+Completed,No,medianLen,Phase 2,All,Treatment,Parallel Assignment,Randomized,smallEnrol,2,elderly-adults,very_highAD
+Completed,No,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,relatively_smallEnrol,3,infants,very_highAD
+Completed,No,medianLen,Phase 4,All,Treatment,Parallel Assignment,Randomized,smallEnrol,1,elderly-childTeen,very_highAD
+Completed,No,medianLen,Not Applicable,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,4,allAges,noAD
+Completed,Accept,relatively_shortLen,Phase 4,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,2,adults-infants,noAD
+Completed,No,relatively_shortLen,Phase 4,Male,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,3,elderly-adults,medianAD
+Terminated,No,relatively_shortLen,Not Applicable,All,Treatment,Parallel Assignment,Randomized,smallEnrol,1,childTeen-infants,noAD
+Completed,No,relatively_shortLen,Phase 4,All,Treatment,Parallel Assignment,Randomized,median_Enrol,3,adults-childTeen,noAD
+Terminated,No,shortLen,Phase 2|Phase 3,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,1,elderly-childTeen,noAD
+Completed,No,relatively_shortLen,Phase 2,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,2,adults,medianAD
+Completed,Accept,shortLen,Not Applicable,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,2,elderly-adults,noAD
+Terminated,Accept,medianLen,Phase 2|Phase 3,All,Prevention,Parallel Assignment,Randomized,largeEnrol,3,infants,very_highAD
+Terminated,No,relatively_shortLen,Phase 2,All,Prevention,Parallel Assignment,Randomized,relatively_smallEnrol,2,elderly-adults,very_highAD
+Completed,Accept,relatively_shortLen,Phase 2|Phase 3,Female,Prevention,Parallel Assignment,Randomized,median_Enrol,2,adults,medianAD
+Completed,No,medianLen,Phase 4,All,Treatment,Parallel Assignment,Randomized,smallEnrol,2,elderly-adults,noAD
+Completed,No,relatively_shortLen,Not Applicable,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,3,adults-infants,noAD
+Completed,No,relatively_shortLen,Not Applicable,All,Diagnostic,Single Group Assignment,SingleArmNA,relatively_smallEnrol,1,elderly-adults,noAD
+Completed,No,longLen,Phase 2,All,Treatment,Parallel Assignment,Randomized,smallEnrol,2,elderly-adults,very_highAD
+Completed,No,relatively_shortLen,Phase 2,All,Treatment,Parallel Assignment,Randomized,smallEnrol,3,allAges,noAD
+Completed,Accept,relatively_shortLen,Not Applicable,Male,Prevention,Factorial Assignment,Randomized,very_largeEnrol,2,adults,noAD
+Completed,No,relatively_shortLen,Phase 2,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,2,elderly-adults,very_highAD
+Completed,No,medianLen,Not Applicable,All,Prevention,Parallel Assignment,Randomized,median_Enrol,3,allAges,noAD
+Completed,No,medianLen,Phase 2,All,Treatment,Crossover Assignment,Randomized,relatively_smallEnrol,2,elderly-adults,very_highAD
+Completed,No,medianLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,largeEnrol,5,elderly-adults,very_highAD
+Completed,Accept,relatively_shortLen,Phase 2,All,Prevention,Parallel Assignment,Randomized,median_Enrol,2,adults,medianAD
+Completed,No,medianLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,largeEnrol,4,elderly-adults,very_highAD
+Completed,Accept,relatively_shortLen,Phase 2,All,Prevention,Parallel Assignment,Non-Randomized,median_Enrol,6,infants,highAD
+Completed,No,relatively_shortLen,Not Applicable,All,Screening,Single Group Assignment,SingleArmNA,median_Enrol,1,allAges,noAD
+Completed,No,relatively_shortLen,Phase 4,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,1,childTeen,highAD
+Completed,Accept,shortLen,Phase 2,All,Prevention,Parallel Assignment,Non-Randomized,relatively_smallEnrol,2,adults-infants,highAD
+Completed,Accept,shortLen,Phase 3,All,Prevention,Parallel Assignment,Non-Randomized,relatively_smallEnrol,1,adults-infants,noAD
+Completed,Accept,shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,largeEnrol,2,elderly-adults,highAD
+Completed,Accept,shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,relatively_smallEnrol,2,infants,medianAD
+Completed,Accept,medianLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,largeEnrol,2,infants,highAD
+Completed,Accept,relatively_shortLen,Phase 4,All,Prevention,Single Group Assignment,Non-Randomized,median_Enrol,1,childTeen-infants,highAD
+Completed,No,relatively_shortLen,Phase 4,Female,Prevention,Single Group Assignment,SingleArmNA,smallEnrol,1,adults,noAD
+Completed,Accept,shortLen,Phase 4,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,1,adults,noAD
+Completed,No,relatively_shortLen,Phase 1|Phase 2,All,Treatment,Parallel Assignment,Randomized,smallEnrol,1,elderly-adults,noAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,largeEnrol,3,adults-childTeen,medianAD
+Completed,No,medianLen,Phase 2,All,Treatment,Parallel Assignment,Randomized,smallEnrol,4,elderly-adults,very_highAD
+"Active, not recruiting",Accept,longLen,Not Applicable,All,Screening,Single Group Assignment,SingleArmNA,largeEnrol,4,elderly-adults,noAD
+Completed,No,relatively_shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,smallEnrol,2,elderly-childTeen,highAD
+Completed,No,relatively_shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,2,elderly-adults,noAD
+Completed,Accept,shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,relatively_smallEnrol,2,elderly-adults,noAD
+Completed,Accept,shortLen,Phase 1|Phase 2,All,Prevention,Parallel Assignment,Randomized,relatively_smallEnrol,4,elderly-adults,highAD
+Completed,No,shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,very_largeEnrol,2,adults-childTeen,medianAD
+Terminated,No,medianLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,5,elderly-adults,very_highAD
+Completed,Accept,relatively_shortLen,Phase 2,All,Prevention,Parallel Assignment,Randomized,largeEnrol,8,infants,very_highAD
+Completed,Accept,shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,largeEnrol,4,elderly-adults,medianAD
+Completed,Accept,medianLen,Not Applicable,Male,Prevention,Parallel Assignment,Randomized,median_Enrol,2,adults,highAD
+Completed,Accept,shortLen,Phase 4,All,Treatment,Single Group Assignment,SingleArmNA,relatively_smallEnrol,1,elderly-adults,noAD
+Terminated,No,relatively_shortLen,Phase 2,All,Treatment,Parallel Assignment,Non-Randomized,smallEnrol,2,elderly-adults,very_highAD
+Completed,No,medianLen,Phase 4,All,Treatment,Parallel Assignment,Randomized,median_Enrol,2,childTeen-infants,very_highAD
+Completed,Accept,shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,median_Enrol,2,elderly-adults,highAD
+Completed,Accept,shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,very_largeEnrol,2,adults-childTeen,medianAD
+Completed,Accept,shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,median_Enrol,2,elderly-childTeen,highAD
+Completed,Accept,shortLen,Phase 4,All,Prevention,Single Group Assignment,SingleArmNA,smallEnrol,1,adults,noAD
+Completed,No,medianLen,Phase 1|Phase 2,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,1,elderly-adults,highAD
+Completed,Accept,shortLen,Phase 2,All,Prevention,Parallel Assignment,Randomized,relatively_smallEnrol,2,infants,medianAD
+Completed,Accept,shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,median_Enrol,2,childTeen-infants,medianAD
+Completed,Accept,shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,median_Enrol,4,infants,medianAD
+Completed,Accept,relatively_shortLen,Phase 2,All,Prevention,Parallel Assignment,Randomized,largeEnrol,7,childTeen,medianAD
+Completed,Accept,shortLen,Phase 4,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,1,elderly-adults,noAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Non-Randomized,smallEnrol,1,childTeen-infants,highAD
+Completed,Accept,relatively_shortLen,Phase 2,All,Prevention,Parallel Assignment,Non-Randomized,relatively_smallEnrol,2,elderly-adults,noAD
+Completed,Accept,shortLen,Phase 1,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,3,adults,noAD
+Completed,Accept,medianLen,Phase 4,All,Prevention,Single Group Assignment,SingleArmNA,median_Enrol,1,childTeen-infants,noAD
+Completed,Accept,shortLen,Phase 3,All,Prevention,Single Group Assignment,SingleArmNA,relatively_smallEnrol,1,childTeen,highAD
+Completed,Accept,shortLen,Phase 4,All,Prevention,Parallel Assignment,Non-Randomized,median_Enrol,1,childTeen,noAD
+Completed,Accept,relatively_shortLen,Phase 4,All,Prevention,Parallel Assignment,Randomized,relatively_smallEnrol,1,childTeen,noAD
+Completed,Accept,shortLen,Phase 3,All,Prevention,Single Group Assignment,Non-Randomized,median_Enrol,1,allAges,medianAD
+Completed,Accept,shortLen,Phase 4,All,Prevention,Parallel Assignment,Randomized,relatively_smallEnrol,2,infants,highAD
+Completed,Accept,relatively_shortLen,Phase 1|Phase 2,All,Prevention,Parallel Assignment,Randomized,largeEnrol,6,elderly-childTeen,highAD
+Completed,Accept,shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,median_Enrol,2,childTeen,noAD
+Completed,Accept,shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,median_Enrol,2,childTeen,noAD
+Completed,Accept,shortLen,Phase 1,All,Prevention,Parallel Assignment,Non-Randomized,smallEnrol,2,adults-infants,noAD
+Completed,Accept,shortLen,Phase 1|Phase 2,All,Prevention,Single Group Assignment,SingleArmNA,smallEnrol,1,childTeen,noAD
+Completed,Accept,relatively_shortLen,Phase 1,All,Prevention,Parallel Assignment,Randomized,median_Enrol,5,adults,highAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,very_largeEnrol,4,childTeen-infants,medianAD
+Completed,Accept,shortLen,Phase 4,All,Prevention,Parallel Assignment,Non-Randomized,largeEnrol,2,childTeen,medianAD
+Completed,Accept,longLen,Phase 4,All,Prevention,Single Group Assignment,SingleArmNA,median_Enrol,1,adults-childTeen,medianAD
+Completed,Accept,shortLen,Phase 3,All,Prevention,Single Group Assignment,SingleArmNA,smallEnrol,1,adults,noAD
+Completed,Accept,shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,largeEnrol,2,elderly,highAD
+Completed,Accept,relatively_shortLen,Phase 4,All,Prevention,Parallel Assignment,Non-Randomized,median_Enrol,2,elderly-adults,medianAD
+Completed,Accept,shortLen,Phase 4,All,Prevention,Parallel Assignment,Non-Randomized,smallEnrol,1,adults,highAD
+Completed,Accept,shortLen,Phase 4,All,Prevention,Parallel Assignment,Non-Randomized,relatively_smallEnrol,1,elderly-adults,noAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,largeEnrol,2,childTeen-infants,medianAD
+Completed,Accept,relatively_shortLen,Phase 4,All,Prevention,Parallel Assignment,Randomized,largeEnrol,2,elderly,highAD
+Completed,Accept,relatively_shortLen,Phase 4,All,Prevention,Single Group Assignment,Non-Randomized,median_Enrol,1,elderly-childTeen,highAD
+Completed,Accept,shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,largeEnrol,2,adults,highAD
+Completed,Accept,shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,median_Enrol,4,childTeen,medianAD
+Completed,Accept,relatively_shortLen,Phase 4,All,Prevention,Parallel Assignment,Randomized,median_Enrol,2,adults-childTeen,noAD
+Completed,Accept,shortLen,Phase 4,All,Prevention,Parallel Assignment,Randomized,largeEnrol,2,adults-childTeen,medianAD
+Completed,Accept,shortLen,Phase 3,All,Prevention,Single Group Assignment,Non-Randomized,relatively_smallEnrol,1,childTeen,noAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Non-Randomized,median_Enrol,2,childTeen-infants,highAD
+Completed,Accept,medianLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,largeEnrol,4,infants,highAD
+Completed,No,relatively_shortLen,Phase 3,All,Treatment,Crossover Assignment,Randomized,relatively_smallEnrol,2,elderly-childTeen,very_highAD
+Terminated,Accept,shortLen,Not Applicable,Female,Diagnostic,Single Group Assignment,SingleArmNA,relatively_smallEnrol,1,elderly-childTeen,noAD
+Completed,No,shortLen,Not Applicable,All,Treatment,Single Group Assignment,Non-Randomized,smallEnrol,1,allAges,noAD
+Completed,Accept,shortLen,Phase 2,All,Prevention,Parallel Assignment,Randomized,relatively_smallEnrol,2,elderly-adults,noAD
+Completed,Accept,relatively_shortLen,Phase 2,All,Prevention,Parallel Assignment,Randomized,median_Enrol,3,childTeen-infants,medianAD
+Completed,Accept,relatively_shortLen,Phase 2,All,Prevention,Parallel Assignment,Randomized,smallEnrol,3,adults,highAD
+Completed,Accept,relatively_shortLen,Phase 4,All,Prevention,Parallel Assignment,Randomized,median_Enrol,2,adults-childTeen,medianAD
+Completed,Accept,relatively_shortLen,Not Applicable,All,Prevention,Parallel Assignment,Randomized,median_Enrol,2,elderly-adults,noAD
+Terminated,No,medianLen,Phase 3,Male,Treatment,Parallel Assignment,Randomized,smallEnrol,2,allAges,noAD
+Completed,No,medianLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,2,elderly-adults,very_highAD
+Completed,Accept,shortLen,Phase 2,All,Prevention,Parallel Assignment,Randomized,median_Enrol,3,infants,highAD
+Completed,Accept,relatively_shortLen,Phase 2,All,Prevention,Parallel Assignment,Randomized,median_Enrol,3,infants,medianAD
+Completed,Accept,medianLen,Phase 4,All,Prevention,Parallel Assignment,Randomized,largeEnrol,3,infants,highAD
+Completed,Accept,shortLen,Phase 4,All,Prevention,Parallel Assignment,Randomized,relatively_smallEnrol,2,infants,highAD
+Completed,No,relatively_shortLen,Phase 1|Phase 2,All,Prevention,Sequential Assignment,Randomized,smallEnrol,2,adults,highAD
+Completed,Accept,relatively_shortLen,Phase 1,All,Prevention,Sequential Assignment,Non-Randomized,smallEnrol,1,adults,noAD
+Completed,Accept,shortLen,Not Applicable,All,Prevention,Parallel Assignment,Randomized,median_Enrol,1,elderly-adults,noAD
+Completed,Accept,shortLen,Phase 2,All,Prevention,Parallel Assignment,Randomized,smallEnrol,4,adults,highAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,largeEnrol,5,infants,highAD
+Completed,Accept,shortLen,Not Applicable,All,Other,Single Group Assignment,SingleArmNA,largeEnrol,2,elderly-adults,noAD
+Completed,No,medianLen,Phase 1|Phase 2,All,Treatment,Parallel Assignment,Randomized,smallEnrol,5,elderly-adults,noAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,median_Enrol,2,infants,highAD
+Completed,Accept,shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,median_Enrol,2,adults-childTeen,noAD
+Completed,Accept,shortLen,Phase 4,All,Prevention,Parallel Assignment,Randomized,median_Enrol,2,childTeen,noAD
+Completed,Accept,medianLen,Phase 4,All,Prevention,Parallel Assignment,Randomized,largeEnrol,2,adults,medianAD
+Completed,Accept,relatively_shortLen,Phase 4,All,Treatment,Parallel Assignment,Randomized,median_Enrol,2,elderly-childTeen,noAD
+Completed,Accept,shortLen,Phase 3,All,Prevention,Parallel Assignment,Non-Randomized,median_Enrol,2,infants,medianAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Single Group Assignment,Non-Randomized,smallEnrol,1,elderly-adults,noAD
+Completed,Accept,shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,median_Enrol,1,childTeen,noAD
+Completed,Accept,shortLen,Phase 2,All,Prevention,Parallel Assignment,Randomized,median_Enrol,3,adults-childTeen,highAD
+Completed,Accept,medianLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,largeEnrol,8,childTeen-infants,highAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,median_Enrol,3,infants,highAD
+Completed,Accept,relatively_shortLen,Phase 2|Phase 3,All,Prevention,Parallel Assignment,Non-Randomized,median_Enrol,2,adults-childTeen,noAD
+Completed,Accept,shortLen,Phase 2,All,Prevention,Parallel Assignment,Non-Randomized,relatively_smallEnrol,1,adults-childTeen,noAD
+Completed,Accept,relatively_shortLen,Phase 2|Phase 3,All,Prevention,Parallel Assignment,Randomized,largeEnrol,12,infants,highAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,largeEnrol,3,adults-childTeen,medianAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,median_Enrol,4,infants,medianAD
+Completed,Accept,relatively_shortLen,Phase 1,All,Other,Single Group Assignment,SingleArmNA,smallEnrol,2,elderly-adults,noAD
+Completed,Accept,shortLen,Phase 4,All,Prevention,Parallel Assignment,Non-Randomized,relatively_smallEnrol,1,elderly-adults,noAD
+Completed,Accept,shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,median_Enrol,5,infants,very_highAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,median_Enrol,3,infants,medianAD
+Completed,Accept,shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,median_Enrol,3,infants,highAD
+Completed,Accept,shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,smallEnrol,1,infants,noAD
+Completed,Accept,shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,median_Enrol,3,childTeen-infants,noAD
+Completed,Accept,medianLen,Phase 3,All,Prevention,Single Group Assignment,Non-Randomized,median_Enrol,2,infants,very_highAD
+Completed,Accept,shortLen,Phase 4,All,Prevention,Parallel Assignment,Randomized,median_Enrol,2,infants,medianAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,median_Enrol,3,infants,highAD
+Completed,Accept,shortLen,Phase 3,All,Treatment,Single Group Assignment,Non-Randomized,relatively_smallEnrol,1,infants,highAD
+Completed,Accept,relatively_shortLen,Phase 4,All,Prevention,Single Group Assignment,Non-Randomized,largeEnrol,1,infants,very_highAD
+Completed,No,medianLen,Phase 4,All,Treatment,Parallel Assignment,Randomized,largeEnrol,2,elderly-adults,very_highAD
+Completed,Accept,medianLen,Phase 2,All,Prevention,Parallel Assignment,Randomized,median_Enrol,4,adults-childTeen,highAD
+Completed,Accept,relatively_shortLen,Phase 4,All,Prevention,Crossover Assignment,Randomized,largeEnrol,3,childTeen,medianAD
+Completed,Accept,shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,largeEnrol,5,childTeen,medianAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,very_largeEnrol,2,adults-childTeen,highAD
+Completed,Accept,medianLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,very_largeEnrol,3,infants,medianAD
+Completed,Accept,shortLen,Phase 3,All,Prevention,Single Group Assignment,Non-Randomized,median_Enrol,1,adults-infants,medianAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Single Group Assignment,Non-Randomized,relatively_smallEnrol,1,allAges,highAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Single Group Assignment,SingleArmNA,relatively_smallEnrol,1,infants,highAD
+Terminated,No,medianLen,Phase 2,All,Treatment,Parallel Assignment,Randomized,smallEnrol,7,adults-infants,highAD
+Completed,Accept,shortLen,Phase 2,All,Prevention,Parallel Assignment,Randomized,median_Enrol,3,adults-childTeen,medianAD
+Completed,Accept,relatively_shortLen,Phase 2,All,Prevention,Parallel Assignment,Randomized,largeEnrol,2,adults-childTeen,medianAD
+Completed,Accept,shortLen,Phase 3,All,Prevention,Single Group Assignment,SingleArmNA,smallEnrol,1,adults,highAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,median_Enrol,2,childTeen-infants,noAD
+Completed,Accept,shortLen,Phase 2,All,Prevention,Single Group Assignment,SingleArmNA,smallEnrol,1,elderly-adults,noAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Non-Randomized,median_Enrol,1,infants,noAD
+Completed,No,medianLen,Phase 1,All,Prevention,Parallel Assignment,Randomized,smallEnrol,4,adults,noAD
+Completed,Accept,medianLen,Phase 3,All,Prevention,Parallel Assignment,Non-Randomized,median_Enrol,2,adults-childTeen,medianAD
+Terminated,No,shortLen,Phase 2,All,Prevention,Parallel Assignment,Randomized,smallEnrol,5,infants,very_highAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,median_Enrol,5,infants,highAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,very_largeEnrol,6,infants,highAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,very_largeEnrol,8,infants,highAD
+Completed,Accept,relatively_shortLen,Phase 2,All,Prevention,Parallel Assignment,Randomized,relatively_smallEnrol,6,infants,highAD
+Completed,Accept,relatively_shortLen,Phase 2,All,Prevention,Parallel Assignment,Randomized,median_Enrol,3,infants,highAD
+Completed,Accept,relatively_shortLen,Phase 1,All,Prevention,Single Group Assignment,Randomized,smallEnrol,2,adults,noAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,largeEnrol,3,infants,highAD
+Completed,Accept,relatively_shortLen,Phase 2,All,Prevention,Parallel Assignment,Randomized,smallEnrol,2,adults,noAD
+Completed,Accept,relatively_shortLen,Phase 2,All,Prevention,Parallel Assignment,Non-Randomized,median_Enrol,3,childTeen-infants,highAD
+Completed,No,relatively_shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,smallEnrol,3,elderly-adults,noAD
+Completed,Accept,longLen,Not Applicable,All,Prevention,Parallel Assignment,Randomized,very_largeEnrol,2,childTeen,noAD
+Completed,Accept,relatively_shortLen,Phase 4,All,Prevention,Parallel Assignment,Randomized,relatively_smallEnrol,5,adults,medianAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Single Group Assignment,SingleArmNA,relatively_smallEnrol,1,infants,highAD
+Completed,Accept,relatively_shortLen,Phase 2,All,Prevention,Single Group Assignment,SingleArmNA,median_Enrol,1,adults-childTeen,highAD
+Completed,Accept,shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,relatively_smallEnrol,4,adults,medianAD
+Completed,No,medianLen,Not Applicable,All,Treatment,Parallel Assignment,Randomized,largeEnrol,2,elderly-adults,noAD
+Completed,Accept,shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,median_Enrol,5,adults,medianAD
+Completed,No,longLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,largeEnrol,1,infants,noAD
+Completed,No,relatively_shortLen,Phase 3,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,1,elderly-adults,noAD
+Completed,Accept,relatively_shortLen,Phase 2,All,Prevention,Parallel Assignment,Randomized,median_Enrol,2,infants,highAD
+Completed,No,longLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,largeEnrol,1,elderly-adults,highAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Single Group Assignment,SingleArmNA,relatively_smallEnrol,1,infants,highAD
+Completed,Accept,relatively_shortLen,Phase 4,All,Prevention,Parallel Assignment,Non-Randomized,median_Enrol,1,infants,medianAD
+Completed,Accept,relatively_shortLen,Phase 4,All,Prevention,Parallel Assignment,Non-Randomized,median_Enrol,2,infants,highAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,largeEnrol,4,infants,highAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,largeEnrol,3,infants,medianAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,largeEnrol,4,allAges,highAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Single Group Assignment,Non-Randomized,median_Enrol,2,infants,medianAD
+Completed,Accept,shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,median_Enrol,3,infants,medianAD
+Completed,Accept,shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,median_Enrol,4,infants,highAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,relatively_smallEnrol,2,infants,highAD
+Completed,Accept,shortLen,Phase 3,All,Prevention,Parallel Assignment,Non-Randomized,relatively_smallEnrol,1,infants,highAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Non-Randomized,median_Enrol,3,infants,highAD
+Completed,Accept,shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,relatively_smallEnrol,2,infants,noAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,median_Enrol,2,infants,highAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,median_Enrol,3,infants,highAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,largeEnrol,3,infants,highAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,median_Enrol,3,infants,highAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,largeEnrol,2,infants,highAD
+Completed,Accept,shortLen,Phase 1,All,Treatment,Single Group Assignment,Non-Randomized,smallEnrol,1,adults,noAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Non-Randomized,largeEnrol,4,infants,highAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,largeEnrol,4,infants,highAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,largeEnrol,3,infants,highAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,relatively_smallEnrol,2,infants,highAD
+Completed,Accept,relatively_shortLen,Phase 2,All,Prevention,Parallel Assignment,Randomized,median_Enrol,8,infants,highAD
+Completed,Accept,shortLen,Not Applicable,Male,Screening,Parallel Assignment,Randomized,relatively_smallEnrol,2,elderly-childTeen,noAD
+Completed,Accept,relatively_shortLen,Phase 2,All,Prevention,Parallel Assignment,Non-Randomized,relatively_smallEnrol,4,adults-childTeen,noAD
+Completed,Accept,relatively_shortLen,Phase 2,All,Prevention,Parallel Assignment,Non-Randomized,relatively_smallEnrol,4,childTeen,noAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,very_largeEnrol,8,infants,highAD
+Completed,No,relatively_shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,2,elderly-childTeen,highAD
+"Active, not recruiting",Accept,relatively_shortLen,Phase 2,All,Prevention,Parallel Assignment,Randomized,relatively_smallEnrol,2,elderly-adults,highAD
+Completed,Accept,relatively_shortLen,Phase 2,All,Prevention,Parallel Assignment,Randomized,median_Enrol,2,elderly-adults,medianAD
+Completed,Accept,relatively_shortLen,Phase 1,All,Prevention,Parallel Assignment,Randomized,smallEnrol,2,adults,highAD
+Completed,No,relatively_shortLen,Phase 4,All,Other,Single Group Assignment,SingleArmNA,smallEnrol,1,elderly-adults,noAD
+Completed,Accept,relatively_shortLen,Phase 1|Phase 2,All,Prevention,Parallel Assignment,Randomized,median_Enrol,6,adults-infants,highAD
+Completed,No,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,relatively_smallEnrol,2,childTeen-infants,very_highAD
+Completed,Accept,relatively_shortLen,Not Applicable,All,Other,Parallel Assignment,Randomized,median_Enrol,3,elderly-childTeen,very_highAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,very_largeEnrol,3,infants,highAD
+Completed,No,relatively_shortLen,Phase 2,All,Treatment,Parallel Assignment,Randomized,smallEnrol,3,elderly-adults,highAD
+Completed,No,shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,median_Enrol,2,allAges,noAD
+Completed,No,medianLen,Not Applicable,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,2,elderly-adults,highAD
+Completed,No,longLen,Not Applicable,All,Other,Parallel Assignment,Randomized,relatively_smallEnrol,1,elderly-adults,noAD
+Completed,No,shortLen,Not Applicable,All,Screening,Single Group Assignment,SingleArmNA,median_Enrol,1,adults-childTeen,noAD
+Completed,No,medianLen,Phase 4,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,3,elderly-adults,highAD
+Terminated,No,relatively_shortLen,Phase 4,All,Diagnostic,Single Group Assignment,SingleArmNA,smallEnrol,1,elderly-childTeen,noAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,median_Enrol,5,infants,highAD
+Completed,Accept,shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,relatively_smallEnrol,2,infants,highAD
+Completed,Accept,shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,median_Enrol,4,infants,highAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Non-Randomized,relatively_smallEnrol,2,infants,highAD
+Completed,Accept,shortLen,Phase 3,All,Prevention,Single Group Assignment,Non-Randomized,relatively_smallEnrol,3,infants,highAD
+Terminated,No,relatively_shortLen,Not Applicable,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,1,elderly-adults,very_highAD
+Completed,Accept,longLen,Phase 2,All,Diagnostic,Parallel Assignment,Randomized,relatively_smallEnrol,5,adults,medianAD
+Completed,Accept,shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,median_Enrol,3,elderly-adults,highAD
+Completed,Accept,relatively_shortLen,Not Applicable,All,Health Services Research,Parallel Assignment,Randomized,relatively_smallEnrol,2,elderly-adults,noAD
+Completed,Accept,shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,smallEnrol,2,infants,noAD
+Completed,Accept,shortLen,Phase 3,All,Prevention,Parallel Assignment,Non-Randomized,median_Enrol,5,infants,medianAD
+Completed,No,relatively_shortLen,Not Applicable,All,Health Services Research,Factorial Assignment,Randomized,very_largeEnrol,4,elderly-adults,noAD
+Completed,Accept,relatively_shortLen,Phase 4,All,Prevention,Parallel Assignment,Randomized,very_largeEnrol,2,adults-childTeen,highAD
+Completed,Accept,shortLen,Early Phase 1,Female,Prevention,Parallel Assignment,Randomized,relatively_smallEnrol,1,elderly-adults,noAD
+Completed,Accept,shortLen,Phase 1,All,Prevention,Parallel Assignment,Randomized,median_Enrol,3,adults,noAD
+Completed,Accept,relatively_shortLen,Phase 2,All,Other,Single Group Assignment,SingleArmNA,smallEnrol,1,elderly-adults,noAD
+Completed,Accept,relatively_shortLen,Phase 1,All,Basic Science,Parallel Assignment,Non-Randomized,smallEnrol,1,adults,noAD
+Completed,Accept,shortLen,Phase 1,All,Prevention,Parallel Assignment,Non-Randomized,smallEnrol,1,adults,noAD
+Completed,Accept,relatively_shortLen,Phase 1,All,Prevention,Parallel Assignment,Randomized,smallEnrol,2,adults,noAD
+Completed,Accept,relatively_shortLen,Phase 1,All,Treatment,Parallel Assignment,Randomized,smallEnrol,5,adults,noAD
+Completed,Accept,medianLen,Phase 1|Phase 2,All,Prevention,Parallel Assignment,Randomized,relatively_smallEnrol,4,adults,medianAD
+Terminated,Accept,shortLen,Not Applicable,All,Basic Science,Single Group Assignment,Non-Randomized,smallEnrol,1,elderly-adults,noAD
+Completed,No,longLen,Phase 2,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,1,elderly-adults,very_highAD
+Completed,No,relatively_shortLen,Phase 1,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,1,elderly-childTeen,noAD
+Terminated,Accept,relatively_shortLen,Phase 4,Male,Prevention,Parallel Assignment,Randomized,median_Enrol,2,adults,medianAD
+Completed,Accept,medianLen,Phase 4,All,Prevention,Parallel Assignment,Randomized,very_largeEnrol,2,elderly,medianAD
+Completed,Accept,relatively_shortLen,Phase 2|Phase 3,All,Prevention,Parallel Assignment,Randomized,smallEnrol,2,adults,noAD
+Completed,No,relatively_shortLen,Phase 3,Male,Treatment,Parallel Assignment,Randomized,median_Enrol,1,childTeen,noAD
+Completed,No,shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,median_Enrol,3,allAges,noAD
+Completed,Accept,shortLen,Phase 1,All,Treatment,Parallel Assignment,Non-Randomized,smallEnrol,6,elderly-adults,noAD
+Completed,No,medianLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,5,elderly-adults,very_highAD
+Completed,No,shortLen,Phase 2,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,1,elderly-adults,noAD
+Completed,No,shortLen,Phase 2,All,Treatment,Parallel Assignment,Randomized,smallEnrol,2,elderly-adults,highAD
+Completed,Accept,shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,largeEnrol,1,infants,highAD
+Completed,No,relatively_shortLen,Phase 3,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,1,childTeen-infants,very_highAD
+Completed,No,medianLen,Phase 2,All,Treatment,Crossover Assignment,Randomized,smallEnrol,2,allAges,very_highAD
+Terminated,No,shortLen,Phase 4,All,Treatment,Parallel Assignment,Randomized,smallEnrol,1,childTeen-infants,noAD
+Completed,No,shortLen,Phase 2,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,5,elderly-adults,medianAD
+Completed,No,medianLen,Phase 2,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,5,elderly-adults,very_highAD
+Completed,No,relatively_shortLen,Phase 2,All,Treatment,Single Group Assignment,Randomized,median_Enrol,7,elderly-adults,highAD
+Completed,No,relatively_shortLen,Phase 2,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,4,elderly-adults,highAD
+Completed,No,shortLen,Phase 2,All,Treatment,Parallel Assignment,Randomized,smallEnrol,5,elderly-adults,highAD
+Terminated,No,medianLen,Phase 2,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,2,elderly-adults,noAD
+Completed,No,medianLen,Phase 2,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,3,elderly-adults,highAD
+Completed,No,relatively_shortLen,Phase 2,All,Prevention,Parallel Assignment,Randomized,smallEnrol,2,adults,highAD
+Completed,No,relatively_shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,median_Enrol,2,elderly-childTeen,highAD
+Completed,No,shortLen,Phase 4,All,Diagnostic,Parallel Assignment,Randomized,very_largeEnrol,2,allAges,noAD
+Completed,No,shortLen,Phase 2,All,Treatment,Parallel Assignment,Randomized,smallEnrol,5,adults,highAD
+Completed,No,shortLen,Phase 2,All,Treatment,Parallel Assignment,Randomized,smallEnrol,1,adults,highAD
+Completed,No,medianLen,Phase 4,All,Treatment,Parallel Assignment,Randomized,smallEnrol,1,elderly-childTeen,very_highAD
+Terminated,Accept,relatively_shortLen,Not Applicable,Female,Prevention,Parallel Assignment,Non-Randomized,largeEnrol,1,adults-childTeen,medianAD
+Completed,Accept,relatively_shortLen,Phase 1|Phase 2,All,Prevention,Parallel Assignment,Randomized,smallEnrol,4,adults,noAD
+Completed,Accept,shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,relatively_smallEnrol,2,adults-childTeen,noAD
+Completed,Accept,relatively_shortLen,Phase 4,All,Prevention,Parallel Assignment,Randomized,median_Enrol,2,childTeen-infants,medianAD
+Completed,Accept,medianLen,Phase 4,All,Prevention,Parallel Assignment,Non-Randomized,median_Enrol,3,adults-infants,noAD
+Terminated,No,relatively_shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,2,allAges,noAD
+Terminated,No,relatively_shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,3,allAges,medianAD
+Completed,No,medianLen,Phase 2,All,Prevention,Parallel Assignment,Randomized,relatively_smallEnrol,2,elderly-adults,very_highAD
+Completed,Accept,relatively_shortLen,Not Applicable,All,Prevention,Parallel Assignment,Randomized,relatively_smallEnrol,1,elderly-adults,noAD
+Completed,No,medianLen,Phase 2,All,Prevention,Parallel Assignment,Randomized,relatively_smallEnrol,3,allAges,medianAD
+Completed,Accept,relatively_shortLen,Not Applicable,All,Diagnostic,Parallel Assignment,Randomized,largeEnrol,2,childTeen-infants,noAD
+Completed,No,medianLen,Phase 2,All,Prevention,Parallel Assignment,Randomized,relatively_smallEnrol,2,elderly-adults,very_highAD
+Completed,Accept,shortLen,Phase 4,All,Prevention,Parallel Assignment,Randomized,relatively_smallEnrol,2,infants,medianAD
+Completed,No,relatively_shortLen,Phase 1|Phase 2,All,Treatment,Parallel Assignment,Randomized,smallEnrol,2,elderly-childTeen,highAD
+Completed,No,shortLen,Phase 2,All,Other,Single Group Assignment,SingleArmNA,relatively_smallEnrol,1,elderly-adults,medianAD
+Completed,Accept,relatively_shortLen,Phase 2|Phase 3,All,Treatment,Parallel Assignment,Randomized,largeEnrol,2,infants,very_highAD
+Terminated,No,medianLen,Phase 2|Phase 3,All,Prevention,Parallel Assignment,Randomized,very_largeEnrol,2,elderly-adults,highAD
+Terminated,No,relatively_shortLen,Phase 4,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,1,elderly-adults,noAD
+Completed,Accept,relatively_shortLen,Phase 2,All,Prevention,Parallel Assignment,Non-Randomized,relatively_smallEnrol,3,adults-childTeen,noAD
+Completed,Accept,relatively_shortLen,Phase 2,All,Prevention,Parallel Assignment,Non-Randomized,relatively_smallEnrol,2,infants,noAD
+Completed,Accept,shortLen,Phase 2,All,Prevention,Parallel Assignment,Randomized,relatively_smallEnrol,2,infants,medianAD
+Terminated,No,shortLen,Phase 4,All,Treatment,Parallel Assignment,Randomized,smallEnrol,2,elderly-adults,highAD
+Completed,No,relatively_shortLen,Phase 3,All,Treatment,Parallel Assignment,Non-Randomized,smallEnrol,1,elderly-adults,highAD
+Completed,Accept,relatively_shortLen,Phase 4,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,1,elderly-adults,noAD
+Completed,No,medianLen,Phase 1|Phase 2,All,Treatment,Parallel Assignment,Randomized,smallEnrol,2,elderly-adults,very_highAD
+Completed,Accept,shortLen,Phase 1,All,Prevention,Parallel Assignment,Non-Randomized,smallEnrol,1,adults,noAD
+Completed,No,shortLen,Phase 4,All,Prevention,Parallel Assignment,Randomized,relatively_smallEnrol,2,elderly,noAD
+Completed,Accept,relatively_shortLen,Phase 1,All,Prevention,Parallel Assignment,Randomized,smallEnrol,2,adults,noAD
+Completed,Accept,relatively_shortLen,Phase 1|Phase 2,All,Prevention,Parallel Assignment,Randomized,median_Enrol,4,adults-infants,highAD
+Completed,Accept,relatively_shortLen,Phase 1,All,Prevention,Parallel Assignment,Randomized,smallEnrol,4,adults,highAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,largeEnrol,2,infants,highAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,largeEnrol,9,infants,highAD
+Completed,Accept,shortLen,Phase 3,All,Prevention,Single Group Assignment,SingleArmNA,median_Enrol,1,infants,medianAD
+Completed,Accept,shortLen,Phase 3,All,Prevention,Parallel Assignment,Non-Randomized,median_Enrol,2,childTeen-infants,noAD
+Completed,Accept,shortLen,Phase 3,All,Prevention,Parallel Assignment,Non-Randomized,median_Enrol,1,infants,noAD
+Completed,Accept,shortLen,Phase 4,All,Prevention,Parallel Assignment,Non-Randomized,smallEnrol,1,childTeen-infants,noAD
+Completed,Accept,shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,relatively_smallEnrol,1,infants,highAD
+Completed,Accept,shortLen,Phase 2,All,Prevention,Parallel Assignment,Non-Randomized,median_Enrol,5,infants,highAD
+Completed,Accept,shortLen,Phase 2,All,Prevention,Parallel Assignment,Randomized,median_Enrol,4,infants,highAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,median_Enrol,9,infants,highAD
+Completed,Accept,relatively_shortLen,Phase 2,All,Prevention,Parallel Assignment,Non-Randomized,median_Enrol,3,infants,medianAD
+Completed,Accept,relatively_shortLen,Phase 2,All,Prevention,Parallel Assignment,Randomized,median_Enrol,3,infants,highAD
+Completed,Accept,shortLen,Phase 2,All,Prevention,Parallel Assignment,Randomized,median_Enrol,3,infants,highAD
+Completed,Accept,relatively_shortLen,Phase 2,All,Prevention,Parallel Assignment,Randomized,median_Enrol,5,infants,highAD
+Terminated,Accept,shortLen,Phase 2,All,Prevention,Parallel Assignment,Randomized,smallEnrol,3,infants,noAD
+Completed,Accept,medianLen,Phase 4,All,Prevention,Parallel Assignment,Non-Randomized,relatively_smallEnrol,1,infants,highAD
+Completed,Accept,shortLen,Phase 2,All,Prevention,Parallel Assignment,Non-Randomized,median_Enrol,1,infants,medianAD
+Completed,Accept,shortLen,Phase 4,All,Prevention,Parallel Assignment,Randomized,relatively_smallEnrol,2,infants,noAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,median_Enrol,5,infants,medianAD
+Completed,No,relatively_shortLen,Not Applicable,All,Treatment,Parallel Assignment,Randomized,smallEnrol,5,elderly-adults,highAD
+Completed,Accept,relatively_shortLen,Not Applicable,All,Health Services Research,Parallel Assignment,Randomized,median_Enrol,1,elderly-adults,noAD
+Completed,No,relatively_shortLen,Not Applicable,All,Prevention,Factorial Assignment,Randomized,relatively_smallEnrol,4,elderly-childTeen,noAD
+Completed,No,medianLen,Phase 4,All,Treatment,Parallel Assignment,Randomized,smallEnrol,2,childTeen-infants,very_highAD
+Completed,No,longLen,Phase 4,All,Treatment,Single Group Assignment,Randomized,median_Enrol,2,allAges,very_highAD
+Terminated,No,shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,2,allAges,noAD
+Completed,No,relatively_shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,median_Enrol,2,allAges,medianAD
+Completed,No,shortLen,Phase 4,All,Treatment,Parallel Assignment,Non-Randomized,relatively_smallEnrol,1,childTeen-infants,noAD
+Terminated,No,relatively_shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,smallEnrol,2,allAges,noAD
+Completed,No,shortLen,Phase 4,All,Treatment,Parallel Assignment,Randomized,smallEnrol,2,allAges,noAD
+Completed,No,relatively_shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,median_Enrol,3,allAges,noAD
+Completed,No,relatively_shortLen,Phase 2|Phase 3,All,Treatment,Parallel Assignment,Randomized,median_Enrol,2,allAges,noAD
+Completed,No,relatively_shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,largeEnrol,2,allAges,noAD
+Terminated,No,shortLen,Phase 4,Male,Prevention,Parallel Assignment,Randomized,smallEnrol,1,elderly-adults,noAD
+Completed,No,shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,median_Enrol,2,allAges,medianAD
+Completed,No,shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,median_Enrol,2,allAges,medianAD
+Completed,No,relatively_shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,2,adults-infants,noAD
+Completed,No,relatively_shortLen,Phase 4,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,2,infants,medianAD
+Completed,Accept,relatively_shortLen,Phase 4,Female,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,1,adults,noAD
+Terminated,No,shortLen,Phase 2,All,Treatment,Parallel Assignment,Randomized,smallEnrol,2,elderly-adults,noAD
+Completed,No,relatively_shortLen,Not Applicable,All,Prevention,Crossover Assignment,Randomized,very_largeEnrol,3,elderly-adults,noAD
+Completed,No,relatively_shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,median_Enrol,2,allAges,noAD
+Completed,Accept,shortLen,Phase 1,All,Treatment,Parallel Assignment,Randomized,smallEnrol,2,adults,noAD
+Completed,No,relatively_shortLen,Not Applicable,All,Diagnostic,Parallel Assignment,Randomized,median_Enrol,2,allAges,highAD
+Terminated,No,shortLen,Not Applicable,All,Treatment,Parallel Assignment,Randomized,smallEnrol,2,elderly-adults,noAD
+Completed,No,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,smallEnrol,2,elderly-adults,highAD
+Completed,No,relatively_shortLen,Phase 2,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,4,elderly-adults,highAD
+Completed,No,shortLen,Phase 2,All,Treatment,Parallel Assignment,Randomized,smallEnrol,2,elderly-adults,noAD
+Completed,No,shortLen,Phase 2,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,1,elderly-adults,noAD
+Completed,No,relatively_shortLen,Phase 2,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,2,elderly-adults,highAD
+Completed,No,relatively_shortLen,Phase 1|Phase 2,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,1,elderly-adults,noAD
+Completed,No,relatively_shortLen,Phase 3,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,1,elderly-adults,very_highAD
+Completed,No,medianLen,Phase 4,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,2,elderly-adults,highAD
+Completed,Accept,relatively_shortLen,Not Applicable,All,Treatment,Parallel Assignment,Randomized,smallEnrol,3,elderly-childTeen,noAD
+Completed,No,relatively_shortLen,Phase 2,All,Treatment,Parallel Assignment,Randomized,smallEnrol,2,allAges,highAD
+Terminated,No,relatively_shortLen,Phase 2,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,2,elderly-adults,highAD
+Completed,No,medianLen,Phase 3,All,Treatment,Single Group Assignment,SingleArmNA,median_Enrol,1,elderly-adults,very_highAD
+Completed,No,shortLen,Phase 2,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,1,elderly-adults,noAD
+Completed,No,relatively_shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,median_Enrol,2,elderly-adults,highAD
+Completed,No,relatively_shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,median_Enrol,2,elderly-adults,highAD
+Completed,No,relatively_shortLen,Phase 2,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,2,elderly-adults,highAD
+Completed,No,medianLen,Phase 2,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,1,elderly-adults,noAD
+Completed,No,relatively_shortLen,Phase 4,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,2,childTeen-infants,medianAD
+Completed,No,relatively_shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,2,elderly-adults,highAD
+Completed,No,relatively_shortLen,Phase 1,All,Prevention,Single Group Assignment,Non-Randomized,smallEnrol,1,elderly-adults,noAD
+Completed,No,relatively_shortLen,Phase 4,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,1,elderly-adults,highAD
+Completed,No,relatively_shortLen,Phase 4,All,Treatment,Single Group Assignment,SingleArmNA,relatively_smallEnrol,1,elderly-adults,medianAD
+Completed,Accept,relatively_shortLen,Phase 4,All,Prevention,Parallel Assignment,Randomized,relatively_smallEnrol,2,adults-infants,noAD
+Completed,No,medianLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,median_Enrol,3,elderly-childTeen,very_highAD
+Completed,No,relatively_shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,median_Enrol,2,elderly-childTeen,very_highAD
+Completed,No,medianLen,Phase 2,All,Treatment,Parallel Assignment,Randomized,median_Enrol,5,elderly-adults,highAD
+Completed,Accept,shortLen,Phase 2,All,Prevention,Single Group Assignment,Randomized,smallEnrol,3,elderly-adults,noAD
+Completed,No,medianLen,Phase 2|Phase 3,All,Treatment,Single Group Assignment,Non-Randomized,smallEnrol,1,elderly-adults,very_highAD
+Completed,No,shortLen,Phase 3,Female,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,2,elderly-adults,noAD
+Completed,No,medianLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,2,elderly-childTeen,highAD
+Completed,Accept,shortLen,Phase 4,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,1,elderly-adults,noAD
+Completed,No,shortLen,Phase 4,All,Treatment,Parallel Assignment,Randomized,smallEnrol,2,childTeen-infants,noAD
+Completed,Accept,relatively_shortLen,Phase 4,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,1,elderly-adults,noAD
+Completed,Accept,relatively_shortLen,Phase 4,All,Other,Single Group Assignment,SingleArmNA,smallEnrol,1,elderly-adults,noAD
+Completed,Accept,shortLen,Not Applicable,All,Prevention,Parallel Assignment,Randomized,smallEnrol,1,elderly-adults,noAD
+Completed,No,medianLen,Phase 2,All,Supportive Care,Single Group Assignment,Non-Randomized,smallEnrol,3,elderly-adults,very_highAD
+Terminated,No,medianLen,Not Applicable,All,Treatment,Parallel Assignment,Randomized,smallEnrol,1,elderly-adults,very_highAD
+Completed,No,relatively_shortLen,Phase 3,All,Prevention,Parallel Assignment,Randomized,median_Enrol,2,elderly-adults,very_highAD
+Completed,No,relatively_shortLen,Phase 2,All,Prevention,Parallel Assignment,Randomized,relatively_smallEnrol,3,elderly-adults,highAD
+Completed,No,shortLen,Phase 2,All,Treatment,Single Group Assignment,Non-Randomized,smallEnrol,1,childTeen-infants,very_highAD
+Terminated,No,medianLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,smallEnrol,2,elderly-childTeen,very_highAD
+Completed,No,longLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,median_Enrol,3,elderly-adults,very_highAD
+Completed,No,relatively_shortLen,Phase 3,All,Treatment,Parallel Assignment,Non-Randomized,smallEnrol,2,elderly-adults,very_highAD
+Completed,No,relatively_shortLen,Phase 2,All,Treatment,Parallel Assignment,Randomized,smallEnrol,2,elderly-adults,noAD
+Completed,Accept,shortLen,Not Applicable,All,Prevention,Parallel Assignment,Randomized,smallEnrol,2,elderly-adults,noAD
+Completed,No,longLen,Phase 1|Phase 2,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,2,elderly-childTeen,very_highAD
+Completed,No,relatively_shortLen,Phase 2,Female,Treatment,Parallel Assignment,Randomized,smallEnrol,2,elderly-adults,noAD
+Completed,No,medianLen,Phase 4,All,Prevention,Parallel Assignment,Randomized,relatively_smallEnrol,2,elderly-adults,medianAD
+Completed,No,relatively_shortLen,Phase 2,Female,Treatment,Single Group Assignment,Randomized,relatively_smallEnrol,2,elderly-adults,highAD
+Completed,No,medianLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,median_Enrol,1,elderly-adults,very_highAD
+Completed,No,relatively_shortLen,Phase 3,All,Treatment,Single Group Assignment,Non-Randomized,relatively_smallEnrol,3,elderly-adults,very_highAD
+Terminated,No,relatively_shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,smallEnrol,2,elderly-childTeen,very_highAD
+Completed,No,relatively_shortLen,Phase 4,All,Treatment,Single Group Assignment,Non-Randomized,relatively_smallEnrol,3,elderly-adults,very_highAD
+Completed,No,relatively_shortLen,Phase 2,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,5,elderly-adults,very_highAD
+Completed,No,longLen,Phase 4,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,2,elderly-adults,very_highAD
+Completed,No,longLen,Phase 3,All,Supportive Care,Parallel Assignment,Randomized,median_Enrol,3,adults-infants,very_highAD
+Completed,No,shortLen,Phase 2,Female,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,2,elderly-adults,noAD
+Completed,Accept,shortLen,Phase 4,All,Treatment,Single Group Assignment,Randomized,smallEnrol,1,adults,noAD
+Completed,No,shortLen,Phase 3,Female,Treatment,Parallel Assignment,Randomized,median_Enrol,2,elderly-childTeen,medianAD
+Completed,Accept,medianLen,Phase 2,All,Prevention,Single Group Assignment,SingleArmNA,relatively_smallEnrol,1,elderly-childTeen,highAD
+Completed,Accept,relatively_shortLen,Not Applicable,Female,Treatment,Parallel Assignment,Randomized,median_Enrol,3,elderly-adults,noAD
+Completed,No,medianLen,Phase 2,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,1,elderly-adults,noAD
+Completed,No,medianLen,Phase 2,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,1,allAges,noAD
+Completed,No,longLen,Phase 3,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,2,childTeen-infants,very_highAD
+Completed,No,relatively_shortLen,Phase 4,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,1,infants,highAD
+Completed,Accept,relatively_shortLen,Phase 2,All,Prevention,Single Group Assignment,SingleArmNA,smallEnrol,1,adults,noAD
+Completed,No,longLen,Phase 2,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,7,allAges,very_highAD
+Completed,No,relatively_shortLen,Phase 1|Phase 2,Female,Prevention,Parallel Assignment,Randomized,relatively_smallEnrol,3,adults,noAD
+Terminated,No,shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,smallEnrol,3,elderly-adults,very_highAD
+Terminated,No,shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,smallEnrol,1,elderly-adults,very_highAD
+Completed,No,shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,median_Enrol,2,elderly-childTeen,medianAD
+Completed,No,shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,median_Enrol,2,elderly-childTeen,medianAD
+Completed,No,relatively_shortLen,Phase 4,All,Prevention,Parallel Assignment,Randomized,smallEnrol,1,elderly-adults,very_highAD
+Completed,No,shortLen,Phase 3,Female,Treatment,Parallel Assignment,SingleArmNA,relatively_smallEnrol,1,elderly-adults,noAD
+Completed,No,relatively_shortLen,Not Applicable,All,Basic Science,Single Group Assignment,SingleArmNA,relatively_smallEnrol,7,elderly-adults,noAD
+Completed,No,relatively_shortLen,Phase 3,All,Treatment,Single Group Assignment,Non-Randomized,smallEnrol,1,elderly-adults,very_highAD
+Completed,No,relatively_shortLen,Phase 2,All,Treatment,Parallel Assignment,Randomized,smallEnrol,2,elderly-adults,noAD
+Terminated,No,relatively_shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,median_Enrol,3,elderly-adults,highAD
+Completed,No,relatively_shortLen,Phase 4,All,Treatment,Single Group Assignment,Non-Randomized,smallEnrol,2,elderly-adults,very_highAD
+Completed,No,shortLen,Phase 3,Female,Treatment,Parallel Assignment,Randomized,median_Enrol,2,elderly-childTeen,medianAD
+Completed,No,shortLen,Phase 2,Female,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,2,elderly-adults,noAD
+Completed,No,relatively_shortLen,Phase 4,Female,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,2,adults,noAD
+Completed,No,shortLen,Phase 4,Female,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,2,adults,noAD
+Completed,No,shortLen,Phase 2,Female,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,2,elderly-adults,noAD
+Completed,No,medianLen,Not Applicable,Female,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,3,adults,noAD
+Completed,No,shortLen,Not Applicable,Female,Treatment,Parallel Assignment,Randomized,median_Enrol,2,elderly-adults,medianAD
+Completed,Accept,relatively_shortLen,Phase 4,Female,Treatment,Parallel Assignment,Non-Randomized,smallEnrol,2,elderly-adults,noAD
+Completed,No,longLen,Phase 1|Phase 2,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,4,elderly-adults,very_highAD
+Completed,Accept,shortLen,Phase 2,All,Treatment,Single Group Assignment,Randomized,smallEnrol,2,elderly-adults,noAD
+Completed,No,shortLen,Phase 4,All,Treatment,Parallel Assignment,Randomized,smallEnrol,2,elderly-adults,noAD
+Completed,No,relatively_shortLen,Not Applicable,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,1,elderly-adults,noAD
+Completed,No,relatively_shortLen,Not Applicable,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,1,elderly-adults,highAD
+Completed,No,relatively_shortLen,Phase 4,All,Treatment,Parallel Assignment,Randomized,smallEnrol,3,elderly-adults,highAD
+Completed,No,shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,median_Enrol,3,elderly-adults,noAD
+Completed,No,shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,median_Enrol,2,elderly-adults,noAD
+Completed,Accept,relatively_shortLen,Phase 4,Female,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,1,elderly-adults,noAD
+Completed,No,shortLen,Phase 4,All,Treatment,Parallel Assignment,Non-Randomized,smallEnrol,1,childTeen,noAD
+Completed,No,shortLen,Phase 4,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,2,elderly-adults,noAD
+Completed,No,relatively_shortLen,Phase 4,All,Treatment,Parallel Assignment,Non-Randomized,smallEnrol,4,elderly-childTeen,noAD
+Completed,No,shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,2,elderly-adults,noAD
+Completed,No,relatively_shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,2,elderly-childTeen,medianAD
+Completed,No,shortLen,Phase 1,All,Treatment,Parallel Assignment,Randomized,median_Enrol,3,elderly-childTeen,medianAD
+Completed,No,shortLen,Not Applicable,All,Treatment,Parallel Assignment,Randomized,median_Enrol,3,elderly-childTeen,highAD
+Completed,No,shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,median_Enrol,3,elderly-childTeen,medianAD
+Completed,No,shortLen,Phase 2,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,3,elderly-adults,noAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,median_Enrol,2,elderly-childTeen,noAD
+Completed,Accept,relatively_shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,median_Enrol,4,elderly-childTeen,medianAD
+Completed,No,medianLen,Phase 2,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,2,elderly-adults,very_highAD
+Completed,No,relatively_shortLen,Phase 4,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,2,elderly-childTeen,very_highAD
+Completed,Accept,shortLen,Phase 4,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,3,elderly-adults,noAD
+Completed,No,relatively_shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,median_Enrol,1,elderly-adults,very_highAD
+Completed,No,relatively_shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,median_Enrol,2,elderly-adults,highAD
+Completed,No,relatively_shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,median_Enrol,2,elderly-adults,highAD
+Completed,No,relatively_shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,largeEnrol,2,elderly-childTeen,highAD
+Completed,No,relatively_shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,median_Enrol,4,elderly-childTeen,highAD
+Completed,No,longLen,Phase 2,All,Treatment,Parallel Assignment,Non-Randomized,relatively_smallEnrol,7,allAges,highAD
+Completed,No,longLen,Phase 2,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,9,allAges,very_highAD
+Completed,No,relatively_shortLen,Phase 2,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,1,elderly-adults,very_highAD
+Completed,No,relatively_shortLen,Phase 4,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,1,elderly-adults,noAD
+Completed,No,relatively_shortLen,Phase 3,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,1,elderly-adults,noAD
+Completed,Accept,relatively_shortLen,Phase 2,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,2,elderly-adults,medianAD
+Completed,No,relatively_shortLen,Phase 2,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,1,elderly-adults,highAD
+Completed,No,longLen,Not Applicable,All,Prevention,Parallel Assignment,Non-Randomized,relatively_smallEnrol,1,allAges,very_highAD
+Completed,No,shortLen,Not Applicable,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,1,elderly-adults,noAD
+Completed,No,relatively_shortLen,Phase 2,All,Treatment,Single Group Assignment,Randomized,relatively_smallEnrol,2,elderly-adults,highAD
+Completed,No,shortLen,Not Applicable,All,Treatment,Single Group Assignment,SingleArmNA,relatively_smallEnrol,1,elderly-adults,noAD
+Terminated,No,relatively_shortLen,Not Applicable,All,Treatment,Parallel Assignment,Randomized,smallEnrol,1,elderly-adults,noAD
+Completed,Accept,relatively_shortLen,Not Applicable,All,Treatment,Single Group Assignment,Randomized,smallEnrol,1,elderly-adults,noAD
+Completed,No,shortLen,Not Applicable,All,Treatment,Single Group Assignment,SingleArmNA,relatively_smallEnrol,1,elderly-adults,noAD
+Completed,No,relatively_shortLen,Phase 2,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,1,elderly-adults,highAD
+Completed,No,relatively_shortLen,Phase 2|Phase 3,All,Treatment,Single Group Assignment,Randomized,relatively_smallEnrol,1,elderly-adults,noAD
+Completed,No,relatively_shortLen,Phase 2,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,3,elderly-adults,highAD
+Completed,No,relatively_shortLen,Phase 2,All,Treatment,Parallel Assignment,Randomized,median_Enrol,5,elderly-adults,highAD
+Completed,No,relatively_shortLen,Phase 2,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,6,elderly-adults,highAD
+Completed,No,relatively_shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,largeEnrol,3,elderly-childTeen,highAD
+Completed,No,longLen,Phase 2,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,12,adults-childTeen,very_highAD
+Terminated,No,relatively_shortLen,Phase 4,All,Treatment,Parallel Assignment,Randomized,smallEnrol,2,elderly-adults,noAD
+Completed,No,relatively_shortLen,Phase 2,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,1,childTeen-infants,very_highAD
+Completed,No,longLen,Phase 1|Phase 2,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,7,elderly-adults,very_highAD
+Terminated,No,medianLen,Phase 1|Phase 2,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,3,elderly-adults,very_highAD
+Terminated,No,relatively_shortLen,Phase 2,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,2,elderly-adults,very_highAD
+Completed,No,medianLen,Phase 2,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,7,allAges,very_highAD
+Completed,No,longLen,Phase 2,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,9,allAges,very_highAD
+Terminated,No,medianLen,Phase 2,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,13,elderly-adults,very_highAD
+Completed,No,longLen,Phase 2,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,11,allAges,very_highAD
+Completed,No,medianLen,Phase 2,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,2,elderly-childTeen,very_highAD
+Terminated,No,relatively_shortLen,Phase 1|Phase 2,All,Treatment,Single Group Assignment,Non-Randomized,smallEnrol,2,elderly-adults,noAD
+Terminated,No,longLen,Phase 1,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,3,elderly-adults,noAD
+Terminated,No,medianLen,Not Applicable,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,4,elderly-adults,noAD
+Completed,No,medianLen,Phase 1|Phase 2,All,Treatment,Sequential Assignment,SingleArmNA,smallEnrol,4,elderly-adults,very_highAD
+"Active, not recruiting",No,longLen,Phase 2,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,7,elderly-adults,very_highAD
+Terminated,No,relatively_shortLen,Phase 2,All,Supportive Care,Single Group Assignment,SingleArmNA,smallEnrol,1,elderly-adults,noAD
+Terminated,Accept,shortLen,Not Applicable,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,4,elderly-adults,very_highAD
+Completed,No,longLen,Phase 1|Phase 2,All,Treatment,Single Group Assignment,SingleArmNA,relatively_smallEnrol,4,elderly-adults,very_highAD
+Completed,No,longLen,Not Applicable,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,5,allAges,very_highAD
+Completed,No,shortLen,Phase 2,All,Supportive Care,Single Group Assignment,SingleArmNA,smallEnrol,3,elderly-adults,noAD
+Completed,No,longLen,Not Applicable,All,Supportive Care,Single Group Assignment,SingleArmNA,smallEnrol,2,elderly-adults,very_highAD
+Completed,No,longLen,Phase 2,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,4,elderly-adults,noAD
+Completed,No,relatively_shortLen,Not Applicable,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,1,elderly-childTeen,noAD
+Terminated,No,relatively_shortLen,Phase 4,All,Treatment,Parallel Assignment,Randomized,smallEnrol,3,elderly-childTeen,very_highAD
+Completed,No,relatively_shortLen,Phase 1,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,4,elderly-adults,noAD
+Terminated,No,medianLen,Phase 1,All,Treatment,Parallel Assignment,Randomized,smallEnrol,3,elderly-adults,very_highAD
+Terminated,No,relatively_shortLen,Phase 2,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,2,elderly-adults,noAD
+Completed,No,longLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,3,elderly-adults,very_highAD
+Completed,No,medianLen,Phase 2,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,1,elderly-adults,very_highAD
+Completed,No,medianLen,Phase 2,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,2,elderly-adults,highAD
+Terminated,No,medianLen,Phase 1|Phase 2,All,Treatment,Parallel Assignment,Randomized,smallEnrol,2,elderly-adults,highAD
+Completed,No,medianLen,Phase 1|Phase 2,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,3,elderly-adults,noAD
+Completed,No,longLen,Phase 2,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,1,elderly-adults,very_highAD
+Terminated,No,longLen,Phase 1,All,Treatment,Single Group Assignment,Non-Randomized,smallEnrol,2,elderly-adults,very_highAD
+Completed,No,medianLen,Phase 1|Phase 2,All,Treatment,Parallel Assignment,Non-Randomized,smallEnrol,1,elderly-adults,highAD
+Completed,No,relatively_shortLen,Phase 2,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,1,elderly-adults,noAD
+Terminated,No,longLen,Phase 1|Phase 2,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,1,elderly-adults,noAD
+Completed,No,shortLen,Phase 2|Phase 3,Female,Basic Science,Parallel Assignment,Randomized,smallEnrol,3,elderly-adults,noAD
+"Active, not recruiting",No,medianLen,Not Applicable,All,Prevention,Parallel Assignment,Randomized,smallEnrol,2,elderly-adults,noAD
+Completed,Accept,shortLen,Phase 3,All,Prevention,Parallel Assignment,Non-Randomized,smallEnrol,2,elderly-adults,noAD
+Completed,No,medianLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,4,allAges,very_highAD
+Completed,No,relatively_shortLen,Not Applicable,All,Treatment,Parallel Assignment,Randomized,very_largeEnrol,1,elderly-adults,medianAD
+Completed,No,shortLen,Phase 4,All,Prevention,Parallel Assignment,Randomized,smallEnrol,1,elderly-adults,noAD
+Completed,Accept,shortLen,Phase 3,All,Prevention,Single Group Assignment,SingleArmNA,relatively_smallEnrol,2,elderly-adults,noAD
+Completed,Accept,shortLen,Not Applicable,All,Prevention,Crossover Assignment,Randomized,smallEnrol,3,elderly-adults,noAD
+Completed,No,shortLen,Not Applicable,All,Prevention,Parallel Assignment,Randomized,relatively_smallEnrol,2,elderly-adults,noAD
+Completed,Accept,relatively_shortLen,Not Applicable,All,Prevention,Parallel Assignment,Randomized,very_largeEnrol,1,elderly-adults,noAD
+Completed,Accept,shortLen,Not Applicable,Female,Prevention,Parallel Assignment,Randomized,median_Enrol,2,adults,noAD
+Completed,No,relatively_shortLen,Phase 2,All,Treatment,Parallel Assignment,Randomized,median_Enrol,2,elderly-adults,highAD
+Completed,No,shortLen,Not Applicable,All,Prevention,Single Group Assignment,Randomized,smallEnrol,1,elderly-adults,noAD
+Completed,No,relatively_shortLen,Phase 3,Female,Treatment,Parallel Assignment,Randomized,median_Enrol,3,elderly-childTeen,medianAD
+Completed,No,relatively_shortLen,Phase 3,Female,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,2,elderly-childTeen,noAD
+Completed,Accept,relatively_shortLen,Not Applicable,All,Prevention,Parallel Assignment,Randomized,largeEnrol,2,infants,noAD
+Terminated,No,relatively_shortLen,Not Applicable,All,Treatment,Parallel Assignment,Randomized,smallEnrol,2,elderly-adults,very_highAD
+Completed,No,relatively_shortLen,Not Applicable,All,Prevention,Parallel Assignment,Randomized,smallEnrol,2,elderly-adults,noAD
+Completed,No,relatively_shortLen,Not Applicable,All,Prevention,Parallel Assignment,Randomized,relatively_smallEnrol,2,elderly-adults,noAD
+Completed,No,relatively_shortLen,Phase 4,All,Treatment,Parallel Assignment,Randomized,smallEnrol,2,elderly-adults,highAD
+Completed,Accept,medianLen,Not Applicable,All,Prevention,Parallel Assignment,Randomized,median_Enrol,2,elderly-adults,medianAD
+Completed,No,shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,median_Enrol,2,elderly-adults,very_highAD
+Completed,No,medianLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,median_Enrol,2,elderly-adults,medianAD
+Terminated,No,medianLen,Not Applicable,All,Prevention,Parallel Assignment,Randomized,smallEnrol,2,elderly-adults,noAD
+Terminated,No,medianLen,Phase 2,All,Treatment,Crossover Assignment,Randomized,smallEnrol,2,allAges,very_highAD
+Completed,Accept,relatively_shortLen,Phase 2,Female,Diagnostic,Parallel Assignment,Non-Randomized,relatively_smallEnrol,1,elderly-adults,noAD
+Completed,Accept,medianLen,Not Applicable,Female,Prevention,Parallel Assignment,Randomized,largeEnrol,2,allAges,noAD
+Completed,No,relatively_shortLen,Phase 2,All,Treatment,Parallel Assignment,Randomized,smallEnrol,1,elderly-adults,highAD
+Completed,Accept,shortLen,Not Applicable,All,Prevention,Parallel Assignment,Randomized,smallEnrol,2,elderly-adults,noAD
+Completed,Accept,medianLen,Phase 4,All,Prevention,Parallel Assignment,Randomized,very_largeEnrol,1,elderly-adults,very_highAD
+Completed,Accept,shortLen,Not Applicable,All,Health Services Research,Parallel Assignment,Randomized,relatively_smallEnrol,1,elderly-adults,noAD
+Terminated,No,medianLen,Phase 4,All,Prevention,Parallel Assignment,Randomized,median_Enrol,2,childTeen-infants,medianAD
+Completed,No,relatively_shortLen,Phase 2,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,3,elderly-adults,very_highAD
+Completed,Accept,shortLen,Not Applicable,Female,Prevention,Parallel Assignment,Randomized,relatively_smallEnrol,2,allAges,noAD
+Completed,No,medianLen,Phase 2,All,Treatment,Parallel Assignment,Randomized,smallEnrol,2,elderly-adults,noAD
+Completed,No,relatively_shortLen,Phase 2,Female,Prevention,Parallel Assignment,Randomized,smallEnrol,2,elderly-adults,noAD
+Completed,No,relatively_shortLen,Phase 1|Phase 2,All,Treatment,Parallel Assignment,Randomized,smallEnrol,2,elderly-childTeen,highAD
+Completed,No,relatively_shortLen,Phase 2,All,Treatment,Single Group Assignment,SingleArmNA,smallEnrol,1,elderly-childTeen,very_highAD
+Completed,Accept,relatively_shortLen,Phase 2,All,Prevention,Factorial Assignment,Randomized,relatively_smallEnrol,4,elderly-adults,noAD
+Terminated,No,shortLen,Phase 2,All,Treatment,Parallel Assignment,Randomized,smallEnrol,3,elderly-adults,noAD
+Completed,No,longLen,Phase 4,All,Treatment,Parallel Assignment,Randomized,smallEnrol,2,infants,noAD
+Completed,No,relatively_shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,median_Enrol,4,elderly-adults,highAD
+Completed,No,shortLen,Phase 3,All,Treatment,Single Group Assignment,Non-Randomized,smallEnrol,1,childTeen-infants,noAD
+Completed,No,medianLen,Phase 2|Phase 3,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,5,infants,very_highAD
+Completed,No,relatively_shortLen,Phase 4,All,Treatment,Parallel Assignment,Randomized,smallEnrol,2,elderly-adults,highAD
+Completed,No,medianLen,Not Applicable,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,7,elderly-adults,highAD
+Completed,Accept,medianLen,Not Applicable,Male,Screening,Parallel Assignment,Randomized,relatively_smallEnrol,2,elderly-adults,noAD
+Completed,No,shortLen,Not Applicable,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,1,elderly-adults,highAD
+Terminated,No,relatively_shortLen,Not Applicable,Male,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,1,elderly-adults,noAD
+Terminated,No,shortLen,Not Applicable,All,Treatment,Parallel Assignment,Randomized,smallEnrol,3,elderly-adults,noAD
+Terminated,No,relatively_shortLen,Not Applicable,All,Treatment,Parallel Assignment,Randomized,smallEnrol,2,elderly-adults,noAD
+Completed,No,relatively_shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,largeEnrol,5,elderly-adults,highAD
+Completed,No,relatively_shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,3,elderly-adults,very_highAD
+Completed,No,longLen,Phase 4,All,Treatment,Parallel Assignment,Randomized,largeEnrol,1,elderly-adults,very_highAD
+Completed,Accept,shortLen,Not Applicable,All,Supportive Care,Parallel Assignment,Randomized,smallEnrol,1,infants,noAD
+Completed,No,relatively_shortLen,Not Applicable,All,Treatment,Parallel Assignment,Randomized,smallEnrol,2,elderly-adults,noAD
+Completed,No,longLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,3,elderly-adults,noAD
+Completed,No,relatively_shortLen,Not Applicable,All,Basic Science,Single Group Assignment,SingleArmNA,relatively_smallEnrol,1,elderly-adults,highAD
+Completed,No,medianLen,Phase 1|Phase 2,All,Prevention,Parallel Assignment,Randomized,median_Enrol,1,adults-infants,highAD
+Completed,No,relatively_shortLen,Not Applicable,All,Treatment,Parallel Assignment,Randomized,smallEnrol,2,elderly-adults,noAD
+Completed,Accept,relatively_shortLen,Not Applicable,All,Health Services Research,Parallel Assignment,Non-Randomized,smallEnrol,1,allAges,very_highAD
+Completed,No,relatively_shortLen,Not Applicable,All,Prevention,Parallel Assignment,Randomized,smallEnrol,2,elderly-adults,noAD
+Completed,No,relatively_shortLen,Phase 2,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,2,elderly-adults,highAD
+Completed,No,relatively_shortLen,Phase 2,All,Treatment,Parallel Assignment,Randomized,relatively_smallEnrol,2,elderly-adults,very_highAD
+Completed,No,medianLen,Phase 1|Phase 2,All,Treatment,Parallel Assignment,Non-Randomized,smallEnrol,1,elderly-adults,very_highAD
+Completed,No,shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,median_Enrol,2,elderly-adults,highAD
+Terminated,No,relatively_shortLen,Phase 3,All,Treatment,Parallel Assignment,Randomized,smallEnrol,2,elderly-adults,noAD
+Completed,No,medianLen,Not Applicable,All,Health Services Research,Parallel Assignment,Randomized,smallEnrol,1,elderly-childTeen,noAD
+Completed,No,relatively_shortLen,Phase 2,All,Prevention,Parallel Assignment,Randomized,median_Enrol,2,elderly-adults,very_highAD
+Completed,No,relatively_shortLen,Not Applicable,All,Screening,Parallel Assignment,Non-Randomized,relatively_smallEnrol,2,elderly-adults,noAD
+Completed,No,relatively_shortLen,Not Applicable,All,Diagnostic,Parallel Assignment,Non-Randomized,largeEnrol,1,adults-infants,noAD
+Completed,No,relatively_shortLen,Phase 3,All,Treatment,Single Group Assignment,SingleArmNA,relatively_smallEnrol,1,elderly-childTeen,very_highAD
+Completed,No,relatively_shortLen,Phase 4,All,Treatment,Parallel Assignment,Randomized,smallEnrol,2,elderly-adults,noAD
+Terminated,Accept,longLen,Phase 1|Phase 2,All,Treatment,Single Group Assignment,Non-Randomized,smallEnrol,1,elderly-childTeen,highAD
