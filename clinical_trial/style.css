@@ -1,0 +1,406 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.header{
+	min-height: 100vh;
+	width: 100%;
+	background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(forest.jpg);
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+
+
+.banner{
+	background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(forest.jpg);
+
+}
+
+
+nav{
+	display: block;
+	padding: 2% 6%;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.nav-links{
+	flex: 1;
+	text-align: right;
+	display: block-level;
+}
+
+.nav-links ul li{
+	list-style: none;
+	display: inline-block;
+	padding: 18px 10px;
+	position: relative;
+}
+
+.nav-links ul li a{
+	color: #fff;
+	text-decoration: none;
+	font-family: poppins;
+	font-size:19px;
+	padding: 5px 5px;
+	font-weight: bold;
+	font-family:'Times New Roman', Times, serif;
+	
+}
+
+.nav-links ul li a:hover{
+	background: #fff; 
+	color: #333; 
+}
+
+
+.text-box{
+	width: 90%;
+	color: #fff;
+	position: absolute;
+	top: 50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+}
+
+.text-box h1{
+	font-size: 62px;	
+}
+
+.text-box p{
+	margin: 10px 0 40px; 
+	font-size: 14px;
+	color: #fff;
+}
+
+
+h1{
+	font-size: 40px;
+	font-weight: 600;
+	color: #fff;
+	text-align: center;
+	padding-top: 100px;
+	padding-bottom: 30px;
+}
+
+.dsQ_title{
+
+	font-weight: 600;
+	color: #fff;
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: #276527;
+
+}
+
+.data_title{
+	font-weight: 600;
+	color: #276527;
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 20px;
+	font-size: 30px;
+}
+
+.other_title{
+	font-weight: 600;
+	color: #276527;
+	text-align: left;
+	padding-top: 50px;
+	padding-bottom: 20px;
+	padding-left: 450px;
+	
+}
+
+.ds_questions{
+	color:#fff;
+	background-color: #276527;
+	font-size:20px;
+	font-weight: 100; 
+	line-height: 22px;
+	padding: 20px;
+	margin-left: 200px;
+	margin-right: 200px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-style:italic;
+
+
+}
+
+.contents{
+	color: rgb(15, 1, 1);
+	font-size:20px;
+	background-color:#eafaea;
+	font-weight: 500; 
+	line-height: 26px;
+	padding: 20px;
+	margin-left: 200px;
+	margin-right: 200px;	
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.contents2{
+	color: rgb(15, 1, 1);
+	font-size:20px;
+	background-color:#eafaea;
+	font-weight: 500; 
+	line-height: 26px;
+	padding: 20px;
+	margin-left: 100px;
+	margin-right: 800px;	
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.aboutU_title{
+	color:#fff;
+	font-size:20px;
+	background-color:#276527;
+	font-weight: bold; 
+	line-height: 26px;
+	padding: 20px;
+	margin-left: 250px;
+	margin-right: 950px;	
+	font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+.pictureSJ1{
+	padding-right:20px;
+
+}
+
+.container img{
+	float: right;
+	padding-right: 220px;
+	align-items:flex-end;
+}
+
+
+
+.data_img{
+	display: block;
+	margin-left: 450px;
+	
+}
+
+.data_links{
+	margin-left: 200px;
+
+}
+
+/*------------------About U-----------------*/
+.column_3{
+	float: left;
+	width: 25%;
+	padding: 10px;
+	height: 300px;
+}
+
+.column_3 ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.column_3 li{
+	padding: 10px;
+	margin-bottom: 20px;
+	background-color: #276527;
+	color: #fff;
+	box-shadow: 0 1px 3px rbga(0,0,0,0.12,0 1px 2px rgba(0,0,0,0.24));
+	font-size: 20px;
+	margin-right: 5px;
+}
+
+.row_margin{
+	margin-left: 200px;
+}
+
+
+/* --------------------Data Cleaning-------------*/
+
+.cleaning_title1{
+	font-weight: 600;
+	color: #276527;
+	margin-left: 300px;
+	margin-right: 400px;
+	padding-top: 50px;
+	padding-bottom: 20px;
+	font-size: 30px;
+}
+
+
+.cleaning_contents{
+	color: rgb(15, 1, 1);
+	font-size:20px;
+	font-weight: 500; 
+	line-height: 26px;
+	margin-left: 300px;	
+	margin-right: 400px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.codes{
+	color: rgb(71, 124, 84);
+	background-color:#eafaea;
+	font-weight: 500; 
+	line-height: 26px;
+	padding: 10px;
+	margin-left: 300px;	
+	margin-right: 400px;
+	border-color: rgb(5, 87, 25);
+}
+
+.cleaning_contents2{
+	color:#fff;
+	font-size:20px;
+	background-color:#276527;
+	font-weight: bold; 
+	line-height: 26px;
+	padding: 20px;
+	margin-left: 300px;
+	margin-right: 400px;	
+	font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.cleaning_contents3{
+	color:#276527;
+	font-size:20px;
+	background-color:#eafaea;
+	font-weight: bold; 
+	margin:0 20px;
+	line-height: 26px;
+	padding: 20px;
+	border-radius: 30px;
+	cursor: pointer;
+	display:inline-block;
+}
+
+.row::after{
+	content: "";
+	clear:both;
+	display: table;
+  }
+
+  .png{
+	  margin-left: 305px;
+	  border-width: thick;
+	  border-color: #276527;
+  }
+
+.data_links1{
+	margin-left: 300px;
+}
+
+/* --------------------Clustering-------------*/
+.clustering_contents{
+	color: rgb(15, 1, 1);
+	font-size:20px;
+	font-weight: 500; 
+	line-height: 30px;
+	margin-left: 300px;	
+	margin-right: 400px;
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 20px;
+	background-color:#eafaea;
+}
+
+
+
+.fig{
+	color: #276527;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.clustering_contents2{
+	color:#fff;
+	font-size:20px;
+	background-color:#276527;
+	font-weight: bold; 
+	line-height: 26px;
+	padding: 40px;
+	margin-left: 300px;
+	margin-right: 400px;	
+	font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.cleaning_contents2 a{
+	color: #fff;
+	text-decoration: none;
+	font-family: poppins;
+	font-size:19px;
+	padding: 5px 5px;
+	font-weight: bold;
+	font-family:'Times New Roman', Times, serif;
+	
+}
+
+/* --------------------ARM-------------*/
+.codesARM{
+	color: #fff;
+	background-color:#90C3A9;
+	font-weight: 500; 
+	line-height: 26px;
+	padding: 10px;
+	margin-left: 300px;	
+	margin-right: 400px;
+	border-color: rgb(5, 87, 25);
+}
+
+
+/* --------------------DT-------------*/
+.spreadSheet{
+	margin-left: 300px;
+
+}
+
+.DT_contents1{
+	color:#fff;
+	background-color:#276527;
+	font-weight: bold; 
+	line-height: 26px;
+	padding: 20px;
+	margin-left: 300px;
+	margin-right: 400px;	
+	font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+/*------------------NB-----------------*/
+.column_2{
+	float: left;
+	width: 32%;
+	padding: 10px;
+	height: 300px;
+}
+
+
+.row_margin_NB{
+	margin-left: 300px;
+}
+
+.NB_contents{
+	background-color: #eafaea; 
+	padding: 10px;
+	font-size:20px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 500; 
+	line-height: 30px;
+}
+
+
+
+
+
+
+
