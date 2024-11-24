@@ -1,0 +1,147 @@
+---
+title: "ARIMA for Pre-COVID UNH"
+format: html
+editor: visual
+---
+
+```{r ,echo=FALSE, message=FALSE, warning=FALSE}
+library(flipbookr)
+library(tidyverse)
+library(ggplot2)
+library(forecast)
+library(astsa) 
+library(xts)
+library(tseries)
+library(fpp2)
+library(fma)
+library(lubridate)
+library(tidyverse)
+library(TSstudio)
+library(quantmod)
+library(tidyquant)
+library(plotly)
+require(gridExtra)
+library(knitr)
+library(kableExtra)
+
+stock_df <- read.csv('data/stock.csv')
+stock_df$Dates <- as.Date(stock_df$Dates)
+
+unh <- stock_df[c('UNH','Dates')]
+unh_precovid <- filter(unh,Dates<"2020-01-10")
+#tail(unh_precovid)
+
+UNH_ts <- ts(unh_precovid$UNH, start = c(2010,1),end = c(2020,1),
+             frequency = 251)
+```
+
+## Step 1: Determine the stationality of time series
+
+Based on information obtained from both ACF graphs and Augmented Dickey-Fuller Test, the time series data is non-stationary.
+
+```{r}
+UNH_acf <- ggAcf(UNH_ts,100)+ggtitle("UNH ACF Plot")
+
+UNH_pacf <- ggPacf(UNH_ts)+ggtitle("PACF Plot for UHNs")
+grid.arrange(UNH_acf, UNH_pacf,nrow=2)
+```
+
+```{r}
+tseries::adf.test(UNH_ts)
+```
+
+## Step 2: Eliminate Non-Stationality
+
+Since this data is non-stationary, it is important to necessary to convert it to stationary time series. This step employs a series of actions to eliminate non-stationality, i.e. log transformation and differencing the data. It turns out the log transformed and 1st differened data has shown good stationary property, there are no need to go further at 2nd differencing. What is more, the Augmented Dickey-Fuller Test also confirmed that the log transformed and 1st differenced data is stationary. Therefore, the log transformation and 1st differencing would be the actions taken to eliminate the non-stationality.
+
+```{r, warning=FALSE}
+plot1<- ggAcf(log(UNH_ts) %>%diff(), 50, main="ACF Plot for Log Transformed & 1st differenced Data") 
+plot2<- ggAcf(log(UNH_ts) %>%diff()%>%diff(),50, main="ACF Plot for Log Transformed & 2nd differenced Data") 
+
+grid.arrange(plot1, plot2,nrow=2)
+```
+
+```{r, message=FALSE, warning=FALSE}
+tseries::adf.test(log(UNH_ts) %>%diff())
+```
+
+## Step 3: Determine p,d,q Parameters
+
+```{r, message=FALSE, warning=FALSE}
+plot3<- ggPacf(log(UNH_ts) %>%diff(),50, main="PACF Plot for Log Transformed & 1st differenced Data") 
+
+grid.arrange(plot1,plot3)
+```
+
+According to the PACF plot and ACF plot above, no obivious peaks in neither ACF nor PACF, so both p and q will be 0. Since I only differenced the data once, the d would be 1.
+
+## Step 4: Fit ARIMA(p,d,q) model
+
+```{r}
+fit1 <- Arima(log(UNH_ts), order=c(0, 1, 0),include.drift = TRUE) 
+summary(fit1)
+```
+
+### Model Diagnostics
+
+-   Inspection of the time plot of the standardized residuals below shows no obvious patterns.
+-   Notice that there may be outliers, with a few values exceeding 3 standard deviations in magnitude.
+-   The ACF of the standardized residuals shows no apparent departure from the model assumptions, no significant lags shown.
+-   The normal Q-Q plot of the residuals shows that the assumption of normality is reasonable, with the exception of the fat-tailed.
+-   The model appears to fit well.
+
+```{r}
+model_output <- capture.output(sarima(log(UNH_ts), 0,1,0))
+```
+
+```{r}
+cat(model_output[8:38], model_output[length(model_output)], sep = "\n") #to get rid of the convergence status and details of the optimization algorithm used by the sarima() 
+```
+
+### Compare with auto.arima() function
+
+Both auto.arima and manually fitted model suggested ARIMA(0,1,0) is the best fit model.
+
+```{r}
+auto.arima(log(UNH_ts))
+```
+
+## Step 5: Forecast
+
+The blue part in graph below forecast the next 100 values of UNH stock price in 80% and 95% confidence level.
+
+```{r}
+(UNH_ts) %>%
+  Arima(order=c(0,1,0),include.drift = TRUE) %>%
+  forecast(300) %>%
+  autoplot() +
+  ylab("UNH stock prices prediction") + xlab("Year")
+```
+
+```{r}
+precovid_pred <- as.data.frame((UNH_ts) %>%
+  Arima(order=c(0,1,0),include.drift = TRUE) %>%
+  forecast(768))['Point Forecast']
+
+unh_postcovid <- filter(unh,Dates>"2020-01-9")
+unh_postcovid$preds <- precovid_pred$`Point Forecast`
+```
+
+## True UNH Stock Price VS UHN ARIMA Prediction since COVID 19
+
+The plot below shows the forecast of pre-COVID only UNH stock price during the COVID period and the real-world UNH stock price. According to the plot, the real world UNH stock price illustrate a more upward trend then the prediction. This indicates that as the pandemic continued and the demand for healthcare services increased, UNH stocks rebounded.
+
+```{r}
+g1<- ggplot(unh_postcovid, aes(x=Dates)) +
+  geom_line(aes(y=UNH, colour="True value"))+
+  geom_line(aes(y=preds, colour="Prediction"))+
+   labs(
+    title = "True UNH Stock Price VS UHN ARIMA Prediction since COVID 19",
+    x = "Date",
+    y = "Adjusted Closing Prices")+
+    guides(colour=guide_legend(title="Healthcare Companies")) 
+
+
+
+ggplotly(g1) %>% layout(hovermode = "x")
+```
