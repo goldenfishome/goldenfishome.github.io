@@ -1,0 +1,265 @@
+---
+title: "ARMA/ARIMA/SARIMA Models for UNH"
+---
+
+```{r ,echo=FALSE, message=FALSE, warning=FALSE}
+library(flipbookr)
+library(tidyverse)
+library(ggplot2)
+library(forecast)
+library(astsa) 
+library(xts)
+library(tseries)
+library(fpp2)
+library(fma)
+library(lubridate)
+library(tidyverse)
+library(TSstudio)
+library(quantmod)
+library(tidyquant)
+library(plotly)
+require(gridExtra)
+library(knitr)
+library(kableExtra)
+
+options("getSymbols.warning4.0"=FALSE)
+options("getSymbols.yahoo.warning"=FALSE)
+
+tickers = c("PFE","UNH","JNJ", "AZN", "SYK", "CVS","LLY")
+for (i in tickers){
+  getSymbols(i,
+             from = "2010-1-1",
+             to = "2023-1-29")}
+
+x <- list(
+  title = "date"
+)
+y <- list(
+  title = "value"
+)
+
+stock <- data.frame(PFE$PFE.Adjusted,
+                    UNH$UNH.Adjusted,
+                    AZN$AZN.Adjusted,
+                    SYK$SYK.Adjusted,
+                    CVS$CVS.Adjusted,
+                    JNJ$JNJ.Adjusted,
+                    LLY$LLY.Adjusted)
+
+
+stock <- data.frame(stock,rownames(stock))
+colnames(stock) <- append(tickers,'Dates')
+
+stock$date<-as.Date(stock$Dates,"%Y-%m-%d")
+#write.csv(stock, 'data/stock.csv', row.names = FALSE)
+
+stock_df <- read.csv('data/stock.csv')
+stock_df$Dates <- as.Date(stock_df$Dates)
+
+UNH_df <- as.data.frame(UNH)
+UNH_df$Dates <- as.Date(rownames(UNH_df))
+UNH_ts <- ts(stock_df$UNH, start = c(2010,1),end = c(2023,1),
+             frequency = 251)
+```
+
+## Step 1: Determine the stationality of time series
+
+Stationality is a pre-requirement of training ARIMA model. This is because term 'Auto Regressive' in ARIMA means it is a linear regression model that uses its own lags as predictors, which work best when the predictors are not correlated and are independent of each other. Stationary time series make sure the statistical properties of time series do not change over time.
+
+Based on information obtained from both ACF graphs and Augmented Dickey-Fuller Test, the time series data is non-stationary.
+
+```{r}
+UNH_acf <- ggAcf(UNH_ts,100)+ggtitle("UNH ACF Plot")
+
+UNH_pacf <- ggPacf(UNH_ts)+ggtitle("PACF Plot for UHNs")
+grid.arrange(UNH_acf, UNH_pacf,nrow=2)
+```
+
+```{r}
+tseries::adf.test(UNH_ts)
+```
+
+## Step 2: Eliminate Non-Stationality
+
+Since this data is non-stationary, it is important to necessary to convert it to stationary time series. This step employs a series of actions to eliminate non-stationality, i.e. log transformation and differencing the data. It turns out the log transformed and 1st differened data has shown good stationary property, there are no need to go further at 2nd differencing. What is more, the Augmented Dickey-Fuller Test also confirmed that the log transformed and 1st differenced data is stationary. Therefore, the log transformation and 1st differencing would be the actions taken to eliminate the non-stationality.
+
+```{r, warning=FALSE}
+plot1<- ggAcf(log(UNH_ts) %>%diff(), 50, main="ACF Plot for Log Transformed & 1st differenced Data") 
+plot2<- ggAcf(log(UNH_ts) %>%diff()%>%diff(),50, main="ACF Plot for Log Transformed & 2nd differenced Data") 
+
+grid.arrange(plot1, plot2,nrow=2)
+```
+
+```{r, message=FALSE, warning=FALSE}
+tseries::adf.test(log(UNH_ts) %>%diff())
+```
+
+## Step 3: Determine p,d,q Parameters
+
+The standard notation of ARIMA(p,d,q) include p,d,q 3 parameters. Here are the representations: - p: The number of lag observations included in the model, also called the lag order; order of the AR term. - d: The number of times that the raw observations are differenced, also called the degree of differencing; number of differencing required to make the time series stationary. - q: order of moving average; order of the MA term. It refers to the number of lagged forecast errors that should go into the ARIMA Model.
+
+```{r, message=FALSE, warning=FALSE}
+plot3<- ggPacf(log(UNH_ts) %>%diff(),50, main="PACF Plot for Log Transformed & 1st differenced Data") 
+
+grid.arrange(plot1,plot3)
+```
+
+According to the PACF plot and ACF plot above, here choose the range of p value and q value as 1-4 and 1-3, respectively. Since I only differenced the data once, the d would be 1.
+
+## Step 4: Fit ARIMA(p,d,q) model
+
+Before fitting the data with ARIMA(p,d,q) model, we will need to choose the set of parameters based on error measurement and model diagnostics. Based on the result below, ARIMA(4,1,3) has lowest error measurement.
+
+```{r, message=FALSE, warning=FALSE}
+################ Check for different combinations ######
+
+
+d=1
+i=1
+temp= data.frame()
+ls=matrix(rep(NA,6*12),nrow=12) # roughly nrow = 3x4x2
+
+
+for (p in 2:5)# p=1,2,3,4 : 4
+{
+  for(q in 2:4)# q=1,2,3 :3
+  {
+    for(d in 1:1)# d=1,2 :2
+    {
+      
+      if(p-1+d+q-1<=8)
+      {
+        
+        model<- Arima(log(UNH_ts),order=c(p-1,d,q-1),include.drift=TRUE) 
+        ls[i,]= c(p-1,d,q-1,model$aic,model$bic,model$aicc)
+        i=i+1
+        #print(i)
+        
+      }
+      
+    }
+  }
+}
+
+temp= as.data.frame(ls)
+names(temp)= c("p","d","q","AIC","BIC","AICc")
+
+kable(temp) %>%
+  kable_styling(font_size = 12)
+```
+
+### Error measurement
+
+```{r}
+temp[which.min(temp$AIC),] 
+```
+
+```{r,echo=FALSE}
+temp[which.min(temp$BIC),] 
+```
+
+```{r,echo=FALSE}
+temp[which.min(temp$AICc),] 
+```
+
+```{r}
+fit1 <- Arima(log(UNH_ts), order=c(4, 1, 3),include.drift = TRUE) 
+summary(fit1)
+```
+
+### Model Diagnostics
+
+-   Inspection of the time plot of the standardized residuals below shows no obvious patterns.
+-   Notice that there may be outliers, with a few values exceeding 3 standard deviations in magnitude.
+-   The ACF of the standardized residuals shows no apparent departure from the model assumptions, no significant lags shown.
+-   The normal Q-Q plot of the residuals shows that the assumption of normality is reasonable, with the exception of the fat-tailed.
+-   The model appears to fit well.
+
+```{r}
+model_output <- capture.output(sarima(log(UNH_ts), 4,1,3))
+```
+
+```{r}
+cat(model_output[91:130], model_output[length(model_output)], sep = "\n") #to get rid of the convergence status and details of the optimization algorithm used by the sarima() 
+```
+
+### Compare with auto.arima() function
+
+auto.arima() returns best ARIMA model according to either AIC, AICc or BIC value. The function conducts a search over possible model within the order constraints provided. However, this method is not reliable sometimes. It fits a different model than ACF/PACF plots suggest. This is because auto.arima() usually return models that are more complex as it prefers more parameters compared than to the for example BIC.
+
+```{r}
+auto.arima(log(UNH_ts))
+```
+
+## Step 5: Forecast
+
+The blue part in graph below forecast the next 100 values of UNH stock price in 80% and 95% confidence level.
+
+```{r}
+log(UNH_ts) %>%
+  Arima(order=c(4,1,3),include.drift = TRUE) %>%
+  forecast(100) %>%
+  autoplot() +
+  ylab("UNH stock prices prediction") + xlab("Year")
+```
+
+## Step 6: Compare ARIMA model with the benchmark methods
+
+Forecasting benchmarks are very important when testing new forecasting methods, to see how well they perform against some simple alternatives.
+
+### Average method
+
+Here, the forecast of all future values are equal to the average of the historical data. The residual plot of this method is not stationary.
+
+```{r}
+f1<-meanf(log(UNH_ts), h=251) #mean
+#summary(f1)
+checkresiduals(f1)#serial correlation ; Lung Box p <0.05
+```
+
+### Naive method
+
+This method simply set all forecasts to be the value of the last observation. According to error measurement here, ARIMA(4,1,3) outperform the average method.
+
+```{r}
+f2<-naive(log(UNH_ts), h=11) # naive method
+summary(f2)
+checkresiduals(f2)#serial correlation ; Lung Box p <0.05
+```
+
+### Seasonal naive method
+
+This method is useful for highly seasonal data, which can set each forecast to be equal to the last observed value from the same season of the year. Here seasonal naive is used to forecast the next 4 values for the UNH stock price series.
+
+```{r}
+f3<-snaive(log(UNH_ts), h=4) #seasonal naive method
+summary(f3)
+checkresiduals(f3) #serial correlation ; Lung Box p <0.05
+```
+
+### Drift Method
+
+A variation on the naïve method is to allow the forecasts to increase or decrease over time, where the amount of change over time is set to be the average change seen in the historical data.
+
+```{r}
+f4 <- rwf(log(UNH_ts),drift=TRUE, h=20) 
+summary(f4)
+checkresiduals(f4)
+```
+
+```{r}
+autoplot(UNH_ts) +
+  autolayer(meanf(UNH_ts, h=100),
+            series="Mean.tr", PI=FALSE) +
+  autolayer(naive((UNH_ts), h=100),
+            series="Naïve.tr", PI=FALSE) +
+  autolayer(rwf((UNH_ts), drift=TRUE, h=100),
+            series="Drift.tr", PI=FALSE) +
+  autolayer(forecast(Arima((UNH_ts), order=c(4, 1, 3),include.drift = TRUE),100), 
+            series="fit",PI=FALSE) +
+  ggtitle("UNH Stock Price") +
+  xlab("Time") + ylab("Log(Price)") +
+  guides(colour=guide_legend(title="Forecast"))
+```
+
+According to the graph above, ARIMA(4,1,3) outperform most of benchmark method, though its performance is very similar to drift method.

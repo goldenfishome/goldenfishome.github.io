@@ -1,0 +1,350 @@
+---
+title: "Financial Time Series Models: CVS Example"
+---
+
+
+```{r ,echo=FALSE, message=FALSE, warning=FALSE}
+library(flipbookr)
+library(tidyverse)
+library(ggplot2)
+library(forecast)
+library(astsa) 
+library(xts)
+library(tseries)
+library(fpp2)
+library(fma)
+library(lubridate)
+library(tidyverse)
+library(TSstudio)
+library(quantmod)
+library(tidyquant)
+library(plotly)
+require(gridExtra)
+library(knitr)
+library(kableExtra)
+library("fGarch")
+```
+
+This section concerns fitting time series data with statistical models that concern the variance in the data. Volatility is a statistical measure of the dispersion of returns for a given security or market index. In most cases, the higher the volatility, the riskier the security. It is often measured as either the standard deviation or variance between returns from the same security or market index. 
+
+At this section, I am going to fit financial time series models on CVS stock price. 
+
+
+```{r, results='hide'}
+getSymbols("CVS", from="2010-1-1", src="yahoo")
+CVS_df <- as.data.frame(CVS)
+CVS_df$Date <- rownames(CVS_df)
+CVS_df <- CVS_df[c('Date','CVS.Adjusted')]
+CVS_df <- CVS_df %>%
+  mutate(Date = as.Date(Date)) %>%
+  complete(Date = seq.Date(min(Date), max(Date), by="day"))
+
+# fill missing values in stock 
+CVS_df <- CVS_df %>% fill(CVS.Adjusted)
+
+#new_dates <- seq(as.Date('2020-12-16'), as.Date('2023-3-21'),'week')
+
+#CVS_df <- CVS_df[which((CVS_df$Date) %in% new_dates),]
+
+
+CVS_ts <- ts(CVS_df$CVS.Adjusted, start = c(2010,1),
+             frequency = 365)
+```
+
+## Visualizaing CVS time series
+```{r}
+p<-CVS_df %>%
+  ggplot()+
+  geom_line(aes(y=CVS.Adjusted,x=Date),color="blue")
+
+ggplotly(p)
+```
+
+CVS Health Corporation is a healthcare company that operates a chain of pharmacies and retail clinics. The stock symbol for CVS is "CVS" and it is traded on the New York Stock Exchange (NYSE).
+
+The stock price of CVS has shown a general trend of rising over the span of last 13 years. Since 2010, the stock price of CVS has been stably increased, with a few notable fluctuations. The price started the decade at around \$30 per share and rose steadily to reach a peak of around \$113 per share in July 2015. After that, the stock price went through a period of volatility and declined to around \$60 per share in November 2016. Since then, the stock has been recovering and currently trading around $80 per share.
+
+The COVID-19 pandemic has had a significant impact on the global economy and financial markets, including the stock price of CVS. As a healthcare company, CVS has been directly impacted by the pandemic, as demand for its pharmacy services and retail products has increased during this period. Like many other stocks, CVS experienced a decline in its stock price in March 2020, when the pandemic began to spread rapidly across the United States. The stock price fell from around \$70 in February 2020 to around \$50 in March 2020, as investors reacted to the uncertainty and potential economic impact of the pandemic. Despite the initial decline, the stock price of CVS recovered quickly and has been relatively resilient during the pandemic. This is likely due to the essential nature of CVS's services, as well as the company's strong financial position and diversified business model. During the pandemic, CVS has continued to grow and expand its business, including through acquisitions and partnerships. For example, CVS announced a partnership with Walgreens and federal and state governments to provide COVID-19 vaccines to long-term care facilities, which has helped to boost the company's profile and reputation.
+
+
+## Calculaing Returns
+Fit an appropriate AR+ARCH/ARMA+GARCH or ARIMA-ARCH/GARCH for the returns data.
+```{r}
+#### calculating Returns
+returns = log(CVS_ts) %>% diff()
+autoplot(returns) +ggtitle("Returns of CVS Stock Price")
+```
+
+## ACF, PACF plots of the returns
+```{r}
+ggAcf(returns)
+```
+
+
+```{r}
+ggPacf(returns)
+```
+
+These plots here shows a closer look of ACF and PACF plots, which are weakly stationary.
+```{r}
+## have a closer look
+acf(returns)
+```
+
+
+```{r}
+pacf(returns)
+```
+
+
+Let's look at the ACF of absolute values of the returns and squared values. We can see clear correlation in both plots. This correlation is comming from the correlation in conditional variation.
+```{r}
+acf(abs(returns))
+```
+
+```{r}
+acf(returns^2)
+```
+
+## Model Fitting Method
+There are two ways we can think of fitting the models. First is that we fit the ARIMA model first and fit a GARCH model for the residual. Second method will be fitting a GARRCH model for the squared returns directly.
+
+## Model Fitting Method 1: GARCH(p,q) model fittin
+### ArchTest
+
+```{r, warning=FALSE}
+library(FinTS)
+ArchTest(returns, lags=1, demean=TRUE)
+```
+
+Because the p-value is < 0.05, we reject the null hypothesis and conclude the presence of ARCH(1) effects.
+
+
+### Fitting an ARIMA model
+Let’s fit the ARIMA model first.
+```{r}
+ARIMA.c=function(p1,p2,q1,q2,data){
+temp=c()
+d=1
+i=1
+temp= data.frame()
+ls=matrix(rep(NA,6*50),nrow=50)
+
+
+for (p in p1:p2)#
+{
+  for(q in q1:q2)#
+  {
+    for(d in 0:2)#
+    {
+      
+      if(p+d+q<=6)
+      {
+        
+        model<- Arima(data,order=c(p,d,q))
+        ls[i,]= c(p,d,q,model$aic,model$bic,model$aicc)
+        i=i+1
+  
+        
+      }
+      
+    }
+  }
+}
+
+
+temp= as.data.frame(ls)
+names(temp)= c("p","d","q","AIC","BIC","AICc")
+
+temp
+}
+```
+
+
+```{r}
+#na.omit(log(bts)))
+output <- ARIMA.c(0,2,0,2,data=log(CVS_ts))
+output
+```
+
+```{r}
+output[which.min(output$AIC),] 
+```
+
+```{r}
+output[which.min(output$BIC),] 
+```
+
+
+```{r}
+output[which.min(output$AICc),] 
+```
+
+
+```{r}
+auto.arima(log(CVS_ts))
+```
+
+
+```{r}
+data=log(CVS_ts)
+sarima(data, 0,1,0) #has lower BIC
+```
+
+I’m going to choose ARIMA(0,1,0) because it has the lowest BIC and the hole model diagnostics are the same.
+
+### Fit the GARCH model
+First fit the ARIMA model and fitting a GARCH model to the residuals of the ARIMA model.
+```{r}
+arima.fit<-Arima(data,order=c(0,1,0),include.drift = TRUE)
+arima.res<-arima.fit$residuals
+
+acf(arima.res)
+```
+
+```{r}
+acf(arima.res^2) #clear correlation 1,3,4,5,6,7
+```
+
+```{r}
+pacf(arima.res^2) #1,3,4,7
+```
+
+
+```{r,warning=FALSE}
+model <- list() ## set counter
+cc <- 1
+for (p in 1:7) {
+  for (q in 1:7) {
+  
+model[[cc]] <- garch(arima.res,order=c(q,p),trace=F)
+cc <- cc + 1
+}
+} 
+
+## get AIC values for model evaluation
+GARCH_AIC <- sapply(model, AIC) ## model with lowest AIC is the best
+which(GARCH_AIC == min(GARCH_AIC))
+```
+
+```{r}
+model[[which(GARCH_AIC == min(GARCH_AIC))]]
+```
+
+```{r}
+summary(garchFit(~garch(1,3), arima.res,trace = F))
+```
+
+beta 3 is not significant. So I’m going to try GARCH(1,1) and GARCH(1,2).
+
+
+```{r}
+summary(garchFit(~garch(1,2), arima.res,trace = F))
+```
+
+
+
+```{r}
+summary(garchFit(~garch(1,1), arima.res,trace = F))
+```
+
+Since all the models has similar AIC ,BIC values, I would go with GARCH(1,1) which all the coefficients are significant.
+
+
+### Final Model
+```{r}
+summary(arima.fit<-Arima(data,order=c(0,1,0),include.drift = TRUE))
+```
+
+```{r}
+summary(final.fit <- garchFit(~garch(1,1), arima.res,trace = F)) 
+```
+
+
+### Forecast
+```{r}
+predict(final.fit, n.ahead = 100, plot=TRUE)
+```
+
+### Volatality plot
+```{r}
+ht <- final.fit@h.t 
+
+data= data.frame(ht,CVS_df$Date)
+ggplot(data, aes(y = ht, x = CVS_df$Date)) + geom_line(col = '#ff9933') + ylab('Conditional Variance') + xlab('Date')+ggtitle("Volatility plot of CVS Stock Price")
+```
+
+There’s obvious volatality 2016 that’s when U.S. presidential election and potential changes to healthcare policy, then even more volatality in 2020 because of COVID.
+
+
+## Model Fitting Method 2: GARCH(p,q) model fitting
+Here is going to fit a GARCH model directly.
+```{r}
+pacf(returns^2) #p=1,3,4
+```
+
+
+```{r,warning=FALSE}
+model <- list() ## set counter
+cc <- 1
+for (p in 1:7) {
+  for (q in 1:7) {
+  
+model[[cc]] <- garch(returns,order=c(q,p),trace=F)
+cc <- cc + 1
+}
+} 
+
+## get AIC values for model evaluation
+GARCH_AIC <- sapply(model, AIC) ## model with lowest AIC is the best
+which(GARCH_AIC == min(GARCH_AIC))
+```
+
+```{r}
+model[[which(GARCH_AIC == min(GARCH_AIC))]]
+```
+
+```{r}
+summary(garchFit(~garch(1,3), returns,trace = F))
+```
+Beta 3 is not significant. So I’m going to try GARCH(1,1), GARCH(2,2), GARCH(1,2) and GARCH(2,1)
+
+```{r}
+summary(garchFit(~garch(1,1), returns,trace = F)) #all significant
+```
+
+```{r}
+summary(garchFit(~garch(1,2), returns,trace = F)) #all significant
+```
+
+```{r}
+garch.fit1 <- garchFit(~garch(1,1), data = returns, trace = F)
+summary(garch.fit1)
+```
+
+
+```{r}
+garch.fit11<- garch(returns,order=c(1,1),trace=F)
+checkresiduals(garch.fit11)
+```
+
+There’s still correlation left.
+
+### Volatality plot
+```{r}
+ht <- garch.fit1@h.t #a numeric vector with the conditional variances (h.t = sigma.t^delta)
+
+
+
+data= data.frame(ht,CVS_df$Date[-length(CVS_df$Date)])
+names(data) <- c('ht','Date')
+ggplot(data, aes(y = ht, x = Date)) + geom_line(col = '#ff9933') + ylab('Conditional Variance') + xlab('Date')+ggtitle("Volatality plot")
+```
+
+
+## Model Comparison
+
+We were looking at Method 1: ARIMA(0,1,0)+GARCH(1,1) and Method 2: GARCH(1,1) Perhaps Method 1 is better because Method 2 has correlation left.
+
+
+
