@@ -1,175 +1,404 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Yujia Jin Personal Website</title>
+<title>Sian Jin | Data Scientist & Engineer</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <style>
-body {font-family: "Times New Roman", Georgia, Serif;}
+body {
+  font-family: "Times New Roman", Georgia, Serif;
+}
+
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Playfair Display";
-  letter-spacing: 5px;
+  font-family: "Playfair Display", serif;
+  letter-spacing: 3px;
 }
 
-.links{
-	text-decoration: none;
-	font-family: poppins;
-	font-size:19px;
-}
-.links h4:hover{
-    background: rgba(0, 0, 0, 0.5); 
-	color: #fff; 
-}
-
-.forest_image{
-    max-width:100%;
-    opacity: 0.95;
+/* Nav — European editorial style */
+.nav-link {
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 11px;
+  letter-spacing: 3.5px;
+  text-transform: uppercase;
+  color: #222;
+  padding: 8px 18px !important;
+  background: none !important;
 }
 
-.home_title{
-    font-size:64px!important;
-    color: #fff; 
-    letter-spacing: 30px;
-    font-style: courier;
-    background-color: rgba(0, 0, 0, 0.5);
+.nav-link:hover {
+  color: #888 !important;
+  background: none !important;
 }
 
-.forest_back{
-    content: "";
-    background-image: linear-gradient(rgba(255,255,255,0.8),rgba(255,255,255,0.8)),url('images/forest.jpg');
-    background-repeat: no-repeat
+/* Hero */
+.hero-img {
+  width: 100%;
+  height: 620px;
+  object-fit: cover;
+  opacity: 0.92;
+  display: block;
 }
 
-.icons{
-    color: #808080;
-    transition: color 0.2s;
-    text-decoration: none;
-    margin: 0  15px;
+.hero-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 28px 36px;
+  display: inline-block;
 }
 
-.icons:hover{
-    color: black;
+.home-title {
+  font-size: 52px !important;
+  color: #fff;
+  letter-spacing: 18px;
+  font-family: "Courier New", Courier, monospace !important;
+  margin: 0 0 8px 0;
+}
+
+.hero-tagline {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.82);
+  letter-spacing: 3px;
+  margin: 0 0 20px 0;
+}
+
+.hero-btn {
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  letter-spacing: 2px;
+  padding: 10px 22px;
+  border: 1px solid rgba(255,255,255,0.7);
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 12px;
+  margin-top: 4px;
+  transition: background 0.2s;
+  background: transparent;
+}
+
+.hero-btn:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.hero-btn-solid {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Skills */
+.skill-tag {
+  display: inline-block;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  padding: 5px 13px;
+  background: #f0f0f0;
+  border-radius: 20px;
+  margin: 3px 3px 3px 0;
+  color: #444;
+}
+
+/* Project Cards */
+.project-card {
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  border-radius: 4px;
+  padding: 26px 22px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.2s, transform 0.2s;
+  height: calc(100% - 20px);
+  box-sizing: border-box;
+}
+
+.project-card:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.11);
+  transform: translateY(-2px);
+}
+
+.project-card h4 {
+  margin: 0 0 12px 0;
+  letter-spacing: 1px;
+  font-size: 19px;
+}
+
+.project-card p {
+  color: #666;
+  font-size: 15px;
+  line-height: 1.85;
+  margin: 0 0 14px 0;
+  font-family: "Times New Roman", Georgia, Serif;
+}
+
+.project-link {
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  text-decoration: none;
+  color: #333;
+  border-bottom: 1px solid #333;
+  padding-bottom: 2px;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.project-link:hover {
+  color: #808080;
+  border-color: #808080;
+}
+
+.tech-tag {
+  display: inline-block;
+  font-family: "Poppins", sans-serif;
+  font-size: 11px;
+  padding: 3px 9px;
+  background: #f5f5f5;
+  border-radius: 3px;
+  margin: 0 3px 6px 0;
+  color: #555;
+}
+
+/* Contact */
+.icons {
+  color: #808080;
+  transition: color 0.2s;
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+.icons:hover {
+  color: black;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: #888;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  letter-spacing: 2px;
+  margin-bottom: 44px;
 }
 </style>
 </head>
 <body>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-<!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
-    <a href="#home" class="w3-bar-item w3-button">Welcome to Sian's Personal Website</a>
-    <!-- Right-sided navbar links. Hide them on small screens -->
-    <div class="w3-right w3-hide-small">
-      <a href="#about" class="w3-bar-item w3-button">About</a>
-      <a href="#projects" class="w3-bar-item w3-button">Projects</a>
-      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
-    </div>
-  </div>
-</div>
-
-<!-- Header -->
-<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:300px" id="home">
-  <img class="forest_image" src="/images/forest5.jpg" alt="forest" width="1500" height="750">
-  <div class="w3-display-bottomleft w3-padding-large">
-    <h1 class="home_title">Sian Yujia Jin</h1>
-  </div>
-</header>
-
-<hr>
-
-<!-- Page content -->
-<div class="w3-content" style="max-width:1100px">
-
-  <!-- About Section -->
-  <div class="w3-row w3-padding-64" id="about">
-    <div class="w3-col m6 w3-padding-large w3-hide-small">
-     <img src="/images/sj.jpg" class="w3-round w3-image" alt="A picture of Sian Jin" width="600" height="750">
-    </div>
-
-    <div class="w3-col m6 w3-padding-large">
-      <h1 class="w3-center">About Me</h1>
-      <h5 class="w3-center">Exploring the data science world</h5>
-      <p class="w3-large" style="letter-spacing: 2px">Welcome to my website. My name is Yujia Jin, you can call me Sian. I am a graduate student of Georgetown Data Science and Analytics Program with a background in Master of Pharmacy. 
-        <br><br>
-        I am very passionate about data analyzing, and enjoy the process of finding pattern and drawing conclusions from seemingly unordered data. I am proficient in a number of languages including Python, R, SQL, JavaScript, Microsoft Office suite, and Tableau, and have interests in NLP, Machine learning, Big Data, Data visualization and etc. Check my links below to see some of projects I did.
-        <br><br>
-        Thanks for visiting!</p>
-      <p class="w3-large w3-text-grey w3-hide-medium"></p>
+  <!-- Navbar -->
+  <div class="w3-top">
+    <div class="w3-bar w3-white" style="border-bottom: 1px solid #e0e0e0; padding: 14px 0;">
+      <a href="#home" class="w3-bar-item nav-link" style="font-size:13px; letter-spacing:5px; font-weight:600; padding-left:32px !important;">SIAN JIN</a>
+      <div class="w3-right w3-hide-small" style="padding-right:24px;">
+        <a href="#about" class="w3-bar-item nav-link">About</a>
+        <a href="#projects" class="w3-bar-item nav-link">Projects</a>
+        <a href="#contact" class="w3-bar-item nav-link">Contact</a>
+        <a href="/resume.pdf" target="_blank" class="w3-bar-item nav-link" style="border-bottom:1px solid #aaa; padding-bottom:2px !important;">Resume</a>
+      </div>
     </div>
   </div>
 
-  <!-- Projects Section -->
-  <div class="w3-row w3-padding-64" id="projects">
-    <div class="w3-container w3-padding-64">
-      <h1 class="w3-center">My Projects</h1>
-      <h5 class="w3-center">Click below to see project pages</h5> <br>
-
-      <a href="https://public.tableau.com/app/profile/yujia.jin/vizzes" target="_blank" class="links"><h4>Tableau Dashboards</h4></a>
-      <p class="w3-text-grey">This link presents my Tableau dashboards: HR Analytics, Covid-19 Situation... </p><br>
-    
-      <a href="https://goldenfishome.github.io/volcano_data_vis/index.html" target="_blank" class="links"><h4>Data Visualization Project: Volcano Analysis & Visualizations</h4></a>
-      <p class="w3-text-grey">This project presents a data science story about the volcanoes with Exploratory Data Analysis, and interactive visualization via Python (matplotlib, plotly), R and JavaScript, identifies insights behind time series, geospatial and quantitative data and applies statistical analysis </p><br>
-    
-      <a href="https://goldenfishome.github.io/big_data/index.html" target="_blank" class="links"><h4>DataBricks Project: Examining Political Engagement and Sentiment on Reddit</h4></a>
-      <p class="w3-text-grey">Cloud based big data project on Spark, that dive deeply into social media to explore behavior trends in how people engage with politics online, with implementing of data visualization, NLP and ML analysis.</p><br>
-      
-      
-      <a href="https://goldenfishome.github.io/clinical_trial/index.html" target="_blank" class="links"><h4> Clinical Trials Analytics Project</h4></a>
-      <p class="w3-text-grey">Implement data cleaning, text mining, and machine learning methods on clinical trials dataset, and exploring the data science questions behind clinical trials.</p><br>
-    
-
-      <a href="http://www.icj-e.org/download/ICJE-7-1-116-125.pdf" target="_blank" class="links"><h4> Weather Forecast with Machine Learning & Time Series Methods </h4></a>
-      <p class="w3-text-grey">A weather forcast project with paper publication on climate change dataset via a series of on linear regression, vector autoregression and neural network LSTM</p><br>
-    
-
-      <a href="https://goldenfishome.github.io/stock/index.html" target="_blank" class="links"><h4>Time Series for Stock Price in Healthcare </h4></a>
-      <p class="w3-text-grey">Explore the development of healthcare companies by fitting their stock price into various time series models
-    </p><br>
-    
-      <h4>coming out soon...</h4>
-      <p class="w3-text-grey">...</p>    
+  <!-- Hero -->
+  <header class="w3-display-container w3-content w3-wide" style="max-width:1600px; min-width:300px;" id="home">
+    <img src="/images/forest5.jpg" alt="forest" class="hero-img">
+    <div class="w3-display-bottomleft" style="padding: 0 0 56px 40px;">
+      <div class="hero-overlay">
+        <h1 class="home-title">Sian Yujia Jin</h1>
+        <p class="hero-tagline">Data Scientist &amp; Engineer &nbsp;·&nbsp; ML &amp; AI Applications</p>
+        <a href="#projects" class="hero-btn">View My Work</a>
+        <a href="/resume.pdf" target="_blank" class="hero-btn hero-btn-solid">Resume</a>
+      </div>
     </div>
-  </div>
-  
-  <hr>
-  
-  <!-- Contact Section -->
-  <div class="w3-row w3-padding-64" id="contact">
-    <div class="w3-col l6 w3-padding-large">
-      <h1 class="w3-center">Contact</h1>
-      <h5 class="w3-center">Drop me emails</h5> <br>
-      <h4><ion-icon name="mail-outline" class="icons"></ion-icon> yj234@georgetown.edu</h4>
-      <h4><ion-icon name="location-outline" class="icons"></ion-icon> Washington, DC</h4>
-    
-      <p class="w3-text-grey">  </p><br>
-        <a href="https://www.linkedin.com/in/sian-jin-6878a5224/" target="_blank" class="icons">
+  </header>
+
+  <div class="w3-content" style="max-width:1100px; padding:0 16px;">
+
+    <!-- About -->
+    <div class="w3-row w3-padding-64" id="about">
+      <div class="w3-col m6 w3-padding-large w3-hide-small">
+        <img src="/images/sj.jpg" class="w3-round w3-image" alt="Sian Jin" width="600" height="750"
+          style="box-shadow: 0 4px 16px rgba(0,0,0,0.12);">
+      </div>
+      <div class="w3-col m6 w3-padding-large">
+        <h1 style="letter-spacing:5px; margin-bottom:4px;">About Me</h1>
+        <p style="font-family:'Poppins',sans-serif; font-size:12px; color:#888; letter-spacing:3px; margin-bottom:24px; margin-top:0;">DATA SCIENTIST &amp; ENGINEER</p>
+
+        <p style="font-size:17px; line-height:1.95; color:#444;">
+          Hi, this is Sian! I love working with data, especially when it feels messy and complex at first. There is something really satisfying about turning it into something clear, reliable, and useful.
+          <br><br>
+          I work across data science and engineering, building systems from raw data all the way to machine learning and AI applications. Lately, I have been exploring how large language models can be used in healthcare and research to make a real impact.
+          <br><br>
+          Outside of work, I spend a lot of time taking care of my plants &#127807;, exploring new places, and staying active. I am someone who enjoys simple things, being close to nature, and bringing a sense of calm and intention into both life and work.
+        </p>
+
+        <div style="margin-top:28px;">
+          <p style="font-family:'Poppins',sans-serif; font-size:11px; letter-spacing:3px; color:#888; margin-bottom:12px;">SKILLS</p>
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">R</span>
+          <span class="skill-tag">SQL</span>
+          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">Tableau</span>
+          <span class="skill-tag">Machine Learning</span>
+          <span class="skill-tag">NLP</span>
+          <span class="skill-tag">LLM</span>
+          <span class="skill-tag">FastAPI</span>
+          <span class="skill-tag">PostgreSQL</span>
+          <span class="skill-tag">Spark</span>
+          <span class="skill-tag">Data Visualization</span>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- Projects -->
+    <div class="w3-padding-64" id="projects">
+      <h1 style="text-align:center; letter-spacing:5px;">Projects</h1>
+      <p class="section-subtitle">A selection of my data science &amp; engineering work</p>
+
+      <div class="w3-row-padding">
+
+        <div class="w3-col m6" style="margin-bottom:4px;">
+          <div class="project-card">
+            <h4>HireTrail</h4>
+            <p>A full-stack job search tracker built with FastAPI and Streamlit. Supports tracking companies, applications, and interview rounds with status filtering, CSV bulk import, and a live dashboard. Backed by PostgreSQL with Alembic migrations, deployed on Render and Streamlit Cloud.</p>
+            <div>
+              <span class="tech-tag">FastAPI</span>
+              <span class="tech-tag">Streamlit</span>
+              <span class="tech-tag">PostgreSQL</span>
+              <span class="tech-tag">Alembic</span>
+              <span class="tech-tag">Render</span>
+            </div>
+            <a href="https://github.com/goldenfishome/HireTrail" target="_blank" class="project-link">View on GitHub &#8594;</a>
+          </div>
+        </div>
+
+        <div class="w3-col m6" style="margin-bottom:4px;">
+          <div class="project-card">
+            <h4>Tableau Dashboards</h4>
+            <p>A collection of interactive dashboards covering HR Analytics, Covid-19 trends, and more. Built to communicate complex data stories through clean, intentional visual design.</p>
+            <div>
+              <span class="tech-tag">Tableau</span>
+              <span class="tech-tag">Data Visualization</span>
+            </div>
+            <a href="https://public.tableau.com/app/profile/yujia.jin/vizzes" target="_blank" class="project-link">View Dashboards &#8594;</a>
+          </div>
+        </div>
+
+        <div class="w3-col m6" style="margin-bottom:4px;">
+          <div class="project-card">
+            <h4>Volcano Analysis &amp; Visualizations</h4>
+            <p>A data science story about volcanoes — exploratory data analysis with interactive visualizations using Python, R, and JavaScript. Covers time series, geospatial, and quantitative data with statistical analysis.</p>
+            <div>
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">R</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">Plotly</span>
+              <span class="tech-tag">Matplotlib</span>
+            </div>
+            <a href="https://goldenfishome.github.io/volcano_data_vis/index.html" target="_blank" class="project-link">View Project &#8594;</a>
+          </div>
+        </div>
+
+        <div class="w3-col m6" style="margin-bottom:4px;">
+          <div class="project-card">
+            <h4>Reddit Political Engagement Analysis</h4>
+            <p>Cloud-based big data project on Spark exploring behavioral trends in political engagement on social media, with NLP and ML analysis on Reddit data.</p>
+            <div>
+              <span class="tech-tag">Spark</span>
+              <span class="tech-tag">Databricks</span>
+              <span class="tech-tag">NLP</span>
+              <span class="tech-tag">Machine Learning</span>
+              <span class="tech-tag">Python</span>
+            </div>
+            <a href="https://goldenfishome.github.io/big_data/index.html" target="_blank" class="project-link">View Project &#8594;</a>
+          </div>
+        </div>
+
+        <div class="w3-col m6" style="margin-bottom:4px;">
+          <div class="project-card">
+            <h4>Clinical Trials Analytics</h4>
+            <p>Data cleaning, text mining, and machine learning applied to a clinical trials dataset, exploring data science questions behind trial outcomes and patterns.</p>
+            <div>
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Text Mining</span>
+              <span class="tech-tag">Machine Learning</span>
+              <span class="tech-tag">R</span>
+            </div>
+            <a href="https://goldenfishome.github.io/clinical_trial/index.html" target="_blank" class="project-link">View Project &#8594;</a>
+          </div>
+        </div>
+
+        <div class="w3-col m6" style="margin-bottom:4px;">
+          <div class="project-card">
+            <h4>Weather Forecast with ML &amp; Time Series</h4>
+            <p>A weather forecasting project on climate change data using linear regression, vector autoregression, and LSTM neural networks. Published in ICJE.</p>
+            <div>
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">LSTM</span>
+              <span class="tech-tag">Time Series</span>
+              <span class="tech-tag">VAR</span>
+              <span class="tech-tag">Published Paper</span>
+            </div>
+            <a href="http://www.icj-e.org/download/ICJE-7-1-116-125.pdf" target="_blank" class="project-link">Read Paper &#8594;</a>
+          </div>
+        </div>
+
+        <div class="w3-col m6" style="margin-bottom:4px;">
+          <div class="project-card">
+            <h4>Stock Price Time Series &mdash; Healthcare</h4>
+            <p>Modeling healthcare company stock prices using multiple time series methods to explore the development and financial trends of the sector.</p>
+            <div>
+              <span class="tech-tag">R</span>
+              <span class="tech-tag">Time Series</span>
+              <span class="tech-tag">ARIMA</span>
+              <span class="tech-tag">Finance</span>
+            </div>
+            <a href="https://goldenfishome.github.io/stock/index.html" target="_blank" class="project-link">View Project &#8594;</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- Contact -->
+    <div class="w3-row w3-padding-64" id="contact">
+      <div class="w3-col l6 w3-padding-large">
+        <h1 style="letter-spacing:5px; margin-bottom:4px;">Contact</h1>
+        <p style="font-family:'Poppins',sans-serif; font-size:12px; color:#888; letter-spacing:3px; margin-bottom:32px; margin-top:0;">LET'S CONNECT</p>
+
+        <div style="font-family:'Poppins',sans-serif; font-size:17px; margin-bottom:28px;">
+          <ion-icon name="mail-outline" class="icons" style="margin-left:0; vertical-align:middle;"></ion-icon>
+          sjin.data@gmail.com
+        </div>
+
+        <div>
+          <a href="https://www.linkedin.com/in/sian-jin-6878a5224/" target="_blank" class="icons">
             <ion-icon name="logo-linkedin" size="large"></ion-icon>
-        </a>
-        <a href="https://github.com/goldenfishome" target="_blank" class="icons">
+          </a>
+          <a href="https://github.com/goldenfishome" target="_blank" class="icons">
             <ion-icon name="logo-github" size="large"></ion-icon>
-        </a>
+          </a>
+        </div>
+      </div>
+
+      <div class="w3-col l6 w3-padding-large">
+        <img src="/images/home_plants.jpg" class="w3-round w3-image" alt="Sian's plants"
+          style="width:100%; max-height:340px; object-fit:cover; box-shadow:0 4px 16px rgba(0,0,0,0.1);">
+      </div>
     </div>
-    
-    <div class="w3-col l6 w3-padding-large">
-      <img src="/images/forest4.jpg" class="w3-round w3-image" alt="mountain" style="width:100%">
-    </div>
+
+    <hr>
   </div>
-  <hr>
 
-  <!-- End page content -->
-</div>
+  <!-- Bottom image -->
+  <img src="/images/leaf.jpg" style="width:100%; max-height:280px; object-fit:cover;">
 
-<!-- Image of location/map -->
-<img src="/images/leaf.jpg" style="width:100%;">
-
-<!-- Footer -->
-<footer class="w3-center w3-light-grey w3-padding-32">
-  <p>© 2023 Yujia Jin. All rights reserved.</p>
-  
-</footer>
+  <!-- Footer -->
+  <footer class="w3-center w3-light-grey w3-padding-32">
+    <p style="font-family:'Poppins',sans-serif; font-size:13px; letter-spacing:2px; color:#888;">&#169; 2025 Sian Yujia Jin</p>
+  </footer>
 
 </body>
 </html>
