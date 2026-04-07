@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(sips -s format jpeg /Users/sianjin/Documents/GitHub/goldenfishome.github.io/images/home_plants.jpg --out /Users/sianjin/Documents/GitHub/goldenfishome.github.io/images/home_plants.jpg)"
+    ]
+  }
+}

@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <style>
 body {
-  font-family: "Times New Roman", Georgia, Serif;
+  font-family: Georgia, "Times New Roman", serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -86,6 +86,33 @@ h1, h2, h3, h4, h5, h6 {
   background: rgba(255, 255, 255, 0.1);
 }
 
+/* Section header — menu nod */
+.section-head {
+  text-align: center;
+  margin-bottom: 44px;
+}
+
+.section-ornament {
+  display: block;
+  color: #888888;
+  font-size: 16px;
+  letter-spacing: 12px;
+  margin-bottom: 12px;
+}
+
+.section-head h1 {
+  letter-spacing: 5px;
+  margin-bottom: 6px;
+}
+
+.section-subtitle {
+  font-style: italic;
+  font-size: 14px;
+  color: #888888;
+  font-family: Georgia, serif;
+  letter-spacing: 0.5px;
+}
+
 /* Skills */
 .skill-tag {
   display: inline-block;
@@ -108,7 +135,6 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 20px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   transition: box-shadow 0.2s, transform 0.2s;
-  height: calc(100% - 20px);
   box-sizing: border-box;
 }
 
@@ -117,10 +143,34 @@ h1, h2, h3, h4, h5, h6 {
   transform: translateY(-2px);
 }
 
-.project-card h4 {
-  margin: 0 0 12px 0;
+/* Card title row — menu dot leader nod */
+.card-title-row {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 6px;
+}
+
+.card-title-row h4 {
+  font-size: 17px;
   letter-spacing: 1px;
-  font-size: 19px;
+  margin: 0;
+  flex-shrink: 0;
+}
+
+.card-dots {
+  flex: 1;
+  border-bottom: 1px dotted #ccc;
+  margin: 0 10px;
+  position: relative;
+  top: -5px;
+}
+
+.card-year {
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: #888888;
+  flex-shrink: 0;
 }
 
 .project-card p {
@@ -128,13 +178,13 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 15px;
   line-height: 1.85;
   margin: 0 0 14px 0;
-  font-family: "Times New Roman", Georgia, Serif;
 }
 
 .project-link {
   font-family: "Poppins", sans-serif;
-  font-size: 12px;
-  letter-spacing: 1.5px;
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
   text-decoration: none;
   color: #333;
   border-bottom: 1px solid #333;
@@ -143,8 +193,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .project-link:hover {
-  color: #808080;
-  border-color: #808080;
+  color: #888888;
+  border-color: #888888;
 }
 
 .tech-tag {
@@ -158,6 +208,47 @@ h1, h2, h3, h4, h5, h6 {
   color: #555;
 }
 
+/* Green Gallery */
+.gallery-img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 4px;
+  transition: opacity 0.2s, transform 0.2s;
+  cursor: pointer;
+}
+
+.gallery-img:hover {
+  opacity: 0.88;
+  transform: scale(1.02);
+}
+
+/* Ornamental rule — menu nod */
+.ornamental-rule {
+  text-align: center;
+  border: none;
+  margin: 0;
+  color: #888888;
+  font-size: 14px;
+  letter-spacing: 10px;
+  overflow: visible;
+  height: 1px;
+  border-top: 1px solid #e0e0e0;
+  position: relative;
+}
+
+.ornamental-rule::after {
+  content: "⁕";
+  background: #fff;
+  padding: 0 12px;
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #888888;
+  font-size: 16px;
+}
+
 /* Contact */
 .icons {
   color: #808080;
@@ -166,18 +257,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 15px;
 }
 
-.icons:hover {
-  color: black;
-}
-
-.section-subtitle {
-  text-align: center;
-  color: #888;
-  font-family: "Poppins", sans-serif;
-  font-size: 14px;
-  letter-spacing: 2px;
-  margin-bottom: 44px;
-}
+.icons:hover { color: black; }
 </style>
 </head>
 <body>
@@ -186,11 +266,12 @@ h1, h2, h3, h4, h5, h6 {
 
   <!-- Navbar -->
   <div class="w3-top">
-    <div class="w3-bar w3-white" style="border-bottom: 1px solid #e0e0e0; padding: 14px 0;">
+    <div class="w3-bar w3-white" style="border-bottom:1px solid #e0e0e0; padding:14px 0;">
       <a href="#home" class="w3-bar-item nav-link" style="font-size:13px; letter-spacing:5px; font-weight:600; padding-left:32px !important;">SIAN JIN</a>
       <div class="w3-right w3-hide-small" style="padding-right:24px;">
         <a href="#about" class="w3-bar-item nav-link">About</a>
         <a href="#projects" class="w3-bar-item nav-link">Projects</a>
+        <a href="#gallery" class="w3-bar-item nav-link">Gallery</a>
         <a href="#contact" class="w3-bar-item nav-link">Contact</a>
         <a href="/resume.pdf" target="_blank" class="w3-bar-item nav-link" style="border-bottom:1px solid #aaa; padding-bottom:2px !important;">Resume</a>
       </div>
@@ -199,7 +280,7 @@ h1, h2, h3, h4, h5, h6 {
 
   <!-- Hero -->
   <header class="w3-display-container w3-content w3-wide" style="max-width:1600px; min-width:300px;" id="home">
-    <img src="/images/forest5.jpg" alt="forest" class="hero-img">
+    <img src="images/forest5.jpg" alt="forest" class="hero-img">
     <div class="w3-display-bottomleft" style="padding: 0 0 56px 40px;">
       <div class="hero-overlay">
         <h1 class="home-title">Sian Yujia Jin</h1>
@@ -215,14 +296,14 @@ h1, h2, h3, h4, h5, h6 {
     <!-- About -->
     <div class="w3-row w3-padding-64" id="about">
       <div class="w3-col m6 w3-padding-large w3-hide-small">
-        <img src="/images/sj.jpg" class="w3-round w3-image" alt="Sian Jin" width="600" height="750"
+        <img src="images/sj.jpg" class="w3-round w3-image" alt="Sian Jin" width="600" height="750"
           style="box-shadow: 0 4px 16px rgba(0,0,0,0.12);">
       </div>
       <div class="w3-col m6 w3-padding-large">
         <h1 style="letter-spacing:5px; margin-bottom:4px;">About Me</h1>
-        <p style="font-family:'Poppins',sans-serif; font-size:12px; color:#888; letter-spacing:3px; margin-bottom:24px; margin-top:0;">DATA SCIENTIST &amp; ENGINEER</p>
+        <p style="font-family:'Poppins',sans-serif; font-size:11px; color:#888; letter-spacing:3px; margin-bottom:24px; margin-top:0; text-transform:uppercase;">Data Scientist &amp; Engineer</p>
 
-        <p style="font-size:17px; line-height:1.95; color:#444;">
+        <p style="font-size:17px; line-height:1.95; color:#111;">
           Hi, this is Sian! I love working with data, especially when it feels messy and complex at first. There is something really satisfying about turning it into something clear, reliable, and useful.
           <br><br>
           I work across data science and engineering, building systems from raw data all the way to machine learning and AI applications. Lately, I have been exploring how large language models can be used in healthcare and research to make a real impact.
@@ -231,7 +312,7 @@ h1, h2, h3, h4, h5, h6 {
         </p>
 
         <div style="margin-top:28px;">
-          <p style="font-family:'Poppins',sans-serif; font-size:11px; letter-spacing:3px; color:#888; margin-bottom:12px;">SKILLS</p>
+          <p style="font-family:'Poppins',sans-serif; font-size:10px; letter-spacing:3px; color:#888888; margin-bottom:12px; text-transform:uppercase;">Skills</p>
           <span class="skill-tag">Python</span>
           <span class="skill-tag">R</span>
           <span class="skill-tag">SQL</span>
@@ -248,19 +329,23 @@ h1, h2, h3, h4, h5, h6 {
       </div>
     </div>
 
-    <hr>
+    <hr class="ornamental-rule">
 
     <!-- Projects -->
     <div class="w3-padding-64" id="projects">
-      <h1 style="text-align:center; letter-spacing:5px;">Projects</h1>
-      <p class="section-subtitle">A selection of my data science &amp; engineering work</p>
+      <div class="section-head">
+        <h1>Projects</h1>
+        <p class="section-subtitle">A selection of the day's work</p>
+      </div>
 
       <div class="w3-row-padding">
 
         <div class="w3-col m6" style="margin-bottom:4px;">
           <div class="project-card">
-            <h4>HireTrail</h4>
-            <p>A full-stack job search tracker built with FastAPI and Streamlit. Supports tracking companies, applications, and interview rounds with status filtering, CSV bulk import, and a live dashboard. Backed by PostgreSQL with Alembic migrations, deployed on Render and Streamlit Cloud.</p>
+            <div class="card-title-row">
+              <h4>HireTrail</h4>
+            </div>
+            <p>A full-stack job search tracker supporting companies, applications, and interview rounds with status filtering, CSV bulk import, and a live dashboard. Backed by PostgreSQL with Alembic migrations, deployed on Render and Streamlit Cloud.</p>
             <div>
               <span class="tech-tag">FastAPI</span>
               <span class="tech-tag">Streamlit</span>
@@ -268,26 +353,30 @@ h1, h2, h3, h4, h5, h6 {
               <span class="tech-tag">Alembic</span>
               <span class="tech-tag">Render</span>
             </div>
-            <a href="https://github.com/goldenfishome/HireTrail" target="_blank" class="project-link">View on GitHub &#8594;</a>
+            <a href="https://github.com/goldenfishome/HireTrail" target="_blank" class="project-link">View on GitHub</a>
           </div>
         </div>
 
         <div class="w3-col m6" style="margin-bottom:4px;">
           <div class="project-card">
-            <h4>Tableau Dashboards</h4>
+            <div class="card-title-row">
+              <h4>Tableau Dashboards</h4>
+            </div>
             <p>A collection of interactive dashboards covering HR Analytics, Covid-19 trends, and more. Built to communicate complex data stories through clean, intentional visual design.</p>
             <div>
               <span class="tech-tag">Tableau</span>
               <span class="tech-tag">Data Visualization</span>
             </div>
-            <a href="https://public.tableau.com/app/profile/yujia.jin/vizzes" target="_blank" class="project-link">View Dashboards &#8594;</a>
+            <a href="https://public.tableau.com/app/profile/yujia.jin/vizzes" target="_blank" class="project-link">View Dashboards</a>
           </div>
         </div>
 
         <div class="w3-col m6" style="margin-bottom:4px;">
           <div class="project-card">
-            <h4>Volcano Analysis &amp; Visualizations</h4>
-            <p>A data science story about volcanoes — exploratory data analysis with interactive visualizations using Python, R, and JavaScript. Covers time series, geospatial, and quantitative data with statistical analysis.</p>
+            <div class="card-title-row">
+              <h4>Volcano Analysis &amp; Visualizations</h4>
+            </div>
+            <p>A data science story about volcanoes — exploratory data analysis with interactive visualizations. Covers time series, geospatial, and quantitative data with statistical analysis.</p>
             <div>
               <span class="tech-tag">Python</span>
               <span class="tech-tag">R</span>
@@ -295,14 +384,16 @@ h1, h2, h3, h4, h5, h6 {
               <span class="tech-tag">Plotly</span>
               <span class="tech-tag">Matplotlib</span>
             </div>
-            <a href="https://goldenfishome.github.io/volcano_data_vis/index.html" target="_blank" class="project-link">View Project &#8594;</a>
+            <a href="https://goldenfishome.github.io/volcano_data_vis/index.html" target="_blank" class="project-link">View Project</a>
           </div>
         </div>
 
         <div class="w3-col m6" style="margin-bottom:4px;">
           <div class="project-card">
-            <h4>Reddit Political Engagement Analysis</h4>
-            <p>Cloud-based big data project on Spark exploring behavioral trends in political engagement on social media, with NLP and ML analysis on Reddit data.</p>
+            <div class="card-title-row">
+              <h4>Reddit Political Engagement</h4>
+            </div>
+            <p>Cloud-based big data project exploring behavioral trends in political engagement on social media, with NLP and ML analysis on Reddit data.</p>
             <div>
               <span class="tech-tag">Spark</span>
               <span class="tech-tag">Databricks</span>
@@ -310,13 +401,15 @@ h1, h2, h3, h4, h5, h6 {
               <span class="tech-tag">Machine Learning</span>
               <span class="tech-tag">Python</span>
             </div>
-            <a href="https://goldenfishome.github.io/big_data/index.html" target="_blank" class="project-link">View Project &#8594;</a>
+            <a href="https://goldenfishome.github.io/big_data/index.html" target="_blank" class="project-link">View Project</a>
           </div>
         </div>
 
         <div class="w3-col m6" style="margin-bottom:4px;">
           <div class="project-card">
-            <h4>Clinical Trials Analytics</h4>
+            <div class="card-title-row">
+              <h4>Clinical Trials Analytics</h4>
+            </div>
             <p>Data cleaning, text mining, and machine learning applied to a clinical trials dataset, exploring data science questions behind trial outcomes and patterns.</p>
             <div>
               <span class="tech-tag">Python</span>
@@ -324,13 +417,15 @@ h1, h2, h3, h4, h5, h6 {
               <span class="tech-tag">Machine Learning</span>
               <span class="tech-tag">R</span>
             </div>
-            <a href="https://goldenfishome.github.io/clinical_trial/index.html" target="_blank" class="project-link">View Project &#8594;</a>
+            <a href="https://goldenfishome.github.io/clinical_trial/index.html" target="_blank" class="project-link">View Project</a>
           </div>
         </div>
 
         <div class="w3-col m6" style="margin-bottom:4px;">
           <div class="project-card">
-            <h4>Weather Forecast with ML &amp; Time Series</h4>
+            <div class="card-title-row">
+              <h4>Weather Forecast &mdash; ML &amp; Time Series</h4>
+            </div>
             <p>A weather forecasting project on climate change data using linear regression, vector autoregression, and LSTM neural networks. Published in ICJE.</p>
             <div>
               <span class="tech-tag">Python</span>
@@ -339,36 +434,63 @@ h1, h2, h3, h4, h5, h6 {
               <span class="tech-tag">VAR</span>
               <span class="tech-tag">Published Paper</span>
             </div>
-            <a href="http://www.icj-e.org/download/ICJE-7-1-116-125.pdf" target="_blank" class="project-link">Read Paper &#8594;</a>
+            <a href="http://www.icj-e.org/download/ICJE-7-1-116-125.pdf" target="_blank" class="project-link">Read Paper</a>
           </div>
         </div>
 
         <div class="w3-col m6" style="margin-bottom:4px;">
           <div class="project-card">
-            <h4>Stock Price Time Series &mdash; Healthcare</h4>
-            <p>Modeling healthcare company stock prices using multiple time series methods to explore the development and financial trends of the sector.</p>
+            <div class="card-title-row">
+              <h4>Stock Price Time Series &mdash; Healthcare</h4>
+            </div>
+            <p>Modeling healthcare company stock prices using multiple time series methods to explore development and financial trends of the sector.</p>
             <div>
               <span class="tech-tag">R</span>
               <span class="tech-tag">Time Series</span>
               <span class="tech-tag">ARIMA</span>
               <span class="tech-tag">Finance</span>
             </div>
-            <a href="https://goldenfishome.github.io/stock/index.html" target="_blank" class="project-link">View Project &#8594;</a>
+            <a href="https://goldenfishome.github.io/stock/index.html" target="_blank" class="project-link">View Project</a>
+          </div>
+        </div>
+
+        <div class="w3-col m6" style="margin-bottom:4px;">
+          <div class="project-card" style="display:flex; align-items:center; justify-content:center; min-height:160px;">
+            <p style="font-style:italic; color:#aaa; font-size:15px; text-align:center; margin:0;">more coming soon...</p>
           </div>
         </div>
 
       </div>
     </div>
 
-    <hr>
+    <hr class="ornamental-rule">
+
+    <!-- Green Gallery -->
+    <div class="w3-padding-64" id="gallery">
+      <div class="section-head">
+        <h1>Green Gallery</h1>
+        <p class="section-subtitle">A little corner of calm</p>
+      </div>
+
+      <div style="display:grid; grid-template-columns: repeat(3, 1fr); gap:12px;">
+        <img src="images/forest2.jpg" alt="plants" class="gallery-img">
+        <img src="images/green.jpg"       alt="green"  class="gallery-img">
+        <img src="images/stem.jpg"        alt="stem"   class="gallery-img">
+        <img src="images/stem1.jpg"       alt="stem"   class="gallery-img">
+        <img src="images/yellow_tree.jpg" alt="tree"   class="gallery-img">
+        <img src="images/leaf.jpg"        alt="leaf"   class="gallery-img">
+      </div>
+    </div>
+
+    <hr class="ornamental-rule">
 
     <!-- Contact -->
     <div class="w3-row w3-padding-64" id="contact">
       <div class="w3-col l6 w3-padding-large">
         <h1 style="letter-spacing:5px; margin-bottom:4px;">Contact</h1>
-        <p style="font-family:'Poppins',sans-serif; font-size:12px; color:#888; letter-spacing:3px; margin-bottom:32px; margin-top:0;">LET'S CONNECT</p>
+        <p style="font-style:italic; font-size:14px; color:#888888; margin-bottom:32px; margin-top:6px; font-family:Georgia,serif;">Come say hello</p>
 
-        <div style="font-family:'Poppins',sans-serif; font-size:17px; margin-bottom:28px;">
+        <div style="font-family:'Poppins',sans-serif; font-size:16px; margin-bottom:28px;">
           <ion-icon name="mail-outline" class="icons" style="margin-left:0; vertical-align:middle;"></ion-icon>
           sjin.data@gmail.com
         </div>
@@ -384,20 +506,18 @@ h1, h2, h3, h4, h5, h6 {
       </div>
 
       <div class="w3-col l6 w3-padding-large">
-        <img src="/images/home_plants.jpg" class="w3-round w3-image" alt="Sian's plants"
+        <img src="images/home_plants.jpg" class="w3-round w3-image" alt="Sian's plants"
           style="width:100%; max-height:340px; object-fit:cover; box-shadow:0 4px 16px rgba(0,0,0,0.1);">
       </div>
     </div>
 
-    <hr>
+    <hr class="ornamental-rule">
   </div>
 
-  <!-- Bottom image -->
-  <img src="/images/leaf.jpg" style="width:100%; max-height:280px; object-fit:cover;">
+  <img src="images/leaf.jpg" style="width:100%; max-height:280px; object-fit:cover; display:block;">
 
-  <!-- Footer -->
   <footer class="w3-center w3-light-grey w3-padding-32">
-    <p style="font-family:'Poppins',sans-serif; font-size:13px; letter-spacing:2px; color:#888;">&#169; 2025 Sian Yujia Jin</p>
+    <p style="font-family:'Poppins',sans-serif; font-size:10px; letter-spacing:3px; text-transform:uppercase; color:#888888;">&#169; 2025 &nbsp;·&nbsp; Sian Yujia Jin</p>
   </footer>
 
 </body>
